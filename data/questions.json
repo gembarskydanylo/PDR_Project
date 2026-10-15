@@ -1,10 +1,12 @@
 [
   {
     "id": "signs_001",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Яку форму має попереджувальний знак (категорія A) у Бельгії?",
       "nl": "Welke vorm heeft een gevaarsbord (categorie A) in België?",
@@ -58,19 +60,25 @@
     },
     "source": {
       "title": "Wegcode art. 66 / Code de la route",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["warning", "shape", "category-A"],
+    "tags": [
+      "warning",
+      "shape",
+      "category-A"
+    ],
     "status": "published"
   },
   {
     "id": "signs_002",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Що означає знак B1 (перевернутий трикутник з червоною облямівкою)?",
       "nl": "Wat betekent bord B1 (omgekeerde driehoek met rode rand)?",
@@ -124,19 +132,25 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B1",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B1", "yield"],
+    "tags": [
+      "priority",
+      "B1",
+      "yield"
+    ],
     "status": "published"
   },
   {
     "id": "signs_003",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Чим відрізняється знак B5 (STOP) від знака B1?",
       "nl": "Wat is het verschil tussen bord B5 (STOP) en bord B1?",
@@ -190,19 +204,25 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B5",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B5", "stop"],
+    "tags": [
+      "priority",
+      "B5",
+      "stop"
+    ],
     "status": "published"
   },
   {
     "id": "signs_004",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Що означає жовтий ромб (знак B9)?",
       "nl": "Wat betekent de gele ruit (bord B9)?",
@@ -256,19 +276,25 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B9",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B9", "priority-road"],
+    "tags": [
+      "priority",
+      "B9",
+      "priority-road"
+    ],
     "status": "published"
   },
   {
     "id": "signs_005",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Який знак позначає кінець головної дороги?",
       "nl": "Welk bord duidt het einde van de voorrangsweg aan?",
@@ -322,19 +348,24 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B11",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B11"],
+    "tags": [
+      "priority",
+      "B11"
+    ],
     "status": "published"
   },
   {
     "id": "signs_006",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Яку форму і колір мають заборонні знаки (категорія C)?",
       "nl": "Welke vorm en kleur hebben verbodsborden (categorie C)?",
@@ -388,24 +419,30 @@
     },
     "source": {
       "title": "Wegcode art. 68",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["prohibitory", "category-C", "shape"],
+    "tags": [
+      "prohibitory",
+      "category-C",
+      "shape"
+    ],
     "status": "published"
   },
   {
     "id": "signs_007",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
-      "uk": "Що означає круглий знак з червоною облямівкою і чорною стрілкою вгору, перекресленою червоною діагоналлю (C1)?",
-      "nl": "Wat betekent het ronde bord met rode rand en zwarte pijl omhoog, doorgestreept met rode diagonaal (C1)?",
-      "fr": "Que signifie le panneau rond à bord rouge avec flèche noire vers le haut barrée d'une diagonale rouge (C1) ?",
-      "en": "What does the round sign with red border and black upward arrow crossed by a red diagonal (C1) mean?"
+      "uk": "Що означає круглий червоний знак з білою горизонтальною смугою (C1)?",
+      "nl": "Wat betekent het ronde rode bord met een witte horizontale balk (C1)?",
+      "fr": "Que signifie le panneau rond rouge avec une barre horizontale blanche (C1) ?",
+      "en": "What does the round red sign with a white horizontal bar (C1) mean?"
     },
     "options": [
       {
@@ -447,26 +484,32 @@
     ],
     "correct_option_id": "a",
     "explanation": {
-      "uk": "C1 — класичний знак «В'їзд заборонено» / «Неправильний напрямок». Забороняє в'їзд усім транспортним засобам з цього напрямку.",
-      "nl": "C1 is het klassieke bord «Verboden richting». Het verbiedt de toegang voor alle bestuurders vanuit die richting.",
-      "fr": "C1 est le signal classique « Sens interdit ». Il interdit l'accès à tous les conducteurs venant de cette direction.",
-      "en": "C1 is the classic «No entry» / «Wrong way» sign. It prohibits entry for all drivers from that direction."
+      "uk": "C1 — «Заборонений напрямок для всіх водіїв»: в'їзд з цього боку заборонено. Типово стоїть на виїзді з вулиці з одностороннім рухом.",
+      "nl": "C1 — 'Verboden richting voor ieder bestuurder': inrijden langs deze kant is verboden. Staat typisch aan het einde van een eenrichtingsstraat.",
+      "fr": "C1 — « Sens interdit à tout conducteur » : il est interdit d'entrer par ce côté. Typiquement placé à la sortie d'une rue à sens unique.",
+      "en": "C1 — 'No entry for any driver': entering from this side is prohibited. Typically placed at the exit of a one-way street."
     },
     "source": {
       "title": "Wegcode art. 68 — C1",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["prohibitory", "C1", "no-entry"],
+    "tags": [
+      "prohibitory",
+      "C1",
+      "no-entry"
+    ],
     "status": "published"
   },
   {
     "id": "signs_008",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 2,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Яку форму мають наказові (обов'язкові) знаки категорії D?",
       "nl": "Welke vorm hebben de gebodsborden (categorie D)?",
@@ -520,19 +563,25 @@
     },
     "source": {
       "title": "Wegcode — Gebodsborden / Signaux d'obligation",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["mandatory", "category-D", "shape"],
+    "tags": [
+      "mandatory",
+      "category-D",
+      "shape"
+    ],
     "status": "published"
   },
   {
     "id": "signs_009",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 2,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Де зазвичай розміщують попереджувальні знаки (серія A) щодо небезпеки?",
       "nl": "Waar worden gevaarsborden (reeks A) meestal geplaatst?",
@@ -586,19 +635,24 @@
     },
     "source": {
       "title": "Wegcode art. 66",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["warning", "placement"],
+    "tags": [
+      "warning",
+      "placement"
+    ],
     "status": "published"
   },
   {
     "id": "signs_010",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 2,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Що означає знак B17?",
       "nl": "Wat betekent bord B17?",
@@ -652,19 +706,25 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B17",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B17", "priority-right"],
+    "tags": [
+      "priority",
+      "B17",
+      "priority-right"
+    ],
     "status": "published"
   },
   {
     "id": "signs_011",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 2,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Що означає знак B19 (вузький проїзд)?",
       "nl": "Wat betekent bord B19 (smalle doorgang)?",
@@ -718,19 +778,25 @@
     },
     "source": {
       "title": "Wegcode art. 67 — B19",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["priority", "B19", "narrow"],
+    "tags": [
+      "priority",
+      "B19",
+      "narrow"
+    ],
     "status": "published"
   },
   {
     "id": "signs_012",
-    "topic_id": "signs",
+    "topic_id": "road_signs",
     "type": "text",
     "difficulty": 1,
-    "region": ["federal"],
+    "region": [
+      "federal"
+    ],
     "question": {
       "uk": "Які основні категорії дорожніх знаків існують у Бельгії?",
       "nl": "Wat zijn de belangrijkste categorieën verkeersborden in België?",
@@ -784,11 +850,396 @@
     },
     "source": {
       "title": "Wegcode — Categorieën verkeersborden",
-      "url": "https://www.wegcode.be",
+      "url": "https://wegcode.be",
       "checked_at": "2026-10-15",
       "review_status": "verified"
     },
-    "tags": ["categories", "overview"],
+    "tags": [
+      "categories",
+      "overview"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "priority_001",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "question": {
+      "uk": "Хто має пріоритет на перехресті без знаків пріоритету, світлофора чи регулювальника?",
+      "nl": "Wie heeft voorrang op een kruispunt zonder voorrangsborden, verkeerslichten of bevoegd persoon?",
+      "fr": "Qui a la priorité à un carrefour sans signaux de priorité, feux ni agent qualifié ?",
+      "en": "Who has priority at an intersection without priority signs, traffic lights or an authorised agent?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Водій, що наближається праворуч",
+          "nl": "De bestuurder die van rechts komt",
+          "fr": "Le conducteur venant de droite",
+          "en": "The driver coming from the right"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Водій, що наближається ліворуч",
+          "nl": "De bestuurder die van links komt",
+          "fr": "Le conducteur venant de gauche",
+          "en": "The driver coming from the left"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Той, хто їде прямо",
+          "nl": "Wie rechtdoor rijdt",
+          "fr": "Celui qui va tout droit",
+          "en": "Whoever goes straight on"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Той, хто їде ширшою дорогою",
+          "nl": "Wie op de bredere weg rijdt",
+          "fr": "Celui qui circule sur la route la plus large",
+          "en": "Whoever is on the wider road"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Загальне правило Бельгії — пріоритет праворуч (voorrang van rechts). Ширина чи покриття дороги значення не мають.",
+      "nl": "De algemene regel in België is voorrang van rechts. De breedte of verharding van de weg speelt geen rol.",
+      "fr": "La règle générale en Belgique est la priorité de droite. La largeur ou le revêtement de la route ne jouent aucun rôle.",
+      "en": "The general rule in Belgium is priority to the right. The width or surface of the road does not matter."
+    },
+    "source": {
+      "title": "Wegcode art. 12.3.1",
+      "url": "https://wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "priority-right"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "roundabout_001",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 1,
+    "region": [
+      "federal"
+    ],
+    "question": {
+      "uk": "Хто має пріоритет на круговому русі, позначеному знаками D5 і B1 («Дати дорогу») на в'їзді?",
+      "nl": "Wie heeft voorrang op een rotonde aangeduid met de borden D5 en B1 ('Voorrang verlenen')?",
+      "fr": "Qui a la priorité sur un rond-point signalé par les panneaux D5 et B1 (« Céder le passage ») ?",
+      "en": "Who has priority on a roundabout marked with signs D5 and B1 ('Give way') at the entry?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Водії, які вже рухаються по колу",
+          "nl": "Bestuurders die al op de rotonde rijden",
+          "fr": "Les conducteurs déjà sur l'anneau",
+          "en": "Drivers already on the roundabout"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Водії, які в'їжджають на коло",
+          "nl": "Bestuurders die de rotonde oprijden",
+          "fr": "Les conducteurs qui s'engagent",
+          "en": "Drivers entering the roundabout"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Водії, що наближаються праворуч",
+          "nl": "Bestuurders die van rechts komen",
+          "fr": "Les conducteurs venant de droite",
+          "en": "Drivers coming from the right"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Знак B1 на в'їзді означає, що ти поступаєшся тим, хто вже рухається по колу. Правило «праворуч» тут не діє.",
+      "nl": "Het bord B1 aan de ingang betekent dat je voorrang verleent aan wie al op de rotonde rijdt. Voorrang van rechts geldt hier niet.",
+      "fr": "Le panneau B1 à l'entrée signifie que vous cédez le passage à ceux qui circulent déjà sur l'anneau. La priorité de droite ne s'applique pas.",
+      "en": "Sign B1 at the entry means you give way to those already on the roundabout. Priority to the right does not apply."
+    },
+    "source": {
+      "title": "Wegcode art. 12.3.1 / bord D5",
+      "url": "https://wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout",
+      "B1",
+      "D5"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_001",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 1,
+    "region": [
+      "flanders",
+      "wallonia"
+    ],
+    "question": {
+      "uk": "Яка максимальна швидкість у населеному пункті у Фландрії та Валлонії, якщо знаки не вказують інше?",
+      "nl": "Wat is de maximumsnelheid binnen de bebouwde kom in Vlaanderen en Wallonië als borden niets anders aangeven?",
+      "fr": "Quelle est la vitesse maximale en agglomération en Flandre et en Wallonie, sauf signalisation contraire ?",
+      "en": "What is the speed limit in built-up areas in Flanders and Wallonia unless signs say otherwise?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "У Фландрії та Валлонії базовий ліміт у населеному пункті — 50 км/год, якщо не встановлено зону 30. Увага: у Брюссельському регіоні з 1 січня 2021 року базовий ліміт — 30 км/год.",
+      "nl": "In Vlaanderen en Wallonië is de basislimiet binnen de bebouwde kom 50 km/u, tenzij een zone 30 geldt. Let op: in het Brussels Gewest is dat sinds 1 januari 2021 30 km/u.",
+      "fr": "En Flandre et en Wallonie, la limite de base en agglomération est de 50 km/h, sauf zone 30. Attention : en Région bruxelloise, c'est 30 km/h depuis le 1er janvier 2021.",
+      "en": "In Flanders and Wallonia the default limit in built-up areas is 50 km/h unless a zone 30 applies. Note: in the Brussels Region it has been 30 km/h since 1 January 2021."
+    },
+    "source": {
+      "title": "Wegcode art. 11.1",
+      "url": "https://wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "built-up-area"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_002",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 1,
+    "region": [
+      "brussels"
+    ],
+    "question": {
+      "uk": "Яка базова максимальна швидкість у Брюссельському столичному регіоні, якщо знаки не вказують інше?",
+      "nl": "Wat is de standaard maximumsnelheid in het Brussels Hoofdstedelijk Gewest als borden niets anders aangeven?",
+      "fr": "Quelle est la vitesse maximale par défaut en Région de Bruxelles-Capitale, sauf signalisation contraire ?",
+      "en": "What is the default speed limit in the Brussels-Capital Region unless signs say otherwise?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "З 1 січня 2021 року весь Брюссельський регіон — «місто 30». На деяких головних осях знаками дозволено 50 або 70 км/год.",
+      "nl": "Sinds 1 januari 2021 is het hele Brussels Gewest een 'Stad 30'. Op sommige grote assen staan borden voor 50 of 70 km/u.",
+      "fr": "Depuis le 1er janvier 2021, toute la Région bruxelloise est une « Ville 30 ». Certains grands axes sont signalés à 50 ou 70 km/h.",
+      "en": "Since 1 January 2021 the whole Brussels Region is a 'City 30'. Some main roads are signed at 50 or 70 km/h."
+    },
+    "source": {
+      "title": "Brussels Mobility — Stad 30",
+      "url": "https://mobilite-mobiliteit.brussels",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "brussels",
+      "zone-30"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_001",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "question": {
+      "uk": "На якій відстані перед пішохідним переходом заборонено зупинку і стоянку на проїжджій частині?",
+      "nl": "Op welke afstand vóór een oversteekplaats voor voetgangers is stilstaan en parkeren op de rijbaan verboden?",
+      "fr": "À quelle distance avant un passage pour piétons l'arrêt et le stationnement sont-ils interdits sur la chaussée ?",
+      "en": "Within what distance before a pedestrian crossing are stopping and parking on the carriageway prohibited?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Менше 3 метрів",
+          "nl": "Minder dan 3 meter",
+          "fr": "Moins de 3 mètres",
+          "en": "Less than 3 metres"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Менше 5 метрів",
+          "nl": "Minder dan 5 meter",
+          "fr": "Moins de 5 mètres",
+          "en": "Less than 5 metres"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Менше 10 метрів",
+          "nl": "Minder dan 10 meter",
+          "fr": "Moins de 10 mètres",
+          "en": "Less than 10 metres"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Зупинка і стоянка заборонені на самому переході та на проїжджій частині ближче ніж за 5 м перед ним.",
+      "nl": "Stilstaan en parkeren is verboden op de oversteekplaats zelf en op de rijbaan op minder dan 5 m ervoor.",
+      "fr": "L'arrêt et le stationnement sont interdits sur le passage et sur la chaussée à moins de 5 m avant celui-ci.",
+      "en": "Stopping and parking are prohibited on the crossing itself and on the carriageway less than 5 m before it."
+    },
+    "source": {
+      "title": "Wegcode art. 24",
+      "url": "https://wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "parking",
+      "pedestrian-crossing"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "safety_001",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "question": {
+      "uk": "Яка загальна максимально допустима концентрація алкоголю в крові для водія легкового авто в Бельгії?",
+      "nl": "Wat is de algemene maximaal toegelaten alcoholconcentratie in het bloed voor een autobestuurder in België?",
+      "fr": "Quel est le taux d'alcoolémie maximal autorisé en général pour un conducteur de voiture en Belgique ?",
+      "en": "What is the general maximum permitted blood alcohol concentration for a car driver in Belgium?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "0,2 г/л (0,2 ‰)",
+          "nl": "0,2 g/l (0,2 ‰)",
+          "fr": "0,2 g/l (0,2 ‰)",
+          "en": "0.2 g/l (0.2 ‰)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "0,5 г/л (0,5 ‰)",
+          "nl": "0,5 g/l (0,5 ‰)",
+          "fr": "0,5 g/l (0,5 ‰)",
+          "en": "0.5 g/l (0.5 ‰)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "0,8 г/л (0,8 ‰)",
+          "nl": "0,8 g/l (0,8 ‰)",
+          "fr": "0,8 g/l (0,8 ‰)",
+          "en": "0.8 g/l (0.8 ‰)"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Загальний ліміт — 0,5 г/л крові (0,22 мг/л у видихуваному повітрі). Для професійних водіїв (вантажівки, автобуси, таксі) — 0,2 г/л.",
+      "nl": "De algemene limiet is 0,5 g/l bloed (0,22 mg/l uitgeademde lucht). Voor professionele bestuurders (vrachtwagen, bus, taxi) geldt 0,2 g/l.",
+      "fr": "La limite générale est de 0,5 g/l de sang (0,22 mg/l d'air expiré). Pour les conducteurs professionnels (camion, bus, taxi), c'est 0,2 g/l.",
+      "en": "The general limit is 0.5 g/l of blood (0.22 mg/l of exhaled air). For professional drivers (truck, bus, taxi) it is 0.2 g/l."
+    },
+    "source": {
+      "title": "Wet betreffende de politie over het wegverkeer, art. 34",
+      "url": "https://www.vias.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": [
+      "alcohol"
+    ],
     "status": "published"
   }
 ]

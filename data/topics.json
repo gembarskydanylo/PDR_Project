@@ -1,134 +1,122 @@
 [
   {
-    "id": "signs",
-    "number": 1,
-    "questionsTarget": 100,
+    "id": "road_signs",
     "name": {
       "uk": "Дорожні знаки та сигнали",
-      "nl": "Verkeersborden en signalen",
-      "fr": "Panneaux et signaux",
+      "nl": "Verkeersborden en signalisatie",
+      "fr": "Panneaux de signalisation",
       "en": "Road signs and signals"
-    }
+    },
+    "target_questions": 100
   },
   {
-    "id": "priority",
-    "number": 2,
-    "questionsTarget": 80,
+    "id": "priority_intersections",
     "name": {
       "uk": "Пріоритет і перехрестя",
       "nl": "Voorrang en kruispunten",
       "fr": "Priorité et carrefours",
       "en": "Priority and intersections"
-    }
+    },
+    "target_questions": 80
   },
   {
-    "id": "roundabout",
-    "number": 3,
-    "questionsTarget": 40,
+    "id": "roundabouts",
     "name": {
       "uk": "Круговий рух",
       "nl": "Rotondes",
       "fr": "Ronds-points",
       "en": "Roundabouts"
-    }
+    },
+    "target_questions": 40
   },
   {
-    "id": "speed",
-    "number": 4,
-    "questionsTarget": 50,
+    "id": "speed_distance",
     "name": {
       "uk": "Швидкість і дистанція",
       "nl": "Snelheid en afstand",
       "fr": "Vitesse et distance",
       "en": "Speed and distance"
-    }
+    },
+    "target_questions": 50
   },
   {
-    "id": "parking",
-    "number": 5,
-    "questionsTarget": 60,
+    "id": "stopping_parking",
     "name": {
       "uk": "Зупинка та паркування",
-      "nl": "Stoppen en parkeren",
+      "nl": "Stilstaan en parkeren",
       "fr": "Arrêt et stationnement",
       "en": "Stopping and parking"
-    }
+    },
+    "target_questions": 60
   },
   {
-    "id": "lanes",
-    "number": 6,
-    "questionsTarget": 50,
+    "id": "lanes_turning",
     "name": {
       "uk": "Смуги, повороти та перестроювання",
-      "nl": "Rijstroken, afslaan en wisselen",
-      "fr": "Voies, virages et changements",
-      "en": "Lanes, turns and changing"
-    }
+      "nl": "Rijstroken, afslaan en ritsen",
+      "fr": "Bandes de circulation et manœuvres",
+      "en": "Lanes, turning and merging"
+    },
+    "target_questions": 50
   },
   {
     "id": "overtaking",
-    "number": 7,
-    "questionsTarget": 35,
     "name": {
       "uk": "Обгін і зустрічний роз'їзд",
-      "nl": "Inhalen en tegenliggers",
+      "nl": "Inhalen en kruisen",
       "fr": "Dépassement et croisement",
-      "en": "Overtaking and oncoming"
-    }
+      "en": "Overtaking and crossing"
+    },
+    "target_questions": 35
   },
   {
-    "id": "vulnerable",
-    "number": 8,
-    "questionsTarget": 60,
+    "id": "vulnerable_users",
     "name": {
-      "uk": "Велосипедисти, пішоходи та інші",
-      "nl": "Fietsers, voetgangers en anderen",
-      "fr": "Cyclistes, piétons et autres",
-      "en": "Cyclists, pedestrians and others"
-    }
+      "uk": "Велосипедисти, пішоходи та інші учасники",
+      "nl": "Kwetsbare weggebruikers",
+      "fr": "Usagers vulnérables",
+      "en": "Vulnerable road users"
+    },
+    "target_questions": 60
   },
   {
-    "id": "motorways",
-    "number": 9,
-    "questionsTarget": 45,
+    "id": "motorways_tunnels",
     "name": {
-      "uk": "Автомагістралі, тунелі та переїзди",
+      "uk": "Автомагістралі, тунелі та залізничні переїзди",
       "nl": "Autosnelwegen, tunnels en overwegen",
-      "fr": "Autoroutes, tunnels et passages",
-      "en": "Motorways, tunnels and crossings"
-    }
+      "fr": "Autoroutes, tunnels et passages à niveau",
+      "en": "Motorways, tunnels and level crossings"
+    },
+    "target_questions": 45
   },
   {
-    "id": "weather",
-    "number": 10,
-    "questionsTarget": 50,
+    "id": "weather_hazards",
     "name": {
-      "uk": "Погода, видимість та небезпеки",
+      "uk": "Погода, видимість та небезпечні ситуації",
       "nl": "Weer, zichtbaarheid en gevaren",
-      "fr": "Météo, visibilité et dangers",
+      "fr": "Météo, visibilité et situations dangereuses",
       "en": "Weather, visibility and hazards"
-    }
+    },
+    "target_questions": 50
   },
   {
-    "id": "safety",
-    "number": 11,
-    "questionsTarget": 70,
+    "id": "safety_alcohol",
     "name": {
       "uk": "Безпека, алкоголь, втома та документи",
-      "nl": "Veiligheid, alcohol, vermoeidheid",
+      "nl": "Veiligheid, alcohol, vermoeidheid en documenten",
       "fr": "Sécurité, alcool, fatigue et documents",
       "en": "Safety, alcohol, fatigue and documents"
-    }
+    },
+    "target_questions": 70
   },
   {
-    "id": "mixed",
-    "number": 12,
-    "questionsTarget": 100,
+    "id": "mixed_exam",
     "name": {
       "uk": "Змішані екзаменаційні ситуації",
       "nl": "Gemengde examensituaties",
       "fr": "Situations d'examen mixtes",
       "en": "Mixed exam situations"
-    }
+    },
+    "target_questions": 100
   }
 ]
