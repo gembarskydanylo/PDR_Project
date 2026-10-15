@@ -1,0 +1,134 @@
+[
+  {
+    "id": "signs",
+    "number": 1,
+    "questionsTarget": 100,
+    "name": {
+      "uk": "Дорожні знаки та сигнали",
+      "nl": "Verkeersborden en signalen",
+      "fr": "Panneaux et signaux",
+      "en": "Road signs and signals"
+    }
+  },
+  {
+    "id": "priority",
+    "number": 2,
+    "questionsTarget": 80,
+    "name": {
+      "uk": "Пріоритет і перехрестя",
+      "nl": "Voorrang en kruispunten",
+      "fr": "Priorité et carrefours",
+      "en": "Priority and intersections"
+    }
+  },
+  {
+    "id": "roundabout",
+    "number": 3,
+    "questionsTarget": 40,
+    "name": {
+      "uk": "Круговий рух",
+      "nl": "Rotondes",
+      "fr": "Ronds-points",
+      "en": "Roundabouts"
+    }
+  },
+  {
+    "id": "speed",
+    "number": 4,
+    "questionsTarget": 50,
+    "name": {
+      "uk": "Швидкість і дистанція",
+      "nl": "Snelheid en afstand",
+      "fr": "Vitesse et distance",
+      "en": "Speed and distance"
+    }
+  },
+  {
+    "id": "parking",
+    "number": 5,
+    "questionsTarget": 60,
+    "name": {
+      "uk": "Зупинка та паркування",
+      "nl": "Stoppen en parkeren",
+      "fr": "Arrêt et stationnement",
+      "en": "Stopping and parking"
+    }
+  },
+  {
+    "id": "lanes",
+    "number": 6,
+    "questionsTarget": 50,
+    "name": {
+      "uk": "Смуги, повороти та перестроювання",
+      "nl": "Rijstroken, afslaan en wisselen",
+      "fr": "Voies, virages et changements",
+      "en": "Lanes, turns and changing"
+    }
+  },
+  {
+    "id": "overtaking",
+    "number": 7,
+    "questionsTarget": 35,
+    "name": {
+      "uk": "Обгін і зустрічний роз'їзд",
+      "nl": "Inhalen en tegenliggers",
+      "fr": "Dépassement et croisement",
+      "en": "Overtaking and oncoming"
+    }
+  },
+  {
+    "id": "vulnerable",
+    "number": 8,
+    "questionsTarget": 60,
+    "name": {
+      "uk": "Велосипедисти, пішоходи та інші",
+      "nl": "Fietsers, voetgangers en anderen",
+      "fr": "Cyclistes, piétons et autres",
+      "en": "Cyclists, pedestrians and others"
+    }
+  },
+  {
+    "id": "motorways",
+    "number": 9,
+    "questionsTarget": 45,
+    "name": {
+      "uk": "Автомагістралі, тунелі та переїзди",
+      "nl": "Autosnelwegen, tunnels en overwegen",
+      "fr": "Autoroutes, tunnels et passages",
+      "en": "Motorways, tunnels and crossings"
+    }
+  },
+  {
+    "id": "weather",
+    "number": 10,
+    "questionsTarget": 50,
+    "name": {
+      "uk": "Погода, видимість та небезпеки",
+      "nl": "Weer, zichtbaarheid en gevaren",
+      "fr": "Météo, visibilité et dangers",
+      "en": "Weather, visibility and hazards"
+    }
+  },
+  {
+    "id": "safety",
+    "number": 11,
+    "questionsTarget": 70,
+    "name": {
+      "uk": "Безпека, алкоголь, втома та документи",
+      "nl": "Veiligheid, alcohol, vermoeidheid",
+      "fr": "Sécurité, alcool, fatigue et documents",
+      "en": "Safety, alcohol, fatigue and documents"
+    }
+  },
+  {
+    "id": "mixed",
+    "number": 12,
+    "questionsTarget": 100,
+    "name": {
+      "uk": "Змішані екзаменаційні ситуації",
+      "nl": "Gemengde examensituaties",
+      "fr": "Situations d'examen mixtes",
+      "en": "Mixed exam situations"
+    }
+  }
+]

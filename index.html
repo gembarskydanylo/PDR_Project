@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="glass">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a0b3a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="ПДР Бельгії — підготовка до теоретичного іспиту на категорію B">
+  <title>ПДР Бельгії</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <h1 id="appTitle">ПДР Бельгії</h1>
+        <p id="tagline">Belgian Driving Theory</p>
+      </div>
+      <div class="top-right">
+        <select id="uiLangPicker" class="lang-select" aria-label="Language">
+          <option value="uk">🇺🇦 UKR</option>
+          <option value="nl">🇳🇱 NL</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+        <span id="score" class="score-pill" aria-live="polite">⭐ 0</span>
+        <button class="theme-btn" id="themeToggle" type="button" title="Theme">🌙</button>
+      </div>
+    </header>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <span><span id="progressLabel">Вивчено тем</span>: <strong id="learnedCount">0</strong> / 12</span>
+      <span id="reviewCount">Помилок: 0</span>
+    </div>
+
+    <!-- Navigation: Topics -->
+    <div class="nav-section">
+      <div class="nav-fade-wrap">
+        <nav class="nav-cats" id="catNav" aria-label="Topics"></nav>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="meta">
+      <span id="prog"></span>
+      <span id="rnd"></span>
+    </div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <i id="barfill"></i>
+    </div>
+
+    <!-- Main card -->
+    <section class="card" id="card" aria-live="polite"></section>
+
+    <!-- Footer -->
+    <footer>
+      <span id="footText">Підготовка до теоретичного іспиту (кат. B)</span>
+      <span>Прогрес зберігається локально на пристрої</span>
+    </footer>
+  </main>
+
+  <!-- Fixed bottom modes -->
+  <div class="modes-wrapper" id="modeButtons"></div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

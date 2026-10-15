@@ -1,0 +1,151 @@
+[
+  {
+    "id": "sign_b1",
+    "topic_id": "road_signs",
+    "type": "sign",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає цей дорожній знак (перевернутий трикутник)?",
+      "nl": "Wat betekent dit verkeersbord (omgekeerde driehoek)?",
+      "fr": "Que signifie ce panneau (triangle inversé) ?",
+      "en": "What does this sign mean (inverted triangle)?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "Дати дорогу", "nl": "Voorrang verlenen", "fr": "Céder le passage", "en": "Give way" } },
+      { "id": "b", "text": { "uk": "Головна дорога", "nl": "Voorrangsweg", "fr": "Route prioritaire", "en": "Priority road" } },
+      { "id": "c", "text": { "uk": "Проїзд без зупинки заборонено", "nl": "Stoppen en voorrang verlenen", "fr": "Arrêt obligatoire", "en": "Stop and give way" } }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Знак B1 ('Дати дорогу'): водій зобов'язаний надати перевагу транспортним засобам на перетинанній дорозі.",
+      "nl": "Bord B1 ('Voorrang verlenen'): de bestuurder moet voorrang verlenen aan bestuurders op de andere weg.",
+      "fr": "Panneau B1 ('Céder le passage') : le conducteur doit céder le passage aux usagers sur l'autre route.",
+      "en": "Sign B1 ('Give way'): the driver must yield priority to road users on the intersecting road."
+    }
+  },
+  {
+    "id": "priority_001",
+    "topic_id": "priority_intersections",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": ["federal", "flanders"],
+    "question": {
+      "uk": "Хто має пріоритет на нерегульованому перехресті рівнозначних доріг?",
+      "nl": "Wie heeft voorrang op een niet-geregeld kruispunt van gelijkwaardige wegen?",
+      "fr": "Qui a la priorité à une intersection non réglementée de routes équivalentes ?",
+      "en": "Who has priority at an unregulated intersection of equivalent roads?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "Водій праворуч (правило правої руки)", "nl": "Bestuurder van rechts", "fr": "Le conducteur venant de droite", "en": "The driver from the right" } },
+      { "id": "b", "text": { "uk": "Водій ліворуч", "nl": "Bestuurder van links", "fr": "Le conducteur venant de gauche", "en": "The driver from the left" } },
+      { "id": "c", "text": { "uk": "Той, хто їде прямо", "nl": "Degene die rechtdoor rijdt", "fr": "Celui qui va tout droit", "en": "The one going straight" } }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Бельгії діє правило правої руки на рівнозначних перехрестях.",
+      "nl": "In België geldt de voorrang van rechts op gelijkwaardige kruispunten.",
+      "fr": "La règle de la priorité de droite s'applique en Belgique.",
+      "en": "Priority to the right applies in Belgium."
+    }
+  },
+  {
+    "id": "roundabout_001",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Хто має пріоритет на круговому русі зі знаком кругового руху та знаком 'Дати дорогу' при в'їзді?",
+      "nl": "Wie heeft voorrang op een rotonde aangeduid met verkeersborden D5 en 'Voorrang verlenen'?",
+      "fr": "Qui a la priorité sur un rond-point indiqué par les panneaux D5 et 'Céder le passage' ?",
+      "en": "Who has priority on a roundabout indicated by sign D5 and 'Give way'?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "Водії, які вже рухаються колом", "nl": "Bestuurder die al op de rotonde rijdt", "fr": "Les conducteurs déjà engagés sur l'anneau", "en": "Drivers already on the roundabout" } },
+      { "id": "b", "text": { "uk": "Водії, які в'їжджають на коло", "nl": "Bestuurders die de rotonde oprijden", "fr": "Les conducteurs qui s'engagent", "en": "Drivers entering the roundabout" } }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Транспортні засоби на круговому русі мають перевагу, якщо на в'їзді встановлено знаки 'Дати дорогу'.",
+      "nl": "Bestuurders op de rotonde hebben voorrang wanneer 'Voorrang verlenen' borden geplaatst zijn.",
+      "fr": "Les usagers sur le rond-point sont prioritaires.",
+      "en": "Vehicles on the roundabout have priority when give-way signs are present."
+    }
+  },
+  {
+    "id": "speed_001",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["flanders", "brussels"],
+    "question": {
+      "uk": "Яка стандартна швидкість у населених пунктах Фландрії та Брюсселя?",
+      "nl": "Wat is de standaard maximumsnelheid binnen de bebouwde kom in Vlaanderen en Brussel?",
+      "fr": "Quelle est la vitesse maximale standard en agglomération en Flandre et à Bruxelles ?",
+      "en": "What is the standard maximum speed within built-up areas in Flanders and Brussels?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "30 км/год", "nl": "30 km/u", "fr": "30 km/h", "en": "30 km/h" } },
+      { "id": "b", "text": { "uk": "50 км/год", "nl": "50 km/u", "fr": "50 km/h", "en": "50 km/h" } },
+      { "id": "c", "text": { "uk": "70 км/год", "nl": "70 km/u", "fr": "70 km/h", "en": "70 km/h" } }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Стандартний ліміт у населених пунктах становить 50 км/год (окрім специфічних зон 30).",
+      "nl": "De standaardlimiet in de bebouwde kom is 50 km/u.",
+      "fr": "La limite standard en agglomération est de 50 km/h.",
+      "en": "The standard limit in built-up areas is 50 km/h."
+    }
+  },
+  {
+    "id": "parking_001",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Яка мінімальна відстань перед пішохідним переходом забороняє зупинку і стоянку?",
+      "nl": "Welke minimumafstand voor een oversteekplaats verbiedt stilstaan en parkeren?",
+      "fr": "Quelle distance minimale avant un passage piéton interdit l'arrêt et le stationnement ?",
+      "en": "What minimum distance before a crosswalk prohibits stopping and parking?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "3 метри", "nl": "3 meter", "fr": "3 mètres", "en": "3 meters" } },
+      { "id": "b", "text": { "uk": "5 метрів", "nl": "5 meter", "fr": "5 mètres", "en": "5 meters" } },
+      { "id": "c", "text": { "uk": "10 метрів", "nl": "10 meter", "fr": "10 mètres", "en": "10 meters" } }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Заборонено зупинку та стоянку ближче ніж за 5 метрів перед пішохідним переходом.",
+      "nl": "Stilstaan en parkeren is verboden op minder dan 5 meter voor een oversteekplaats.",
+      "fr": "L'arrêt et le stationnement sont interdits à moins de 5 mètres avant le passage.",
+      "en": "Stopping and parking are prohibited within 5 meters before a pedestrian crossing."
+    }
+  },
+  {
+    "id": "safety_001",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Який максимально допустимий рівень алкоголю в крові для досвідченого водія?",
+      "nl": "Wat is het max toegelaten alcoholgehalte in het bloed voor een ervaren bestuurder?",
+      "fr": "Quel est le taux d'alcoolémie maximal autorisé pour un conducteur expérimenté ?",
+      "en": "What is the max permitted blood alcohol level for an experienced driver?"
+    },
+    "options": [
+      { "id": "a", "text": { "uk": "0.2 проміле", "nl": "0,2 promille", "fr": "0,2 pour mille", "en": "0.2 promille" } },
+      { "id": "b", "text": { "uk": "0.5 проміле", "nl": "0,5 promille", "fr": "0,5 pour mille", "en": "0.5 promille" } },
+      { "id": "c", "text": { "id": "c", "uk": "0.8 проміле", "nl": "0,8 promille", "fr": "0,8 pour mille", "en": "0.8 promille" } }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Ліміт для досвідчених водіїв у Бельгії становить 0.5 проміле.",
+      "nl": "De wettelijke limiet in België is 0,5 promille voor ervaren bestuurders.",
+      "fr": "La limite légale est de 0,5 pour mille.",
+      "en": "The legal limit in Belgium is 0.5 promille."
+    }
+  }
+]

@@ -1,0 +1,794 @@
+[
+  {
+    "id": "signs_001",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Яку форму має попереджувальний знак (категорія A) у Бельгії?",
+      "nl": "Welke vorm heeft een gevaarsbord (categorie A) in België?",
+      "fr": "Quelle forme a un signal de danger (catégorie A) en Belgique ?",
+      "en": "What shape does a warning sign (category A) have in Belgium?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Трикутник з червоною облямівкою, вістрям вгору",
+          "nl": "Driehoek met rode rand, punt naar boven",
+          "fr": "Triangle à bord rouge, pointe en haut",
+          "en": "Triangle with red border, point upwards"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Круглий з червоною облямівкою",
+          "nl": "Rond met rode rand",
+          "fr": "Rond à bord rouge",
+          "en": "Round with red border"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Квадратний синій",
+          "nl": "Vierkant blauw",
+          "fr": "Carré bleu",
+          "en": "Square blue"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Восьмикутний червоний",
+          "nl": "Achthoekig rood",
+          "fr": "Octogone rouge",
+          "en": "Octagonal red"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Попереджувальні знаки (серія A) мають форму рівностороннього трикутника з червоною облямівкою і білим фоном. Вони зазвичай стоять приблизно за 150 м до небезпеки.",
+      "nl": "Gevaarsborden (reeks A) hebben de vorm van een gelijkzijdige driehoek met rode rand en witte achtergrond. Ze staan meestal ongeveer 150 m vóór het gevaar.",
+      "fr": "Les signaux de danger (série A) ont la forme d'un triangle équilatéral à bord rouge et fond blanc. Ils sont généralement placés environ 150 m avant le danger.",
+      "en": "Warning signs (series A) are equilateral triangles with a red border and white background. They are usually placed about 150 m before the hazard."
+    },
+    "source": {
+      "title": "Wegcode art. 66 / Code de la route",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["warning", "shape", "category-A"],
+    "status": "published"
+  },
+  {
+    "id": "signs_002",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає знак B1 (перевернутий трикутник з червоною облямівкою)?",
+      "nl": "Wat betekent bord B1 (omgekeerde driehoek met rode rand)?",
+      "fr": "Que signifie le signal B1 (triangle inversé à bord rouge) ?",
+      "en": "What does sign B1 (inverted triangle with red border) mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зупинитися обов'язково",
+          "nl": "Verplicht stoppen",
+          "fr": "Arrêt obligatoire",
+          "en": "Mandatory stop"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Дати дорогу (поступитися пріоритетом)",
+          "nl": "Voorrang verlenen",
+          "fr": "Céder le passage",
+          "en": "Give way / Yield"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Головна дорога",
+          "nl": "Voorrangsweg",
+          "fr": "Voie prioritaire",
+          "en": "Priority road"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Кінець головної дороги",
+          "nl": "Einde voorrangsweg",
+          "fr": "Fin de voie prioritaire",
+          "en": "End of priority road"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "B1 — «Дати дорогу». Ти повинен поступитися пріоритетом транспортним засобам на перехресній дорозі. Правило «праворуч має перевагу» при цьому скасовується.",
+      "nl": "B1 betekent «Voorrang verlenen». Je moet voorrang geven aan bestuurders op de kruisende weg. De voorrang van rechts vervalt.",
+      "fr": "B1 signifie « Céder le passage ». Vous devez céder le passage aux conducteurs sur la voie croisante. La priorité à droite est annulée.",
+      "en": "B1 means «Give way». You must yield to traffic on the crossing road. The priority-to-the-right rule is cancelled."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B1",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B1", "yield"],
+    "status": "published"
+  },
+  {
+    "id": "signs_003",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Чим відрізняється знак B5 (STOP) від знака B1?",
+      "nl": "Wat is het verschil tussen bord B5 (STOP) en bord B1?",
+      "fr": "Quelle est la différence entre le signal B5 (STOP) et le B1 ?",
+      "en": "What is the difference between sign B5 (STOP) and sign B1?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B5 вимагає повної зупинки, навіть якщо дороги вільні",
+          "nl": "B5 verplicht tot volledig stoppen, ook als de weg vrij is",
+          "fr": "B5 impose un arrêt complet, même si la voie est libre",
+          "en": "B5 requires a complete stop, even if the road is clear"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Немає різниці — обидва означають «дати дорогу»",
+          "nl": "Geen verschil — beide betekenen voorrang verlenen",
+          "fr": "Aucune différence — les deux signifient céder le passage",
+          "en": "No difference — both mean give way"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B5 дозволяє проїхати без зупинки, якщо нікого немає",
+          "nl": "B5 laat toe door te rijden zonder stoppen als er niemand is",
+          "fr": "B5 permet de passer sans s'arrêter s'il n'y a personne",
+          "en": "B5 allows you to pass without stopping if no one is there"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "B5 стосується лише вантажівок",
+          "nl": "B5 geldt alleen voor vrachtwagens",
+          "fr": "B5 s'applique uniquement aux camions",
+          "en": "B5 applies only to trucks"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Знак B5 (восьмикутний червоний STOP) вимагає повної зупинки перед стоп-лінією або краєм перехрестя, навіть якщо здається, що дороги вільні. Після зупинки — дати дорогу.",
+      "nl": "Bord B5 (achthoekig rood STOP) verplicht tot volledig stoppen vóór de stopstreep of de rand van het kruispunt, ook als de weg vrij lijkt. Daarna voorrang verlenen.",
+      "fr": "Le signal B5 (octogone rouge STOP) impose un arrêt complet avant la ligne d'arrêt ou le bord du carrefour, même si la voie paraît libre. Ensuite céder le passage.",
+      "en": "Sign B5 (octagonal red STOP) requires a complete stop before the stop line or the edge of the intersection, even if the road appears clear. Then give way."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B5",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B5", "stop"],
+    "status": "published"
+  },
+  {
+    "id": "signs_004",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає жовтий ромб (знак B9)?",
+      "nl": "Wat betekent de gele ruit (bord B9)?",
+      "fr": "Que signifie le losange jaune (signal B9) ?",
+      "en": "What does the yellow diamond (sign B9) mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Кінець головної дороги",
+          "nl": "Einde van de voorrangsweg",
+          "fr": "Fin de la voie prioritaire",
+          "en": "End of the priority road"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Початок головної дороги (водій має пріоритет на наступних перехрестях)",
+          "nl": "Begin van de voorrangsweg (je hebt voorrang op de volgende kruispunten)",
+          "fr": "Début de la voie prioritaire (vous avez la priorité aux carrefours suivants)",
+          "en": "Start of a priority road (you have priority at the following intersections)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Обов'язкова зупинка",
+          "nl": "Verplicht stoppen",
+          "fr": "Arrêt obligatoire",
+          "en": "Mandatory stop"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Пішохідний перехід",
+          "nl": "Zebrapad",
+          "fr": "Passage pour piétons",
+          "en": "Pedestrian crossing"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "B9 — жовтий ромб — позначає початок головної дороги. Поки ти на цій дорозі, ти маєш пріоритет на перехрестях, доки не зустрінеш знак кінця головної дороги (B11).",
+      "nl": "B9 — gele ruit — duidt het begin van een voorrangsweg aan. Zolang je op deze weg rijdt, heb je voorrang op de kruispunten tot je bord B11 (einde voorrangsweg) tegenkomt.",
+      "fr": "B9 — losange jaune — indique le début d'une voie prioritaire. Tant que vous circulez sur cette voie, vous avez la priorité aux carrefours jusqu'au signal B11 (fin de voie prioritaire).",
+      "en": "B9 — yellow diamond — marks the start of a priority road. While on this road you have priority at intersections until you meet sign B11 (end of priority road)."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B9",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B9", "priority-road"],
+    "status": "published"
+  },
+  {
+    "id": "signs_005",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Який знак позначає кінець головної дороги?",
+      "nl": "Welk bord duidt het einde van de voorrangsweg aan?",
+      "fr": "Quel signal indique la fin de la voie prioritaire ?",
+      "en": "Which sign indicates the end of a priority road?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B9 (жовтий ромб)",
+          "nl": "B9 (gele ruit)",
+          "fr": "B9 (losange jaune)",
+          "en": "B9 (yellow diamond)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B11 (жовтий ромб з чорною перекресленою лінією)",
+          "nl": "B11 (gele ruit met zwarte dwarsstreep)",
+          "fr": "B11 (losange jaune barré)",
+          "en": "B11 (yellow diamond with black crossbar)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B1 (перевернутий трикутник)",
+          "nl": "B1 (omgekeerde driehoek)",
+          "fr": "B1 (triangle inversé)",
+          "en": "B1 (inverted triangle)"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "B5 (STOP)",
+          "nl": "B5 (STOP)",
+          "fr": "B5 (STOP)",
+          "en": "B5 (STOP)"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "B11 — жовтий ромб з чорною діагональною смугою — означає кінець головної дороги. Після цього знову діють загальні правила пріоритету (зазвичай «праворуч має перевагу»).",
+      "nl": "B11 — gele ruit met zwarte diagonale streep — betekent het einde van de voorrangsweg. Daarna gelden opnieuw de algemene voorrangsregels (meestal voorrang van rechts).",
+      "fr": "B11 — losange jaune barré d'une bande noire — signifie la fin de la voie prioritaire. Ensuite s'appliquent à nouveau les règles générales de priorité (généralement priorité à droite).",
+      "en": "B11 — yellow diamond with a black diagonal bar — means the end of the priority road. After that the general priority rules apply again (usually priority to the right)."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B11",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B11"],
+    "status": "published"
+  },
+  {
+    "id": "signs_006",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Яку форму і колір мають заборонні знаки (категорія C)?",
+      "nl": "Welke vorm en kleur hebben verbodsborden (categorie C)?",
+      "fr": "Quelle forme et couleur ont les signaux d'interdiction (catégorie C) ?",
+      "en": "What shape and colour do prohibitory signs (category C) have?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Круглі, білий фон, червона облямівка",
+          "nl": "Rond, witte achtergrond, rode rand",
+          "fr": "Ronds, fond blanc, bord rouge",
+          "en": "Round, white background, red border"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Трикутні, жовтий фон",
+          "nl": "Driehoekig, gele achtergrond",
+          "fr": "Triangulaires, fond jaune",
+          "en": "Triangular, yellow background"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Квадратні, синій фон",
+          "nl": "Vierkant, blauwe achtergrond",
+          "fr": "Carrés, fond bleu",
+          "en": "Square, blue background"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Восьмикутні, червоний фон",
+          "nl": "Achthoekig, rode achtergrond",
+          "fr": "Octogonaux, fond rouge",
+          "en": "Octagonal, red background"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Заборонні знаки (серія C) — круглі з білим фоном і червоною облямівкою. Червона діагональна смуга часто перекреслює символ, що забороняється.",
+      "nl": "Verbodsborden (reeks C) zijn rond met witte achtergrond en rode rand. Een rode diagonale streep doorkruist vaak het verboden symbool.",
+      "fr": "Les signaux d'interdiction (série C) sont ronds avec fond blanc et bord rouge. Une bande diagonale rouge barre souvent le symbole interdit.",
+      "en": "Prohibitory signs (series C) are round with a white background and red border. A red diagonal bar often crosses out the prohibited symbol."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["prohibitory", "category-C", "shape"],
+    "status": "published"
+  },
+  {
+    "id": "signs_007",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає круглий знак з червоною облямівкою і чорною стрілкою вгору, перекресленою червоною діагоналлю (C1)?",
+      "nl": "Wat betekent het ronde bord met rode rand en zwarte pijl omhoog, doorgestreept met rode diagonaal (C1)?",
+      "fr": "Que signifie le panneau rond à bord rouge avec flèche noire vers le haut barrée d'une diagonale rouge (C1) ?",
+      "en": "What does the round sign with red border and black upward arrow crossed by a red diagonal (C1) mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Заборонений напрямок (в'їзд заборонено)",
+          "nl": "Verboden richting (inrijden verboden)",
+          "fr": "Sens interdit",
+          "en": "No entry / Wrong way"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Обов'язковий напрямок прямо",
+          "nl": "Verplichte richting rechtdoor",
+          "fr": "Direction obligatoire tout droit",
+          "en": "Mandatory direction straight ahead"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Кінець обмеження швидкості",
+          "nl": "Einde snelheidsbeperking",
+          "fr": "Fin de limitation de vitesse",
+          "en": "End of speed limit"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Дозволено лише велосипедам",
+          "nl": "Alleen voor fietsers",
+          "fr": "Réservé aux cyclistes",
+          "en": "Cyclists only"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C1 — класичний знак «В'їзд заборонено» / «Неправильний напрямок». Забороняє в'їзд усім транспортним засобам з цього напрямку.",
+      "nl": "C1 is het klassieke bord «Verboden richting». Het verbiedt de toegang voor alle bestuurders vanuit die richting.",
+      "fr": "C1 est le signal classique « Sens interdit ». Il interdit l'accès à tous les conducteurs venant de cette direction.",
+      "en": "C1 is the classic «No entry» / «Wrong way» sign. It prohibits entry for all drivers from that direction."
+    },
+    "source": {
+      "title": "Wegcode art. 68 — C1",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["prohibitory", "C1", "no-entry"],
+    "status": "published"
+  },
+  {
+    "id": "signs_008",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Яку форму мають наказові (обов'язкові) знаки категорії D?",
+      "nl": "Welke vorm hebben de gebodsborden (categorie D)?",
+      "fr": "Quelle forme ont les signaux d'obligation (catégorie D) ?",
+      "en": "What shape do mandatory signs (category D) have?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Круглі з синім фоном і білим символом",
+          "nl": "Rond met blauwe achtergrond en wit symbool",
+          "fr": "Ronds à fond bleu et symbole blanc",
+          "en": "Round with blue background and white symbol"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Трикутні з червоною облямівкою",
+          "nl": "Driehoekig met rode rand",
+          "fr": "Triangulaires à bord rouge",
+          "en": "Triangular with red border"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Квадратні з жовтим фоном",
+          "nl": "Vierkant met gele achtergrond",
+          "fr": "Carrés à fond jaune",
+          "en": "Square with yellow background"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Восьмикутні червоні",
+          "nl": "Achthoekig rood",
+          "fr": "Octogonaux rouges",
+          "en": "Octagonal red"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Наказові знаки (серія D) — круглі, синій фон, білий символ. Вони вказують обов'язковий напрямок або дію (наприклад, «їхати тільки прямо», «об'їзд зліва» тощо).",
+      "nl": "Gebodsborden (reeks D) zijn rond, blauwe achtergrond, wit symbool. Ze geven een verplichte richting of handeling aan (bijv. «rechtdoor», «links om»).",
+      "fr": "Les signaux d'obligation (série D) sont ronds, fond bleu, symbole blanc. Ils indiquent une direction ou une action obligatoire (ex. « tout droit », « contourner par la gauche »).",
+      "en": "Mandatory signs (series D) are round with a blue background and white symbol. They indicate a compulsory direction or action (e.g. «straight ahead», «keep left»)."
+    },
+    "source": {
+      "title": "Wegcode — Gebodsborden / Signaux d'obligation",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["mandatory", "category-D", "shape"],
+    "status": "published"
+  },
+  {
+    "id": "signs_009",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Де зазвичай розміщують попереджувальні знаки (серія A) щодо небезпеки?",
+      "nl": "Waar worden gevaarsborden (reeks A) meestal geplaatst?",
+      "fr": "Où sont généralement placés les signaux de danger (série A) ?",
+      "en": "Where are warning signs (series A) usually placed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Безпосередньо на місці небезпеки",
+          "nl": "Direct op de plaats van het gevaar",
+          "fr": "Directement sur le lieu du danger",
+          "en": "Directly at the location of the hazard"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Приблизно за 150 метрів до небезпеки",
+          "nl": "Ongeveer 150 meter vóór het gevaar",
+          "fr": "Environ 150 mètres avant le danger",
+          "en": "Approximately 150 metres before the hazard"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "За 50 метрів після небезпеки",
+          "nl": "50 meter na het gevaar",
+          "fr": "50 mètres après le danger",
+          "en": "50 metres after the hazard"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Тільки в населених пунктах",
+          "nl": "Alleen binnen de bebouwde kom",
+          "fr": "Uniquement en agglomération",
+          "en": "Only inside built-up areas"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "Попереджувальні знаки зазвичай встановлюють приблизно за 150 м до небезпечної ділянки, щоб водій встиг знизити швидкість і підготуватися. На залізничних переїздах знаки стоять ближче.",
+      "nl": "Gevaarsborden staan meestal ongeveer 150 m vóór het gevaarlijke punt, zodat de bestuurder tijdig kan vertragen. Bij overwegen staan ze dichterbij.",
+      "fr": "Les signaux de danger sont généralement placés environ 150 m avant le point dangereux, pour permettre au conducteur de ralentir à temps. Aux passages à niveau ils sont plus proches.",
+      "en": "Warning signs are usually placed about 150 m before the hazard so the driver can slow down in time. At level crossings they are closer."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["warning", "placement"],
+    "status": "published"
+  },
+  {
+    "id": "signs_010",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає знак B17?",
+      "nl": "Wat betekent bord B17?",
+      "fr": "Que signifie le signal B17 ?",
+      "en": "What does sign B17 mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Перехрестя, де діє правило «праворуч має перевагу»",
+          "nl": "Kruispunt waar de voorrang van rechts geldt",
+          "fr": "Carrefour où s'applique la priorité à droite",
+          "en": "Intersection where priority to the right applies"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Головна дорога",
+          "nl": "Voorrangsweg",
+          "fr": "Voie prioritaire",
+          "en": "Priority road"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Обов'язкова зупинка",
+          "nl": "Verplicht stoppen",
+          "fr": "Arrêt obligatoire",
+          "en": "Mandatory stop"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Круговий рух",
+          "nl": "Rotonde",
+          "fr": "Rond-point",
+          "en": "Roundabout"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B17 попереджає про перехрестя, на якому застосовується загальне правило пріоритету справа (voorrang van rechts). Це корисно, коли водій може очікувати іншого режиму пріоритету.",
+      "nl": "B17 waarschuwt voor een kruispunt waar de algemene regel van voorrang van rechts van toepassing is. Nuttig wanneer de bestuurder een ander regime zou kunnen verwachten.",
+      "fr": "B17 annonce un carrefour où s'applique la règle générale de la priorité à droite. Utile lorsque le conducteur pourrait s'attendre à un autre régime.",
+      "en": "B17 warns of an intersection where the general priority-to-the-right rule applies. Useful when the driver might expect a different priority regime."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B17",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B17", "priority-right"],
+    "status": "published"
+  },
+  {
+    "id": "signs_011",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": ["federal"],
+    "question": {
+      "uk": "Що означає знак B19 (вузький проїзд)?",
+      "nl": "Wat betekent bord B19 (smalle doorgang)?",
+      "fr": "Que signifie le signal B19 (passage étroit) ?",
+      "en": "What does sign B19 (narrow passage) mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ти повинен дати дорогу зустрічному транспорту",
+          "nl": "Je moet voorrang verlenen aan tegenliggers",
+          "fr": "Vous devez céder le passage aux véhicules venant en sens inverse",
+          "en": "You must give way to oncoming traffic"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Ти маєш пріоритет перед зустрічним транспортом",
+          "nl": "Je hebt voorrang op tegenliggers",
+          "fr": "Vous avez la priorité sur les véhicules venant en sens inverse",
+          "en": "You have priority over oncoming traffic"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Проїзд заборонений",
+          "nl": "Doorgang verboden",
+          "fr": "Passage interdit",
+          "en": "Passage forbidden"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Тільки для велосипедів",
+          "nl": "Alleen voor fietsers",
+          "fr": "Réservé aux cyclistes",
+          "en": "Cyclists only"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B19 вказує на вузький проїзд, де ти повинен поступитися дорогою транспортним засобам, що їдуть назустріч.",
+      "nl": "B19 duidt een smalle doorgang aan waar je voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen.",
+      "fr": "B19 indique un passage étroit où vous devez céder le passage aux conducteurs venant en sens opposé.",
+      "en": "B19 indicates a narrow passage where you must give way to drivers coming from the opposite direction."
+    },
+    "source": {
+      "title": "Wegcode art. 67 — B19",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["priority", "B19", "narrow"],
+    "status": "published"
+  },
+  {
+    "id": "signs_012",
+    "topic_id": "signs",
+    "type": "text",
+    "difficulty": 1,
+    "region": ["federal"],
+    "question": {
+      "uk": "Які основні категорії дорожніх знаків існують у Бельгії?",
+      "nl": "Wat zijn de belangrijkste categorieën verkeersborden in België?",
+      "fr": "Quelles sont les principales catégories de panneaux en Belgique ?",
+      "en": "What are the main categories of traffic signs in Belgium?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A (попередження), B (пріоритет), C (заборона), D (наказ), E (зупинка/паркування), F (інформація)",
+          "nl": "A (gevaar), B (voorrang), C (verbod), D (gebod), E (stilstaan/parkeren), F (aanwijzing)",
+          "fr": "A (danger), B (priorité), C (interdiction), D (obligation), E (arrêt/stationnement), F (indication)",
+          "en": "A (warning), B (priority), C (prohibition), D (mandatory), E (stopping/parking), F (information)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Тільки червоні, сині та жовті",
+          "nl": "Alleen rode, blauwe en gele",
+          "fr": "Uniquement rouges, bleus et jaunes",
+          "en": "Only red, blue and yellow"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Тільки попереджувальні та заборонні",
+          "nl": "Alleen gevaar- en verbodsborden",
+          "fr": "Uniquement danger et interdiction",
+          "en": "Only warning and prohibitory"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "uk": "Залежить від регіону (Фландрія / Валлонія)",
+          "nl": "Hangt af van het gewest (Vlaanderen / Wallonië)",
+          "fr": "Dépend de la région (Flandre / Wallonie)",
+          "en": "Depends on the region (Flanders / Wallonia)"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Бельгійські дорожні знаки поділяються на шість основних серій: A — попередження, B — пріоритет, C — заборона, D — наказ, E — зупинка та паркування, F — інформація та вказівники. Це федеральна система.",
+      "nl": "Belgische verkeersborden zijn ingedeeld in zes hoofdreeksen: A — gevaar, B — voorrang, C — verbod, D — gebod, E — stilstaan en parkeren, F — aanwijzing. Dit is een federaal systeem.",
+      "fr": "Les panneaux belges sont classés en six séries principales : A — danger, B — priorité, C — interdiction, D — obligation, E — arrêt et stationnement, F — indication. C'est un système fédéral.",
+      "en": "Belgian traffic signs are divided into six main series: A — warning, B — priority, C — prohibition, D — mandatory, E — stopping and parking, F — information. This is a federal system."
+    },
+    "source": {
+      "title": "Wegcode — Categorieën verkeersborden",
+      "url": "https://www.wegcode.be",
+      "checked_at": "2026-10-15",
+      "review_status": "verified"
+    },
+    "tags": ["categories", "overview"],
+    "status": "published"
+  }
+]

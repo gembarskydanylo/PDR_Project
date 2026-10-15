@@ -1,0 +1,146 @@
+Я розробляю мобільний навчальний PWA-застосунок «ПДР Бельгії» для українців, які готуються до теоретичного іспиту на категорію B. Інтерфейс підтримує чотири мови: українську (uk), нідерландську (nl), французьку (fr) та англійську (en). Увесь проєкт побудований на чистому HTML, CSS та JavaScript (ES6+) без зайвих фреймворків, із локальним збереженням прогресу (localStorage).
+
+Ось поточна структурована кодова база та дані проєкту, якими ми користуємося:
+
+---
+1. index.html
+---
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПДР Бельгії | Belgian Driving Theory</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div id="app">
+        <header class="app-header">
+            <h1 data-i18n="app_title">ПДР Бельгії</h1>
+            <div class="language-selector">
+                <select id="langSelect">
+                    <option value="uk">🇺🇦 UA</option>
+                    <option value="nl">🇳🇱 NL</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="en">🇬🇧 EN</option>
+                </select>
+            </div>
+        </header>
+
+        <main id="homeScreen" class="main-content">
+            <section class="progress-card">
+                <h2 data-i18n="your_progress">Твій прогрес</h2>
+                <p><span data-i18n="learned_topics">Вивчено тем</span>: <strong id="learnedCount">0</strong> / 12</p>
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar" style="width: 0%;"></div>
+                </div>
+                <p class="progress-hint" data-i18n="progress_hint">Продовжуй із того місця, де зупинився.</p>
+            </section>
+
+            <div class="menu-grid">
+                <button class="menu-card" data-action="topics">
+                    <span class="icon">📚</span>
+                    <h3 data-i18n="menu_topics">Дорожні знаки</h3>
+                    <p data-i18n="menu_topics_desc">Вивчай значення</p>
+                </button>
+                <button class="menu-card" data-action="scenarios">
+                    <span class="icon">🚗</span>
+                    <h3 data-i18n="menu_scenarios">Ситуації</h3>
+                    <p data-i18n="menu_scenarios_desc">Дивись і аналізуй</p>
+                </button>
+                <button class="menu-card" data-action="exam">
+                    <span class="icon">⏱️</span>
+                    <h3 data-i18n="menu_exam">Тестування</h3>
+                    <p data-i18n="menu_exam_desc">Перевіряй знання</p>
+                </button>
+                <button class="menu-card" data-action="mistakes">
+                    <span class="icon">🔄</span>
+                    <h3 data-i18n="menu_mistakes">Мої помилки</h3>
+                    <p data-i18n="menu_mistakes_desc">Повторюй складне</p>
+                </button>
+            </div>
+        </main>
+
+        <div id="quizScreen" class="main-content" style="display: none;">
+            <div class="quiz-header">
+                <button id="backToHome" class="back-btn">← <span data-i18n="back">Назад</span></button>
+                <span id="quizProgressIndicator">Питання 1 / 5</span>
+            </div>
+            <div class="question-card">
+                <h2 id="questionText">Завантаження питання...</h2>
+            </div>
+            <div id="optionsContainer" class="options-container"></div>
+            <div id="explanationContainer" class="explanation-container" style="display: none;">
+                <p id="explanationText"></p>
+                <button id="nextQuestionBtn" class="primary-btn" data-i18n="next">Наступне питання</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+---
+2. js/translations.js
+---
+const translations = {
+    uk: {
+        app_title: "ПДР Бельгії", your_progress: "Твій прогрес", learned_topics: "Вивчено тем",
+        progress_hint: "Продовжуй із того місця, де зупинився.", menu_topics: "Дорожні знаки",
+        menu_topics_desc: "Вивчай значення", menu_scenarios: "Ситуації", menu_scenarios_desc: "Дивись і аналізуй",
+        menu_exam: "Тестування", menu_exam_desc: "Перевіряй знання", menu_mistakes: "Мої помилки",
+        menu_mistakes_desc: "Повторюй складне", back: "Назад", next: "Наступне питання"
+    },
+    nl: {
+        app_title: "Belgische Wegcode", your_progress: "Jouw voortgang", learned_topics: "Bestudeerde onderwerpen",
+        progress_hint: "Ga verder waar je gebleven was.", menu_topics: "Verkeersborden",
+        menu_topics_desc: "Leer de betekenis", menu_scenarios: "Situaties", menu_scenarios_desc: "Bekijk en analyseer",
+        menu_exam: "Examen", menu_exam_desc: "Test je kennis", menu_mistakes: "Mijn fouten",
+        menu_mistakes_desc: "Herhaal moeilijke items", back: "Terug", next: "Volgende vraag"
+    },
+    fr: {
+        app_title: "Code de la route Belge", your_progress: "Votre progression", learned_topics: "Sujets étudiés",
+        progress_hint: "Reprenez là où vous vous êtes arrêté.", menu_topics: "Panneaux",
+        menu_topics_desc: "Apprendre le sens", menu_scenarios: "Situations", menu_scenarios_desc: "Voir et analyser",
+        menu_exam: "Examen", menu_exam_desc: "Testez vos connaissances", menu_mistakes: "Mes erreurs",
+        menu_mistakes_desc: "Répéter les erreurs", back: "Retour", next: "Question suivante"
+    },
+    en: {
+        app_title: "Belgian Driving Rules", your_progress: "Your Progress", learned_topics: "Topics learned",
+        progress_hint: "Continue from where you left off.", menu_topics: "Road Signs",
+        menu_topics_desc: "Learn meanings", menu_scenarios: "Scenarios", menu_scenarios_desc: "Watch and analyze",
+        menu_exam: "Exam Practice", menu_exam_desc: "Test your knowledge", menu_mistakes: "My Mistakes",
+        menu_mistakes_desc: "Review difficult ones", back: "Back", next: "Next question"
+    }
+};
+
+---
+3. data/topics.json (12 навчальних модулів)
+---
+[
+  { "id": "road_signs", "name": { "uk": "Дорожні знаки та сигнали", "nl": "Verkeersborden en signalisatie", "fr": "Panneaux de signalisation", "en": "Road signs and signals" }, "target_questions": 100 },
+  { "id": "priority_intersections", "name": { "uk": "Пріоритет і перехрестя", "nl": "Voorrang en kruispunten", "fr": "Priorité et carrefours", "en": "Priority and intersections" }, "target_questions": 80 },
+  { "id": "roundabouts", "name": { "uk": "Круговий рух", "nl": "Rotondes", "fr": "Ronds-points", "en": "Roundabouts" }, "target_questions": 40 },
+  { "id": "speed_distance", "name": { "uk": "Швидкість і дистанція", "nl": "Snelheid en afstand", "fr": "Vitesse et distance", "en": "Speed and distance" }, "target_questions": 50 },
+  { "id": "stopping_parking", "name": { "uk": "Зупинка та паркування", "nl": "Stilstaan en parkeren", "fr": "Arrêt et stationnement", "en": "Stopping and parking" }, "target_questions": 60 },
+  { "id": "lanes_turning", "name": { "uk": "Смуги, повороти та перестроювання", "nl": "Rijstroken, afslaan en ritsen", "fr": "Bandes de circulation et manœuvres", "en": "Lanes, turning and merging" }, "target_questions": 50 },
+  { "id": "overtaking", "name": { "uk": "Обгін і зустрічний роз'їзд", "nl": "Inhalen en kruisen", "fr": "Dépassement et croisement", "en": "Overtaking and crossing" }, "target_questions": 35 },
+  { "id": "vulnerable_users", "name": { "uk": "Велосипедисти, пішоходи та інші учасники", "nl": "Kwetsbare weggebruikers", "fr": "Usagers vulnérables", "en": "Vulnerable road users" }, "target_questions": 60 },
+  { "id": "motorways_tunnels", "name": { "uk": "Автомагістралі, тунелі та залізничні переїзди", "nl": "Autosnelwegen, tunnels en overwegen", "fr": "Autoroutes, tunnels et passages à niveau", "en": "Motorways, tunnels and level crossings" }, "target_questions": 45 },
+  { "id": "weather_hazards", "name": { "uk": "Погода, видимість та небезпечні ситуації", "nl": "Weer, zichtbaarheid en gevaren", "fr": "Météo, visibilité et situations dangereuses", "en": "Weather, visibility and hazards" }, "target_questions": 50 },
+  { "id": "safety_alcohol", "name": { "uk": "Безпека, алкоголь, втома та документи", "nl": "Veiligheid, alcohol, vermoeidheid en documenten", "fr": "Sécurité, alcool, fatigue et documents", "en": "Safety, alcohol, fatigue and documents" }, "target_questions": 70 },
+  { "id": "mixed_exam", "name": { "uk": "Змішані екзаменаційні ситуації", "nl": "Gemengde examensituaties", "fr": "Situations d'examen mixtes", "en": "Mixed exam situations" }, "target_questions": 100 }
+]
+
+---
+ПРАВИЛА ДЛЯ ТЕБЕ (AI):
+1. Завжди відповідай українською мовою.
+2. Спирайся на офіційні правила дорожнього руху Бельгії (Wegcode / Code de la route).
+3. Допомагай розвивати цей код, додавати нові фічі (наприклад, фільтрацію за темами, режим збереження помилок) та розширювати базу питань у `questions.json`.
+4. Надавай чистий та готовий до копіювання код без зайвої води.
