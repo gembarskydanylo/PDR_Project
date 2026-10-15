@@ -10,6 +10,7 @@
   <title>ПДР Бельгії</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
     <header>
       <div class="brand">
         <h1 id="appTitle">ПДР Бельгії</h1>
-        <p id="tagline">Belgian Driving Theory</p>
+        <p id="tagline">Теорія · категорія B</p>
       </div>
       <div class="top-right">
         <select id="uiLangPicker" class="lang-select" aria-label="Language">
@@ -28,13 +29,14 @@
           <option value="en">🇬🇧 EN</option>
         </select>
         <span id="score" class="score-pill" aria-live="polite">⭐ 0</span>
-        <button class="theme-btn" id="themeToggle" type="button" title="Theme">🌙</button>
+        <button class="theme-btn" id="themeToggle" type="button" title="Theme" aria-label="Theme">🌌</button>
       </div>
     </header>
 
     <!-- Stats bar -->
     <div class="stats-bar">
-      <span><span id="progressLabel">Вивчено тем</span>: <strong id="learnedCount">0</strong> / 12</span>
+      <span><span id="progressLabel">Вивчено тем</span>: <strong id="learnedCount">0</strong> / <span id="topicsTotal">12</span></span>
+      <select id="regionPicker" class="region-select" aria-label="Регіон"></select>
       <span id="reviewCount">Помилок: 0</span>
     </div>
 
@@ -60,7 +62,7 @@
     <!-- Footer -->
     <footer>
       <span id="footText">Підготовка до теоретичного іспиту (кат. B)</span>
-      <span>Прогрес зберігається локально на пристрої</span>
+      <span id="footLocal">Прогрес зберігається лише на цьому пристрої</span>
     </footer>
   </main>
 

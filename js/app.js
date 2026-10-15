@@ -4,8 +4,16 @@
 window.currentLang = "uk";
 let mode = "home";
 let currentTopicId = null;
+let topics = [];      // з data/topics.json
+let questions = [];   // з data/questions.json (лише status: published)
+let quiz = null;      // активна сесія: { ids, i, correct, answered, label, restart }
 
-const $ = id => document.getElementById(id);
+const EXAM_SIZE = 50;
+const PRACTICE_SIZE = 20;
+const THEMES = ["glass", "oranje", "dark"];
+const THEME_ICONS = { glass: "🌌", oranje: "🧡", dark: "🌙" };
+
+const $ = (id) => document.getElementById(id);
 
 // ===== Helpers =====
 function el(tag, cls, text) {
@@ -15,30 +23,86 @@ function el(tag, cls, text) {
   return e;
 }
 
+function button(cls, text, onClick) {
+  const b = el("button", cls, text);
+  b.type = "button";
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Питання, що стосуються обраного регіону (федеральні діють скрізь).
+function visibleQuestions() {
+  const region = Progress.get().region;
+  if (region === "all") return questions;
+  return questions.filter((q) => q.region.includes("federal") || q.region.includes(region));
+}
+
+function questionsOfTopic(topicId) {
+  return visibleQuestions().filter((q) => q.topic_id === topicId);
+}
+
+const byId = (id) => questions.find((q) => q.id === id);
+
+function go(newMode, topicId = null) {
+  mode = newMode;
+  currentTopicId = topicId;
+  quiz = null;
+  refresh();
+}
+
 // ===== Init =====
-function init() {
+async function init() {
   const progress = Progress.load();
   window.currentLang = progress.language || "uk";
   $("uiLangPicker").value = window.currentLang;
+  applyTheme(readTheme());
+  setupListeners();
 
-  // Theme
   try {
-    const savedTheme = localStorage.getItem("pdr_theme");
-    if (savedTheme === "glass" || savedTheme === "oranje" || savedTheme === "dark") {
-      document.documentElement.dataset.theme = savedTheme;
-    } else {
-      document.documentElement.dataset.theme = "glass";
-    }
+    const [tRes, qRes] = await Promise.all([fetch("data/topics.json"), fetch("data/questions.json")]);
+    topics = await tRes.json();
+    questions = (await qRes.json()).filter((q) => (q.status || "published") === "published");
   } catch (e) {
-    document.documentElement.dataset.theme = "glass";
+    console.error("Failed to load data", e);
   }
 
+  buildRegionPicker();
+  refresh();
+}
+
+function refresh() {
   updateHeader();
   buildTopicNav();
   updateModeButtons();
   updateStats();
   render();
-  setupListeners();
+}
+
+// ===== Theme =====
+function readTheme() {
+  try {
+    const saved = localStorage.getItem("pdr_theme");
+    return THEMES.includes(saved) ? saved : "glass";
+  } catch (e) {
+    return "glass";
+  }
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const btn = $("themeToggle");
+  btn.textContent = THEME_ICONS[theme];
+  const bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+  document.querySelector('meta[name="theme-color"]').content = bg || "#1a0b3a";
 }
 
 // ===== Header & Language =====
@@ -47,25 +111,43 @@ function updateHeader() {
   $("tagline").textContent = t("tagline");
   $("progressLabel").textContent = t("progress_label");
   $("footText").textContent = t("foot");
+  $("footLocal").textContent = t("foot_local");
+  $("regionPicker").setAttribute("aria-label", t("region_label"));
   document.documentElement.lang = window.currentLang;
+  document.title = t("app_title");
+  buildRegionPicker();
+}
+
+function buildRegionPicker() {
+  const sel = $("regionPicker");
+  const current = Progress.get().region;
+  sel.replaceChildren();
+  ["all", "flanders", "brussels", "wallonia"].forEach((r) => {
+    const o = el("option", "", t("regions." + r));
+    o.value = r;
+    sel.appendChild(o);
+  });
+  sel.value = current;
 }
 
 function setLanguage(lang) {
   window.currentLang = lang;
   Progress.setLanguage(lang);
-  updateHeader();
-  buildTopicNav();
-  updateModeButtons();
-  updateStats();
-  render();
+  refresh();
 }
 
 // ===== Stats =====
+function learnedTopicsCount() {
+  return topics.filter((tp) => {
+    const ids = questionsOfTopic(tp.id).map((q) => q.id);
+    return ids.length > 0 && Progress.topicPercent(ids) === 100;
+  }).length;
+}
+
 function updateStats() {
-  const completed = Progress.getTopicsCompletedCount();
-  $("learnedCount").textContent = completed;
-  const mistakes = Progress.getMistakes().length;
-  $("reviewCount").textContent = t("review_count") + ": " + mistakes;
+  $("learnedCount").textContent = learnedTopicsCount();
+  $("topicsTotal").textContent = topics.length || 12;
+  $("reviewCount").textContent = t("review_count") + ": " + Progress.getMistakes().length;
   $("score").textContent = "⭐ " + (Progress.get().totalCorrect || 0);
 }
 
@@ -74,31 +156,13 @@ function buildTopicNav() {
   const nav = $("catNav");
   nav.replaceChildren();
 
-  // "All / Home" button
-  const allBtn = el("button", "", t("all_topics"));
-  allBtn.type = "button";
-  allBtn.setAttribute("aria-selected", mode === "home" || !currentTopicId ? "true" : "false");
-  allBtn.onclick = () => {
-    currentTopicId = null;
-    mode = "home";
-    updateModeButtons();
-    buildTopicNav();
-    render();
-  };
+  const allBtn = button("", t("all_topics"), () => go("topics"));
+  allBtn.setAttribute("aria-pressed", String(mode === "topics" && !currentTopicId));
   nav.appendChild(allBtn);
 
-  topicsData.forEach(topic => {
-    const btn = el("button", "", getTopicName(topic));
-    btn.type = "button";
-    btn.dataset.topic = topic.id;
-    btn.setAttribute("aria-selected", currentTopicId === topic.id ? "true" : "false");
-    btn.onclick = () => {
-      currentTopicId = topic.id;
-      mode = "topics";
-      updateModeButtons();
-      buildTopicNav();
-      render();
-    };
+  topics.forEach((topic) => {
+    const btn = button("", tr(topic.name), () => startTopic(topic.id));
+    btn.setAttribute("aria-pressed", String(currentTopicId === topic.id));
     nav.appendChild(btn);
   });
 }
@@ -107,220 +171,269 @@ function buildTopicNav() {
 function updateModeButtons() {
   const wrap = $("modeButtons");
   wrap.replaceChildren();
-
-  const modes = [
-    ["home", t("modes.home")],
-    ["topics", t("modes.topics")],
-    ["practice", t("modes.practice")],
-    ["exam", t("modes.exam")],
-    ["mistakes", t("modes.mistakes")]
-  ];
-
-  modes.forEach(([m, label]) => {
-    const b = el("button", m === mode ? "primary" : "", label);
-    b.type = "button";
-    b.onclick = () => {
-      mode = m;
-      if (m === "home") currentTopicId = null;
-      updateModeButtons();
-      buildTopicNav();
-      render();
-    };
+  ["home", "topics", "practice", "exam", "mistakes"].forEach((m) => {
+    const b = button(m === mode ? "primary" : "", t("modes." + m), () => go(m));
+    if (m === mode) b.setAttribute("aria-current", "page");
     wrap.appendChild(b);
   });
 }
 
 // ===== Render =====
 function render() {
+  setBar(0);
   $("prog").textContent = "";
   $("rnd").textContent = "";
-  $("barfill").style.width = "0%";
+  if (quiz) return renderQuestion();
 
   switch (mode) {
-    case "home":
-      renderHome();
-      break;
-    case "topics":
-      renderTopics();
-      break;
-    case "practice":
-      renderComingSoon("practice");
-      break;
-    case "exam":
-      renderExam();
-      break;
-    case "mistakes":
-      renderMistakes();
-      break;
-    default:
-      renderHome();
+    case "topics": return renderTopics();
+    case "practice": return renderPractice();
+    case "exam": return renderExam();
+    case "mistakes": return renderMistakes();
+    default: return renderHome();
   }
 }
 
-function renderHome() {
-  const card = $("card");
-  card.replaceChildren();
+function setBar(percent) {
+  $("barfill").style.width = percent + "%";
+  document.querySelector(".bar").setAttribute("aria-valuenow", String(Math.round(percent)));
+}
 
+function card() {
+  const c = $("card");
+  c.replaceChildren();
+  return c;
+}
+
+function renderHome() {
+  const c = card();
   const hero = el("div", "home-hero");
   hero.appendChild(el("div", "icon-big", "🚗"));
   hero.appendChild(el("h2", "", t("home_title")));
   hero.appendChild(el("p", "", t("home_desc")));
-  card.appendChild(hero);
+  c.appendChild(hero);
 
   const grid = el("div", "actions-grid");
-
-  const actions = [
-    { icon: "🚦", title: t("road_signs"), desc: t("study_meanings"), mode: "topics" },
-    { icon: "🖼️", title: t("situations"), desc: t("look_analyze"), mode: "practice" },
-    { icon: "📝", title: t("testing"), desc: t("check_knowledge"), mode: "exam" },
-    { icon: "⚠️", title: t("my_mistakes"), desc: t("repeat_hard"), mode: "mistakes" }
-  ];
-
-  actions.forEach(a => {
-    const btn = el("button", "action-card");
-    btn.type = "button";
-    const icon = el("div", "action-icon", a.icon);
-    btn.appendChild(icon);
+  [
+    { icon: "🚦", title: t("road_signs"), desc: t("study_meanings"), run: () => startTopic("road_signs") },
+    { icon: "🎯", title: t("situations"), desc: t("look_analyze"), run: () => go("practice") },
+    { icon: "📝", title: t("testing"), desc: t("check_knowledge"), run: () => go("exam") },
+    { icon: "⚠️", title: t("my_mistakes"), desc: t("repeat_hard"), run: () => go("mistakes") }
+  ].forEach((a) => {
+    const btn = button("action-card", undefined, a.run);
+    btn.appendChild(el("div", "action-icon", a.icon));
     btn.appendChild(el("div", "action-title", a.title));
     btn.appendChild(el("div", "action-desc", a.desc));
-    btn.onclick = () => {
-      mode = a.mode;
-      if (a.mode === "topics") currentTopicId = null;
-      updateModeButtons();
-      buildTopicNav();
-      render();
-    };
     grid.appendChild(btn);
   });
-
-  card.appendChild(grid);
+  c.appendChild(grid);
 }
 
 function renderTopics() {
-  const card = $("card");
-  card.replaceChildren();
-
-  card.appendChild(el("h2", "", t("topics_title")));
-
+  const c = card();
+  c.appendChild(el("h2", "", t("topics_title")));
   const list = el("div", "topic-list");
 
-  topicsData.forEach(topic => {
-    const progress = Progress.get().topicsCompleted[topic.id] || 0;
-    const btn = el("button", "topic-item");
-    btn.type = "button";
-
-    const num = el("div", "topic-num", String(topic.number));
-    btn.appendChild(num);
-
+  topics.forEach((topic, idx) => {
+    const ids = questionsOfTopic(topic.id).map((q) => q.id);
+    const btn = button("topic-item", undefined, () => startTopic(topic.id));
+    btn.appendChild(el("div", "topic-num", String(idx + 1)));
     const info = el("div", "topic-info");
-    info.appendChild(el("div", "topic-name", getTopicName(topic)));
-    info.appendChild(el("div", "topic-meta", `${topic.questionsTarget} ${t("questions")} · ${progress}%`));
+    info.appendChild(el("div", "topic-name", tr(topic.name)));
+    info.appendChild(el("div", "topic-meta",
+      `${ids.length} / ${topic.target_questions} ${t("questions")} · ${Progress.topicPercent(ids)}%`));
     btn.appendChild(info);
-
-    btn.onclick = () => {
-      currentTopicId = topic.id;
-      renderComingSoon("topic");
-    };
-
     list.appendChild(btn);
   });
+  c.appendChild(list);
+}
 
-  card.appendChild(list);
+function renderPractice() {
+  const c = card();
+  c.appendChild(el("h2", "", t("practice_title")));
+  c.appendChild(el("p", "muted", t("practice_desc")));
+  const pool = visibleQuestions();
+  c.appendChild(el("p", "muted", `${pool.length} ${t("questions")}`));
+  c.appendChild(button("btn primary", t("start"), startPractice));
 }
 
 function renderExam() {
-  const card = $("card");
-  card.replaceChildren();
-
-  const block1 = el("div");
-  block1.appendChild(el("h2", "", t("exam_title")));
-  const desc1 = el("p", "", t("exam_desc"));
-  desc1.style.color = "var(--mut)";
-  desc1.style.margin = "4px 0 12px";
-  block1.appendChild(desc1);
-  card.appendChild(block1);
-
-  const startBtn = el("button", "btn primary", t("start"));
-  startBtn.type = "button";
-  startBtn.onclick = () => renderComingSoon("exam");
-  card.appendChild(startBtn);
-
-  const block2 = el("div");
-  block2.style.marginTop = "20px";
-  block2.appendChild(el("h2", "", t("practice_title")));
-  const desc2 = el("p", "", t("practice_desc"));
-  desc2.style.color = "var(--mut)";
-  desc2.style.margin = "4px 0 12px";
-  block2.appendChild(desc2);
-  card.appendChild(block2);
-
-  const pracBtn = el("button", "btn", t("start"));
-  pracBtn.type = "button";
-  pracBtn.onclick = () => {
-    mode = "practice";
-    updateModeButtons();
-    render();
-  };
-  card.appendChild(pracBtn);
+  const c = card();
+  c.appendChild(el("h2", "", t("exam_title")));
+  c.appendChild(el("p", "muted", t("exam_desc")));
+  const n = visibleQuestions().length;
+  if (n < EXAM_SIZE) {
+    c.appendChild(el("p", "notice", t("exam_not_ready", { n })));
+    c.appendChild(button("btn", t("practice_title"), () => go("practice")));
+  }
 }
 
 function renderMistakes() {
-  const card = $("card");
-  card.replaceChildren();
-
-  const mistakes = Progress.getMistakes();
-
-  if (mistakes.length === 0) {
+  const c = card();
+  const ids = Progress.getMistakes().filter((id) => byId(id));
+  if (!ids.length) {
     const empty = el("div", "empty-state");
     empty.appendChild(el("div", "icon-big", "✅"));
     empty.appendChild(el("h3", "", t("no_mistakes")));
     empty.appendChild(el("p", "", t("no_mistakes_desc")));
-    card.appendChild(empty);
-  } else {
-    card.appendChild(el("h2", "", t("my_mistakes") + ` (${mistakes.length})`));
-    const empty = el("div", "empty-state");
-    empty.appendChild(el("p", "", t("coming_soon_desc")));
-    card.appendChild(empty);
+    c.appendChild(empty);
+    return;
   }
+  c.appendChild(el("h2", "", `${t("my_mistakes")} (${ids.length})`));
+  c.appendChild(button("btn primary", t("review_mistakes"), () => startQuiz(shuffle(ids), t("my_mistakes"))));
 }
 
-function renderComingSoon(type) {
-  const card = $("card");
-  card.replaceChildren();
-
+function renderComingSoon() {
+  const c = card();
   const empty = el("div", "empty-state");
   empty.appendChild(el("div", "icon-big", "⏳"));
   empty.appendChild(el("h3", "", t("coming_soon")));
   empty.appendChild(el("p", "", t("coming_soon_desc")));
-
-  const back = el("button", "btn primary", t("modes.home"));
-  back.type = "button";
-  back.style.marginTop = "16px";
-  back.style.maxWidth = "200px";
-  back.style.marginLeft = "auto";
-  back.style.marginRight = "auto";
-  back.style.display = "block";
-  back.onclick = () => {
-    mode = "home";
-    currentTopicId = null;
-    updateModeButtons();
-    buildTopicNav();
-    render();
-  };
+  const back = button("btn primary narrow", t("modes.topics"), () => go("topics"));
   empty.appendChild(back);
-  card.appendChild(empty);
+  c.appendChild(empty);
+}
+
+// ===== Quiz =====
+function startTopic(topicId) {
+  mode = "topics";
+  currentTopicId = topicId;
+  const ids = questionsOfTopic(topicId).map((q) => q.id);
+  const topic = topics.find((tp) => tp.id === topicId);
+  if (!ids.length) {
+    quiz = null;
+    refresh();
+    return renderComingSoon();
+  }
+  startQuiz(shuffle(ids), tr(topic?.name), () => startTopic(topicId));
+}
+
+function startPractice() {
+  const ids = shuffle(visibleQuestions().map((q) => q.id)).slice(0, PRACTICE_SIZE);
+  startQuiz(ids, t("practice_title"), startPractice);
+}
+
+function startQuiz(ids, label, restart) {
+  if (!ids.length) {
+    card().appendChild(el("p", "notice", t("no_questions")));
+    return;
+  }
+  quiz = { ids, i: 0, correct: 0, answered: false, label, restart: restart || (() => startQuiz(shuffle(ids), label)) };
+  buildTopicNav();
+  updateModeButtons();
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderQuestion() {
+  const q = byId(quiz.ids[quiz.i]);
+  const n = quiz.ids.length;
+  $("prog").textContent = t("question_of", { i: quiz.i + 1, n });
+  $("rnd").textContent = quiz.label || "";
+  setBar((quiz.i / n) * 100);
+
+  const c = card();
+  const head = el("div", "q");
+  const badges = el("div", "badges");
+  q.region.filter((r) => r !== "federal").forEach((r) => badges.appendChild(el("span", "badge", t("regions." + r))));
+  if (badges.childElementCount) head.appendChild(badges);
+  if (q.image) {
+    const img = el("img", "q-img");
+    img.src = q.image;
+    img.alt = "";
+    head.appendChild(img);
+  }
+  head.appendChild(el("h2", "", tr(q.question)));
+  c.appendChild(head);
+
+  const opts = el("div", "opts");
+  q.options.forEach((o) => {
+    const b = button("opt", tr(o.text), () => answer(q, o.id));
+    b.dataset.id = o.id;
+    opts.appendChild(b);
+  });
+  c.appendChild(opts);
+  c.appendChild(el("div", "feedback"));
+}
+
+function answer(q, optionId) {
+  if (quiz.answered) return;
+  quiz.answered = true;
+  const ok = optionId === q.correct_option_id;
+  if (ok) quiz.correct += 1;
+  Progress.recordAnswer(q.id, ok);
+  updateStats();
+
+  document.querySelectorAll(".opt").forEach((b) => {
+    b.disabled = true;
+    if (b.dataset.id === q.correct_option_id) b.classList.add("correct");
+    else if (b.dataset.id === optionId) b.classList.add("incorrect");
+  });
+
+  const fb = document.querySelector(".feedback");
+  fb.classList.add(ok ? "ok" : "bad");
+  fb.appendChild(el("strong", "", ok ? "✅ " + t("correct") : "❌ " + t("wrong")));
+  fb.appendChild(el("p", "", tr(q.explanation)));
+  if (q.source?.title) {
+    const src = el("p", "source");
+    src.appendChild(document.createTextNode(t("source") + ": "));
+    if (q.source.url) {
+      const a = el("a", "", q.source.title);
+      a.href = q.source.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      src.appendChild(a);
+    } else {
+      src.appendChild(document.createTextNode(q.source.title));
+    }
+    fb.appendChild(src);
+  }
+
+  const last = quiz.i === quiz.ids.length - 1;
+  const next = button("btn primary", last ? t("finish") : t("next"), () => {
+    if (last) return renderResult();
+    quiz.i += 1;
+    quiz.answered = false;
+    render();
+  });
+  $("card").appendChild(next);
+  next.focus({ preventScroll: true });
+  next.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function renderResult() {
+  const { correct, ids, label, restart } = quiz;
+  const n = ids.length;
+  setBar(100);
+  $("prog").textContent = label || "";
+  $("rnd").textContent = "";
+
+  const c = card();
+  const box = el("div", "empty-state result");
+  box.appendChild(el("div", "icon-big", correct === n ? "🏆" : correct / n >= 0.82 ? "👍" : "📚"));
+  box.appendChild(el("h3", "", t("result_title")));
+  box.appendChild(el("p", "result-score", t("result_score", { c: correct, n })));
+  const row = el("div", "row");
+  row.appendChild(button("btn primary", t("retry"), restart));
+  row.appendChild(button("btn", t("modes.home"), () => go("home")));
+  box.appendChild(row);
+  c.appendChild(box);
+  quiz = null;
+  buildTopicNav();
 }
 
 // ===== Listeners =====
 function setupListeners() {
-  $("uiLangPicker").addEventListener("change", e => setLanguage(e.target.value));
-
+  $("uiLangPicker").addEventListener("change", (e) => setLanguage(e.target.value));
+  $("regionPicker").addEventListener("change", (e) => {
+    Progress.setRegion(e.target.value);
+    quiz = null;
+    refresh();
+  });
   $("themeToggle").addEventListener("click", () => {
-    const order = ["glass", "oranje", "dark"];
-    const cur = document.documentElement.dataset.theme || "glass";
-    const i = order.indexOf(cur);
-    const next = order[(i < 0 ? 0 : i + 1) % order.length];
-    document.documentElement.dataset.theme = next;
+    const cur = document.documentElement.dataset.theme;
+    const next = THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length];
+    applyTheme(next);
     try { localStorage.setItem("pdr_theme", next); } catch (e) {}
   });
 }
