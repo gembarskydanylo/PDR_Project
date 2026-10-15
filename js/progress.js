@@ -76,5 +76,11 @@ const Progress = {
 
   setRegion(region) {
     return this.update({ region });
+  },
+
+  // Скидає відповіді й помилки, зберігаючи мову та регіон.
+  reset() {
+    const { language, region } = this.load();
+    this.save({ ...this.getDefault(), language, region });
   }
 };

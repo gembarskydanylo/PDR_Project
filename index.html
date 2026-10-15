@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="uk" data-theme="glass">
+<html lang="uk" data-theme="auto">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#1a0b3a">
+  <meta name="theme-color" content="#F1F2F0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="description" content="ПДР Бельгії — підготовка до теоретичного іспиту на категорію B">
   <title>ПДР Бельгії</title>
   <link rel="manifest" href="manifest.webmanifest">
@@ -14,60 +14,28 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <main>
-    <!-- Header -->
-    <header>
-      <div class="brand">
-        <h1 id="appTitle">ПДР Бельгії</h1>
-        <p id="tagline">Теорія · категорія B</p>
-      </div>
-      <div class="top-right">
-        <select id="uiLangPicker" class="lang-select" aria-label="Language">
-          <option value="uk">🇺🇦 UKR</option>
-          <option value="nl">🇳🇱 NL</option>
-          <option value="fr">🇫🇷 FR</option>
-          <option value="en">🇬🇧 EN</option>
-        </select>
-        <span id="score" class="score-pill" aria-live="polite">⭐ 0</span>
-        <button class="theme-btn" id="themeToggle" type="button" title="Theme" aria-label="Theme">🌌</button>
-      </div>
-    </header>
-
-    <!-- Stats bar -->
-    <div class="stats-bar">
-      <span><span id="progressLabel">Вивчено тем</span>: <strong id="learnedCount">0</strong> / <span id="topicsTotal">12</span></span>
-      <select id="regionPicker" class="region-select" aria-label="Регіон"></select>
-      <span id="reviewCount">Помилок: 0</span>
+  <header class="topbar">
+    <button class="icon-btn" id="backBtn" type="button" hidden></button>
+    <div class="brand" id="brand">
+      <img src="assets/signs/B9.svg" alt="" width="28" height="28">
+      <span id="appTitle">ПДР Бельгії</span>
     </div>
-
-    <!-- Navigation: Topics -->
-    <div class="nav-section">
-      <div class="nav-fade-wrap">
-        <nav class="nav-cats" id="catNav" aria-label="Topics"></nav>
-      </div>
-    </div>
-
-    <!-- Progress -->
-    <div class="meta">
+    <div class="quiz-progress" id="quizProgress" hidden>
       <span id="prog"></span>
-      <span id="rnd"></span>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="barfill"></i></div>
     </div>
-    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-      <i id="barfill"></i>
-    </div>
+    <select id="uiLangPicker" class="lang-select" aria-label="Language">
+      <option value="uk">UK</option>
+      <option value="nl">NL</option>
+      <option value="fr">FR</option>
+      <option value="en">EN</option>
+    </select>
+    <button class="icon-btn" id="settingsBtn" type="button"></button>
+  </header>
 
-    <!-- Main card -->
-    <section class="card" id="card" aria-live="polite"></section>
+  <main id="view" aria-live="polite"></main>
 
-    <!-- Footer -->
-    <footer>
-      <span id="footText">Підготовка до теоретичного іспиту (кат. B)</span>
-      <span id="footLocal">Прогрес зберігається лише на цьому пристрої</span>
-    </footer>
-  </main>
-
-  <!-- Fixed bottom modes -->
-  <div class="modes-wrapper" id="modeButtons"></div>
+  <nav class="tabbar" id="tabbar" aria-label="Menu"></nav>
 
   <script src="js/translations.js"></script>
   <script src="js/progress.js"></script>

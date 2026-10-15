@@ -1,5 +1,5 @@
 // Підвищуй версію при кожній зміні файлів зі списку SHELL.
-const VERSION = "pdr-v2";
+const VERSION = "pdr-v3";
 const SHELL = [
   "./",
   "./index.html",
@@ -12,7 +12,26 @@ const SHELL = [
   "./manifest.webmanifest",
   "./assets/icons/icon.svg",
   "./assets/icons/icon-192.png",
-  "./assets/icons/icon-512.png"
+  "./assets/icons/icon-512.png",
+  "./assets/signs/A51.svg",
+  "./assets/signs/B1.svg",
+  "./assets/signs/B11.svg",
+  "./assets/signs/B17.svg",
+  "./assets/signs/B5.svg",
+  "./assets/signs/B9.svg",
+  "./assets/signs/C1.svg",
+  "./assets/signs/C3.svg",
+  "./assets/signs/C35.svg",
+  "./assets/signs/C43.svg",
+  "./assets/signs/D1.svg",
+  "./assets/signs/D5.svg",
+  "./assets/signs/D7.svg",
+  "./assets/signs/E1.svg",
+  "./assets/signs/E3.svg",
+  "./assets/signs/F5.svg",
+  "./assets/scenes/crosswalk-parking.svg",
+  "./assets/scenes/priority-right.svg",
+  "./assets/scenes/roundabout-yield.svg"
 ];
 
 self.addEventListener("install", (event) => {

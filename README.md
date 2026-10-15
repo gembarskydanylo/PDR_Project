@@ -10,7 +10,8 @@
 - Головна, 12 тем, практика (20 випадкових питань), повторення помилок
 - Пояснення після кожної відповіді з посиланням на джерело
 - Фільтр за регіоном (Фландрія / Брюссель / Валлонія): регіональні правила, наприклад ліміт 30 км/год у Брюсселі
-- 4 мови, 3 теми оформлення, встановлення як застосунок, офлайн-режим
+- Справжні бельгійські знаки (SVG за офіційною геометрією, серії A–F) і схеми ситуацій у вигляді згори
+- Стримане оформлення: світла / темна / як у системі; 4 мови; встановлення як застосунок; офлайн
 - Режим іспиту — опис формату; сам іспит вмикається, коли в базі буде ≥ 50 питань
 
 ## Формат офіційного іспиту
@@ -34,13 +35,15 @@ Service worker працює лише на `localhost` або через HTTPS (�
 
 ```
 index.html              оболонка застосунку
-styles/main.css         стилі (теми glass / oranje / dark)
+styles/main.css         стилі (світла / темна тема, токени кольорів на :root)
 js/translations.js      рядки інтерфейсу uk/nl/fr/en, t() і tr()
 js/progress.js          прогрес і помилки в localStorage
 js/app.js               екрани, квіз, завантаження даних
 data/topics.json        12 тем (id, name ×4, target_questions)
 data/questions.json     питання (схема нижче)
 assets/icons/           іконки PWA
+assets/signs/           знаки (генеруються scripts/build-signs.py)
+assets/scenes/          схеми ситуацій (генеруються scripts/build-scenes.py)
 sw.js                   офлайн-кеш (при зміні JS/CSS підняти VERSION)
 scripts/validate-questions.mjs  перевірка questions.json
 docs/gemini-legacy/     ранні чернетки з Gemini (для історії)
@@ -68,10 +71,14 @@ docs/gemini-legacy/     ранні чернетки з Gemini (для істор
 ```
 
 - `topic_id`: один з 12 id у `data/topics.json`
-- `type`: `text` | `sign` | `image_scenario` (для двох останніх обов'язкове поле `image`)
+- `type`: `text` | `sign` | `image_scenario` (для двох останніх обов'язкове поле `image`, напр. `assets/signs/B1.svg` або `assets/scenes/priority-right.svg`)
 - `difficulty`: 1–3
 - `region`: `federal` (уся Бельгія) | `flanders` | `brussels` | `wallonia`
 - `status`: `draft` | `review` | `published` (у застосунку показуються лише `published`)
+
+Додати знак або схему: дописати функцію в `scripts/build-signs.py` / `scripts/build-scenes.py`, запустити `python3 scripts/build-signs.py` (або scenes) і додати файл у список `SHELL` у `sw.js`.
+
+Знаки Бельгії є частиною законодавства, тому вони у суспільному надбанні.
 
 Перед кожним комітом із питаннями:
 

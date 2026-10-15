@@ -7,7 +7,8 @@
       "fr": "Panneaux de signalisation",
       "en": "Road signs and signals"
     },
-    "target_questions": 100
+    "target_questions": 100,
+    "icon": "B9"
   },
   {
     "id": "priority_intersections",
@@ -17,7 +18,8 @@
       "fr": "Priorité et carrefours",
       "en": "Priority and intersections"
     },
-    "target_questions": 80
+    "target_questions": 80,
+    "icon": "B1"
   },
   {
     "id": "roundabouts",
@@ -27,7 +29,8 @@
       "fr": "Ronds-points",
       "en": "Roundabouts"
     },
-    "target_questions": 40
+    "target_questions": 40,
+    "icon": "D5"
   },
   {
     "id": "speed_distance",
@@ -37,7 +40,8 @@
       "fr": "Vitesse et distance",
       "en": "Speed and distance"
     },
-    "target_questions": 50
+    "target_questions": 50,
+    "icon": "C43"
   },
   {
     "id": "stopping_parking",
@@ -47,7 +51,8 @@
       "fr": "Arrêt et stationnement",
       "en": "Stopping and parking"
     },
-    "target_questions": 60
+    "target_questions": 60,
+    "icon": "E3"
   },
   {
     "id": "lanes_turning",
@@ -57,7 +62,8 @@
       "fr": "Bandes de circulation et manœuvres",
       "en": "Lanes, turning and merging"
     },
-    "target_questions": 50
+    "target_questions": 50,
+    "icon": "D1"
   },
   {
     "id": "overtaking",
@@ -67,7 +73,8 @@
       "fr": "Dépassement et croisement",
       "en": "Overtaking and crossing"
     },
-    "target_questions": 35
+    "target_questions": 35,
+    "icon": "C35"
   },
   {
     "id": "vulnerable_users",
@@ -77,7 +84,8 @@
       "fr": "Usagers vulnérables",
       "en": "Vulnerable road users"
     },
-    "target_questions": 60
+    "target_questions": 60,
+    "icon": "D7"
   },
   {
     "id": "motorways_tunnels",
@@ -87,7 +95,8 @@
       "fr": "Autoroutes, tunnels et passages à niveau",
       "en": "Motorways, tunnels and level crossings"
     },
-    "target_questions": 45
+    "target_questions": 45,
+    "icon": "F5"
   },
   {
     "id": "weather_hazards",
@@ -97,7 +106,8 @@
       "fr": "Météo, visibilité et situations dangereuses",
       "en": "Weather, visibility and hazards"
     },
-    "target_questions": 50
+    "target_questions": 50,
+    "icon": "A51"
   },
   {
     "id": "safety_alcohol",
@@ -107,7 +117,8 @@
       "fr": "Sécurité, alcool, fatigue et documents",
       "en": "Safety, alcohol, fatigue and documents"
     },
-    "target_questions": 70
+    "target_questions": 70,
+    "icon": "B5"
   },
   {
     "id": "mixed_exam",
@@ -117,6 +128,7 @@
       "fr": "Situations d'examen mixtes",
       "en": "Mixed exam situations"
     },
-    "target_questions": 100
+    "target_questions": 100,
+    "icon": "B17"
   }
 ]

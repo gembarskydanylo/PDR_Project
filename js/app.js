@@ -2,18 +2,42 @@
 
 // ===== State =====
 window.currentLang = "uk";
-let mode = "home";
-let currentTopicId = null;
+let view = "home";    // home | topics | exam | mistakes | settings
 let topics = [];      // з data/topics.json
 let questions = [];   // з data/questions.json (лише status: published)
-let quiz = null;      // активна сесія: { ids, i, correct, answered, label, restart }
+let quiz = null;      // { ids, i, correct, answered, label, restart, done }
 
 const EXAM_SIZE = 50;
 const PRACTICE_SIZE = 20;
-const THEMES = ["glass", "oranje", "dark"];
-const THEME_ICONS = { glass: "🌌", oranje: "🧡", dark: "🌙" };
+const THEMES = ["auto", "light", "dark"];
+const KEYS = "ABCDEFG";
 
 const $ = (id) => document.getElementById(id);
+
+// Лінійні іконки (stroke = currentColor).
+const ICON_PATHS = {
+  home: '<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  topics: '<path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/>',
+  exam: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9.5 2.5h5"/>',
+  mistakes: '<path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5"/>',
+  settings: '<path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>',
+  close: '<path d="M6 6l12 12M18 6 6 18"/>',
+  chevron: '<path d="m9 6 6 6-6 6"/>',
+  shuffle: '<path d="M16 4h4v4M4 19 20 4M20 16v4h-4M14.5 14.5 20 20M4 5l5 5"/>'
+};
+
+function icon(name) {
+  const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  s.setAttribute("viewBox", "0 0 24 24");
+  s.setAttribute("fill", "none");
+  s.setAttribute("stroke", "currentColor");
+  s.setAttribute("stroke-width", "1.8");
+  s.setAttribute("stroke-linecap", "round");
+  s.setAttribute("stroke-linejoin", "round");
+  s.setAttribute("aria-hidden", "true");
+  s.innerHTML = ICON_PATHS[name];
+  return s;
+}
 
 // ===== Helpers =====
 function el(tag, cls, text) {
@@ -23,12 +47,24 @@ function el(tag, cls, text) {
   return e;
 }
 
-function button(cls, text, onClick) {
-  const b = el("button", cls, text);
+function button(cls, content, onClick) {
+  const b = el("button", cls);
   b.type = "button";
+  if (typeof content === "string") b.textContent = content;
+  else if (content) b.append(...[].concat(content));
   b.addEventListener("click", onClick);
   return b;
 }
+
+function img(src, cls) {
+  const i = el("img", cls);
+  i.src = src;
+  i.alt = "";
+  i.decoding = "async";
+  return i;
+}
+
+const signSrc = (code) => `assets/signs/${code}.svg`;
 
 function shuffle(arr) {
   const a = arr.slice();
@@ -46,25 +82,24 @@ function visibleQuestions() {
   return questions.filter((q) => q.region.includes("federal") || q.region.includes(region));
 }
 
-function questionsOfTopic(topicId) {
-  return visibleQuestions().filter((q) => q.topic_id === topicId);
-}
-
+const questionsOfTopic = (topicId) => visibleQuestions().filter((q) => q.topic_id === topicId);
+const idsOfTopic = (topicId) => questionsOfTopic(topicId).map((q) => q.id);
 const byId = (id) => questions.find((q) => q.id === id);
 
-function go(newMode, topicId = null) {
-  mode = newMode;
-  currentTopicId = topicId;
+function go(newView) {
+  view = newView;
   quiz = null;
-  refresh();
+  render();
+  window.scrollTo(0, 0);
 }
 
 // ===== Init =====
 async function init() {
-  const progress = Progress.load();
-  window.currentLang = progress.language || "uk";
+  window.currentLang = Progress.load().language || "uk";
   $("uiLangPicker").value = window.currentLang;
   applyTheme(readTheme());
+  $("settingsBtn").append(icon("settings"));
+  $("backBtn").append(icon("close"));
   setupListeners();
 
   try {
@@ -74,16 +109,6 @@ async function init() {
   } catch (e) {
     console.error("Failed to load data", e);
   }
-
-  buildRegionPicker();
-  refresh();
-}
-
-function refresh() {
-  updateHeader();
-  buildTopicNav();
-  updateModeButtons();
-  updateStats();
   render();
 }
 
@@ -91,107 +116,46 @@ function refresh() {
 function readTheme() {
   try {
     const saved = localStorage.getItem("pdr_theme");
-    return THEMES.includes(saved) ? saved : "glass";
+    return THEMES.includes(saved) ? saved : "auto";
   } catch (e) {
-    return "glass";
+    return "auto";
   }
 }
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  const btn = $("themeToggle");
-  btn.textContent = THEME_ICONS[theme];
-  const bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
-  document.querySelector('meta[name="theme-color"]').content = bg || "#1a0b3a";
+  try { localStorage.setItem("pdr_theme", theme); } catch (e) {}
+  requestAnimationFrame(() => {
+    const surface = getComputedStyle(document.documentElement).getPropertyValue("--surface").trim();
+    document.querySelector('meta[name="theme-color"]').content = surface || "#FFFFFF";
+  });
 }
 
-// ===== Header & Language =====
-function updateHeader() {
+// ===== Chrome (top bar + tab bar) =====
+function renderChrome() {
+  const inQuiz = Boolean(quiz);
+  document.body.classList.toggle("in-quiz", inQuiz);
+  $("brand").hidden = inQuiz;
+  $("settingsBtn").hidden = inQuiz;
+  $("quizProgress").hidden = !inQuiz || quiz.done;
+  $("backBtn").hidden = !inQuiz;
+  $("backBtn").setAttribute("aria-label", t("close"));
+  $("settingsBtn").setAttribute("aria-label", t("modes.settings"));
   $("appTitle").textContent = t("app_title");
-  $("tagline").textContent = t("tagline");
-  $("progressLabel").textContent = t("progress_label");
-  $("footText").textContent = t("foot");
-  $("footLocal").textContent = t("foot_local");
-  $("regionPicker").setAttribute("aria-label", t("region_label"));
   document.documentElement.lang = window.currentLang;
   document.title = t("app_title");
-  buildRegionPicker();
-}
 
-function buildRegionPicker() {
-  const sel = $("regionPicker");
-  const current = Progress.get().region;
-  sel.replaceChildren();
-  ["all", "flanders", "brussels", "wallonia"].forEach((r) => {
-    const o = el("option", "", t("regions." + r));
-    o.value = r;
-    sel.appendChild(o);
+  const bar = $("tabbar");
+  bar.replaceChildren();
+  ["home", "topics", "exam", "mistakes"].forEach((m) => {
+    const b = button("", [icon(m), el("span", "", t("modes." + m))], () => go(m));
+    if (m === view) b.setAttribute("aria-current", "page");
+    if (m === "mistakes") {
+      const n = Progress.getMistakes().filter(byId).length;
+      if (n) b.appendChild(el("span", "count", String(n)));
+    }
+    bar.appendChild(b);
   });
-  sel.value = current;
-}
-
-function setLanguage(lang) {
-  window.currentLang = lang;
-  Progress.setLanguage(lang);
-  refresh();
-}
-
-// ===== Stats =====
-function learnedTopicsCount() {
-  return topics.filter((tp) => {
-    const ids = questionsOfTopic(tp.id).map((q) => q.id);
-    return ids.length > 0 && Progress.topicPercent(ids) === 100;
-  }).length;
-}
-
-function updateStats() {
-  $("learnedCount").textContent = learnedTopicsCount();
-  $("topicsTotal").textContent = topics.length || 12;
-  $("reviewCount").textContent = t("review_count") + ": " + Progress.getMistakes().length;
-  $("score").textContent = "⭐ " + (Progress.get().totalCorrect || 0);
-}
-
-// ===== Topic navigation (top horizontal) =====
-function buildTopicNav() {
-  const nav = $("catNav");
-  nav.replaceChildren();
-
-  const allBtn = button("", t("all_topics"), () => go("topics"));
-  allBtn.setAttribute("aria-pressed", String(mode === "topics" && !currentTopicId));
-  nav.appendChild(allBtn);
-
-  topics.forEach((topic) => {
-    const btn = button("", tr(topic.name), () => startTopic(topic.id));
-    btn.setAttribute("aria-pressed", String(currentTopicId === topic.id));
-    nav.appendChild(btn);
-  });
-}
-
-// ===== Mode buttons (bottom) =====
-function updateModeButtons() {
-  const wrap = $("modeButtons");
-  wrap.replaceChildren();
-  ["home", "topics", "practice", "exam", "mistakes"].forEach((m) => {
-    const b = button(m === mode ? "primary" : "", t("modes." + m), () => go(m));
-    if (m === mode) b.setAttribute("aria-current", "page");
-    wrap.appendChild(b);
-  });
-}
-
-// ===== Render =====
-function render() {
-  setBar(0);
-  $("prog").textContent = "";
-  $("rnd").textContent = "";
-  if (quiz) return renderQuestion();
-
-  switch (mode) {
-    case "topics": return renderTopics();
-    case "practice": return renderPractice();
-    case "exam": return renderExam();
-    case "mistakes": return renderMistakes();
-    default: return renderHome();
-  }
 }
 
 function setBar(percent) {
@@ -199,113 +163,242 @@ function setBar(percent) {
   document.querySelector(".bar").setAttribute("aria-valuenow", String(Math.round(percent)));
 }
 
-function card() {
-  const c = $("card");
-  c.replaceChildren();
-  return c;
+function render() {
+  renderChrome();
+  if (quiz) return quiz.done ? renderResult() : renderQuestion();
+  switch (view) {
+    case "topics": return renderTopics();
+    case "exam": return renderExam();
+    case "mistakes": return renderMistakes();
+    case "settings": return renderSettings();
+    default: return renderHome();
+  }
+}
+
+function screen() {
+  const v = $("view");
+  v.replaceChildren();
+  return v;
+}
+
+// ===== Screens =====
+function topicRow(topic) {
+  const ids = idsOfTopic(topic.id);
+  const pct = Progress.topicPercent(ids);
+  const row = button("row-link", null, () => startTopic(topic.id));
+  row.appendChild(img(signSrc(topic.icon), "sign"));
+  const mid = el("div");
+  mid.appendChild(el("div", "row-title", tr(topic.name)));
+  mid.appendChild(el("div", "row-sub", plural("questions", ids.length)));
+  if (ids.length) {
+    const m = el("div", "meter");
+    const fill = el("i");
+    fill.style.width = pct + "%";
+    m.appendChild(fill);
+    mid.appendChild(m);
+  } else {
+    row.setAttribute("aria-disabled", "true");
+  }
+  row.appendChild(mid);
+  row.appendChild(el("span", "row-end", ids.length ? pct + "%" : ""));
+  return row;
+}
+
+function actionRow(glyph, title, sub, end, onClick) {
+  const row = button("row-link", null, onClick);
+  const g = el("span", "glyph");
+  g.appendChild(icon(glyph));
+  row.appendChild(g);
+  const mid = el("div");
+  mid.appendChild(el("div", "row-title", title));
+  mid.appendChild(el("div", "row-sub", sub));
+  row.appendChild(mid);
+  const e = el("span", "row-end");
+  if (end) e.textContent = end;
+  else e.appendChild(icon("chevron"));
+  row.appendChild(e);
+  return row;
+}
+
+function nextTopic() {
+  const withQ = topics.filter((tp) => idsOfTopic(tp.id).length);
+  return withQ.find((tp) => Progress.topicPercent(idsOfTopic(tp.id)) < 100) || withQ[0];
 }
 
 function renderHome() {
-  const c = card();
-  const hero = el("div", "home-hero");
-  hero.appendChild(el("div", "icon-big", "🚗"));
-  hero.appendChild(el("h2", "", t("home_title")));
-  hero.appendChild(el("p", "", t("home_desc")));
-  c.appendChild(hero);
+  const v = screen();
+  v.appendChild(el("h1", "", t("home_title")));
 
-  const grid = el("div", "actions-grid");
+  const tp = nextTopic();
+  if (tp) {
+    const ids = idsOfTopic(tp.id);
+    const pct = Progress.topicPercent(ids);
+    const box = el("section", "panel continue");
+    box.appendChild(img(signSrc(tp.icon), "sign"));
+    const info = el("div");
+    info.appendChild(el("div", "muted small", t("continue_label")));
+    info.appendChild(el("h2", "", tr(tp.name)));
+    const m = el("div", "meter");
+    const fill = el("i");
+    fill.style.width = pct + "%";
+    m.appendChild(fill);
+    info.appendChild(m);
+    box.appendChild(info);
+    box.appendChild(button("btn primary", pct ? t("continue_btn") : t("start_btn"), () => startTopic(tp.id)));
+    v.appendChild(box);
+  }
+
+  const p = Progress.get();
+  const stats = el("section", "stats");
   [
-    { icon: "🚦", title: t("road_signs"), desc: t("study_meanings"), run: () => startTopic("road_signs") },
-    { icon: "🎯", title: t("situations"), desc: t("look_analyze"), run: () => go("practice") },
-    { icon: "📝", title: t("testing"), desc: t("check_knowledge"), run: () => go("exam") },
-    { icon: "⚠️", title: t("my_mistakes"), desc: t("repeat_hard"), run: () => go("mistakes") }
-  ].forEach((a) => {
-    const btn = button("action-card", undefined, a.run);
-    btn.appendChild(el("div", "action-icon", a.icon));
-    btn.appendChild(el("div", "action-title", a.title));
-    btn.appendChild(el("div", "action-desc", a.desc));
-    grid.appendChild(btn);
+    [p.totalCorrect, t("stat_correct")],
+    [p.totalAnswered, t("stat_answered")],
+    [`${learnedTopicsCount()}/${topics.length}`, t("stat_topics")]
+  ].forEach(([n, label]) => {
+    const d = el("div");
+    d.appendChild(el("b", "", String(n)));
+    d.appendChild(el("span", "", label));
+    stats.appendChild(d);
   });
-  c.appendChild(grid);
+  v.appendChild(stats);
+
+  const list = el("section", "list");
+  list.appendChild(actionRow("shuffle", t("practice_title"), t("practice_desc"), null, startPractice));
+  const mistakes = Progress.getMistakes().filter(byId).length;
+  list.appendChild(actionRow("mistakes", t("modes.mistakes"), t("mistakes_desc"), mistakes ? String(mistakes) : null, () => go("mistakes")));
+  list.appendChild(actionRow("exam", t("exam_title"), t("exam_desc_short"), null, () => go("exam")));
+  v.appendChild(list);
+}
+
+function learnedTopicsCount() {
+  return topics.filter((tp) => {
+    const ids = idsOfTopic(tp.id);
+    return ids.length > 0 && Progress.topicPercent(ids) === 100;
+  }).length;
 }
 
 function renderTopics() {
-  const c = card();
-  c.appendChild(el("h2", "", t("topics_title")));
-  const list = el("div", "topic-list");
-
-  topics.forEach((topic, idx) => {
-    const ids = questionsOfTopic(topic.id).map((q) => q.id);
-    const btn = button("topic-item", undefined, () => startTopic(topic.id));
-    btn.appendChild(el("div", "topic-num", String(idx + 1)));
-    const info = el("div", "topic-info");
-    info.appendChild(el("div", "topic-name", tr(topic.name)));
-    info.appendChild(el("div", "topic-meta",
-      `${ids.length} / ${topic.target_questions} ${t("questions")} · ${Progress.topicPercent(ids)}%`));
-    btn.appendChild(info);
-    list.appendChild(btn);
-  });
-  c.appendChild(list);
-}
-
-function renderPractice() {
-  const c = card();
-  c.appendChild(el("h2", "", t("practice_title")));
-  c.appendChild(el("p", "muted", t("practice_desc")));
-  const pool = visibleQuestions();
-  c.appendChild(el("p", "muted", `${pool.length} ${t("questions")}`));
-  c.appendChild(button("btn primary", t("start"), startPractice));
+  const v = screen();
+  v.appendChild(el("h1", "", t("topics_title")));
+  const list = el("section", "list");
+  topics.forEach((tp) => list.appendChild(topicRow(tp)));
+  v.appendChild(list);
 }
 
 function renderExam() {
-  const c = card();
-  c.appendChild(el("h2", "", t("exam_title")));
-  c.appendChild(el("p", "muted", t("exam_desc")));
+  const v = screen();
+  v.appendChild(el("h1", "", t("exam_title")));
+  const rules = el("section", "rules");
+  [["50", t("exam_rules.q")], ["15", t("exam_rules.t")], ["41/50", t("exam_rules.pass")], ["−5", t("exam_rules.serious")]]
+    .forEach(([n, label]) => {
+      const d = el("div");
+      d.appendChild(el("b", "", n));
+      d.appendChild(el("span", "", label));
+      rules.appendChild(d);
+    });
+  v.appendChild(rules);
+  v.appendChild(el("p", "muted", t("exam_note")));
   const n = visibleQuestions().length;
   if (n < EXAM_SIZE) {
-    c.appendChild(el("p", "notice", t("exam_not_ready", { n })));
-    c.appendChild(button("btn", t("practice_title"), () => go("practice")));
+    v.appendChild(el("p", "notice", t("exam_not_ready", { n })));
+    v.appendChild(button("btn primary", t("practice_title"), startPractice));
   }
 }
 
 function renderMistakes() {
-  const c = card();
-  const ids = Progress.getMistakes().filter((id) => byId(id));
+  const v = screen();
+  v.appendChild(el("h1", "", t("modes.mistakes")));
+  const ids = Progress.getMistakes().filter(byId);
   if (!ids.length) {
-    const empty = el("div", "empty-state");
-    empty.appendChild(el("div", "icon-big", "✅"));
-    empty.appendChild(el("h3", "", t("no_mistakes")));
-    empty.appendChild(el("p", "", t("no_mistakes_desc")));
-    c.appendChild(empty);
+    const empty = el("section", "panel empty");
+    empty.appendChild(img(signSrc("B9"), ""));
+    empty.appendChild(el("h2", "", t("no_mistakes")));
+    empty.appendChild(el("p", "muted", t("no_mistakes_desc")));
+    v.appendChild(empty);
     return;
   }
-  c.appendChild(el("h2", "", `${t("my_mistakes")} (${ids.length})`));
-  c.appendChild(button("btn primary", t("review_mistakes"), () => startQuiz(shuffle(ids), t("my_mistakes"))));
+  v.appendChild(button("btn primary", `${t("review_mistakes")} (${ids.length})`,
+    () => startQuiz(shuffle(ids), t("modes.mistakes"), () => go("mistakes"))));
+  const list = el("section", "list");
+  ids.forEach((id) => {
+    const q = byId(id);
+    const row = button("row-link", null, () => startQuiz([id], t("modes.mistakes"), () => go("mistakes")));
+    if (q.image?.includes("/signs/")) row.appendChild(img(q.image, "sign"));
+    else {
+      const g = el("span", "glyph");
+      g.appendChild(icon("mistakes"));
+      row.appendChild(g);
+    }
+    const mid = el("div");
+    mid.appendChild(el("div", "row-title", tr(q.question)));
+    const topic = topics.find((tp) => tp.id === q.topic_id);
+    mid.appendChild(el("div", "row-sub", tr(topic?.name)));
+    row.appendChild(mid);
+    const end = el("span", "row-end");
+    end.appendChild(icon("chevron"));
+    row.appendChild(end);
+    list.appendChild(row);
+  });
+  v.appendChild(list);
 }
 
-function renderComingSoon() {
-  const c = card();
-  const empty = el("div", "empty-state");
-  empty.appendChild(el("div", "icon-big", "⏳"));
-  empty.appendChild(el("h3", "", t("coming_soon")));
-  empty.appendChild(el("p", "", t("coming_soon_desc")));
-  const back = button("btn primary narrow", t("modes.topics"), () => go("topics"));
-  empty.appendChild(back);
-  c.appendChild(empty);
+function segmented(options, current, onPick) {
+  const wrap = el("div", "segmented");
+  options.forEach(([value, label]) => {
+    const b = button("", label, () => onPick(value));
+    b.setAttribute("aria-pressed", String(value === current));
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+
+function renderSettings() {
+  const v = screen();
+  v.appendChild(el("h1", "", t("modes.settings")));
+  const panel = el("section", "panel section");
+
+  const lang = el("div", "field");
+  lang.appendChild(el("label", "", t("language_label")));
+  lang.appendChild(segmented([["uk", "Українська"], ["nl", "NL"], ["fr", "FR"], ["en", "EN"]], window.currentLang, setLanguage));
+  panel.appendChild(lang);
+
+  const region = el("div", "field");
+  region.appendChild(el("label", "", t("region_label")));
+  region.appendChild(segmented(["all", "flanders", "brussels", "wallonia"].map((r) => [r, t("regions." + r)]),
+    Progress.get().region, (r) => { Progress.setRegion(r); render(); }));
+  region.appendChild(el("p", "muted small", t("region_hint")));
+  panel.appendChild(region);
+
+  const theme = el("div", "field");
+  theme.appendChild(el("label", "", t("theme_label")));
+  theme.appendChild(segmented(THEMES.map((x) => [x, t("themes." + x)]), readTheme(), (x) => { applyTheme(x); render(); }));
+  panel.appendChild(theme);
+  v.appendChild(panel);
+
+  v.appendChild(el("p", "muted small", t("local_note")));
+  v.appendChild(button("btn danger", t("reset"), () => {
+    if (confirm(t("reset_confirm"))) { Progress.reset(); render(); }
+  }));
 }
 
 // ===== Quiz =====
 function startTopic(topicId) {
-  mode = "topics";
-  currentTopicId = topicId;
-  const ids = questionsOfTopic(topicId).map((q) => q.id);
+  const ids = idsOfTopic(topicId);
   const topic = topics.find((tp) => tp.id === topicId);
   if (!ids.length) {
+    view = "topics";
     quiz = null;
-    refresh();
-    return renderComingSoon();
+    renderChrome();
+    const v = screen();
+    v.appendChild(el("h1", "", tr(topic?.name)));
+    const empty = el("section", "panel empty");
+    empty.appendChild(img(signSrc(topic.icon), ""));
+    empty.appendChild(el("p", "muted", t("topic_empty")));
+    empty.appendChild(button("btn", t("back"), () => go("topics")));
+    v.appendChild(empty);
+    return;
   }
-  startQuiz(shuffle(ids), tr(topic?.name), () => startTopic(topicId));
+  startQuiz(shuffle(ids), tr(topic.name), () => startTopic(topicId));
 }
 
 function startPractice() {
@@ -314,46 +407,41 @@ function startPractice() {
 }
 
 function startQuiz(ids, label, restart) {
-  if (!ids.length) {
-    card().appendChild(el("p", "notice", t("no_questions")));
-    return;
-  }
-  quiz = { ids, i: 0, correct: 0, answered: false, label, restart: restart || (() => startQuiz(shuffle(ids), label)) };
-  buildTopicNav();
-  updateModeButtons();
+  if (!ids.length) return;
+  quiz = { ids, i: 0, correct: 0, answered: false, label, restart, done: false };
   render();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo(0, 0);
 }
 
 function renderQuestion() {
   const q = byId(quiz.ids[quiz.i]);
   const n = quiz.ids.length;
-  $("prog").textContent = t("question_of", { i: quiz.i + 1, n });
-  $("rnd").textContent = quiz.label || "";
+  $("prog").textContent = `${quiz.label} — ${t("question_of", { i: quiz.i + 1, n })}`;
   setBar((quiz.i / n) * 100);
 
-  const c = card();
-  const head = el("div", "q");
-  const badges = el("div", "badges");
-  q.region.filter((r) => r !== "federal").forEach((r) => badges.appendChild(el("span", "badge", t("regions." + r))));
-  if (badges.childElementCount) head.appendChild(badges);
+  const v = screen();
   if (q.image) {
-    const img = el("img", "q-img");
-    img.src = q.image;
-    img.alt = "";
-    head.appendChild(img);
+    const fig = el("figure", "figure " + (q.image.includes("/signs/") ? "sign" : "scene"));
+    fig.appendChild(img(q.image));
+    v.appendChild(fig);
   }
-  head.appendChild(el("h2", "", tr(q.question)));
-  c.appendChild(head);
+
+  const regional = q.region.filter((r) => r !== "federal");
+  if (regional.length) {
+    const tags = el("div", "tags");
+    regional.forEach((r) => tags.appendChild(el("span", "tag", t("regions." + r))));
+    v.appendChild(tags);
+  }
+
+  v.appendChild(el("h1", "question", tr(q.question)));
 
   const opts = el("div", "opts");
-  q.options.forEach((o) => {
-    const b = button("opt", tr(o.text), () => answer(q, o.id));
+  shuffle(q.options).forEach((o, idx) => {
+    const b = button("opt", [el("span", "key", KEYS[idx]), el("span", "", tr(o.text))], () => answer(q, o.id));
     b.dataset.id = o.id;
     opts.appendChild(b);
   });
-  c.appendChild(opts);
-  c.appendChild(el("div", "feedback"));
+  v.appendChild(opts);
 }
 
 function answer(q, optionId) {
@@ -362,7 +450,6 @@ function answer(q, optionId) {
   const ok = optionId === q.correct_option_id;
   if (ok) quiz.correct += 1;
   Progress.recordAnswer(q.id, ok);
-  updateStats();
 
   document.querySelectorAll(".opt").forEach((b) => {
     b.disabled = true;
@@ -370,72 +457,62 @@ function answer(q, optionId) {
     else if (b.dataset.id === optionId) b.classList.add("incorrect");
   });
 
-  const fb = document.querySelector(".feedback");
-  fb.classList.add(ok ? "ok" : "bad");
-  fb.appendChild(el("strong", "", ok ? "✅ " + t("correct") : "❌ " + t("wrong")));
-  fb.appendChild(el("p", "", tr(q.explanation)));
+  const box = el("section", "panel explain" + (ok ? " ok" : ""));
+  box.appendChild(el("h2", "", ok ? t("correct") : t("wrong")));
+  box.appendChild(el("p", "", tr(q.explanation)));
   if (q.source?.title) {
     const src = el("p", "source");
     src.appendChild(document.createTextNode(t("source") + ": "));
-    if (q.source.url) {
-      const a = el("a", "", q.source.title);
-      a.href = q.source.url;
-      a.target = "_blank";
-      a.rel = "noopener";
-      src.appendChild(a);
-    } else {
-      src.appendChild(document.createTextNode(q.source.title));
-    }
-    fb.appendChild(src);
+    const a = el("a", "", q.source.title);
+    a.href = q.source.url || "#";
+    a.target = "_blank";
+    a.rel = "noopener";
+    src.appendChild(a);
+    box.appendChild(src);
   }
+  const v = $("view");
+  v.appendChild(box);
 
   const last = quiz.i === quiz.ids.length - 1;
-  const next = button("btn primary", last ? t("finish") : t("next"), () => {
-    if (last) return renderResult();
-    quiz.i += 1;
-    quiz.answered = false;
+  const next = button("btn primary next-btn", last ? t("finish") : t("next"), () => {
+    if (last) quiz.done = true;
+    else { quiz.i += 1; quiz.answered = false; }
     render();
+    window.scrollTo(0, 0);
   });
-  $("card").appendChild(next);
+  v.appendChild(next);
   next.focus({ preventScroll: true });
-  next.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  box.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderResult() {
-  const { correct, ids, label, restart } = quiz;
+  const { correct, ids, restart } = quiz;
   const n = ids.length;
-  setBar(100);
-  $("prog").textContent = label || "";
-  $("rnd").textContent = "";
-
-  const c = card();
-  const box = el("div", "empty-state result");
-  box.appendChild(el("div", "icon-big", correct === n ? "🏆" : correct / n >= 0.82 ? "👍" : "📚"));
-  box.appendChild(el("h3", "", t("result_title")));
-  box.appendChild(el("p", "result-score", t("result_score", { c: correct, n })));
-  const row = el("div", "row");
-  row.appendChild(button("btn primary", t("retry"), restart));
-  row.appendChild(button("btn", t("modes.home"), () => go("home")));
-  box.appendChild(row);
-  c.appendChild(box);
-  quiz = null;
-  buildTopicNav();
+  const good = correct / n >= 41 / 50;
+  const v = screen();
+  const box = el("section", "panel result");
+  box.appendChild(el("h2", "muted", t("result_title")));
+  box.appendChild(el("div", "score", `${correct}/${n}`));
+  box.appendChild(el("p", "verdict " + (good ? "ok" : "bad"), good ? t("result_good") : t("result_more")));
+  const actions = el("div", "actions");
+  actions.appendChild(button("btn primary", t("retry"), restart));
+  actions.appendChild(button("btn", t("to_home"), () => go("home")));
+  box.appendChild(actions);
+  v.appendChild(box);
 }
 
 // ===== Listeners =====
+function setLanguage(lang) {
+  window.currentLang = lang;
+  $("uiLangPicker").value = lang;
+  Progress.setLanguage(lang);
+  render();
+}
+
 function setupListeners() {
   $("uiLangPicker").addEventListener("change", (e) => setLanguage(e.target.value));
-  $("regionPicker").addEventListener("change", (e) => {
-    Progress.setRegion(e.target.value);
-    quiz = null;
-    refresh();
-  });
-  $("themeToggle").addEventListener("click", () => {
-    const cur = document.documentElement.dataset.theme;
-    const next = THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length];
-    applyTheme(next);
-    try { localStorage.setItem("pdr_theme", next); } catch (e) {}
-  });
+  $("settingsBtn").addEventListener("click", () => go("settings"));
+  $("backBtn").addEventListener("click", () => go(view === "settings" ? "home" : view));
 }
 
 // ===== Start =====

@@ -74,16 +74,16 @@
   {
     "id": "signs_002",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 1,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Що означає знак B1 (перевернутий трикутник з червоною облямівкою)?",
-      "nl": "Wat betekent bord B1 (omgekeerde driehoek met rode rand)?",
-      "fr": "Que signifie le signal B1 (triangle inversé à bord rouge) ?",
-      "en": "What does sign B1 (inverted triangle with red border) mean?"
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
     },
     "options": [
       {
@@ -141,21 +141,22 @@
       "B1",
       "yield"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/signs/B1.svg"
   },
   {
     "id": "signs_003",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 1,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Чим відрізняється знак B5 (STOP) від знака B1?",
-      "nl": "Wat is het verschil tussen bord B5 (STOP) en bord B1?",
-      "fr": "Quelle est la différence entre le signal B5 (STOP) et le B1 ?",
-      "en": "What is the difference between sign B5 (STOP) and sign B1?"
+      "uk": "Чим цей знак відрізняється від знака «Дати дорогу» (B1)?",
+      "nl": "Wat is het verschil tussen dit bord en het bord 'Voorrang verlenen' (B1)?",
+      "fr": "En quoi ce panneau diffère-t-il du panneau « Céder le passage » (B1) ?",
+      "en": "How does this sign differ from the 'Give way' sign (B1)?"
     },
     "options": [
       {
@@ -213,21 +214,22 @@
       "B5",
       "stop"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/signs/B5.svg"
   },
   {
     "id": "signs_004",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 1,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Що означає жовтий ромб (знак B9)?",
-      "nl": "Wat betekent de gele ruit (bord B9)?",
-      "fr": "Que signifie le losange jaune (signal B9) ?",
-      "en": "What does the yellow diamond (sign B9) mean?"
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
     },
     "options": [
       {
@@ -285,7 +287,8 @@
       "B9",
       "priority-road"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/signs/B9.svg"
   },
   {
     "id": "signs_005",
@@ -433,16 +436,16 @@
   {
     "id": "signs_007",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 1,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Що означає круглий червоний знак з білою горизонтальною смугою (C1)?",
-      "nl": "Wat betekent het ronde rode bord met een witte horizontale balk (C1)?",
-      "fr": "Que signifie le panneau rond rouge avec une barre horizontale blanche (C1) ?",
-      "en": "What does the round red sign with a white horizontal bar (C1) mean?"
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
     },
     "options": [
       {
@@ -500,7 +503,8 @@
       "C1",
       "no-entry"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/signs/C1.svg"
   },
   {
     "id": "signs_008",
@@ -648,16 +652,16 @@
   {
     "id": "signs_010",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 2,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Що означає знак B17?",
-      "nl": "Wat betekent bord B17?",
-      "fr": "Que signifie le signal B17 ?",
-      "en": "What does sign B17 mean?"
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
     },
     "options": [
       {
@@ -715,7 +719,8 @@
       "B17",
       "priority-right"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/signs/B17.svg"
   },
   {
     "id": "signs_011",
@@ -863,61 +868,52 @@
   {
     "id": "priority_001",
     "topic_id": "priority_intersections",
-    "type": "text",
+    "type": "image_scenario",
     "difficulty": 2,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Хто має пріоритет на перехресті без знаків пріоритету, світлофора чи регулювальника?",
-      "nl": "Wie heeft voorrang op een kruispunt zonder voorrangsborden, verkeerslichten of bevoegd persoon?",
-      "fr": "Qui a la priorité à un carrefour sans signaux de priorité, feux ni agent qualifié ?",
-      "en": "Who has priority at an intersection without priority signs, traffic lights or an authorised agent?"
+      "uk": "Перехрестя без знаків і світлофорів. Ти (A) їдеш прямо. Хто має проїхати першим?",
+      "nl": "Kruispunt zonder borden of verkeerslichten. Jij (A) rijdt rechtdoor. Wie mag eerst doorrijden?",
+      "fr": "Carrefour sans panneaux ni feux. Vous (A) allez tout droit. Qui passe en premier ?",
+      "en": "Intersection without signs or traffic lights. You (A) go straight on. Who goes first?"
     },
     "options": [
       {
         "id": "a",
         "text": {
-          "uk": "Водій, що наближається праворуч",
-          "nl": "De bestuurder die van rechts komt",
-          "fr": "Le conducteur venant de droite",
-          "en": "The driver coming from the right"
+          "uk": "Машина B, бо вона праворуч від мене",
+          "nl": "Auto B, want die komt van rechts",
+          "fr": "La voiture B, car elle vient de droite",
+          "en": "Car B, because it comes from the right"
         }
       },
       {
         "id": "b",
         "text": {
-          "uk": "Водій, що наближається ліворуч",
-          "nl": "De bestuurder die van links komt",
-          "fr": "Le conducteur venant de gauche",
-          "en": "The driver coming from the left"
+          "uk": "Я (A), бо їду прямо",
+          "nl": "Ik (A), want ik rijd rechtdoor",
+          "fr": "Moi (A), car je vais tout droit",
+          "en": "Me (A), because I go straight on"
         }
       },
       {
         "id": "c",
         "text": {
-          "uk": "Той, хто їде прямо",
-          "nl": "Wie rechtdoor rijdt",
-          "fr": "Celui qui va tout droit",
-          "en": "Whoever goes straight on"
-        }
-      },
-      {
-        "id": "d",
-        "text": {
-          "uk": "Той, хто їде ширшою дорогою",
-          "nl": "Wie op de bredere weg rijdt",
-          "fr": "Celui qui circule sur la route la plus large",
-          "en": "Whoever is on the wider road"
+          "uk": "Той, хто першим під'їхав до перехрестя",
+          "nl": "Wie het eerst aan het kruispunt is",
+          "fr": "Celui qui arrive le premier au carrefour",
+          "en": "Whoever reaches the intersection first"
         }
       }
     ],
     "correct_option_id": "a",
     "explanation": {
-      "uk": "Загальне правило Бельгії — пріоритет праворуч (voorrang van rechts). Ширина чи покриття дороги значення не мають.",
-      "nl": "De algemene regel in België is voorrang van rechts. De breedte of verharding van de weg speelt geen rol.",
-      "fr": "La règle générale en Belgique est la priorité de droite. La largeur ou le revêtement de la route ne jouent aucun rôle.",
-      "en": "The general rule in Belgium is priority to the right. The width or surface of the road does not matter."
+      "uk": "Без знаків пріоритету діє правило «праворуч має перевагу». B наближається праворуч від тебе, тож ти пропускаєш B, навіть якщо їдеш прямо.",
+      "nl": "Zonder voorrangsborden geldt voorrang van rechts. B komt van rechts, dus je laat B voorgaan, ook als je rechtdoor rijdt.",
+      "fr": "Sans signaux de priorité, la priorité de droite s'applique. B vient de votre droite : vous le laissez passer, même si vous allez tout droit.",
+      "en": "Without priority signs, priority to the right applies. B comes from your right, so you let B go first, even when going straight on."
     },
     "source": {
       "title": "Wegcode art. 12.3.1",
@@ -928,48 +924,49 @@
     "tags": [
       "priority-right"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/scenes/priority-right.svg"
   },
   {
     "id": "roundabout_001",
     "topic_id": "roundabouts",
-    "type": "text",
+    "type": "image_scenario",
     "difficulty": 1,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Хто має пріоритет на круговому русі, позначеному знаками D5 і B1 («Дати дорогу») на в'їзді?",
-      "nl": "Wie heeft voorrang op een rotonde aangeduid met de borden D5 en B1 ('Voorrang verlenen')?",
-      "fr": "Qui a la priorité sur un rond-point signalé par les panneaux D5 et B1 (« Céder le passage ») ?",
-      "en": "Who has priority on a roundabout marked with signs D5 and B1 ('Give way') at the entry?"
+      "uk": "Ти (A) під'їжджаєш до кругового руху зі знаками D5 і B1. Машина B уже на колі. Хто проїжджає першим?",
+      "nl": "Jij (A) nadert een rotonde met de borden D5 en B1. Auto B rijdt al op de rotonde. Wie mag eerst?",
+      "fr": "Vous (A) arrivez à un rond-point signalé par D5 et B1. La voiture B est déjà sur l'anneau. Qui passe en premier ?",
+      "en": "You (A) approach a roundabout with signs D5 and B1. Car B is already on the roundabout. Who goes first?"
     },
     "options": [
       {
         "id": "a",
         "text": {
-          "uk": "Водії, які вже рухаються по колу",
-          "nl": "Bestuurders die al op de rotonde rijden",
-          "fr": "Les conducteurs déjà sur l'anneau",
-          "en": "Drivers already on the roundabout"
+          "uk": "Машина B, яка вже на колі",
+          "nl": "Auto B, die al op de rotonde rijdt",
+          "fr": "La voiture B, déjà sur l'anneau",
+          "en": "Car B, already on the roundabout"
         }
       },
       {
         "id": "b",
         "text": {
-          "uk": "Водії, які в'їжджають на коло",
-          "nl": "Bestuurders die de rotonde oprijden",
-          "fr": "Les conducteurs qui s'engagent",
-          "en": "Drivers entering the roundabout"
+          "uk": "Я (A), бо B ліворуч від мене",
+          "nl": "Ik (A), want B komt van links",
+          "fr": "Moi (A), car B vient de gauche",
+          "en": "Me (A), because B comes from the left"
         }
       },
       {
         "id": "c",
         "text": {
-          "uk": "Водії, що наближаються праворуч",
-          "nl": "Bestuurders die van rechts komen",
-          "fr": "Les conducteurs venant de droite",
-          "en": "Drivers coming from the right"
+          "uk": "Той, хто швидше",
+          "nl": "Wie het snelst rijdt",
+          "fr": "Le plus rapide",
+          "en": "Whoever is faster"
         }
       }
     ],
@@ -991,7 +988,8 @@
       "B1",
       "D5"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/scenes/roundabout-yield.svg"
   },
   {
     "id": "speed_001",
@@ -1122,43 +1120,43 @@
   {
     "id": "parking_001",
     "topic_id": "stopping_parking",
-    "type": "text",
+    "type": "image_scenario",
     "difficulty": 2,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "На якій відстані перед пішохідним переходом заборонено зупинку і стоянку на проїжджій частині?",
-      "nl": "Op welke afstand vóór een oversteekplaats voor voetgangers is stilstaan en parkeren op de rijbaan verboden?",
-      "fr": "À quelle distance avant un passage pour piétons l'arrêt et le stationnement sont-ils interdits sur la chaussée ?",
-      "en": "Within what distance before a pedestrian crossing are stopping and parking on the carriageway prohibited?"
+      "uk": "Ти (A) хочеш зупинитися перед пішохідним переходом. На якій мінімальній відстані до нього це дозволено?",
+      "nl": "Jij (A) wil stilstaan vóór een oversteekplaats voor voetgangers. Op welke minimale afstand ervan mag dat?",
+      "fr": "Vous (A) voulez vous arrêter avant un passage pour piétons. À quelle distance minimale est-ce autorisé ?",
+      "en": "You (A) want to stop before a pedestrian crossing. At what minimum distance is this allowed?"
     },
     "options": [
       {
         "id": "a",
         "text": {
-          "uk": "Менше 3 метрів",
-          "nl": "Minder dan 3 meter",
-          "fr": "Moins de 3 mètres",
-          "en": "Less than 3 metres"
+          "uk": "3 м",
+          "nl": "3 m",
+          "fr": "3 m",
+          "en": "3 m"
         }
       },
       {
         "id": "b",
         "text": {
-          "uk": "Менше 5 метрів",
-          "nl": "Minder dan 5 meter",
-          "fr": "Moins de 5 mètres",
-          "en": "Less than 5 metres"
+          "uk": "5 м",
+          "nl": "5 m",
+          "fr": "5 m",
+          "en": "5 m"
         }
       },
       {
         "id": "c",
         "text": {
-          "uk": "Менше 10 метрів",
-          "nl": "Minder dan 10 meter",
-          "fr": "Moins de 10 mètres",
-          "en": "Less than 10 metres"
+          "uk": "10 м",
+          "nl": "10 m",
+          "fr": "10 m",
+          "en": "10 m"
         }
       }
     ],
@@ -1179,7 +1177,8 @@
       "parking",
       "pedestrian-crossing"
     ],
-    "status": "published"
+    "status": "published",
+    "image": "assets/scenes/crosswalk-parking.svg"
   },
   {
     "id": "safety_001",
