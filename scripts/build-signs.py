@@ -175,9 +175,9 @@ for code, k in (("A1a", -1), ("A1b", 1)):
     d = f"M{cx - 4 * k},{cy + 20} L{cx - 4 * k},{cy + 2} Q{cx - 4 * k},{cy - 12} {cx + 10 * k},{cy - 16}"
     SIGNS[code] = svg(body + f'<path d="{d}" fill="none" stroke="{BLACK}" stroke-width="7" stroke-linecap="butt"/>', 100, 92)
 
-# A45 — залізничний переїзд зі шлагбаумом (піктограма огорожі)
+# A41 — залізничний переїзд зі шлагбаумом (піктограма огорожі)
 body, (cx, cy) = triangle(up=True)
-SIGNS["A45"] = svg(body + f'<g fill="{BLACK}">'
+SIGNS["A41"] = svg(body + f'<g fill="{BLACK}">'
                           f'<rect x="{cx - 20}" y="{cy - 8}" width="40" height="5"/>'
                           f'<rect x="{cx - 20}" y="{cy + 6}" width="40" height="5"/>'
                           + "".join(f'<rect x="{cx - 19 + i * 9.2:.1f}" y="{cy - 12}" width="3.4" height="30"/>' for i in range(5))
@@ -249,6 +249,89 @@ SIGNS["F7"] = SIGNS["F5"].replace("</svg>", f'<line x1="10" y1="90" x2="90" y2="
 # F19 — дорога з одностороннім рухом
 SIGNS["F19"] = svg(f'<rect x="2" y="2" width="76" height="96" rx="6" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
                    f'<path d="M40,14 L62,40 L48,40 L48,86 L32,86 L32,40 L18,40 Z" fill="{WHITE}"/>', 80, 100)
+
+# ===== Розширення 2: знаки, підтверджені дослідженням 16.10.2026 =====
+def arrow_v(x, y_tip, length, width, head, color, up=True):
+    """Вертикальна стрілка: вістря в (x, y_tip)."""
+    d = 1 if up else -1
+    yb = y_tip + d * head
+    ye = y_tip + d * length
+    return (f'<polygon points="{x},{y_tip} {x + width * 1.5},{yb} {x + width / 2},{yb} {x + width / 2},{ye} '
+            f'{x - width / 2},{ye} {x - width / 2},{yb} {x - width * 1.5},{yb}" fill="{color}"/>')
+
+
+# B19 — дати дорогу зустрічним: ліворуч товста чорна стрілка вниз, праворуч тонка червона вгору
+SIGNS["B19"] = svg(disc(WHITE, RED, 11) + arrow_v(38, 78, 52, 9, 14, BLACK, up=False) + arrow_v(63, 24, 52, 5, 10, RED, up=True))
+# B21 — пріоритет над зустрічними: ліворуч тонка червона вниз, праворуч товста біла вгору
+SIGNS["B21"] = svg(f'<rect x="2" y="2" width="96" height="96" rx="8" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
+                   f'<rect x="7" y="7" width="86" height="86" rx="5" fill="none" stroke="{WHITE}" stroke-width="2.5"/>'
+                   + arrow_v(37, 78, 52, 5, 10, RED, up=False) + arrow_v(62, 22, 54, 9, 14, WHITE, up=True))
+
+
+def walker(x, y, s=1.0, color=BLACK):
+    """Піктограма пішохода (вигляд збоку, крокує праворуч). (x, y) — центр голови."""
+    k = s
+    return (f'<g fill="none" stroke="{color}" stroke-width="{4.6 * k}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<path d="M{x},{y + 6 * k} L{x - 1 * k},{y + 19 * k}"/>'
+            f'<path d="M{x - 1 * k},{y + 19 * k} L{x + 6 * k},{y + 27 * k} L{x + 7 * k},{y + 35 * k}"/>'
+            f'<path d="M{x - 1 * k},{y + 19 * k} L{x - 6 * k},{y + 27 * k} L{x - 11 * k},{y + 33 * k}"/>'
+            f'<path d="M{x},{y + 9 * k} L{x + 7 * k},{y + 15 * k} L{x + 9 * k},{y + 21 * k}"/>'
+            f'<path d="M{x},{y + 9 * k} L{x - 6 * k},{y + 15 * k} L{x - 8 * k},{y + 20 * k}"/></g>'
+            f'<circle cx="{x + 1 * k}" cy="{y}" r="{4.4 * k}" fill="{color}"/>')
+
+
+def zebra(x, y, w, n=5, color=BLACK):
+    step = w / (n * 2 - 1)
+    return "".join(f'<rect x="{x + i * 2 * step:.1f}" y="{y}" width="{step:.1f}" height="3.2" fill="{color}"/>' for i in range(n))
+
+
+# A21 — пішохідний перехід (попередження)
+body, (cx, cy) = triangle(up=True)
+SIGNS["A21"] = svg(body + walker(cx - 1, cy - 17, 0.82) + zebra(cx - 18, cy + 15.5, 36), 100, 92)
+
+# A23 — діти
+body, (cx, cy) = triangle(up=True)
+SIGNS["A23"] = svg(body + walker(cx - 7, cy - 16, 0.78) + walker(cx + 9, cy - 8, 0.56), 100, 92)
+
+# F49 — пішохідний перехід (інформаційний)
+SIGNS["F49"] = svg(f'<rect x="2" y="2" width="96" height="96" rx="8" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
+                   f'<polygon points="50,12 90,84 10,84" fill="{WHITE}" stroke="{WHITE}" stroke-width="4" stroke-linejoin="round"/>'
+                   + walker(48, 36, 0.86) + zebra(30, 74, 40))
+
+# A43 — залізничний переїзд без шлагбаума (паровоз)
+body, (cx, cy) = triangle(up=True)
+loco = (f'<g fill="{BLACK}"><rect x="{cx - 20}" y="{cy - 2}" width="26" height="12" rx="2"/>'
+        f'<rect x="{cx + 5}" y="{cy - 12}" width="12" height="22" rx="1"/>'
+        f'<rect x="{cx + 3}" y="{cy - 14}" width="16" height="3"/>'
+        f'<rect x="{cx - 16}" y="{cy - 10}" width="6" height="9"/>'
+        f'<rect x="{cx - 22}" y="{cy + 8}" width="4" height="4"/>'
+        f'<circle cx="{cx - 12}" cy="{cy + 14}" r="4"/><circle cx="{cx - 3}" cy="{cy + 14}" r="4"/><circle cx="{cx + 11}" cy="{cy + 13}" r="5"/></g>'
+        f'<rect x="{cx + 8}" y="{cy - 9}" width="6" height="6" fill="{WHITE}"/>')
+SIGNS["A43"] = svg(body + loco, 100, 92)
+
+
+def st_andrew(double=False):
+    def board(angle, y0=50, length=92, w=15):
+        return (f'<rect x="{50 - length / 2}" y="{y0 - w / 2}" width="{length}" height="{w}" fill="{WHITE}" stroke="{RED}" stroke-width="3.2" '
+                f'transform="rotate({angle} 50 {y0})"/>')
+    body = board(35) + board(-35)
+    if double:
+        body += (f'<rect x="20" y="{86}" width="32" height="13" fill="{WHITE}" stroke="{RED}" stroke-width="3" transform="rotate(35 36 92)"/>'
+                 f'<rect x="48" y="{86}" width="32" height="13" fill="{WHITE}" stroke="{RED}" stroke-width="3" transform="rotate(-35 64 92)"/>')
+    return svg(f'<g transform="translate(0,{0 if double else 0})">{body}</g>', 100, 110 if double else 100)
+
+
+SIGNS["A45"] = st_andrew()
+SIGNS["A47"] = st_andrew(double=True)
+
+# A15 — слизька дорога
+body, (cx, cy) = triangle(up=True)
+skid = (f'<g fill="{BLACK}"><path d="M{cx - 12},{cy + 2} Q{cx - 11},{cy - 10} {cx},{cy - 11} Q{cx + 11},{cy - 10} {cx + 12},{cy + 2} L{cx + 13},{cy + 7} L{cx - 13},{cy + 7} Z"/>'
+        f'<rect x="{cx - 13}" y="{cy + 6}" width="5" height="5" rx="1"/><rect x="{cx + 8}" y="{cy + 6}" width="5" height="5" rx="1"/></g>'
+        f'<path d="M{cx - 6},{cy - 8} L{cx + 6},{cy - 8} L{cx + 8},{cy - 2} L{cx - 8},{cy - 2} Z" fill="{WHITE}"/>'
+        f'<g fill="none" stroke="{BLACK}" stroke-width="2.6" stroke-linecap="round">'
+        f'<path d="M{cx - 9},{cy + 13} q-4,5 0,9 q4,4 -1,8"/><path d="M{cx + 9},{cy + 13} q4,5 0,9 q-4,4 1,8"/></g>')
+SIGNS["A15"] = svg(body + skid, 100, 92)
 
 OUT.mkdir(parents=True, exist_ok=True)
 for code, content in SIGNS.items():

@@ -749,16 +749,16 @@
   {
     "id": "signs_011",
     "topic_id": "road_signs",
-    "type": "text",
+    "type": "sign",
     "difficulty": 2,
     "region": [
       "federal"
     ],
     "question": {
-      "uk": "Що означає знак B19 (вузький проїзд)?",
-      "nl": "Wat betekent bord B19 (smalle doorgang)?",
-      "fr": "Que signifie le signal B19 (passage étroit) ?",
-      "en": "What does sign B19 (narrow passage) mean?"
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
     },
     "options": [
       {
@@ -818,7 +818,8 @@
     ],
     "status": "published",
     "degree": 1,
-    "is_speed": false
+    "is_speed": false,
+    "image": "assets/signs/B19.svg"
   },
   {
     "id": "signs_012",
@@ -2379,7 +2380,7 @@
     "explanation": {
       "uk": "У Валлонії базовий ліміт поза населеними пунктами — 90 км/год. На автомагістралях і дорогах 2×2 з розділювальною смугою — 120 км/год.",
       "nl": "In Wallonië is de basislimiet buiten de bebouwde kom 90 km/u; op autosnelwegen en 2×2-wegen met middenberm 120 km/u.",
-      "fr": "En Wallonie, la limite de base hors agglomération est de 90 km/h ; 120 km/h sur autoroute et routes 2×2 avec berme centrale.",
+      "fr": "En Wallonie, la limite de base hors agglomération est de 90 km/h ; 120 km/h sur autoroute et routes 2×2 avec terre-plein central.",
       "en": "In Wallonia the default limit outside built-up areas is 90 km/h; 120 km/h on motorways and 2×2 roads with a central reservation."
     },
     "source": {
@@ -2442,7 +2443,7 @@
     "explanation": {
       "uk": "У Брюссельському регіоні поза населеними пунктами — 70 км/год, у тому числі на 2×2, розділених лише розміткою. 120 км/год — тільки на автомагістралях і 2×2 з розділювальною смугою.",
       "nl": "In het Brussels Gewest geldt buiten de bebouwde kom 70 km/u, ook op 2×2-wegen gescheiden door markeringen. 120 km/u enkel op autosnelwegen en 2×2 met middenberm.",
-      "fr": "En Région bruxelloise, hors agglomération, 70 km/h, y compris sur les 2×2 séparées par un marquage. 120 km/h uniquement sur autoroute et 2×2 avec berme centrale.",
+      "fr": "En Région bruxelloise, hors agglomération, 70 km/h, y compris sur les 2×2 séparées par un marquage. 120 km/h uniquement sur autoroute et 2×2 avec terre-plein central.",
       "en": "In the Brussels Region outside built-up areas the limit is 70 km/h, including on 2×2 roads separated only by markings. 120 km/h only on motorways and 2×2 with a central reservation."
     },
     "source": {
@@ -4126,7 +4127,7 @@
     "explanation": {
       "uk": "Розвертатися, здавати назад, їхати проти руху й користуватися проїздами в розділювальній смузі на автомагістралі заборонено. Порушення 4-го ступеня (−5). Їдь до наступного виїзду.",
       "nl": "Keren, achteruitrijden, tegen de rijrichting in rijden en de middenbermovergangen gebruiken is op de autosnelweg verboden. Overtreding van de 4de graad (−5). Rijd tot de volgende afrit.",
-      "fr": "Faire demi-tour, reculer, rouler à contresens et utiliser les passages de la berme centrale sont interdits sur autoroute. Infraction du 4e degré (−5). Allez à la sortie suivante.",
+      "fr": "Faire demi-tour, reculer, rouler à contresens et utiliser les passages du terre-plein central sont interdits sur autoroute. Infraction du 4e degré (−5). Allez à la sortie suivante.",
       "en": "U-turning, reversing, driving against traffic and using the median crossings are prohibited on motorways. 4th-degree offence (−5). Go to the next exit."
     },
     "source": {
@@ -5014,7 +5015,7 @@
     "image": "assets/signs/A1b.svg"
   },
   {
-    "id": "sign_a45",
+    "id": "sign_a41",
     "topic_id": "road_signs",
     "type": "sign",
     "difficulty": 2,
@@ -5060,10 +5061,10 @@
     ],
     "correct_option_id": "a",
     "explanation": {
-      "uk": "A45 (піктограма огорожі) попереджає про переїзд зі шлагбаумом. Переїзд без шлагбаума позначають іншим знаком — з паровозом (A47).",
-      "nl": "A45 (hekje) kondigt een overweg met slagbomen aan. Zonder slagbomen gebruikt men A47 (locomotief).",
-      "fr": "A45 (barrière) annonce un passage à niveau avec barrières. Sans barrières : A47 (locomotive).",
-      "en": "A45 (fence) announces a level crossing with barriers. Without barriers: A47 (locomotive)."
+      "uk": "A41 (піктограма огорожі) попереджає про переїзд зі шлагбаумом. Переїзд без шлагбаума позначають іншим знаком — з паровозом (A43).",
+      "nl": "A41 (hekje) kondigt een overweg met slagbomen aan. Zonder slagbomen gebruikt men A43 (locomotief).",
+      "fr": "A41 (barrière) annonce un passage à niveau avec barrières. Sans barrières : A43 (locomotive).",
+      "en": "A41 (fence) announces a level crossing with barriers. Without barriers: A43 (locomotive)."
     },
     "source": {
       "title": "Wegcode art. 66",
@@ -5072,10 +5073,10 @@
       "review_status": "verified"
     },
     "tags": [
-      "A45"
+      "A41"
     ],
     "status": "published",
-    "image": "assets/signs/A45.svg"
+    "image": "assets/signs/A41.svg"
   },
   {
     "id": "sign_b15",
@@ -7253,7 +7254,7 @@
     "region": [
       "federal"
     ],
-    "degree": 2,
+    "degree": 1,
     "is_speed": false,
     "question": {
       "uk": "Затор на дорозі з двома смугами в одному напрямку. Як утворити «коридор життя»?",
@@ -8091,7 +8092,7 @@
     "question": {
       "uk": "Фландрія, поза населеним пунктом: дорога 2×2 смуги, напрямки розділені розділювальною смугою (не лише розміткою). Яка максимальна швидкість?",
       "nl": "Vlaanderen, buiten de bebouwde kom: 2×2 rijstroken gescheiden door een middenberm (niet enkel markeringen). Maximumsnelheid?",
-      "fr": "Flandre, hors agglomération : route 2×2 séparée par une berme centrale (pas seulement un marquage). Vitesse maximale ?",
+      "fr": "Flandre, hors agglomération : route 2×2 séparée par un terre-plein central (pas seulement un marquage). Vitesse maximale ?",
       "en": "Flanders, outside built-up area: 2×2 road separated by a central reservation (not just markings). Maximum speed?"
     },
     "options": [
@@ -8574,7 +8575,7 @@
     "region": [
       "federal"
     ],
-    "degree": 1,
+    "degree": 2,
     "is_speed": false,
     "question": {
       "uk": "Для кого Wegcode встановлює мінімальну дистанцію 50 м поза населеними пунктами?",
@@ -8928,7 +8929,7 @@
     "region": [
       "federal"
     ],
-    "degree": 1,
+    "degree": 2,
     "is_speed": false,
     "question": {
       "uk": "Чи можна ставити авто біля вершини підйому чи на повороті з поганою видимістю?",
@@ -9714,7 +9715,7 @@
     "region": [
       "federal"
     ],
-    "degree": 1,
+    "degree": 2,
     "is_speed": false,
     "question": {
       "uk": "Як правильно повернути праворуч?",
@@ -9998,7 +9999,7 @@
     "region": [
       "federal"
     ],
-    "degree": 1,
+    "degree": 2,
     "is_speed": false,
     "question": {
       "uk": "На автомагістралі з трьома смугами вантажівки понад 3,5 т можуть рухатися…",
@@ -10516,7 +10517,7 @@
     "region": [
       "federal"
     ],
-    "degree": 1,
+    "degree": 2,
     "is_speed": false,
     "question": {
       "uk": "Чи можна обганяти на підвищеній ділянці дороги (лежачому поліцейському)?",
@@ -11581,7 +11582,7 @@
     "question": {
       "uk": "Чи можна скористатися проїздом у розділювальній смузі автомагістралі, щоб розвернутися?",
       "nl": "Mag je een overgang in de middenberm van de autosnelweg gebruiken om te keren?",
-      "fr": "Pouvez-vous utiliser un passage dans la berme centrale de l'autoroute pour faire demi-tour ?",
+      "fr": "Pouvez-vous utiliser un passage dans la terre-plein central de l'autoroute pour faire demi-tour ?",
       "en": "May you use a gap in the motorway central reservation to turn around?"
     },
     "options": [
@@ -11608,7 +11609,7 @@
     "explanation": {
       "uk": "Ні. Проїзди в розділювальній смузі — лише для служб. Користуватися ними й розвертатися на автомагістралі заборонено. 4-й ступінь (−5).",
       "nl": "Nee. Middenbermovergangen zijn voor diensten; ze gebruiken en keren is verboden. 4de graad (−5).",
-      "fr": "Non. Les passages de la berme centrale sont réservés aux services ; les utiliser et faire demi-tour est interdit. 4e degré (−5).",
+      "fr": "Non. Les passages du terre-plein central sont réservés aux services ; les utiliser et faire demi-tour est interdit. 4e degré (−5).",
       "en": "No. Median crossings are for services only; using them and U-turning are banned. 4th degree (−5)."
     },
     "source": {
@@ -11801,7 +11802,7 @@
     "region": [
       "federal"
     ],
-    "degree": 2,
+    "degree": 1,
     "is_speed": false,
     "question": {
       "uk": "Залізничний переїзд без шлагбаума й світлофора. Як ти його проїжджаєш?",
@@ -12007,10 +12008,10 @@
     },
     "tags": [
       "level-crossing",
-      "A45"
+      "A41"
     ],
     "status": "published",
-    "image": "assets/signs/A45.svg"
+    "image": "assets/signs/A41.svg"
   },
   {
     "id": "lights_nightfall",
@@ -12137,7 +12138,7 @@
     "region": [
       "federal"
     ],
-    "degree": 2,
+    "degree": 1,
     "is_speed": false,
     "question": {
       "uk": "Дорога суцільно освітлена ліхтарями, і ти добре бачиш приблизно на 100 м. Яке світло вмикаєш?",
@@ -13869,6 +13870,4495 @@
     "tags": [
       "fog",
       "motorway"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "sign_a15",
+    "topic_id": "weather_hazards",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Слизька дорога",
+          "nl": "Glibberige rijbaan",
+          "fr": "Chaussée glissante",
+          "en": "Slippery road"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Автомийка",
+          "nl": "Carwash",
+          "fr": "Station de lavage",
+          "en": "Car wash"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Ремонт дороги",
+          "nl": "Werken",
+          "fr": "Travaux",
+          "en": "Roadworks"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A15 попереджає про слизьку дорогу (дощ, лід, листя, бруд). Знизь швидкість і збільш дистанцію.",
+      "nl": "A15: glibberige rijbaan. Vertraag en vergroot je afstand.",
+      "fr": "A15 : chaussée glissante. Ralentissez et augmentez la distance.",
+      "en": "A15: slippery road. Slow down and increase your distance."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A15"
+    ],
+    "status": "published",
+    "image": "assets/signs/A15.svg"
+  },
+  {
+    "id": "sign_a21",
+    "topic_id": "vulnerable_users",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Попереду пішохідний перехід",
+          "nl": "Oversteekplaats voor voetgangers",
+          "fr": "Passage pour piétons",
+          "en": "Pedestrian crossing ahead"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Пішохідна зона",
+          "nl": "Voetgangerszone",
+          "fr": "Zone piétonne",
+          "en": "Pedestrian zone"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Діти",
+          "nl": "Kinderen",
+          "fr": "Enfants",
+          "en": "Children"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A21 — трикутник із пішоходом на «зебрі»: попереду перехід. Будь готовий пропустити пішоходів.",
+      "nl": "A21: oversteekplaats voor voetgangers verderop; wees klaar om te stoppen.",
+      "fr": "A21 : passage pour piétons plus loin ; soyez prêt à vous arrêter.",
+      "en": "A21: pedestrian crossing ahead; be ready to stop."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A21"
+    ],
+    "status": "published",
+    "image": "assets/signs/A21.svg"
+  },
+  {
+    "id": "sign_a23",
+    "topic_id": "vulnerable_users",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Діти",
+          "nl": "Kinderen",
+          "fr": "Enfants",
+          "en": "Children"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Пішохідний перехід",
+          "nl": "Oversteekplaats",
+          "fr": "Passage pour piétons",
+          "en": "Pedestrian crossing"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Ігровий майданчик закрито",
+          "nl": "Speelplein gesloten",
+          "fr": "Plaine de jeux fermée",
+          "en": "Playground closed"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A23 попереджає про місце, де бувають діти: школа, майданчик. Разом із F4a утворює зону біля школи (30 км/год).",
+      "nl": "A23: kinderen. Samen met F4a vormt het een schoolomgeving (30 km/u).",
+      "fr": "A23 : enfants. Avec F4a, il forme un abord d'école (30 km/h).",
+      "en": "A23: children. With F4a it forms a school area (30 km/h)."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A23"
+    ],
+    "status": "published",
+    "image": "assets/signs/A23.svg"
+  },
+  {
+    "id": "sign_a43",
+    "topic_id": "motorways_tunnels",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Залізничний переїзд без шлагбаума",
+          "nl": "Overweg zonder slagbomen",
+          "fr": "Passage à niveau sans barrières",
+          "en": "Level crossing without barriers"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Залізничний переїзд зі шлагбаумом",
+          "nl": "Overweg met slagbomen",
+          "fr": "Passage à niveau avec barrières",
+          "en": "Level crossing with barriers"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Музей залізниці",
+          "nl": "Spoorwegmuseum",
+          "fr": "Musée du chemin de fer",
+          "en": "Railway museum"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A43 (паровоз) — переїзд без шлагбаума. Переїжджай, лише переконавшись, що потяг не наближається. Переїзд зі шлагбаумом — A41 (огорожа).",
+      "nl": "A43 (locomotief): overweg zonder slagbomen. Pas oversteken als er geen trein nadert. Met slagbomen: A41 (hekje).",
+      "fr": "A43 (locomotive) : passage sans barrières. Traversez seulement si aucun train n'approche. Avec barrières : A41.",
+      "en": "A43 (locomotive): crossing without barriers. Cross only if no train is coming. With barriers: A41."
+    },
+    "source": {
+      "title": "Wegcode art. 66, 20.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A43"
+    ],
+    "status": "published",
+    "image": "assets/signs/A43.svg"
+  },
+  {
+    "id": "sign_a45_cross",
+    "topic_id": "motorways_tunnels",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Переїзд з однією колією (знак біля самого переїзду)",
+          "nl": "Overweg met één spoor (vlak bij de overweg)",
+          "fr": "Passage à niveau à une voie (juste avant)",
+          "en": "Single-track level crossing (right at it)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Перехрестя з пріоритетом праворуч",
+          "nl": "Kruispunt met voorrang van rechts",
+          "fr": "Carrefour à priorité de droite",
+          "en": "Junction with priority to the right"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Дорога закрита",
+          "nl": "Weg afgesloten",
+          "fr": "Route fermée",
+          "en": "Road closed"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Андріївський хрест (A45) стоїть біля самого переїзду з однією колією. Не плутай із B17 — трикутником з чорним хрестом.",
+      "nl": "Het andreaskruis (A45) staat vlak bij een overweg met één spoor. Niet verwarren met B17 (driehoek met zwart kruis).",
+      "fr": "La croix de Saint-André (A45) se place juste avant un passage à une voie. Ne pas confondre avec le B17.",
+      "en": "The St Andrew's cross (A45) stands right at a single-track crossing. Do not confuse it with B17."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A45"
+    ],
+    "status": "published",
+    "image": "assets/signs/A45.svg"
+  },
+  {
+    "id": "sign_a47_cross",
+    "topic_id": "motorways_tunnels",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Переїзд з двома коліями й більше",
+          "nl": "Overweg met twee of meer sporen",
+          "fr": "Passage à niveau à deux voies ou plus",
+          "en": "Level crossing with two or more tracks"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Переїзд з однією колією",
+          "nl": "Overweg met één spoor",
+          "fr": "Passage à une voie",
+          "en": "Single-track crossing"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Кінець залізниці",
+          "nl": "Einde spoorweg",
+          "fr": "Fin de voie ferrée",
+          "en": "End of railway"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Подвійний Андріївський хрест (A47) — колій дві й більше. Після одного потяга може йти інший, тому не рушай одразу.",
+      "nl": "Het dubbele andreaskruis (A47): twee of meer sporen. Na één trein kan er een tweede komen.",
+      "fr": "La double croix (A47) : deux voies ou plus. Un second train peut suivre.",
+      "en": "The double cross (A47): two or more tracks. A second train may follow."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A47"
+    ],
+    "status": "published",
+    "image": "assets/signs/A47.svg"
+  },
+  {
+    "id": "sign_b19",
+    "topic_id": "priority_intersections",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Пропусти зустрічних у вузькому місці",
+          "nl": "Voorrang verlenen aan tegenliggers in de smalle doorgang",
+          "fr": "Céder le passage aux conducteurs venant en sens inverse",
+          "en": "Give way to oncoming traffic in the narrow passage"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "У тебе пріоритет над зустрічними",
+          "nl": "Jij hebt voorrang op tegenliggers",
+          "fr": "Vous avez la priorité sur ceux d'en face",
+          "en": "You have priority over oncoming traffic"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Двосторонній рух закінчується",
+          "nl": "Einde tweerichtingsverkeer",
+          "fr": "Fin de circulation dans les deux sens",
+          "en": "End of two-way traffic"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B19: червона стрілка вгору — це ти, ти поступаєшся. Чорна стрілка вниз — зустрічні, вони мають пріоритет.",
+      "nl": "B19: de rode pijl omhoog ben jij — jij verleent voorrang. De zwarte pijl zijn de tegenliggers.",
+      "fr": "B19 : la flèche rouge vers le haut, c'est vous — vous cédez. La flèche noire : ceux d'en face, prioritaires.",
+      "en": "B19: the red upward arrow is you — you give way. The black arrow is oncoming traffic, which has priority."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "B19"
+    ],
+    "status": "published",
+    "image": "assets/signs/B19.svg"
+  },
+  {
+    "id": "sign_b21",
+    "topic_id": "priority_intersections",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "У вузькому місці пріоритет у тебе",
+          "nl": "Voorrang t.o.v. tegenliggers in de smalle doorgang",
+          "fr": "Priorité par rapport aux conducteurs venant en sens inverse",
+          "en": "Priority over oncoming traffic in the narrow passage"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Пропусти зустрічних",
+          "nl": "Laat tegenliggers voorgaan",
+          "fr": "Cédez à ceux d'en face",
+          "en": "Give way to oncoming traffic"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Одностороння дорога",
+          "nl": "Eenrichtingsweg",
+          "fr": "Sens unique",
+          "en": "One-way road"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B21 (синій квадрат): біла стрілка вгору — ти, маєш пріоритет; червона вниз — зустрічні, вони поступаються. Правило: червона стрілка завжди поступається.",
+      "nl": "B21 (blauw vierkant): de witte pijl ben jij — voorrang; de rode pijl (tegenliggers) moet wachten. Regel: rood geeft voorrang.",
+      "fr": "B21 (carré bleu) : la flèche blanche, c'est vous — priorité ; la rouge (en face) cède. Règle : le rouge cède.",
+      "en": "B21 (blue square): the white arrow is you — priority; the red one (oncoming) gives way. Rule: red gives way."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "B21"
+    ],
+    "status": "published",
+    "image": "assets/signs/B21.svg"
+  },
+  {
+    "id": "sign_f49",
+    "topic_id": "vulnerable_users",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Пішохідний перехід (саме місце переходу)",
+          "nl": "Oversteekplaats voor voetgangers",
+          "fr": "Passage pour piétons",
+          "en": "Pedestrian crossing"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Пішохідна зона",
+          "nl": "Voetgangerszone",
+          "fr": "Zone piétonne",
+          "en": "Pedestrian zone"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Підземний перехід",
+          "nl": "Voetgangerstunnel",
+          "fr": "Passage souterrain",
+          "en": "Pedestrian underpass"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F49 (синій квадрат із пішоходом) позначає саме місце переходу. A21 (трикутник) попереджає про нього заздалегідь.",
+      "nl": "F49 duidt de oversteekplaats zelf aan; A21 (driehoek) kondigt ze vooraf aan.",
+      "fr": "F49 indique le passage lui-même ; A21 (triangle) l'annonce à l'avance.",
+      "en": "F49 marks the crossing itself; A21 (triangle) warns of it in advance."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "F49"
+    ],
+    "status": "published",
+    "image": "assets/signs/F49.svg"
+  },
+  {
+    "id": "pick_lc_no_barriers",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про залізничний переїзд БЕЗ шлагбаума?",
+      "nl": "Welk bord kondigt een overweg ZONDER slagbomen aan?",
+      "fr": "Quel panneau annonce un passage à niveau SANS barrières ?",
+      "en": "Which sign warns of a level crossing WITHOUT barriers?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A43",
+          "nl": "A43",
+          "fr": "A43",
+          "en": "A43"
+        },
+        "image": "assets/signs/A43.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A41",
+          "nl": "A41",
+          "fr": "A41",
+          "en": "A41"
+        },
+        "image": "assets/signs/A41.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A45",
+          "nl": "A45",
+          "fr": "A45",
+          "en": "A45"
+        },
+        "image": "assets/signs/A45.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A43 (паровоз) — без шлагбаума. A41 (огорожа) — зі шлагбаумом. A45 — Андріївський хрест біля самого переїзду.",
+      "nl": "A43 (locomotief): zonder slagbomen. A41 (hekje): met slagbomen. A45: andreaskruis bij de overweg.",
+      "fr": "A43 (locomotive) : sans barrières. A41 : avec barrières. A45 : croix de Saint-André.",
+      "en": "A43 (locomotive): no barriers. A41 (fence): barriers. A45: St Andrew's cross."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "level-crossing"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_priority_oncoming",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак дає тобі пріоритет над зустрічними у вузькому місці?",
+      "nl": "Welk bord geeft jou voorrang op tegenliggers in een smalle doorgang?",
+      "fr": "Quel panneau vous donne la priorité sur ceux d'en face dans un passage étroit ?",
+      "en": "Which sign gives you priority over oncoming traffic in a narrow passage?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B21",
+          "nl": "B21",
+          "fr": "B21",
+          "en": "B21"
+        },
+        "image": "assets/signs/B21.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B19",
+          "nl": "B19",
+          "fr": "B19",
+          "en": "B19"
+        },
+        "image": "assets/signs/B19.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B15",
+          "nl": "B15",
+          "fr": "B15",
+          "en": "B15"
+        },
+        "image": "assets/signs/B15.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B21 (синій квадрат) — пріоритет у тебе. B19 (кругле з червоною облямівкою) — ти пропускаєш. B15 — пріоритет на найближчому перехресті.",
+      "nl": "B21 (blauw): jij hebt voorrang. B19 (rond, rode rand): jij laat voorgaan. B15: voorrang op het volgende kruispunt.",
+      "fr": "B21 (bleu) : vous êtes prioritaire. B19 (rond, bord rouge) : vous cédez. B15 : priorité à la prochaine intersection.",
+      "en": "B21 (blue): you have priority. B19 (round, red border): you give way. B15: priority at the next junction."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "B21"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_children",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про дітей?",
+      "nl": "Welk bord waarschuwt voor kinderen?",
+      "fr": "Quel panneau avertit de la présence d'enfants ?",
+      "en": "Which sign warns of children?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A23",
+          "nl": "A23",
+          "fr": "A23",
+          "en": "A23"
+        },
+        "image": "assets/signs/A23.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A21",
+          "nl": "A21",
+          "fr": "A21",
+          "en": "A21"
+        },
+        "image": "assets/signs/A21.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A51",
+          "nl": "A51",
+          "fr": "A51",
+          "en": "A51"
+        },
+        "image": "assets/signs/A51.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A23 — діти. A21 — пішохідний перехід. A51 — інша небезпека.",
+      "nl": "A23: kinderen. A21: oversteekplaats. A51: ander gevaar.",
+      "fr": "A23 : enfants. A21 : passage pour piétons. A51 : autre danger.",
+      "en": "A23: children. A21: pedestrian crossing. A51: other danger."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "A23"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_crossing_info",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак стоїть саме біля пішохідного переходу (а не попереджає заздалегідь)?",
+      "nl": "Welk bord staat aan de oversteekplaats zelf (en niet vooraf)?",
+      "fr": "Quel panneau est placé au passage lui-même (et non avant) ?",
+      "en": "Which sign is placed at the crossing itself (not in advance)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "F49",
+          "nl": "F49",
+          "fr": "F49",
+          "en": "F49"
+        },
+        "image": "assets/signs/F49.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A21",
+          "nl": "A21",
+          "fr": "A21",
+          "en": "A21"
+        },
+        "image": "assets/signs/A21.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A23",
+          "nl": "A23",
+          "fr": "A23",
+          "en": "A23"
+        },
+        "image": "assets/signs/A23.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F49 (синій квадрат) — на самому переході. A21 (червоний трикутник) — попередження перед ним.",
+      "nl": "F49 (blauw) staat aan de oversteekplaats; A21 (driehoek) kondigt ze aan.",
+      "fr": "F49 (bleu) est au passage ; A21 (triangle) l'annonce.",
+      "en": "F49 (blue) is at the crossing; A21 (triangle) announces it."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "F49"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "narrow_b19_situation",
+    "topic_id": "priority_intersections",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Перед звуженням стоїть знак B19. Назустріч уже під'їжджає авто. Що робиш?",
+      "nl": "Voor een versmalling staat bord B19. Er nadert een tegenligger. Wat doe je?",
+      "fr": "Avant un rétrécissement se trouve un B19. Une voiture arrive en face. Que faites-vous ?",
+      "en": "Before a narrowing there is a B19 sign. An oncoming car approaches. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Пропускаю зустрічне авто, за потреби зупиняюся перед звуженням",
+          "nl": "Ik laat de tegenligger voorgaan en stop zo nodig voor de versmalling",
+          "fr": "Je laisse passer la voiture d'en face, je m'arrête si nécessaire",
+          "en": "I let the oncoming car through, stopping before the narrowing if needed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Проїжджаю першим, бо я ближче",
+          "nl": "Ik rijd eerst, ik ben dichterbij",
+          "fr": "Je passe en premier, je suis plus près",
+          "en": "I go first, I am closer"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "За знаком B19 ти поступаєшся зустрічним у вузькому місці. Їдь, коли проїзд вільний.",
+      "nl": "Bij B19 verleen je voorrang aan tegenliggers in de smalle doorgang.",
+      "fr": "Avec le B19, vous cédez le passage à ceux d'en face dans le passage étroit.",
+      "en": "With B19 you give way to oncoming traffic in the narrow passage."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "B19"
+    ],
+    "status": "published",
+    "image": "assets/signs/B19.svg"
+  },
+  {
+    "id": "narrow_b21_careful",
+    "topic_id": "priority_intersections",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "У тебе знак B21, але зустрічне авто вже заїхало у вузьке місце. Що робиш?",
+      "nl": "Je hebt bord B21, maar een tegenligger is de smalle doorgang al ingereden. Wat doe je?",
+      "fr": "Vous avez le B21, mais une voiture d'en face est déjà engagée dans le passage. Que faites-vous ?",
+      "en": "You have sign B21, but an oncoming car is already in the narrow passage. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Чекаю, поки воно проїде: пріоритет не дає права на зіткнення",
+          "nl": "Ik wacht tot hij voorbij is: voorrang geeft geen recht op een botsing",
+          "fr": "J'attends qu'elle passe : la priorité ne donne pas droit à une collision",
+          "en": "I wait until it has passed: priority is no right to collide"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їду: пріоритет у мене",
+          "nl": "Ik rijd: ik heb voorrang",
+          "fr": "Je passe : j'ai la priorité",
+          "en": "I go: I have priority"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B21 дає пріоритет, але якщо інший водій уже у звуженні, проїхати неможливо без небезпеки. Завжди можна зупинитися й уникнути аварії.",
+      "nl": "B21 geeft voorrang, maar is de tegenligger al in de versmalling, dan wacht je om een ongeval te vermijden.",
+      "fr": "Le B21 donne la priorité, mais si l'autre est déjà engagé, attendez pour éviter l'accident.",
+      "en": "B21 gives priority, but if the other driver is already in the narrowing, wait to avoid a crash."
+    },
+    "source": {
+      "title": "Wegcode art. 67, 10.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "B21"
+    ],
+    "status": "published",
+    "image": "assets/signs/B21.svg"
+  },
+  {
+    "id": "lc_a47_second_train",
+    "topic_id": "motorways_tunnels",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 4,
+    "is_speed": false,
+    "question": {
+      "uk": "Перед переїздом стоїть знак A47. Потяг проїхав, але червоні вогні ще блимають. Чи можна їхати?",
+      "nl": "Aan de overweg staat A47. De trein is voorbij, maar de rode lichten knipperen nog. Mag je rijden?",
+      "fr": "Au passage se trouve un A47. Le train est passé, mais les feux rouges clignotent encore. Pouvez-vous passer ?",
+      "en": "There is an A47 sign at the crossing. The train has passed but the red lights still flash. May you go?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Колій дві й більше, тож може йти другий потяг. Поки блимають червоні вогні, заїжджати заборонено. 4-й ступінь (−5).",
+      "nl": "Nee. Er zijn twee of meer sporen: er kan een tweede trein komen. Zolang de rode lichten knipperen, mag je niet oprijden. 4de graad (−5).",
+      "fr": "Non. Deux voies ou plus : un second train peut venir. Tant que les feux rouges clignotent, interdit. 4e degré (−5).",
+      "en": "No. Two or more tracks: a second train may come. While red lights flash you may not enter. 4th degree (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 20.3",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "level-crossing"
+    ],
+    "status": "published",
+    "image": "assets/signs/A47.svg"
+  },
+  {
+    "id": "lc_a43_approach",
+    "topic_id": "motorways_tunnels",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти бачиш цей знак. Як під'їжджаєш до переїзду?",
+      "nl": "Je ziet dit bord. Hoe nader je de overweg?",
+      "fr": "Vous voyez ce panneau. Comment abordez-vous le passage ?",
+      "en": "You see this sign. How do you approach the crossing?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Знижую швидкість і переконуюся, що потяг не наближається",
+          "nl": "Ik vertraag en vergewis me ervan dat er geen trein nadert",
+          "fr": "Je ralentis et m'assure qu'aucun train n'approche",
+          "en": "I slow down and make sure no train is coming"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їду як зазвичай: шлагбаум опуститься, якщо буде потяг",
+          "nl": "Ik rijd normaal: de slagbomen gaan wel dicht",
+          "fr": "Je roule normalement : les barrières se fermeront",
+          "en": "I drive normally: the barriers will close"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A43 — переїзд без шлагбаума. Тут немає шлагбаума, який тебе зупинить: переконайся сам, що потяга немає.",
+      "nl": "A43: overweg zonder slagbomen. Je moet zelf nagaan dat er geen trein komt.",
+      "fr": "A43 : passage sans barrières. Vérifiez vous-même qu'aucun train n'arrive.",
+      "en": "A43: crossing without barriers. Check yourself that no train is coming."
+    },
+    "source": {
+      "title": "Wegcode art. 20.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "level-crossing"
+    ],
+    "status": "published",
+    "image": "assets/signs/A43.svg"
+  },
+  {
+    "id": "ra2_inner_exit",
+    "topic_id": "roundabouts",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти (A) у внутрішній смузі кільця і хочеш виїхати на найближчому виїзді. Зовнішньою смугою поруч їде B. Хто пропускає?",
+      "nl": "Je (A) rijdt op de binnenste strook van de rotonde en wilt de volgende afrit nemen. Op de buitenste strook rijdt B. Wie verleent voorrang?",
+      "fr": "Vous (A) êtes sur la bande intérieure et voulez prendre la prochaine sortie. B roule sur la bande extérieure. Qui cède le passage ?",
+      "en": "You (A) are in the inner lane and want the next exit. B is in the outer lane. Who gives way?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Я (A): перестроювання — маневр",
+          "nl": "Ik (A): van strook wisselen is een manoeuvre",
+          "fr": "Moi (A) : changer de bande est une manœuvre",
+          "en": "Me (A): changing lane is a manoeuvre"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B, бо я праворуч від нього не буду",
+          "nl": "B, want ik kom van links",
+          "fr": "B, car je viens de gauche",
+          "en": "B, because I come from the left"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Перехід із внутрішньої смуги в зовнішню — зміна смуги, тобто маневр. Ти пропускаєш тих, хто вже їде зовнішньою смугою, і вмикаєш правий покажчик.",
+      "nl": "Van de binnenste naar de buitenste strook gaan is een strookwissel (manoeuvre): laat wie op de buitenste strook rijdt voorgaan en geef rechts aan.",
+      "fr": "Passer de la bande intérieure à l'extérieure est une manœuvre : cédez à ceux sur la bande extérieure et mettez le clignotant droit.",
+      "en": "Moving from the inner to the outer lane is a lane change (manoeuvre): give way to those in the outer lane and indicate right."
+    },
+    "source": {
+      "title": "Wegcode art. 12.4, 19.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published",
+    "image": "assets/scenes/roundabout-two-lanes.svg"
+  },
+  {
+    "id": "ra2_lane_choice",
+    "topic_id": "roundabouts",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Кругова розв'язка з двома смугами. Чи можна їхати внутрішньою (лівою) смугою?",
+      "nl": "Rotonde met twee rijstroken. Mag je de binnenste (linkse) strook gebruiken?",
+      "fr": "Rond-point à deux bandes. Pouvez-vous emprunter la bande intérieure (gauche) ?",
+      "en": "Two-lane roundabout. May you use the inner (left) lane?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Так, якщо вона найкраще веде до мого виїзду; дотримуюся розмітки",
+          "nl": "Ja, als ze het best bij mijn uitrit past; ik volg de markeringen",
+          "fr": "Oui, si elle convient le mieux à ma sortie ; je respecte le marquage",
+          "en": "Yes, if it best suits my exit; I follow the markings"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Ні, лише для обгону",
+          "nl": "Nee, alleen om in te halen",
+          "fr": "Non, seulement pour dépasser",
+          "en": "No, only for overtaking"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На кільці правило «тримайся правого краю» не діє: обирай смугу за напрямком виїзду й дотримуйся розмітки.",
+      "nl": "Op een rotonde geldt de plicht om rechts te houden niet: kies de strook volgens je uitrit.",
+      "fr": "Sur un rond-point, l'obligation de serrer à droite ne s'applique pas : choisissez la bande selon votre sortie.",
+      "en": "On a roundabout the keep-right rule does not apply: choose the lane for your exit."
+    },
+    "source": {
+      "title": "Wegcode art. 9.3.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published",
+    "image": "assets/scenes/roundabout-two-lanes.svg"
+  },
+  {
+    "id": "ra2_indicator_exit",
+    "topic_id": "roundabouts",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Коли вмикати правий покажчик, виїжджаючи з кільця з двох смуг?",
+      "nl": "Wanneer geef je rechts aan om een tweestrooksrotonde te verlaten?",
+      "fr": "Quand mettez-vous le clignotant droit pour quitter un rond-point à deux bandes ?",
+      "en": "When do you signal right to leave a two-lane roundabout?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Завчасно перед своїм виїздом",
+          "nl": "Tijdig voor mijn uitrit",
+          "fr": "À temps avant ma sortie",
+          "en": "In good time before my exit"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Лише вже на виїзді",
+          "nl": "Pas als ik al op de uitrit ben",
+          "fr": "Une fois sur la sortie",
+          "en": "Only once on the exit road"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Не потрібно",
+          "nl": "Niet nodig",
+          "fr": "Pas nécessaire",
+          "en": "Not needed"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Виїзд — зміна напрямку, тож правий покажчик вмикають завчасно, щоб інші зрозуміли твій намір.",
+      "nl": "Het verlaten is een richtingsverandering: tijdig rechts aangeven.",
+      "fr": "Sortir est un changement de direction : clignotant droit à temps.",
+      "en": "Leaving is a change of direction: signal right in good time."
+    },
+    "source": {
+      "title": "Wegcode art. 19.2.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published",
+    "image": "assets/scenes/roundabout-two-lanes.svg"
+  },
+  {
+    "id": "ra_tram",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Через центр кругової розв'язки проходять трамвайні колії, наближається трамвай. Хто має пріоритет?",
+      "nl": "Over de rotonde lopen tramsporen en er nadert een tram. Wie heeft voorrang?",
+      "fr": "Des voies de tram traversent le rond-point et un tram approche. Qui a la priorité ?",
+      "en": "Tram tracks cross the roundabout and a tram approaches. Who has priority?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Трамвай",
+          "nl": "De tram",
+          "fr": "Le tram",
+          "en": "The tram"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Авто на кільці",
+          "nl": "De auto's op de rotonde",
+          "fr": "Les voitures sur l'anneau",
+          "en": "Cars on the ring"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Кожен учасник руху пропускає рейковий транспорт і звільняє колії, зокрема й на кільці (якщо світлофор не регулює інакше).",
+      "nl": "Elke weggebruiker verleent voorrang aan spoorvoertuigen, ook op een rotonde (tenzij lichten anders regelen).",
+      "fr": "Tout usager cède le passage aux véhicules sur rails, aussi sur un rond-point (sauf feux).",
+      "en": "Everyone gives way to rail vehicles, also on a roundabout (unless lights regulate)."
+    },
+    "source": {
+      "title": "Wegcode art. 12.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout",
+      "tram"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "ra_b5_entry",
+    "topic_id": "roundabouts",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "На в'їзді на кільце стоїть знак B5 (STOP). Що робиш?",
+      "nl": "Aan de ingang van de rotonde staat B5 (STOP). Wat doe je?",
+      "fr": "À l'entrée du rond-point se trouve un B5 (STOP). Que faites-vous ?",
+      "en": "At the roundabout entry there is a B5 (STOP) sign. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Повністю зупиняюся, потім пропускаю тих, хто на колі",
+          "nl": "Ik stop volledig en laat dan wie op de rotonde rijdt voorgaan",
+          "fr": "Je m'arrête complètement puis cède le passage",
+          "en": "I stop completely, then give way to those on the ring"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Лише пригальмовую, якщо кільце порожнє",
+          "nl": "Ik vertraag enkel als de rotonde leeg is",
+          "fr": "Je ralentis seulement si l'anneau est vide",
+          "en": "I only slow down if the ring is empty"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B5 вимагає повної зупинки навіть на порожньому кільці. Потім пропускаєш усіх, хто рухається по колу. Ігнорування B5 — 2-й ступінь.",
+      "nl": "B5 vereist een volledige stop, ook als de rotonde leeg is; daarna voorrang verlenen. 2de graad.",
+      "fr": "Le B5 impose l'arrêt complet même si l'anneau est vide ; puis céder le passage. 2e degré.",
+      "en": "B5 requires a full stop even if the ring is empty; then give way. 2nd degree."
+    },
+    "source": {
+      "title": "Wegcode art. 12.3.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout",
+      "B5"
+    ],
+    "status": "published",
+    "image": "assets/signs/B5.svg"
+  },
+  {
+    "id": "ra_emergency",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти на кільці й чуєш сирену швидкої, що наближається ззаду. Що робиш?",
+      "nl": "Je rijdt op de rotonde en hoort achter je een ziekenwagen met sirene. Wat doe je?",
+      "fr": "Vous êtes sur le rond-point et entendez une ambulance arriver derrière. Que faites-vous ?",
+      "en": "You are on the roundabout and hear an ambulance siren behind. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Звільняю їй шлях, за потреби зупиняюся",
+          "nl": "Ik maak de doorgang vrij en stop zo nodig",
+          "fr": "Je dégage le passage et m'arrête si besoin",
+          "en": "I clear the way and stop if needed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Продовжую, бо на колі в мене пріоритет",
+          "nl": "Ik rijd door, op de rotonde heb ik voorrang",
+          "fr": "Je continue, j'ai la priorité sur l'anneau",
+          "en": "I continue, I have priority on the ring"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Спеціальний звуковий сигнал зобов'язує звільнити шлях будь-де, зокрема на кільці. 3-й ступінь (−5).",
+      "nl": "Het speciale geluidssignaal verplicht je overal de doorgang vrij te maken, ook op een rotonde. 3de graad (−5).",
+      "fr": "L'avertisseur spécial oblige à dégager le passage partout, aussi sur un rond-point. 3e degré (−5).",
+      "en": "The special sound signal obliges you to clear the way everywhere, also on a roundabout. 3rd degree (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 38",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout",
+      "emergency"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "ra_cyclist_overtake",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "На кільці в населеному пункті перед тобою їде велосипедист. Обганяючи його, яку бокову відстань залишаєш?",
+      "nl": "Op een rotonde binnen de bebouwde kom rijdt een fietser voor je. Welke zijdelingse afstand houd je bij het inhalen?",
+      "fr": "Sur un rond-point en agglomération, un cycliste roule devant vous. Quelle distance latérale gardez-vous en le dépassant ?",
+      "en": "On a roundabout in a built-up area a cyclist is ahead. What lateral distance do you keep when overtaking?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "1 м",
+          "nl": "1 m",
+          "fr": "1 m",
+          "en": "1 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "0,5 м",
+          "nl": "0,5 m",
+          "fr": "0,5 m",
+          "en": "0.5 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Не має значення на кільці",
+          "nl": "Op een rotonde maakt dat niet uit",
+          "fr": "Peu importe sur un rond-point",
+          "en": "It does not matter on a roundabout"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Бокова відстань до велосипедиста діє й на кільці: щонайменше 1 м у населеному пункті (1,5 м поза ним). Якщо місця немає — не обганяй. 3-й ступінь (−5).",
+      "nl": "Ook op een rotonde: minstens 1 m binnen de bebouwde kom (1,5 m buiten). Geen plaats? Niet inhalen. 3de graad (−5).",
+      "fr": "Aussi sur un rond-point : au moins 1 m en agglomération (1,5 m hors). Pas de place ? Ne dépassez pas. 3e degré (−5).",
+      "en": "Also on a roundabout: at least 1 m in built-up areas (1.5 m outside). No room? Do not overtake. 3rd degree (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40ter",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout",
+      "cyclist"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "ra_no_priority_right_ring",
+    "topic_id": "roundabouts",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти в'їжджаєш на кільце (D5 + B1). Зліва по колу наближається авто, праворуч від тебе нікого. Чи можеш ти в'їхати першим, бо авто зліва?",
+      "nl": "Je rijdt een rotonde op (D5 + B1). Van links nadert een auto op de rotonde, rechts niemand. Mag je eerst oprijden omdat hij van links komt?",
+      "fr": "Vous entrez sur un rond-point (D5 + B1). Une voiture arrive de gauche sur l'anneau. Pouvez-vous passer d'abord car elle vient de gauche ?",
+      "en": "You enter a roundabout (D5 + B1). A car approaches on the ring from the left. May you go first because it comes from the left?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Знак B1 зобов'язує пропустити тих, хто вже на колі, звідки б вони не їхали. Правило «праворуч» на в'їзді не діє.",
+      "nl": "Nee. B1 verplicht je voorrang te verlenen aan wie op de rotonde rijdt. Voorrang van rechts geldt hier niet.",
+      "fr": "Non. Le B1 oblige à céder le passage à ceux déjà sur l'anneau. La priorité de droite ne joue pas.",
+      "en": "No. B1 obliges you to give way to those already on the ring. Priority to the right does not apply here."
+    },
+    "source": {
+      "title": "Wegcode art. 12.3.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published",
+    "image": "assets/scenes/roundabout-yield.svg"
+  },
+  {
+    "id": "ice_speed",
+    "topic_id": "weather_hazards",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Мінус 2 °C, на дорозі місцями ожеледиця, стоїть знак A15. Що найважливіше?",
+      "nl": "−2 °C, plaatselijk ijzel, bord A15. Wat is het belangrijkste?",
+      "fr": "−2 °C, verglas par endroits, panneau A15. Qu'est-ce qui compte le plus ?",
+      "en": "−2 °C, patches of ice, sign A15. What matters most?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Значно знизити швидкість і збільшити дистанцію, уникати різких дій",
+          "nl": "Sterk vertragen, afstand vergroten, bruuske bewegingen vermijden",
+          "fr": "Ralentir fortement, augmenter la distance, éviter les gestes brusques",
+          "en": "Slow down a lot, increase the distance, avoid sudden actions"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їхати як звичайно, якщо дорогу посипали",
+          "nl": "Normaal rijden als er gestrooid is",
+          "fr": "Rouler normalement si la route est salée",
+          "en": "Drive normally if the road is gritted"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Швидкість завжди підлаштовують під стан дороги й погоду, щоб зупинитися перед будь-якою передбачуваною перешкодою. На льоду гальмівний шлях у рази довший.",
+      "nl": "Je snelheid moet altijd aangepast zijn aan wegdek en weer, zodat je voor elke voorzienbare hindernis kunt stoppen. Op ijs is de remweg vele malen langer.",
+      "fr": "La vitesse doit toujours être adaptée à la route et à la météo pour s'arrêter devant tout obstacle prévisible. Sur la glace, le freinage est bien plus long.",
+      "en": "Speed must always suit road and weather so you can stop for any foreseeable obstacle. On ice the braking distance is many times longer."
+    },
+    "source": {
+      "title": "Wegcode art. 10.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "ice"
+    ],
+    "status": "published",
+    "image": "assets/scenes/black-ice.svg"
+  },
+  {
+    "id": "ice_braking",
+    "topic_id": "weather_hazards",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Як змінюється гальмівний шлях на ожеледиці порівняно з сухою дорогою?",
+      "nl": "Hoe verandert de remweg op ijzel tegenover een droge weg?",
+      "fr": "Comment évolue la distance de freinage sur le verglas par rapport à une route sèche ?",
+      "en": "How does braking distance on ice compare to a dry road?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Стає в кілька разів довшим",
+          "nl": "Wordt meerdere keren langer",
+          "fr": "Devient plusieurs fois plus longue",
+          "en": "It becomes several times longer"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Майже не змінюється",
+          "nl": "Blijft ongeveer gelijk",
+          "fr": "Reste à peu près la même",
+          "en": "Stays about the same"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Стає коротшим через холод",
+          "nl": "Wordt korter door de kou",
+          "fr": "Devient plus courte à cause du froid",
+          "en": "Becomes shorter because of the cold"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зчеплення шин із льодом дуже слабке, тож гальмівний шлях зростає в кілька разів. Тому швидкість і дистанцію треба змінювати заздалегідь (ст. 10.1).",
+      "nl": "Op ijs is de grip zeer klein: de remweg wordt meerdere keren langer. Pas snelheid en afstand vooraf aan (art. 10.1).",
+      "fr": "Sur la glace, l'adhérence est très faible : la distance de freinage est multipliée. Adaptez vitesse et distance à l'avance (art. 10.1).",
+      "en": "On ice grip is very low: braking distance multiplies. Adapt speed and distance in advance (art. 10.1)."
+    },
+    "source": {
+      "title": "Wegcode art. 10.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "ice"
+    ],
+    "status": "published",
+    "image": "assets/scenes/black-ice.svg"
+  },
+  {
+    "id": "dazzle_dip",
+    "topic_id": "weather_hazards",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Вночі назустріч їде авто B. У тебе (A) увімкнене дальнє світло. Що треба зробити?",
+      "nl": "'s Nachts nadert tegenligger B. Jij (A) rijdt met grootlicht. Wat moet je doen?",
+      "fr": "La nuit, la voiture B arrive en face. Vous (A) êtes en feux de route. Que devez-vous faire ?",
+      "en": "At night car B approaches. You (A) have main beams on. What must you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Перемкнути на ближнє",
+          "nl": "Overschakelen op dimlicht",
+          "fr": "Passer en feux de croisement",
+          "en": "Switch to dipped beams"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Моргнути дальнім",
+          "nl": "Met grootlicht knipperen",
+          "fr": "Faire un appel de phares",
+          "en": "Flash the main beams"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Нічого: B має перемкнути першим",
+          "nl": "Niets: B moet eerst dimmen",
+          "fr": "Rien : B doit d'abord passer en croisement",
+          "en": "Nothing: B must dip first"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "При зустрічному роз'їзді перемикайся на ближнє, щоб не засліпити інших. 2-й ступінь.",
+      "nl": "Bij het kruisen schakel je over op dimlicht om anderen niet te verblinden. 2de graad.",
+      "fr": "En croisant, passez en feux de croisement pour ne pas éblouir. 2e degré.",
+      "en": "When meeting traffic, switch to dipped beams so you do not dazzle others. 2nd degree."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "lights",
+      "dazzle"
+    ],
+    "status": "published",
+    "image": "assets/scenes/night-dazzle.svg"
+  },
+  {
+    "id": "dazzle_reaction",
+    "topic_id": "weather_hazards",
+    "type": "image_scenario",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Тебе засліпило світло зустрічного авто. Як правильно діяти?",
+      "nl": "Je wordt verblind door de lichten van een tegenligger. Wat doe je best?",
+      "fr": "Vous êtes ébloui par les phares d'un véhicule venant en face. Que faites-vous ?",
+      "en": "You are dazzled by an oncoming car's lights. What is best?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Знизити швидкість, дивитися на правий край дороги, за потреби зупинитися",
+          "nl": "Vertragen, naar de rechterrand kijken, zo nodig stoppen",
+          "fr": "Ralentir, regarder le bord droit, s'arrêter si besoin",
+          "en": "Slow down, look at the right edge, stop if needed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Увімкнути дальнє у відповідь",
+          "nl": "Ook grootlicht aanzetten",
+          "fr": "Allumer aussi les feux de route",
+          "en": "Switch on main beams in return"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Прискоритися, щоб швидше роз'їхатися",
+          "nl": "Versnellen om sneller voorbij te zijn",
+          "fr": "Accélérer pour croiser plus vite",
+          "en": "Speed up to pass sooner"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Засліплений водій бачить гірше, тож має знизити швидкість настільки, щоб зупинитися в межах того, що бачить. Відповідати дальнім — небезпечно.",
+      "nl": "Wie verblind is, ziet minder: vertraag zodat je binnen je zichtveld kunt stoppen. Terugverblinden is gevaarlijk.",
+      "fr": "Ébloui, on voit moins : ralentissez pour pouvoir vous arrêter dans la distance visible. Éblouir en retour est dangereux.",
+      "en": "Dazzled, you see less: slow down so you can stop within what you see. Dazzling back is dangerous."
+    },
+    "source": {
+      "title": "Wegcode art. 10.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "dazzle"
+    ],
+    "status": "published",
+    "image": "assets/scenes/night-dazzle.svg"
+  },
+  {
+    "id": "hazard_when",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Коли можна вмикати аварійну сигналізацію (усі покажчики повороту разом)?",
+      "nl": "Wanneer mag je de noodverlichting (alle richtingaanwijzers samen) gebruiken?",
+      "fr": "Quand pouvez-vous allumer les feux de détresse ?",
+      "en": "When may you use the hazard lights (all indicators together)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "При поломці чи аварії, для попередження про раптову небезпеку (наприклад, затор попереду) і шкільному автобусу під час посадки",
+          "nl": "Bij pech of ongeval, om te waarschuwen voor plots gevaar (bv. file) en voor een schoolbus bij in- en uitstappen",
+          "fr": "En cas de panne ou d'accident, pour avertir d'un danger soudain (p. ex. bouchon) et pour un bus scolaire à l'embarquement",
+          "en": "On breakdown or crash, to warn of sudden danger (e.g. a jam ahead) and for a school bus loading children"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Щоб на хвилину стати в другий ряд",
+          "nl": "Om even dubbel te parkeren",
+          "fr": "Pour stationner un instant en double file",
+          "en": "To double-park for a minute"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Аварійна сигналізація — для поломки, аварії, раптової небезпеки та шкільного автобуса. Вона не дає права зупинятися там, де це заборонено.",
+      "nl": "Noodverlichting is voor pech, ongeval, plots gevaar en een schoolbus. Ze geeft geen recht om te stoppen waar het verboden is.",
+      "fr": "Les feux de détresse servent en cas de panne, d'accident, de danger soudain et pour un bus scolaire. Ils ne permettent pas de s'arrêter où c'est interdit.",
+      "en": "Hazard lights are for breakdowns, crashes, sudden danger and school buses. They give no right to stop where it is banned."
+    },
+    "source": {
+      "title": "Wegcode art. 32bis / Politie (uitleg)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "hazard-lights"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "hazard_double_park",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи можна ненадовго зупинитися в другому ряду, якщо ввімкнути аварійну сигналізацію?",
+      "nl": "Mag je even dubbel stilstaan als je de noodverlichting aanzet?",
+      "fr": "Pouvez-vous vous arrêter un instant en double file si vous allumez les feux de détresse ?",
+      "en": "May you briefly stop double-parked if you switch on the hazard lights?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Аварійна сигналізація не скасовує заборон зупинки й стоянки.",
+      "nl": "Nee. De noodverlichting heft de verboden op stilstaan en parkeren niet op.",
+      "fr": "Non. Les feux de détresse ne lèvent pas les interdictions d'arrêt et de stationnement.",
+      "en": "No. Hazard lights do not cancel stopping and parking bans."
+    },
+    "source": {
+      "title": "Wegcode art. 32bis / Politie (uitleg)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "hazard-lights"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "winter_tyres",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи обов'язкові зимові шини в Бельгії?",
+      "nl": "Zijn winterbanden verplicht in België?",
+      "fr": "Les pneus hiver sont-ils obligatoires en Belgique ?",
+      "en": "Are winter tyres mandatory in Belgium?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні, але рекомендовані взимку",
+          "nl": "Nee, maar aanbevolen in de winter",
+          "fr": "Non, mais recommandés en hiver",
+          "en": "No, but recommended in winter"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так, з 1 листопада",
+          "nl": "Ja, vanaf 1 november",
+          "fr": "Oui, dès le 1er novembre",
+          "en": "Yes, from 1 November"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Бельгії зимові шини не обов'язкові (на відміну, наприклад, від Німеччини за певних умов). Але швидкість і далі треба підлаштовувати під дорогу.",
+      "nl": "In België zijn winterbanden niet verplicht. Je moet je snelheid wel aan de omstandigheden aanpassen.",
+      "fr": "En Belgique, les pneus hiver ne sont pas obligatoires. La vitesse doit toutefois être adaptée.",
+      "en": "In Belgium winter tyres are not mandatory. You must still adapt your speed."
+    },
+    "source": {
+      "title": "Touring — winterbanden en sneeuwkettingen (secundair, art. 81.4.4)",
+      "url": "https://www.touring.be",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tyres"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "snow_chains",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Коли можна їздити на ланцюгах проти ковзання?",
+      "nl": "Wanneer mag je sneeuwkettingen gebruiken?",
+      "fr": "Quand pouvez-vous utiliser des chaînes à neige ?",
+      "en": "When may you use snow chains?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Лише на дорозі, вкритій снігом або льодом",
+          "nl": "Alleen op een weg bedekt met sneeuw of ijs",
+          "fr": "Seulement sur une route couverte de neige ou de glace",
+          "en": "Only on a road covered with snow or ice"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Цілу зиму",
+          "nl": "De hele winter",
+          "fr": "Tout l'hiver",
+          "en": "All winter"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Лише на автомагістралі",
+          "nl": "Alleen op de autosnelweg",
+          "fr": "Seulement sur autoroute",
+          "en": "Only on the motorway"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ланцюги дозволені лише на дорогах, вкритих снігом чи льодом. На чистому асфальті їх знімають.",
+      "nl": "Sneeuwkettingen mogen enkel op wegen bedekt met sneeuw of ijs.",
+      "fr": "Les chaînes ne sont permises que sur route couverte de neige ou de glace.",
+      "en": "Snow chains are only allowed on roads covered with snow or ice."
+    },
+    "source": {
+      "title": "Touring — winterbanden en sneeuwkettingen (secundair, art. 81.4.4)",
+      "url": "https://www.touring.be",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tyres"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "studded_tyres",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи можна в Бельгії їздити на шипованих шинах?",
+      "nl": "Mag je in België met spijkerbanden rijden?",
+      "fr": "Peut-on rouler en pneus à clous en Belgique ?",
+      "en": "May you drive with studded tyres in Belgium?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні, крім винятків, дозволених міністром",
+          "nl": "Nee, behalve bij uitzondering door de minister",
+          "fr": "Non, sauf dérogation ministérielle",
+          "en": "No, except by ministerial exception"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Шиповані шини в Бельгії заборонені, хіба що міністр тимчасово дозволить їх як виняток.",
+      "nl": "Spijkerbanden zijn verboden, behalve bij een uitzondering van de minister.",
+      "fr": "Les pneus à clous sont interdits, sauf dérogation ministérielle.",
+      "en": "Studded tyres are banned, except by ministerial exception."
+    },
+    "source": {
+      "title": "Touring — winterbanden en sneeuwkettingen (secundair, art. 81.4.4)",
+      "url": "https://www.touring.be",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tyres"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "rain_rear_fog",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Злива, двірники ледь встигають. Чи можна ввімкнути задній протитуманний ліхтар?",
+      "nl": "Hevige regen, de ruitenwissers volgen nauwelijks. Mag je het achterste mistlicht aanzetten?",
+      "fr": "Pluie battante, les essuie-glaces suivent à peine. Pouvez-vous allumer le feu brouillard arrière ?",
+      "en": "Torrential rain, the wipers barely cope. May you switch on the rear fog light?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Так. Задній протитуманний дозволений (і потрібний) у тумані чи снігопаді з видимістю менше ~100 м, а також при сильному дощі.",
+      "nl": "Ja. Het achterste mistlicht moet branden bij mist of sneeuw onder ongeveer 100 m en bij hevige regen.",
+      "fr": "Oui. Le feu brouillard arrière s'utilise par brouillard ou neige sous ~100 m et par forte pluie.",
+      "en": "Yes. The rear fog light is used in fog or snow under ~100 m and in heavy rain."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1.2°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "fog",
+      "rain"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "fog_150",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Легкий туман, видимість приблизно 150 м. Чи треба вмикати задній протитуманний?",
+      "nl": "Lichte mist, zicht ongeveer 150 m. Moet het achterste mistlicht aan?",
+      "fr": "Brouillard léger, visibilité d'environ 150 m. Faut-il le feu brouillard arrière ?",
+      "en": "Light fog, visibility about 150 m. Must the rear fog light be on?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні, лише ближнє світло (поріг для заднього протитуманного — ~100 м)",
+          "nl": "Nee, alleen dimlicht (achterste mistlicht pas onder ongeveer 100 m)",
+          "fr": "Non, feux de croisement seulement (brouillard arrière sous ~100 m)",
+          "en": "No, dipped beams only (rear fog light below ~100 m)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "При видимості менше ~200 м вмикають ближнє світло, а задній протитуманний — лише коли видимість менша ~100 м (або при сильному дощі).",
+      "nl": "Onder ongeveer 200 m dimlicht; het achterste mistlicht pas onder ongeveer 100 m (of bij hevige regen).",
+      "fr": "Sous ~200 m, feux de croisement ; brouillard arrière seulement sous ~100 m (ou forte pluie).",
+      "en": "Below ~200 m dipped beams; rear fog light only below ~100 m (or in heavy rain)."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1, 30.1.2°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "fog"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "aquaplaning",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "На мокрій дорозі кермо раптом стало «легким» — почався аквапланінг. Що робиш?",
+      "nl": "Op een natte weg voelt het stuur plots licht aan: aquaplaning. Wat doe je?",
+      "fr": "Sur route mouillée, le volant devient soudain léger : aquaplaning. Que faites-vous ?",
+      "en": "On a wet road the steering suddenly feels light: aquaplaning. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Відпускаю газ, тримаю кермо рівно, не гальмую різко",
+          "nl": "Gas loslaten, stuur recht houden, niet bruusk remmen",
+          "fr": "Lâcher l'accélérateur, garder le volant droit, ne pas freiner brusquement",
+          "en": "Release the throttle, keep the wheel straight, do not brake hard"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Різко гальмую",
+          "nl": "Bruusk remmen",
+          "fr": "Freiner brusquement",
+          "en": "Brake hard"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Додаю газу",
+          "nl": "Gas geven",
+          "fr": "Accélérer",
+          "en": "Accelerate"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Під час аквапланінгу шини ковзають по воді. Відпусти газ і тримай кермо рівно, доки зчеплення не повернеться. Запобігти допомагає нижча швидкість у дощ (ст. 10.1).",
+      "nl": "Bij aquaplaning glijden de banden over water: gas los, stuur recht tot je weer grip hebt. Voorkom het met een lagere snelheid (art. 10.1).",
+      "fr": "En aquaplaning, les pneus glissent sur l'eau : lâchez l'accélérateur, volant droit jusqu'à retrouver l'adhérence. Prévenez-le en ralentissant (art. 10.1).",
+      "en": "In aquaplaning the tyres skim on water: ease off and keep the wheel straight until grip returns. Prevent it by slowing down (art. 10.1)."
+    },
+    "source": {
+      "title": "Wegcode art. 10.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "rain"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_f1_wallonia",
+    "topic_id": "speed_distance",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "wallonia"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Валлонія. Ти проїхав цей знак, інших знаків немає. Яка максимальна швидкість?",
+      "nl": "Wallonië. Je rijdt dit bord voorbij, er staan geen andere borden. Maximumsnelheid?",
+      "fr": "Wallonie. Vous passez ce panneau, sans autre signalisation. Vitesse maximale ?",
+      "en": "Wallonia. You pass this sign, no other signs. Maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Валлонії базовий ліміт у населеному пункті — 50 км/год.",
+      "nl": "In Wallonië is de basislimiet in de bebouwde kom 50 km/u.",
+      "fr": "En Wallonie, la limite de base en agglomération est de 50 km/h.",
+      "en": "In Wallonia the default built-up limit is 50 km/h."
+    },
+    "source": {
+      "title": "Wegcode art. 11.1 (Waals Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published",
+    "image": "assets/signs/F1.svg"
+  },
+  {
+    "id": "speed_f3_brussels",
+    "topic_id": "speed_distance",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "brussels"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Брюссельський регіон. Ти виїхав за знак F3 на звичайну дорогу (не автомагістраль). Яка максимальна швидкість без інших знаків?",
+      "nl": "Brussels Gewest. Je rijdt voorbij bord F3 op een gewone weg (geen autosnelweg). Maximumsnelheid zonder andere borden?",
+      "fr": "Région bruxelloise. Vous passez le F3 sur une route ordinaire (pas une autoroute). Vitesse maximale sans autre panneau ?",
+      "en": "Brussels Region. You pass sign F3 onto an ordinary road (not a motorway). Maximum speed with no other signs?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "90 км/год",
+          "nl": "90 km/u",
+          "fr": "90 km/h",
+          "en": "90 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Брюссельському регіоні поза населеними пунктами — 70 км/год (не 90).",
+      "nl": "In het Brussels Gewest buiten de bebouwde kom 70 km/u (niet 90).",
+      "fr": "En Région bruxelloise, hors agglomération, 70 km/h (pas 90).",
+      "en": "In the Brussels Region outside built-up areas 70 km/h (not 90)."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2 (Brussels Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published",
+    "image": "assets/signs/F3.svg"
+  },
+  {
+    "id": "sign_c43_70",
+    "topic_id": "speed_distance",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Максимальна швидкість 70 км/год",
+          "nl": "Maximumsnelheid 70 km/u",
+          "fr": "Vitesse maximale 70 km/h",
+          "en": "Maximum speed 70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Рекомендована швидкість 70 км/год",
+          "nl": "Aanbevolen snelheid 70 km/u",
+          "fr": "Vitesse conseillée 70 km/h",
+          "en": "Advisory 70 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Мінімальна швидкість 70 км/год",
+          "nl": "Minimumsnelheid 70 km/u",
+          "fr": "Vitesse minimale 70 km/h",
+          "en": "Minimum 70 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Червоне коло з числом — максимальна швидкість. Рекомендовану й мінімальну швидкість позначають іншими знаками.",
+      "nl": "Rood rond bord met getal: maximumsnelheid. Aanbevolen of minimumsnelheid hebben andere borden.",
+      "fr": "Cercle rouge avec chiffre : vitesse maximale. Vitesse conseillée ou minimale : autres panneaux.",
+      "en": "Red circle with a number: maximum speed. Advisory or minimum speeds use other signs."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "C43-70"
+    ],
+    "status": "published",
+    "image": "assets/signs/C43-70.svg"
+  },
+  {
+    "id": "sign_c43_120",
+    "topic_id": "speed_distance",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Максимальна швидкість 120 км/год",
+          "nl": "Maximumsnelheid 120 km/u",
+          "fr": "Vitesse maximale 120 km/h",
+          "en": "Maximum speed 120 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Мінімальна швидкість 120 км/год",
+          "nl": "Minimumsnelheid 120 km/u",
+          "fr": "Vitesse minimale 120 km/h",
+          "en": "Minimum 120 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Кінець обмеження 120",
+          "nl": "Einde beperking 120",
+          "fr": "Fin de limitation 120",
+          "en": "End of 120 limit"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C43 «120» — максимум 120 км/год. Кінець обмеження позначає знак C45.",
+      "nl": "C43 '120': maximaal 120 km/u. Einde: bord C45.",
+      "fr": "C43 « 120 » : 120 km/h maximum. Fin : C45.",
+      "en": "C43 '120': max 120 km/h. End: sign C45."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "C43-120"
+    ],
+    "status": "published",
+    "image": "assets/signs/C43-120.svg"
+  },
+  {
+    "id": "speed_flanders_90_only_sign",
+    "topic_id": "speed_distance",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "flanders"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Фландрія, поза населеним пунктом. Де можна їхати 90 км/год?",
+      "nl": "Vlaanderen, buiten de bebouwde kom. Waar mag je 90 km/u rijden?",
+      "fr": "Flandre, hors agglomération. Où pouvez-vous rouler à 90 km/h ?",
+      "en": "Flanders, outside built-up areas. Where may you drive 90 km/h?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Лише там, де стоїть знак C43 «90»",
+          "nl": "Alleen waar een bord C43 '90' staat",
+          "fr": "Seulement là où un C43 « 90 » est placé",
+          "en": "Only where a C43 '90' sign is placed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "На всіх дорогах поза населеним пунктом",
+          "nl": "Op alle wegen buiten de bebouwde kom",
+          "fr": "Sur toutes les routes hors agglomération",
+          "en": "On all roads outside built-up areas"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Фландрії базовий ліміт — 70 км/год. 90 км/год — тільки там, де це прямо дозволяє знак.",
+      "nl": "In Vlaanderen is de basis 70 km/u; 90 alleen waar een bord het toelaat.",
+      "fr": "En Flandre, la base est 70 km/h ; 90 seulement avec un panneau.",
+      "en": "In Flanders the default is 70 km/h; 90 only where a sign allows it."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2 (Vlaams Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published",
+    "image": "assets/signs/C43-90.svg"
+  },
+  {
+    "id": "escooter_seat",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Електросамокат із сидінням. До якої категорії він належить і чи потрібен шолом?",
+      "nl": "Een elektrische step met zitje. Onder welke categorie valt hij en is een helm nodig?",
+      "fr": "Une trottinette électrique avec siège. Dans quelle catégorie entre-t-elle et faut-il un casque ?",
+      "en": "An e-scooter with a seat. What category is it and is a helmet required?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Це мопед: шолом, страховка й сертифікат відповідності обов'язкові",
+          "nl": "Het is een bromfiets: helm, verzekering en gelijkvormigheidsattest verplicht",
+          "fr": "C'est un cyclomoteur : casque, assurance et certificat de conformité obligatoires",
+          "en": "It is a moped: helmet, insurance and conformity certificate required"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Як звичайний самокат, шолом не потрібен",
+          "nl": "Zoals een gewone step, geen helm",
+          "fr": "Comme une trottinette normale, pas de casque",
+          "en": "Like a normal scooter, no helmet"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Самокат із сидінням вважається мопедом. Тому потрібні шолом, страховка й сертифікат відповідності (COC).",
+      "nl": "Een step met zitje is een bromfiets: helm, verzekering en COC verplicht.",
+      "fr": "Une trottinette avec siège est un cyclomoteur : casque, assurance et certificat COC obligatoires.",
+      "en": "A scooter with a seat counts as a moped: helmet, insurance and COC required."
+    },
+    "source": {
+      "title": "vlaanderen.be — elektrische step met zitje",
+      "url": "https://www.vlaanderen.be",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "e-scooter"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_max_light",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Скільки щонайбільше легких помилок (по −1) можна зробити й усе одно скласти іспит, якщо серйозних немає?",
+      "nl": "Hoeveel lichte fouten (−1) mag je maximaal maken en toch slagen, zonder zware fouten?",
+      "fr": "Combien de fautes légères (−1) au maximum pouvez-vous faire et réussir, sans faute grave ?",
+      "en": "What is the maximum number of minor errors (−1) and still pass, with no serious errors?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "9",
+          "nl": "9",
+          "fr": "9",
+          "en": "9"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "5",
+          "nl": "5",
+          "fr": "5",
+          "en": "5"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "12",
+          "nl": "12",
+          "fr": "12",
+          "en": "12"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "50 − 9 = 41: це ще прохідний бал. Десята легка помилка — вже 40, провал.",
+      "nl": "50 − 9 = 41: nog geslaagd. Een tiende lichte fout geeft 40: gezakt.",
+      "fr": "50 − 9 = 41 : réussi. Une dixième faute légère donne 40 : échec.",
+      "en": "50 − 9 = 41: pass. A tenth minor error gives 40: fail."
+    },
+    "source": {
+      "title": "vlaanderen.be — theorie-examen rijbewijs B",
+      "url": "https://www.vlaanderen.be/rijbewijs-b-voor-auto/theorie-examen-voor-rijbewijs-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_one_serious",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти зробив одну серйозну помилку (−5). Скільки ще легких помилок можна собі дозволити?",
+      "nl": "Je maakte één zware fout (−5). Hoeveel lichte fouten mag je nog maken?",
+      "fr": "Vous avez fait une faute grave (−5). Combien de fautes légères pouvez-vous encore vous permettre ?",
+      "en": "You made one serious error (−5). How many more minor errors can you afford?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "4",
+          "nl": "4",
+          "fr": "4",
+          "en": "4"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "9",
+          "nl": "9",
+          "fr": "9",
+          "en": "9"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "0",
+          "nl": "0",
+          "fr": "0",
+          "en": "0"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "50 − 5 − 4 = 41. П'ята легка помилка дає 40 — провал.",
+      "nl": "50 − 5 − 4 = 41. Een vijfde lichte fout geeft 40: gezakt.",
+      "fr": "50 − 5 − 4 = 41. Une cinquième faute légère donne 40 : échec.",
+      "en": "50 − 5 − 4 = 41. A fifth minor error gives 40: fail."
+    },
+    "source": {
+      "title": "vlaanderen.be — theorie-examen rijbewijs B",
+      "url": "https://www.vlaanderen.be/rijbewijs-b-voor-auto/theorie-examen-voor-rijbewijs-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_unanswered",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти не встиг відповісти на питання за 15 секунд. Як це рахується?",
+      "nl": "Je hebt niet binnen 15 seconden geantwoord. Hoe telt dat?",
+      "fr": "Vous n'avez pas répondu dans les 15 secondes. Comment est-ce compté ?",
+      "en": "You did not answer within 15 seconds. How is it counted?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Як помилка",
+          "nl": "Als een fout",
+          "fr": "Comme une faute",
+          "en": "As an error"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Не рахується",
+          "nl": "Telt niet mee",
+          "fr": "Ne compte pas",
+          "en": "It does not count"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Питання повторять",
+          "nl": "De vraag wordt herhaald",
+          "fr": "La question est reposée",
+          "en": "The question is repeated"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Питання без відповіді рахується як неправильне: −1 або −5, залежно від теми питання.",
+      "nl": "Een vraag zonder antwoord telt als fout: −1 of −5 naargelang de vraag.",
+      "fr": "Une question sans réponse compte comme une faute : −1 ou −5 selon la question.",
+      "en": "An unanswered question counts as wrong: −1 or −5 depending on the question."
+    },
+    "source": {
+      "title": "vlaanderen.be — theorie-examen rijbewijs B",
+      "url": "https://www.vlaanderen.be/rijbewijs-b-voor-auto/theorie-examen-voor-rijbewijs-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_fee_fl",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "flanders"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Скільки коштує теоретичний іспит B у Фландрії (з 2026) і скільки — аудіопереклад?",
+      "nl": "Wat kost het theorie-examen B in Vlaanderen (sinds 2026) en wat kost de audiovertaling?",
+      "fr": "Combien coûte l'examen théorique B en Flandre (depuis 2026) et la traduction audio ?",
+      "en": "What does the theory exam B cost in Flanders (since 2026), and the audio translation?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "19 € + 43 € за переклад",
+          "nl": "19 € + 43 € voor de vertaling",
+          "fr": "19 € + 43 € pour la traduction",
+          "en": "€19 + €43 for translation"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "50 € разом",
+          "nl": "50 € samen",
+          "fr": "50 € au total",
+          "en": "€50 in total"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Безкоштовно",
+          "nl": "Gratis",
+          "fr": "Gratuit",
+          "en": "Free"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Фландрії іспит коштує 19 €. Аудіопереклад французькою, німецькою чи англійською — ще 43 €.",
+      "nl": "In Vlaanderen kost het examen 19 €; audiovertaling (FR/DE/EN) kost 43 € extra.",
+      "fr": "En Flandre, l'examen coûte 19 € ; la traduction audio (FR/DE/EN) 43 € en plus.",
+      "en": "In Flanders the exam costs €19; audio translation (FR/DE/EN) is €43 extra."
+    },
+    "source": {
+      "title": "vlaanderen.be — theorie-examen rijbewijs B",
+      "url": "https://www.vlaanderen.be/rijbewijs-b-voor-auto/theorie-examen-voor-rijbewijs-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_interpreter_bxl",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "brussels"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Брюссель. Скільки коштує перекладач (англійська чи німецька) на теоретичному іспиті?",
+      "nl": "Brussel. Wat kost een tolk (Engels of Duits) bij het theorie-examen?",
+      "fr": "Bruxelles. Combien coûte un interprète (anglais ou allemand) à l'examen théorique ?",
+      "en": "Brussels. What does an interpreter (English or German) cost at the theory exam?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "50 € (сам іспит — 19 €)",
+          "nl": "50 € (het examen zelf 19 €)",
+          "fr": "50 € (l'examen lui-même 19 €)",
+          "en": "€50 (the exam itself €19)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Безкоштовно",
+          "nl": "Gratis",
+          "fr": "Gratuit",
+          "en": "Free"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "10 €",
+          "nl": "10 €",
+          "fr": "10 €",
+          "en": "€10"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Брюсселі іспит складають французькою або нідерландською. Перекладача (DE/EN або мова жестів) призначає центр, це коштує 50 €.",
+      "nl": "In Brussel: examen in FR of NL; een tolk (DE/EN, gebarentaal) wordt door het centrum aangesteld en kost 50 €.",
+      "fr": "À Bruxelles : examen en FR ou NL ; un interprète (DE/EN, langue des signes) désigné par le centre coûte 50 €.",
+      "en": "In Brussels: exam in FR or NL; an interpreter (DE/EN, sign language) appointed by the centre costs €50."
+    },
+    "source": {
+      "title": "be.brussels — examens permis B",
+      "url": "https://be.brussels/fr/transport-mobilite/permis-de-conduire-et-immatriculation/obtenir-son-permis/formation-la-conduite-et-examens-pour-le-permis-de-conduire-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_questions_count",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Скільки питань на теоретичному іспиті категорії B?",
+      "nl": "Hoeveel vragen telt het theorie-examen B?",
+      "fr": "Combien de questions compte l'examen théorique B ?",
+      "en": "How many questions are in the category B theory exam?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "50",
+          "nl": "50",
+          "fr": "50",
+          "en": "50"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "40",
+          "nl": "40",
+          "fr": "40",
+          "en": "40"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "30",
+          "nl": "30",
+          "fr": "30",
+          "en": "30"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "50 питань з 2–3 варіантами відповіді, у всіх трьох регіонах.",
+      "nl": "50 meerkeuzevragen met 2 of 3 antwoorden, in de drie gewesten.",
+      "fr": "50 questions à 2 ou 3 réponses, dans les trois régions.",
+      "en": "50 questions with 2–3 answers, in all three regions."
+    },
+    "source": {
+      "title": "vlaanderen.be — theorie-examen rijbewijs B",
+      "url": "https://www.vlaanderen.be/rijbewijs-b-voor-auto/theorie-examen-voor-rijbewijs-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "exam_bxl_local",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "brussels"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Брюссель. Де треба скласти теорію, щоб складати практичний іспит у Брюсселі (якщо тимчасові права видано після 1.11.2018)?",
+      "nl": "Brussel. Waar moet je voor theorie geslaagd zijn om in Brussel het praktisch examen af te leggen (voorlopig rijbewijs na 1.11.2018)?",
+      "fr": "Bruxelles. Où faut-il avoir réussi la théorie pour passer la pratique à Bruxelles (permis provisoire après le 1.11.2018) ?",
+      "en": "Brussels. Where must you pass the theory to take the practical exam in Brussels (provisional licence after 1.11.2018)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "У Брюсселі",
+          "nl": "In Brussel",
+          "fr": "À Bruxelles",
+          "en": "In Brussels"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Будь-де в Бельгії",
+          "nl": "Overal in België",
+          "fr": "Partout en Belgique",
+          "en": "Anywhere in Belgium"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Для практичного іспиту в Брюсселі потрібна теорія, складена в Брюсселі (для тимчасових прав, виданих після 1.11.2018).",
+      "nl": "Voor het praktisch examen in Brussel moet je in Brussel voor theorie geslaagd zijn (voorlopig rijbewijs na 1.11.2018).",
+      "fr": "Pour la pratique à Bruxelles, il faut avoir réussi la théorie à Bruxelles (permis provisoire après le 1.11.2018).",
+      "en": "For the practical exam in Brussels you need a theory pass from Brussels (provisional licence after 1.11.2018)."
+    },
+    "source": {
+      "title": "be.brussels — examens permis B",
+      "url": "https://be.brussels/fr/transport-mobilite/permis-de-conduire-et-immatriculation/obtenir-son-permis/formation-la-conduite-et-examens-pour-le-permis-de-conduire-b",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "exam"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c3_closed",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє рух усім транспортним засобам в обох напрямках?",
+      "nl": "Welk bord verbiedt het verkeer voor alle voertuigen in beide richtingen?",
+      "fr": "Quel panneau interdit la circulation à tout véhicule dans les deux sens ?",
+      "en": "Which sign bans all vehicles in both directions?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C3",
+          "nl": "C3",
+          "fr": "C3",
+          "en": "C3"
+        },
+        "image": "assets/signs/C3.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C1",
+          "nl": "C1",
+          "fr": "C1",
+          "en": "C1"
+        },
+        "image": "assets/signs/C1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "E3",
+          "nl": "E3",
+          "fr": "E3",
+          "en": "E3"
+        },
+        "image": "assets/signs/E3.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C3 — Рух заборонено; C1 — В'їзд заборонено; E3 — Зупинка і стоянка заборонені.",
+      "nl": "C3 — Verboden toegang; C1 — Verboden richting; E3 — Stilstaan en parkeren verboden.",
+      "fr": "C3 — Accès interdit; C1 — Sens interdit; E3 — Arrêt et stationnement interdits.",
+      "en": "C3 — Closed to all vehicles; C1 — No entry; E3 — No stopping and no parking."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C3"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c1_no_entry",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє в'їзд з цього боку (дорога одностороння назустріч тобі)?",
+      "nl": "Welk bord verbiedt de toegang langs deze kant (eenrichting tegen jou in)?",
+      "fr": "Quel panneau interdit l'accès de ce côté (sens unique contre vous) ?",
+      "en": "Which sign bans entry from this side (one-way against you)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C1",
+          "nl": "C1",
+          "fr": "C1",
+          "en": "C1"
+        },
+        "image": "assets/signs/C1.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C3",
+          "nl": "C3",
+          "fr": "C3",
+          "en": "C3"
+        },
+        "image": "assets/signs/C3.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "F19",
+          "nl": "F19",
+          "fr": "F19",
+          "en": "F19"
+        },
+        "image": "assets/signs/F19.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C1 — В'їзд заборонено; C3 — Рух заборонено; F19 — Дорога з одностороннім рухом.",
+      "nl": "C1 — Verboden richting; C3 — Verboden toegang; F19 — Eenrichtingsweg.",
+      "fr": "C1 — Sens interdit; C3 — Accès interdit; F19 — Sens unique.",
+      "en": "C1 — No entry; C3 — Closed to all vehicles; F19 — One-way road."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C1"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c35_no_overtake",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє обгін?",
+      "nl": "Welk bord verbiedt inhalen?",
+      "fr": "Quel panneau interdit le dépassement ?",
+      "en": "Which sign bans overtaking?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C35",
+          "nl": "C35",
+          "fr": "C35",
+          "en": "C35"
+        },
+        "image": "assets/signs/C35.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C33",
+          "nl": "C33",
+          "fr": "C33",
+          "en": "C33"
+        },
+        "image": "assets/signs/C33.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "C31a",
+          "nl": "C31a",
+          "fr": "C31a",
+          "en": "C31a"
+        },
+        "image": "assets/signs/C31a.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C35 — Обгін заборонено; C33 — Розворот заборонено; C31a — Поворот ліворуч заборонено.",
+      "nl": "C35 — Inhaalverbod; C33 — Verboden te keren; C31a — Verboden links af te slaan.",
+      "fr": "C35 — Dépassement interdit; C33 — Interdiction de faire demi-tour; C31a — Interdiction de tourner à gauche.",
+      "en": "C35 — No overtaking; C33 — No U-turn; C31a — No left turn."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C35"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c33_uturn",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє розворот?",
+      "nl": "Welk bord verbiedt keren?",
+      "fr": "Quel panneau interdit le demi-tour ?",
+      "en": "Which sign bans U-turns?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C33",
+          "nl": "C33",
+          "fr": "C33",
+          "en": "C33"
+        },
+        "image": "assets/signs/C33.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C31a",
+          "nl": "C31a",
+          "fr": "C31a",
+          "en": "C31a"
+        },
+        "image": "assets/signs/C31a.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "C31b",
+          "nl": "C31b",
+          "fr": "C31b",
+          "en": "C31b"
+        },
+        "image": "assets/signs/C31b.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C33 — Розворот заборонено; C31a — Поворот ліворуч заборонено; C31b — Поворот праворуч заборонено.",
+      "nl": "C33 — Verboden te keren; C31a — Verboden links af te slaan; C31b — Verboden rechts af te slaan.",
+      "fr": "C33 — Interdiction de faire demi-tour; C31a — Interdiction de tourner à gauche; C31b — Interdiction de tourner à droite.",
+      "en": "C33 — No U-turn; C31a — No left turn; C31b — No right turn."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C33"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c31b_right",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє поворот праворуч?",
+      "nl": "Welk bord verbiedt rechts afslaan?",
+      "fr": "Quel panneau interdit de tourner à droite ?",
+      "en": "Which sign bans turning right?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C31b",
+          "nl": "C31b",
+          "fr": "C31b",
+          "en": "C31b"
+        },
+        "image": "assets/signs/C31b.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C31a",
+          "nl": "C31a",
+          "fr": "C31a",
+          "en": "C31a"
+        },
+        "image": "assets/signs/C31a.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "C33",
+          "nl": "C33",
+          "fr": "C33",
+          "en": "C33"
+        },
+        "image": "assets/signs/C33.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C31b — Поворот праворуч заборонено; C31a — Поворот ліворуч заборонено; C33 — Розворот заборонено.",
+      "nl": "C31b — Verboden rechts af te slaan; C31a — Verboden links af te slaan; C33 — Verboden te keren.",
+      "fr": "C31b — Interdiction de tourner à droite; C31a — Interdiction de tourner à gauche; C33 — Interdiction de faire demi-tour.",
+      "en": "C31b — No right turn; C31a — No left turn; C33 — No U-turn."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C31b"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_b9_priority_road",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак означає, що ти їдеш дорогою з пріоритетом?",
+      "nl": "Welk bord betekent dat je op een voorrangsweg rijdt?",
+      "fr": "Quel panneau indique que vous êtes sur une route prioritaire ?",
+      "en": "Which sign means you are on a priority road?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B9",
+          "nl": "B9",
+          "fr": "B9",
+          "en": "B9"
+        },
+        "image": "assets/signs/B9.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B15",
+          "nl": "B15",
+          "fr": "B15",
+          "en": "B15"
+        },
+        "image": "assets/signs/B15.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B11",
+          "nl": "B11",
+          "fr": "B11",
+          "en": "B11"
+        },
+        "image": "assets/signs/B11.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B9 — Дорога з пріоритетом; B15 — Пріоритет на найближчому перехресті; B11 — Кінець дороги з пріоритетом.",
+      "nl": "B9 — Voorrangsweg; B15 — Voorrang op het volgende kruispunt; B11 — Einde voorrangsweg.",
+      "fr": "B9 — Route prioritaire; B15 — Priorité à la prochaine intersection; B11 — Fin de route prioritaire.",
+      "en": "B9 — Priority road; B15 — Priority at the next intersection; B11 — End of priority road."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "B9"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_b11_end_priority",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Після якого знака пріоритет дороги закінчується?",
+      "nl": "Na welk bord eindigt de voorrangsweg?",
+      "fr": "Après quel panneau la route prioritaire prend-elle fin ?",
+      "en": "After which sign does the priority road end?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B11",
+          "nl": "B11",
+          "fr": "B11",
+          "en": "B11"
+        },
+        "image": "assets/signs/B11.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B9",
+          "nl": "B9",
+          "fr": "B9",
+          "en": "B9"
+        },
+        "image": "assets/signs/B9.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B17",
+          "nl": "B17",
+          "fr": "B17",
+          "en": "B17"
+        },
+        "image": "assets/signs/B17.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B11 — Кінець дороги з пріоритетом; B9 — Дорога з пріоритетом; B17 — Перехрестя з пріоритетом праворуч.",
+      "nl": "B11 — Einde voorrangsweg; B9 — Voorrangsweg; B17 — Kruispunt met voorrang van rechts.",
+      "fr": "B11 — Fin de route prioritaire; B9 — Route prioritaire; B17 — Carrefour à priorité de droite.",
+      "en": "B11 — End of priority road; B9 — Priority road; B17 — Junction with priority to the right."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "B11"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_b5_stop",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак вимагає повної зупинки перед перехрестям?",
+      "nl": "Welk bord verplicht je volledig te stoppen voor het kruispunt?",
+      "fr": "Quel panneau impose l'arrêt complet avant le carrefour ?",
+      "en": "Which sign requires a full stop before the junction?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B5",
+          "nl": "B5",
+          "fr": "B5",
+          "en": "B5"
+        },
+        "image": "assets/signs/B5.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B1",
+          "nl": "B1",
+          "fr": "B1",
+          "en": "B1"
+        },
+        "image": "assets/signs/B1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B17",
+          "nl": "B17",
+          "fr": "B17",
+          "en": "B17"
+        },
+        "image": "assets/signs/B17.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B5 — STOP; B1 — Дати дорогу; B17 — Перехрестя з пріоритетом праворуч.",
+      "nl": "B5 — STOP; B1 — Voorrang verlenen; B17 — Kruispunt met voorrang van rechts.",
+      "fr": "B5 — STOP; B1 — Cédez le passage; B17 — Carrefour à priorité de droite.",
+      "en": "B5 — STOP; B1 — Give way; B17 — Junction with priority to the right."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "B5"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_b17_right",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про перехрестя, де діє пріоритет праворуч?",
+      "nl": "Welk bord kondigt een kruispunt met voorrang van rechts aan?",
+      "fr": "Quel panneau annonce un carrefour à priorité de droite ?",
+      "en": "Which sign warns of a junction with priority to the right?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "B17",
+          "nl": "B17",
+          "fr": "B17",
+          "en": "B17"
+        },
+        "image": "assets/signs/B17.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "B15",
+          "nl": "B15",
+          "fr": "B15",
+          "en": "B15"
+        },
+        "image": "assets/signs/B15.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A51",
+          "nl": "A51",
+          "fr": "A51",
+          "en": "A51"
+        },
+        "image": "assets/signs/A51.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "B17 — Перехрестя з пріоритетом праворуч; B15 — Пріоритет на найближчому перехресті; A51 — Інша небезпека.",
+      "nl": "B17 — Kruispunt met voorrang van rechts; B15 — Voorrang op het volgende kruispunt; A51 — Ander gevaar.",
+      "fr": "B17 — Carrefour à priorité de droite; B15 — Priorité à la prochaine intersection; A51 — Autre danger.",
+      "en": "B17 — Junction with priority to the right; B15 — Priority at the next intersection; A51 — Other danger."
+    },
+    "source": {
+      "title": "Wegcode art. 67",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "B17"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_d5_roundabout",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак позначає круговий рух?",
+      "nl": "Welk bord duidt een rotonde aan?",
+      "fr": "Quel panneau indique un rond-point ?",
+      "en": "Which sign marks a roundabout?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "D5",
+          "nl": "D5",
+          "fr": "D5",
+          "en": "D5"
+        },
+        "image": "assets/signs/D5.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "D1",
+          "nl": "D1",
+          "fr": "D1",
+          "en": "D1"
+        },
+        "image": "assets/signs/D1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B1",
+          "nl": "B1",
+          "fr": "B1",
+          "en": "B1"
+        },
+        "image": "assets/signs/B1.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "D5 — Круговий рух; D1 — Обов'язковий напрямок; B1 — Дати дорогу.",
+      "nl": "D5 — Rotonde; D1 — Verplichte rijrichting; B1 — Voorrang verlenen.",
+      "fr": "D5 — Rond-point; D1 — Direction obligatoire; B1 — Cédez le passage.",
+      "en": "D5 — Roundabout; D1 — Compulsory direction; B1 — Give way."
+    },
+    "source": {
+      "title": "Wegcode art. 69",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "D5"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_d7_cycle",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак позначає обов'язкову велодоріжку?",
+      "nl": "Welk bord duidt een verplicht fietspad aan?",
+      "fr": "Quel panneau indique une piste cyclable obligatoire ?",
+      "en": "Which sign marks a mandatory cycle path?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "D7",
+          "nl": "D7",
+          "fr": "D7",
+          "en": "D7"
+        },
+        "image": "assets/signs/D7.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "D1",
+          "nl": "D1",
+          "fr": "D1",
+          "en": "D1"
+        },
+        "image": "assets/signs/D1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "F49",
+          "nl": "F49",
+          "fr": "F49",
+          "en": "F49"
+        },
+        "image": "assets/signs/F49.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "D7 — Обов'язкова велодоріжка; D1 — Обов'язковий напрямок; F49 — Пішохідний перехід (місце переходу).",
+      "nl": "D7 — Verplicht fietspad; D1 — Verplichte rijrichting; F49 — Oversteekplaats voor voetgangers.",
+      "fr": "D7 — Piste cyclable obligatoire; D1 — Direction obligatoire; F49 — Passage pour piétons.",
+      "en": "D7 — Compulsory cycle path; D1 — Compulsory direction; F49 — Pedestrian crossing."
+    },
+    "source": {
+      "title": "Wegcode art. 70",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "D7"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_e3_no_stopping",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак забороняє і зупинку, і стоянку?",
+      "nl": "Welk bord verbiedt zowel stilstaan als parkeren?",
+      "fr": "Quel panneau interdit à la fois l'arrêt et le stationnement ?",
+      "en": "Which sign bans both stopping and parking?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "E3",
+          "nl": "E3",
+          "fr": "E3",
+          "en": "E3"
+        },
+        "image": "assets/signs/E3.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "E1",
+          "nl": "E1",
+          "fr": "E1",
+          "en": "E1"
+        },
+        "image": "assets/signs/E1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "E9a",
+          "nl": "E9a",
+          "fr": "E9a",
+          "en": "E9a"
+        },
+        "image": "assets/signs/E9a.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "E3 — Зупинка і стоянка заборонені; E1 — Стоянка заборонена; E9a — Стоянка дозволена.",
+      "nl": "E3 — Stilstaan en parkeren verboden; E1 — Parkeerverbod; E9a — Parkeren toegelaten.",
+      "fr": "E3 — Arrêt et stationnement interdits; E1 — Stationnement interdit; E9a — Stationnement autorisé.",
+      "en": "E3 — No stopping and no parking; E1 — No parking; E9a — Parking allowed."
+    },
+    "source": {
+      "title": "Wegcode art. 70",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "E3"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_e9a_parking",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак дозволяє стоянку?",
+      "nl": "Welk bord laat parkeren toe?",
+      "fr": "Quel panneau autorise le stationnement ?",
+      "en": "Which sign allows parking?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "E9a",
+          "nl": "E9a",
+          "fr": "E9a",
+          "en": "E9a"
+        },
+        "image": "assets/signs/E9a.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "E1",
+          "nl": "E1",
+          "fr": "E1",
+          "en": "E1"
+        },
+        "image": "assets/signs/E1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "E3",
+          "nl": "E3",
+          "fr": "E3",
+          "en": "E3"
+        },
+        "image": "assets/signs/E3.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "E9a — Стоянка дозволена; E1 — Стоянка заборонена; E3 — Зупинка і стоянка заборонені.",
+      "nl": "E9a — Parkeren toegelaten; E1 — Parkeerverbod; E3 — Stilstaan en parkeren verboden.",
+      "fr": "E9a — Stationnement autorisé; E1 — Stationnement interdit; E3 — Arrêt et stationnement interdits.",
+      "en": "E9a — Parking allowed; E1 — No parking; E3 — No stopping and no parking."
+    },
+    "source": {
+      "title": "Wegcode art. 70",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "E9a"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_f4b_end30",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Після якого знака закінчується зона 30?",
+      "nl": "Na welk bord eindigt de zone 30?",
+      "fr": "Après quel panneau la zone 30 se termine-t-elle ?",
+      "en": "After which sign does the zone 30 end?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "F4b",
+          "nl": "F4b",
+          "fr": "F4b",
+          "en": "F4b"
+        },
+        "image": "assets/signs/F4b.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "F4a",
+          "nl": "F4a",
+          "fr": "F4a",
+          "en": "F4a"
+        },
+        "image": "assets/signs/F4a.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "C45",
+          "nl": "C45",
+          "fr": "C45",
+          "en": "C45"
+        },
+        "image": "assets/signs/C45.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F4b — Кінець зони 30; F4a — Початок зони 30; C45 — Кінець обмеження швидкості.",
+      "nl": "F4b — Einde zone 30; F4a — Begin zone 30; C45 — Einde snelheidsbeperking.",
+      "fr": "F4b — Fin de zone 30; F4a — Début de zone 30; C45 — Fin de limitation de vitesse.",
+      "en": "F4b — End of zone 30; F4a — Start of zone 30; C45 — End of speed limit."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "F4b"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_f5_motorway",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак позначає початок автомагістралі?",
+      "nl": "Welk bord duidt het begin van een autosnelweg aan?",
+      "fr": "Quel panneau indique le début d'une autoroute ?",
+      "en": "Which sign marks the start of a motorway?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "F5",
+          "nl": "F5",
+          "fr": "F5",
+          "en": "F5"
+        },
+        "image": "assets/signs/F5.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "F7",
+          "nl": "F7",
+          "fr": "F7",
+          "en": "F7"
+        },
+        "image": "assets/signs/F7.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "F19",
+          "nl": "F19",
+          "fr": "F19",
+          "en": "F19"
+        },
+        "image": "assets/signs/F19.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F5 — Автомагістраль; F7 — Кінець автомагістралі; F19 — Дорога з одностороннім рухом.",
+      "nl": "F5 — Autosnelweg; F7 — Einde autosnelweg; F19 — Eenrichtingsweg.",
+      "fr": "F5 — Autoroute; F7 — Fin d'autoroute; F19 — Sens unique.",
+      "en": "F5 — Motorway; F7 — End of motorway; F19 — One-way road."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "F5"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_f7_end_motorway",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак позначає кінець автомагістралі?",
+      "nl": "Welk bord duidt het einde van een autosnelweg aan?",
+      "fr": "Quel panneau indique la fin d'une autoroute ?",
+      "en": "Which sign marks the end of a motorway?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "F7",
+          "nl": "F7",
+          "fr": "F7",
+          "en": "F7"
+        },
+        "image": "assets/signs/F7.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "F5",
+          "nl": "F5",
+          "fr": "F5",
+          "en": "F5"
+        },
+        "image": "assets/signs/F5.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "F3",
+          "nl": "F3",
+          "fr": "F3",
+          "en": "F3"
+        },
+        "image": "assets/signs/F3.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F7 — Кінець автомагістралі; F5 — Автомагістраль; F3 — Кінець населеного пункту.",
+      "nl": "F7 — Einde autosnelweg; F5 — Autosnelweg; F3 — Einde bebouwde kom.",
+      "fr": "F7 — Fin d'autoroute; F5 — Autoroute; F3 — Fin d'agglomération.",
+      "en": "F7 — End of motorway; F5 — Motorway; F3 — End of built-up area."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "F7"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_f19_oneway",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак означає, що ти в'їжджаєш на дорогу з одностороннім рухом?",
+      "nl": "Welk bord betekent dat je een eenrichtingsweg inrijdt?",
+      "fr": "Quel panneau indique que vous entrez dans un sens unique ?",
+      "en": "Which sign means you are entering a one-way road?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "F19",
+          "nl": "F19",
+          "fr": "F19",
+          "en": "F19"
+        },
+        "image": "assets/signs/F19.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C1",
+          "nl": "C1",
+          "fr": "C1",
+          "en": "C1"
+        },
+        "image": "assets/signs/C1.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "D1",
+          "nl": "D1",
+          "fr": "D1",
+          "en": "D1"
+        },
+        "image": "assets/signs/D1.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "F19 — Дорога з одностороннім рухом; C1 — В'їзд заборонено; D1 — Обов'язковий напрямок.",
+      "nl": "F19 — Eenrichtingsweg; C1 — Verboden richting; D1 — Verplichte rijrichting.",
+      "fr": "F19 — Sens unique; C1 — Sens interdit; D1 — Direction obligatoire.",
+      "en": "F19 — One-way road; C1 — No entry; D1 — Compulsory direction."
+    },
+    "source": {
+      "title": "Wegcode art. 71",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "F19"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_a1b_bend_right",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про небезпечний поворот праворуч?",
+      "nl": "Welk bord waarschuwt voor een gevaarlijke bocht naar rechts?",
+      "fr": "Quel panneau annonce un virage dangereux à droite ?",
+      "en": "Which sign warns of a dangerous bend to the right?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A1b",
+          "nl": "A1b",
+          "fr": "A1b",
+          "en": "A1b"
+        },
+        "image": "assets/signs/A1b.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A1a",
+          "nl": "A1a",
+          "fr": "A1a",
+          "en": "A1a"
+        },
+        "image": "assets/signs/A1a.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A51",
+          "nl": "A51",
+          "fr": "A51",
+          "en": "A51"
+        },
+        "image": "assets/signs/A51.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A1b — Небезпечний поворот праворуч; A1a — Небезпечний поворот ліворуч; A51 — Інша небезпека.",
+      "nl": "A1b — Gevaarlijke bocht naar rechts; A1a — Gevaarlijke bocht naar links; A51 — Ander gevaar.",
+      "fr": "A1b — Virage dangereux à droite; A1a — Virage dangereux à gauche; A51 — Autre danger.",
+      "en": "A1b — Dangerous bend to the right; A1a — Dangerous bend to the left; A51 — Other danger."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "A1b"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_a15_slippery",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про слизьку дорогу?",
+      "nl": "Welk bord waarschuwt voor een glibberige rijbaan?",
+      "fr": "Quel panneau avertit d'une chaussée glissante ?",
+      "en": "Which sign warns of a slippery road?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A15",
+          "nl": "A15",
+          "fr": "A15",
+          "en": "A15"
+        },
+        "image": "assets/signs/A15.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A51",
+          "nl": "A51",
+          "fr": "A51",
+          "en": "A51"
+        },
+        "image": "assets/signs/A51.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A1a",
+          "nl": "A1a",
+          "fr": "A1a",
+          "en": "A1a"
+        },
+        "image": "assets/signs/A1a.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A15 — Слизька дорога; A51 — Інша небезпека; A1a — Небезпечний поворот ліворуч.",
+      "nl": "A15 — Glibberige rijbaan; A51 — Ander gevaar; A1a — Gevaarlijke bocht naar links.",
+      "fr": "A15 — Chaussée glissante; A51 — Autre danger; A1a — Virage dangereux à gauche.",
+      "en": "A15 — Slippery road; A51 — Other danger; A1a — Dangerous bend to the left."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "A15"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_a41_barriers",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак попереджає про залізничний переїзд ЗІ шлагбаумом?",
+      "nl": "Welk bord kondigt een overweg MET slagbomen aan?",
+      "fr": "Quel panneau annonce un passage à niveau AVEC barrières ?",
+      "en": "Which sign warns of a level crossing WITH barriers?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A41",
+          "nl": "A41",
+          "fr": "A41",
+          "en": "A41"
+        },
+        "image": "assets/signs/A41.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A43",
+          "nl": "A43",
+          "fr": "A43",
+          "en": "A43"
+        },
+        "image": "assets/signs/A43.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "A47",
+          "nl": "A47",
+          "fr": "A47",
+          "en": "A47"
+        },
+        "image": "assets/signs/A47.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A41 — Залізничний переїзд зі шлагбаумом; A43 — Залізничний переїзд без шлагбаума; A47 — Андріївський хрест: дві колії й більше.",
+      "nl": "A41 — Overweg met slagbomen; A43 — Overweg zonder slagbomen; A47 — Andreaskruis: twee of meer sporen.",
+      "fr": "A41 — Passage à niveau avec barrières; A43 — Passage à niveau sans barrières; A47 — Croix de Saint-André : deux voies ou plus.",
+      "en": "A41 — Level crossing with barriers; A43 — Level crossing without barriers; A47 — St Andrew's cross: two or more tracks."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "A41"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_a47_two_tracks",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Який знак означає переїзд з двома коліями й більше?",
+      "nl": "Welk bord duidt een overweg met twee of meer sporen aan?",
+      "fr": "Quel panneau indique un passage à deux voies ou plus ?",
+      "en": "Which sign marks a crossing with two or more tracks?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "A47",
+          "nl": "A47",
+          "fr": "A47",
+          "en": "A47"
+        },
+        "image": "assets/signs/A47.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "A45",
+          "nl": "A45",
+          "fr": "A45",
+          "en": "A45"
+        },
+        "image": "assets/signs/A45.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "B17",
+          "nl": "B17",
+          "fr": "B17",
+          "en": "B17"
+        },
+        "image": "assets/signs/B17.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "A47 — Андріївський хрест: дві колії й більше; A45 — Андріївський хрест: одна колія; B17 — Перехрестя з пріоритетом праворуч.",
+      "nl": "A47 — Andreaskruis: twee of meer sporen; A45 — Andreaskruis: één spoor; B17 — Kruispunt met voorrang van rechts.",
+      "fr": "A47 — Croix de Saint-André : deux voies ou plus; A45 — Croix de Saint-André : une voie; B17 — Carrefour à priorité de droite.",
+      "en": "A47 — St Andrew's cross: two or more tracks; A45 — St Andrew's cross: single track; B17 — Junction with priority to the right."
+    },
+    "source": {
+      "title": "Wegcode art. 66",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "A47"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pick_c45_end_limit",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Який знак скасовує попереднє обмеження швидкості?",
+      "nl": "Welk bord heft de vorige snelheidsbeperking op?",
+      "fr": "Quel panneau met fin à la limitation de vitesse précédente ?",
+      "en": "Which sign ends the previous speed limit?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "C45",
+          "nl": "C45",
+          "fr": "C45",
+          "en": "C45"
+        },
+        "image": "assets/signs/C45.svg"
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "C43",
+          "nl": "C43",
+          "fr": "C43",
+          "en": "C43"
+        },
+        "image": "assets/signs/C43.svg"
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "F4b",
+          "nl": "F4b",
+          "fr": "F4b",
+          "en": "F4b"
+        },
+        "image": "assets/signs/F4b.svg"
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C45 — Кінець обмеження швидкості; C43 — Обмеження швидкості; F4b — Кінець зони 30.",
+      "nl": "C45 — Einde snelheidsbeperking; C43 — Snelheidsbeperking; F4b — Einde zone 30.",
+      "fr": "C45 — Fin de limitation de vitesse; C43 — Limitation de vitesse; F4b — Fin de zone 30.",
+      "en": "C45 — End of speed limit; C43 — Speed limit; F4b — End of zone 30."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pick-sign",
+      "C45"
     ],
     "status": "published"
   }

@@ -376,6 +376,61 @@ SCENES["rescue-lane"] = wrap(
     + path_arrow("M92,100 L380,100")
 )
 
+# ===== Розширення 2: кільце з двома смугами, ожеледиця, засліплення =====
+# 16. Кругова розв'язка з двома смугами: A у внутрішній смузі хоче виїхати, B у зовнішній
+R2_OUT, R2_MID, R2_IN = 96, 66, 40
+cy2 = 118
+ring2 = (f'<rect x="{cx - 46}" y="{cy2}" width="92" height="{H}" fill="{PAVE}"/>'
+         f'<rect x="{cx - 46}" y="0" width="92" height="{cy2}" fill="{PAVE}"/>'
+         f'<rect x="0" y="{cy2 - 46}" width="{W}" height="92" fill="{PAVE}"/>'
+         f'<circle cx="{cx}" cy="{cy2}" r="{R2_OUT + 10}" fill="{PAVE}"/>'
+         f'<rect x="{cx - 36}" y="0" width="72" height="{H}" fill="{ROAD}"/>'
+         f'<rect x="0" y="{cy2 - 36}" width="{W}" height="72" fill="{ROAD}"/>'
+         f'<circle cx="{cx}" cy="{cy2}" r="{R2_OUT}" fill="{ROAD}"/>'
+         f'<circle cx="{cx}" cy="{cy2}" r="{R2_MID}" fill="none" stroke="{LINE}" stroke-width="2" stroke-dasharray="10 9"/>'
+         f'<circle cx="{cx}" cy="{cy2}" r="{R2_IN}" fill="#9DB384" stroke="{CURB}" stroke-width="4"/>')
+ai = math.radians(60)   # A — у внутрішній смузі, праворуч знизу
+ax, ay = cx + (R2_MID + R2_IN) / 2 * math.cos(ai), cy2 + (R2_MID + R2_IN) / 2 * math.sin(ai)
+bo = math.radians(100)  # B — у зовнішній смузі трохи позаду
+bx2, by2 = cx + (R2_OUT + R2_MID) / 2 * math.cos(bo), cy2 + (R2_OUT + R2_MID) / 2 * math.sin(bo)
+# рух проти годинникової стрілки (на схемі y донизу): кут зменшується
+SCENES["roundabout-two-lanes"] = wrap(
+    ring2
+    # кут повороту машини = кут позиції на колі (рух проти годинникової стрілки)
+    + car(ax, ay, 60, EGO) + label(ax + 30, ay + 4, "A", EGO)
+    + car(bx2, by2, 100, "#C9302C") + label(bx2 - 30, by2 + 6, "B")
+    + path_arrow(f"M{ax + 14},{ay - 18} Q{cx + 86},{cy2 - 20} {W - 30},{cy2 - 17}")
+)
+
+# 17. Ожеледиця: дорога з крижаною кіркою, знак A15
+ice = "".join(f'<ellipse cx="{x0}" cy="{y0}" rx="{rx}" ry="{ry}" fill="#DCEBF5" opacity=".75"/>'
+              for x0, y0, rx, ry in ((70, 112, 40, 9), (170, 140, 55, 10), (260, 108, 46, 8), (340, 146, 38, 9), (120, 155, 30, 6)))
+SCENES["black-ice"] = wrap(
+    f'<rect width="{W}" height="{H}" fill="#E8EEF0"/>'
+    + hroad(90, 80) + ice
+    + "".join(f'<circle cx="{(i * 47) % W}" cy="{(i * 31) % 70 + 5}" r="1.6" fill="#FFFFFF"/>' for i in range(30))
+    + car(220, 90 + 60, 90, EGO) + label(180, 90 + 60, "A", EGO)
+    + sign("A15", 330, 222, 34)
+    + f'<text x="40" y="232" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#1F5FAE">−2 °C</text>'
+)
+
+# 18. Вночі: засліплення зустрічним світлом
+SCENES["night-dazzle"] = (
+    f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W * 2}" height="{H * 2}">{defs()}'
+    f'<defs><radialGradient id="glare" cx="0" cy=".5" r="1"><stop offset="0" stop-color="#FFF7C8" stop-opacity=".95"/>'
+    f'<stop offset="1" stop-color="#FFF7C8" stop-opacity="0"/></radialGradient>'
+    f'<linearGradient id="dip" x1="0" x2="1"><stop offset="0" stop-color="#FFF2B0" stop-opacity=".55"/><stop offset="1" stop-color="#FFF2B0" stop-opacity="0"/></linearGradient></defs>'
+    f'<rect width="{W}" height="{H}" fill="#1B2129"/>'
+    f'<rect x="0" y="88" width="{W}" height="84" fill="#34393F"/>'
+    f'<line x1="0" y1="130" x2="{W}" y2="130" stroke="#C9CCD0" stroke-width="2" stroke-dasharray="12 10" opacity=".7"/>'
+    # світло зустрічного (дальнє) — довгий яскравий конус ліворуч
+    f'<polygon points="276,106 40,70 40,150" fill="url(#glare)"/>'
+    + car(300, 109, -90, "#E8E8E4")
+    # твоє ближнє світло — короткий конус праворуч
+    + f'<polygon points="124,151 230,138 230,170" fill="url(#dip)"/>'
+    + car(100, 151, 90, EGO) + label(100, 186, "A", EGO) + label(300, 78, "B")
+    + "</svg>\n")
+
 OUT.mkdir(parents=True, exist_ok=True)
 for name, content in SCENES.items():
     (OUT / f"{name}.svg").write_text(content, encoding="utf-8")

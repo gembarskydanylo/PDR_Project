@@ -1,5 +1,21 @@
 [
   {
+    "code": "A15",
+    "category": "A",
+    "name": {
+      "uk": "Слизька дорога",
+      "nl": "Glibberige rijbaan",
+      "fr": "Chaussée glissante",
+      "en": "Slippery road"
+    },
+    "meaning": {
+      "uk": "Попереду ділянка, де дорога може бути слизькою (дощ, лід, бруд): зменш швидкість, уникай різких маневрів.",
+      "nl": "Glibberige rijbaan: vertraag en vermijd bruuske manoeuvres.",
+      "fr": "Chaussée glissante : ralentissez et évitez les manœuvres brusques.",
+      "en": "Slippery road: slow down and avoid sudden manoeuvres."
+    }
+  },
+  {
     "code": "A1a",
     "category": "A",
     "name": {
@@ -32,7 +48,39 @@
     }
   },
   {
-    "code": "A45",
+    "code": "A21",
+    "category": "A",
+    "name": {
+      "uk": "Пішохідний перехід",
+      "nl": "Oversteekplaats voor voetgangers",
+      "fr": "Passage pour piétons",
+      "en": "Pedestrian crossing ahead"
+    },
+    "meaning": {
+      "uk": "Попереджає про пішохідний перехід: будь готовий пропустити пішоходів (−5, якщо не пропустиш).",
+      "nl": "Kondigt een oversteekplaats aan: wees klaar om voetgangers voor te laten.",
+      "fr": "Annonce un passage pour piétons : soyez prêt à céder le passage.",
+      "en": "Warns of a pedestrian crossing: be ready to give way."
+    }
+  },
+  {
+    "code": "A23",
+    "category": "A",
+    "name": {
+      "uk": "Діти",
+      "nl": "Kinderen",
+      "fr": "Enfants",
+      "en": "Children"
+    },
+    "meaning": {
+      "uk": "Попереджає про місце, де часто бувають діти (школа, майданчик). Часто стоїть разом із зоною 30.",
+      "nl": "Plaats waar veel kinderen komen (school, speelplein); vaak met een zone 30.",
+      "fr": "Endroit fréquenté par des enfants (école, plaine de jeux) ; souvent avec une zone 30.",
+      "en": "Place often used by children (school, playground); often with a zone 30."
+    }
+  },
+  {
+    "code": "A41",
     "category": "A",
     "name": {
       "uk": "Залізничний переїзд зі шлагбаумом",
@@ -45,6 +93,54 @@
       "nl": "Overweg met slagbomen. Niet oprijden zolang ze bewegen of dicht zijn of de rode lichten knipperen (−5).",
       "fr": "Passage à niveau avec barrières. Ne pas s'engager tant qu'elles bougent ou sont fermées ou que les feux rouges clignotent (−5).",
       "en": "Level crossing with barriers. Do not enter while they move or are closed or the red lights flash (−5)."
+    }
+  },
+  {
+    "code": "A43",
+    "category": "A",
+    "name": {
+      "uk": "Залізничний переїзд без шлагбаума",
+      "nl": "Overweg zonder slagbomen",
+      "fr": "Passage à niveau sans barrières",
+      "en": "Level crossing without barriers"
+    },
+    "meaning": {
+      "uk": "Попереду переїзд без шлагбаума: переїжджай лише переконавшись, що потяг не наближається.",
+      "nl": "Overweg zonder slagbomen: steek pas over als je zeker bent dat er geen trein nadert.",
+      "fr": "Passage à niveau sans barrières : ne traversez qu'après vous être assuré qu'aucun train n'approche.",
+      "en": "Level crossing without barriers: cross only after making sure no train is coming."
+    }
+  },
+  {
+    "code": "A45",
+    "category": "A",
+    "name": {
+      "uk": "Андріївський хрест: одна колія",
+      "nl": "Andreaskruis: één spoor",
+      "fr": "Croix de Saint-André : une voie",
+      "en": "St Andrew's cross: single track"
+    },
+    "meaning": {
+      "uk": "Стоїть безпосередньо біля переїзду з однією колією.",
+      "nl": "Staat vlak bij een overweg met één spoor.",
+      "fr": "Placée juste avant un passage à niveau à une voie.",
+      "en": "Placed right at a single-track level crossing."
+    }
+  },
+  {
+    "code": "A47",
+    "category": "A",
+    "name": {
+      "uk": "Андріївський хрест: дві колії й більше",
+      "nl": "Andreaskruis: twee of meer sporen",
+      "fr": "Croix de Saint-André : deux voies ou plus",
+      "en": "St Andrew's cross: two or more tracks"
+    },
+    "meaning": {
+      "uk": "Переїзд має дві колії й більше: після одного потяга може йти інший.",
+      "nl": "Overweg met twee of meer sporen: na één trein kan er een tweede komen.",
+      "fr": "Passage à deux voies ou plus : un second train peut suivre.",
+      "en": "Crossing with two or more tracks: a second train may follow."
     }
   },
   {
@@ -125,6 +221,38 @@
       "nl": "Waarschuwt dat op het kruispunt voorrang van rechts geldt.",
       "fr": "Avertit que la priorité de droite s'applique au carrefour.",
       "en": "Warns that priority to the right applies at the junction."
+    }
+  },
+  {
+    "code": "B19",
+    "category": "B",
+    "name": {
+      "uk": "Вузький проїзд: пропусти зустрічних",
+      "nl": "Smalle doorgang: voorrang verlenen aan tegenliggers",
+      "fr": "Passage étroit : céder le passage aux conducteurs venant en sens inverse",
+      "en": "Narrow passage: give way to oncoming traffic"
+    },
+    "meaning": {
+      "uk": "Червона стрілка — це ти. Пропусти тих, хто їде назустріч, і за потреби зупинись перед звуженням.",
+      "nl": "De rode pijl ben jij: laat tegenliggers voorgaan, stop zo nodig voor de versmalling.",
+      "fr": "La flèche rouge, c'est vous : cédez aux conducteurs venant en face, arrêtez-vous si nécessaire.",
+      "en": "The red arrow is you: give way to oncoming traffic, stop before the narrowing if needed."
+    }
+  },
+  {
+    "code": "B21",
+    "category": "B",
+    "name": {
+      "uk": "Вузький проїзд: у тебе пріоритет",
+      "nl": "Smalle doorgang: voorrang t.o.v. tegenliggers",
+      "fr": "Passage étroit : priorité par rapport aux conducteurs venant en sens inverse",
+      "en": "Narrow passage: priority over oncoming traffic"
+    },
+    "meaning": {
+      "uk": "Біла стрілка вгору — це ти: зустрічні мають тебе пропустити. Однак обережність ніхто не скасовував.",
+      "nl": "De witte pijl ben jij: tegenliggers moeten jou laten voorgaan. Blijf voorzichtig.",
+      "fr": "La flèche blanche, c'est vous : ceux d'en face vous cèdent le passage. Restez prudent.",
+      "en": "The white arrow is you: oncoming drivers must let you through. Stay careful."
     }
   },
   {
@@ -429,6 +557,22 @@
       "nl": "Einde bebouwde kom: basis 70 km/u in Vlaanderen en Brussel, 90 km/u in Wallonië.",
       "fr": "Fin d'agglomération : en principe 70 km/h en Flandre et à Bruxelles, 90 km/h en Wallonie.",
       "en": "End of built-up area: default 70 km/h in Flanders and Brussels, 90 km/h in Wallonia."
+    }
+  },
+  {
+    "code": "F49",
+    "category": "F",
+    "name": {
+      "uk": "Пішохідний перехід (місце переходу)",
+      "nl": "Oversteekplaats voor voetgangers",
+      "fr": "Passage pour piétons",
+      "en": "Pedestrian crossing"
+    },
+    "meaning": {
+      "uk": "Позначає саме місце пішохідного переходу. Пішоходів, що на ньому чи ось-ось ступлять, пропускаєш.",
+      "nl": "Duidt de oversteekplaats zelf aan; laat voetgangers voorgaan.",
+      "fr": "Indique le passage pour piétons lui-même ; cédez le passage aux piétons.",
+      "en": "Marks the crossing itself; give way to pedestrians."
     }
   },
   {
