@@ -5,6 +5,7 @@ const Progress = {
     return {
       language: "uk",
       region: "all",
+      secondLang: "",     // "" | "nl" | "fr" | "en" — друга мова питань і уроків
       answers: {},        // { [questionId]: { ok: boolean, everOk: boolean, n: number } }
       mistakes: [],       // id питань, на які востаннє відповіли неправильно
       examHistory: [],
@@ -78,9 +79,20 @@ const Progress = {
     return this.update({ region });
   },
 
+  setSecondLang(secondLang) {
+    return this.update({ secondLang });
+  },
+
+  // Зберігає результат пробного іспиту (останні 10).
+  addExam(result) {
+    const data = this.load();
+    data.examHistory = [result, ...(data.examHistory || [])].slice(0, 10);
+    this.save(data);
+  },
+
   // Скидає відповіді й помилки, зберігаючи мову та регіон.
   reset() {
-    const { language, region } = this.load();
-    this.save({ ...this.getDefault(), language, region });
+    const { language, region, secondLang } = this.load();
+    this.save({ ...this.getDefault(), language, region, secondLang });
   }
 };
