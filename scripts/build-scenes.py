@@ -68,7 +68,8 @@ def sign(code, x, y, size=30):
 
 def wrap(body):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W * 2}" height="{H * 2}">'
-            f'{defs()}<rect width="{W}" height="{H}" fill="{GRASS}"/>{body}</svg>\n')
+            f'{defs()}<clipPath id="frame"><rect width="{W}" height="{H}"/></clipPath>'
+            f'<g clip-path="url(#frame)"><rect width="{W}" height="{H}" fill="{GRASS}"/>{body}</g></svg>\n')
 
 
 def crossroads(road=70):
