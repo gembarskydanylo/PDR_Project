@@ -46,6 +46,8 @@ assets/signs/           знаки (генеруються scripts/build-signs.p
 assets/scenes/          схеми ситуацій (генеруються scripts/build-scenes.py)
 sw.js                   офлайн-кеш (при зміні JS/CSS підняти VERSION)
 scripts/validate-questions.mjs  перевірка questions.json
+docs/brand-guidelines.md  бренд-гайд: голос, кольори, логотип, правила знаків і схем
+assets/banners/launch/  банери для соцмереж (генеруються scripts/build-banners.cjs)
 docs/gemini-legacy/     ранні чернетки з Gemini (для історії)
 ```
 
@@ -85,3 +87,13 @@ docs/gemini-legacy/     ранні чернетки з Gemini (для істор
 ```bash
 node scripts/validate-questions.mjs
 ```
+
+## Банери
+
+```bash
+PW=/шлях/до/playwright node scripts/build-banners.cjs
+```
+
+Два напрями (`minimal` — світлий зі знаками, `asphalt` — темний зі схемою), формати:
+`og` 1200×630 (превʼю посилання), `github-social` 1280×640, `instagram-post` 1080×1080, `instagram-story` 1080×1920, `facebook-cover` 820×312.
+Превʼю посилання підключене в `index.html` (`og:image`). Для GitHub: Settings → General → Social preview → завантажити `minimal-github-social-1280x640.png`.

@@ -342,8 +342,8 @@ function renderMistakes() {
   v.appendChild(list);
 }
 
-function segmented(options, current, onPick) {
-  const wrap = el("div", "segmented");
+function segmented(options, current, onPick, cls = "") {
+  const wrap = el("div", ("segmented " + cls).trim());
   options.forEach(([value, label]) => {
     const b = button("", label, () => onPick(value));
     b.setAttribute("aria-pressed", String(value === current));
@@ -359,13 +359,13 @@ function renderSettings() {
 
   const lang = el("div", "field");
   lang.appendChild(el("label", "", t("language_label")));
-  lang.appendChild(segmented([["uk", "Українська"], ["nl", "NL"], ["fr", "FR"], ["en", "EN"]], window.currentLang, setLanguage));
+  lang.appendChild(segmented([["uk", "Українська"], ["nl", "Nederlands"], ["fr", "Français"], ["en", "English"]], window.currentLang, setLanguage, "two-rows"));
   panel.appendChild(lang);
 
   const region = el("div", "field");
   region.appendChild(el("label", "", t("region_label")));
   region.appendChild(segmented(["all", "flanders", "brussels", "wallonia"].map((r) => [r, t("regions." + r)]),
-    Progress.get().region, (r) => { Progress.setRegion(r); render(); }));
+    Progress.get().region, (r) => { Progress.setRegion(r); render(); }, "two-rows"));
   region.appendChild(el("p", "muted small", t("region_hint")));
   panel.appendChild(region);
 
