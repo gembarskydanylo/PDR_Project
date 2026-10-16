@@ -489,7 +489,10 @@ function renderQuestion() {
     const label = el("span", "opt-text", tr(o.text));
     const o2 = second(o.text, "second");
     if (o2) label.appendChild(o2);
-    const b = button("opt", [el("span", "key", KEYS[idx]), label], () => (quiz.exam ? examAnswer(q, o.id) : answer(q, o.id)));
+    const parts = [el("span", "key", KEYS[idx])];
+    if (o.image) parts.push(img(o.image, "opt-sign"));
+    parts.push(label);
+    const b = button("opt" + (o.image ? " with-img" : ""), parts, () => (quiz.exam ? examAnswer(q, o.id) : answer(q, o.id)));
     b.dataset.id = o.id;
     opts.appendChild(b);
   });

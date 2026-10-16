@@ -147,6 +147,109 @@ SIGNS["F5"] = svg(
     f'<rect x="16" y="34" width="68" height="9" fill="{WHITE}"/>'
     f'<rect x="20" y="43" width="7" height="8" fill="{WHITE}"/><rect x="73" y="43" width="7" height="8" fill="{WHITE}"/>')
 
+# ===== Розширення: додаткові знаки =====
+def bar_prohibit():
+    """Червона діагональ заборони (зліва-згори вниз-праворуч), обрізана по колу."""
+    return (f'<defs><clipPath id="in"><circle cx="50" cy="50" r="37"/></clipPath></defs>'
+            f'<line x1="22" y1="22" x2="78" y2="78" stroke="{RED}" stroke-width="10" clip-path="url(#in)"/>')
+
+
+def turn_arrow(direction):
+    """Чорна стрілка «поворот» для C31: їде вгору й повертає ліворуч/праворуч."""
+    k = -1 if direction == "left" else 1
+    x = lambda v: 50 + k * (v - 50)
+    return (f'<path d="M{x(54)},80 L{x(54)},52 Q{x(54)},40 {x(64)},40 L{x(66)},40" fill="none" stroke="{BLACK}" stroke-width="9"/>'
+            f'<polygon points="{x(64)},28 {x(80)},40 {x(64)},52" fill="{BLACK}"/>')
+
+
+def number_disc(n):
+    size = 40 if n < 100 else 32
+    return svg(disc(WHITE, RED, 11) +
+               f'<text x="50" y="{50 + size * .35:.1f}" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" '
+               f'font-size="{size}" fill="{BLACK}" letter-spacing="-1">{n}</text>')
+
+
+# A1a / A1b — небезпечний поворот ліворуч / праворуч
+for code, k in (("A1a", -1), ("A1b", 1)):
+    body, (cx, cy) = triangle(up=True)
+    d = f"M{cx - 4 * k},{cy + 20} L{cx - 4 * k},{cy + 2} Q{cx - 4 * k},{cy - 12} {cx + 10 * k},{cy - 16}"
+    SIGNS[code] = svg(body + f'<path d="{d}" fill="none" stroke="{BLACK}" stroke-width="7" stroke-linecap="butt"/>', 100, 92)
+
+# A45 — залізничний переїзд зі шлагбаумом (піктограма огорожі)
+body, (cx, cy) = triangle(up=True)
+SIGNS["A45"] = svg(body + f'<g fill="{BLACK}">'
+                          f'<rect x="{cx - 20}" y="{cy - 8}" width="40" height="5"/>'
+                          f'<rect x="{cx - 20}" y="{cy + 6}" width="40" height="5"/>'
+                          + "".join(f'<rect x="{cx - 19 + i * 9.2:.1f}" y="{cy - 12}" width="3.4" height="30"/>' for i in range(5))
+                          + '</g>', 100, 92)
+
+# B15 — пріоритет на найближчому перехресті
+body, (cx, cy) = triangle(up=True)
+SIGNS["B15"] = svg(body + f'<rect x="{cx - 4.5}" y="{cy - 17}" width="9" height="35" fill="{BLACK}"/>'
+                          f'<rect x="{cx - 14}" y="{cy - 4}" width="28" height="3.5" fill="{BLACK}"/>', 100, 92)
+
+# C31a / C31b — поворот ліворуч / праворуч заборонено
+SIGNS["C31a"] = svg(disc(WHITE, RED, 11) + turn_arrow("left") + bar_prohibit())
+SIGNS["C31b"] = svg(disc(WHITE, RED, 11) + turn_arrow("right") + bar_prohibit())
+
+# C33 — розворот заборонено
+SIGNS["C33"] = svg(disc(WHITE, RED, 11) +
+                   f'<path d="M58,80 L58,44 Q58,28 46,28 Q34,28 34,44 L34,56" fill="none" stroke="{BLACK}" stroke-width="8"/>'
+                   f'<polygon points="23,54 45,54 34,70" fill="{BLACK}"/>' + bar_prohibit())
+
+# C43 з іншими значеннями
+for n in (30, 70, 90, 120):
+    SIGNS[f"C43-{n}"] = number_disc(n)
+
+# C45 — кінець обмеження швидкості
+SIGNS["C45"] = svg(f'<circle cx="50" cy="50" r="48" fill="{WHITE}" stroke="{BLACK}" stroke-width="1.5"/>'
+                   f'<text x="50" y="64" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" '
+                   f'font-size="40" fill="#8C8C8C" letter-spacing="-1">50</text>'
+                   '<defs><clipPath id="c45"><circle cx="50" cy="50" r="46"/></clipPath></defs><g clip-path="url(#c45)">'
+                   + "".join(f'<line x1="{8 + d}" y1="{92 + d}" x2="{92 + d}" y2="{8 + d}" stroke="{BLACK}" stroke-width="2.2"/>' for d in (-10, -5, 0, 5, 10))
+                   + "</g>")
+
+# E9a — стоянка дозволена
+SIGNS["E9a"] = svg(f'<rect x="2" y="2" width="96" height="96" rx="8" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
+                   f'<text x="50" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="70" fill="{WHITE}">P</text>')
+
+
+def town(diag=False):
+    body = (f'<rect x="2" y="12" width="96" height="46" rx="4" fill="{WHITE}" stroke="{BLACK}" stroke-width="3"/>'
+            f'<text x="50" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" fill="{BLACK}" textLength="80" lengthAdjust="spacingAndGlyphs">GRIMBERGEN</text>')
+    if diag:
+        body += f'<line x1="8" y1="54" x2="92" y2="16" stroke="{RED}" stroke-width="5"/>'
+    return svg(body, 100, 70)
+
+
+SIGNS["F1"] = town()
+SIGNS["F3"] = town(diag=True)
+
+
+def zone30(end=False):
+    grey = "#8C8C8C"
+    ring, num, txt = (grey, grey, grey) if end else (RED, BLACK, BLACK)
+    body = (f'<rect x="2" y="2" width="76" height="96" rx="4" fill="{WHITE}" stroke="{BLACK}" stroke-width="2"/>'
+            f'<text x="40" y="22" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15" fill="{txt}">ZONE</text>'
+            f'<circle cx="40" cy="60" r="28" fill="{ring}"/><circle cx="40" cy="60" r="21.5" fill="{WHITE}"/>'
+            f'<text x="40" y="69" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="25" fill="{num}">30</text>')
+    if end:
+        body += ('<defs><clipPath id="z"><rect x="4" y="4" width="72" height="92"/></clipPath></defs><g clip-path="url(#z)">'
+                 + "".join(f'<line x1="{-6 + d}" y1="{98 + d}" x2="{86 + d}" y2="{2 + d}" stroke="{BLACK}" stroke-width="2.2"/>' for d in (-10, -5, 0, 5, 10))
+                 + "</g>")
+    return svg(body, 80, 100)
+
+
+SIGNS["F4a"] = zone30()
+SIGNS["F4b"] = zone30(end=True)
+
+# F7 — кінець автомагістралі (F5 з червоною смугою)
+SIGNS["F7"] = SIGNS["F5"].replace("</svg>", f'<line x1="10" y1="90" x2="90" y2="10" stroke="{RED}" stroke-width="7"/></svg>')
+
+# F19 — дорога з одностороннім рухом
+SIGNS["F19"] = svg(f'<rect x="2" y="2" width="76" height="96" rx="6" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
+                   f'<path d="M40,14 L62,40 L48,40 L48,86 L32,86 L32,40 L18,40 Z" fill="{WHITE}"/>', 80, 100)
+
 OUT.mkdir(parents=True, exist_ok=True)
 for code, content in SIGNS.items():
     (OUT / f"{code}.svg").write_text(content, encoding="utf-8")

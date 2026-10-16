@@ -1,5 +1,53 @@
 [
   {
+    "code": "A1a",
+    "category": "A",
+    "name": {
+      "uk": "Небезпечний поворот ліворуч",
+      "nl": "Gevaarlijke bocht naar links",
+      "fr": "Virage dangereux à gauche",
+      "en": "Dangerous bend to the left"
+    },
+    "meaning": {
+      "uk": "Попереду небезпечний поворот ліворуч: заздалегідь зменш швидкість.",
+      "nl": "Gevaarlijke bocht naar links: vertraag op tijd.",
+      "fr": "Virage dangereux à gauche : ralentissez à temps.",
+      "en": "Dangerous bend to the left: slow down in time."
+    }
+  },
+  {
+    "code": "A1b",
+    "category": "A",
+    "name": {
+      "uk": "Небезпечний поворот праворуч",
+      "nl": "Gevaarlijke bocht naar rechts",
+      "fr": "Virage dangereux à droite",
+      "en": "Dangerous bend to the right"
+    },
+    "meaning": {
+      "uk": "Попереду небезпечний поворот праворуч: заздалегідь зменш швидкість.",
+      "nl": "Gevaarlijke bocht naar rechts: vertraag op tijd.",
+      "fr": "Virage dangereux à droite : ralentissez à temps.",
+      "en": "Dangerous bend to the right: slow down in time."
+    }
+  },
+  {
+    "code": "A45",
+    "category": "A",
+    "name": {
+      "uk": "Залізничний переїзд зі шлагбаумом",
+      "nl": "Overweg met slagbomen",
+      "fr": "Passage à niveau avec barrières",
+      "en": "Level crossing with barriers"
+    },
+    "meaning": {
+      "uk": "Попереду переїзд зі шлагбаумом. Поки шлагбаум рухається чи закритий або блимають червоні вогні, заїжджати не можна (−5).",
+      "nl": "Overweg met slagbomen. Niet oprijden zolang ze bewegen of dicht zijn of de rode lichten knipperen (−5).",
+      "fr": "Passage à niveau avec barrières. Ne pas s'engager tant qu'elles bougent ou sont fermées ou que les feux rouges clignotent (−5).",
+      "en": "Level crossing with barriers. Do not enter while they move or are closed or the red lights flash (−5)."
+    }
+  },
+  {
     "code": "A51",
     "category": "A",
     "name": {
@@ -29,6 +77,54 @@
       "nl": "Verleen voorrang aan de bestuurders op de weg die je kruist of oprijdt.",
       "fr": "Cédez le passage aux conducteurs sur la voie que vous croisez ou abordez.",
       "en": "Give way to drivers on the road you cross or enter."
+    }
+  },
+  {
+    "code": "B11",
+    "category": "B",
+    "name": {
+      "uk": "Кінець дороги з пріоритетом",
+      "nl": "Einde voorrangsweg",
+      "fr": "Fin de route prioritaire",
+      "en": "End of priority road"
+    },
+    "meaning": {
+      "uk": "Знову діють загальні правила, зазвичай «праворуч».",
+      "nl": "De algemene regels gelden opnieuw, meestal voorrang van rechts.",
+      "fr": "Les règles générales s'appliquent à nouveau, souvent priorité de droite.",
+      "en": "General rules apply again, usually priority to the right."
+    }
+  },
+  {
+    "code": "B15",
+    "category": "B",
+    "name": {
+      "uk": "Пріоритет на найближчому перехресті",
+      "nl": "Voorrang op het volgende kruispunt",
+      "fr": "Priorité à la prochaine intersection",
+      "en": "Priority at the next intersection"
+    },
+    "meaning": {
+      "uk": "Пріоритет у тебе лише на найближчому перехресті. Далі знову діють загальні правила.",
+      "nl": "Je hebt voorrang alleen op het eerstvolgende kruispunt.",
+      "fr": "Vous avez la priorité uniquement à la prochaine intersection.",
+      "en": "You have priority only at the next intersection."
+    }
+  },
+  {
+    "code": "B17",
+    "category": "B",
+    "name": {
+      "uk": "Перехрестя з пріоритетом праворуч",
+      "nl": "Kruispunt met voorrang van rechts",
+      "fr": "Carrefour à priorité de droite",
+      "en": "Junction with priority to the right"
+    },
+    "meaning": {
+      "uk": "Попереджає, що на перехресті діє правило «праворуч».",
+      "nl": "Waarschuwt dat op het kruispunt voorrang van rechts geldt.",
+      "fr": "Avertit que la priorité de droite s'applique au carrefour.",
+      "en": "Warns that priority to the right applies at the junction."
     }
   },
   {
@@ -64,38 +160,6 @@
     }
   },
   {
-    "code": "B11",
-    "category": "B",
-    "name": {
-      "uk": "Кінець дороги з пріоритетом",
-      "nl": "Einde voorrangsweg",
-      "fr": "Fin de route prioritaire",
-      "en": "End of priority road"
-    },
-    "meaning": {
-      "uk": "Знову діють загальні правила, зазвичай «праворуч».",
-      "nl": "De algemene regels gelden opnieuw, meestal voorrang van rechts.",
-      "fr": "Les règles générales s'appliquent à nouveau, souvent priorité de droite.",
-      "en": "General rules apply again, usually priority to the right."
-    }
-  },
-  {
-    "code": "B17",
-    "category": "B",
-    "name": {
-      "uk": "Перехрестя з пріоритетом праворуч",
-      "nl": "Kruispunt met voorrang van rechts",
-      "fr": "Carrefour à priorité de droite",
-      "en": "Junction with priority to the right"
-    },
-    "meaning": {
-      "uk": "Попереджає, що на перехресті діє правило «праворуч».",
-      "nl": "Waarschuwt dat op het kruispunt voorrang van rechts geldt.",
-      "fr": "Avertit que la priorité de droite s'applique au carrefour.",
-      "en": "Warns that priority to the right applies at the junction."
-    }
-  },
-  {
     "code": "C1",
     "category": "C",
     "name": {
@@ -125,6 +189,54 @@
       "nl": "Verboden voor alle bestuurders in beide richtingen, tenzij een onderbord uitzonderingen maakt.",
       "fr": "Interdit à tout conducteur dans les deux sens, sauf exceptions sur panneau additionnel.",
       "en": "Closed to all drivers in both directions unless a sub-plate makes exceptions."
+    }
+  },
+  {
+    "code": "C31a",
+    "category": "C",
+    "name": {
+      "uk": "Поворот ліворуч заборонено",
+      "nl": "Verboden links af te slaan",
+      "fr": "Interdiction de tourner à gauche",
+      "en": "No left turn"
+    },
+    "meaning": {
+      "uk": "На найближчому перехресті ліворуч повертати не можна.",
+      "nl": "Verboden links af te slaan op het volgende kruispunt.",
+      "fr": "Interdiction de tourner à gauche au prochain carrefour.",
+      "en": "No left turn at the next junction."
+    }
+  },
+  {
+    "code": "C31b",
+    "category": "C",
+    "name": {
+      "uk": "Поворот праворуч заборонено",
+      "nl": "Verboden rechts af te slaan",
+      "fr": "Interdiction de tourner à droite",
+      "en": "No right turn"
+    },
+    "meaning": {
+      "uk": "На найближчому перехресті праворуч повертати не можна.",
+      "nl": "Verboden rechts af te slaan op het volgende kruispunt.",
+      "fr": "Interdiction de tourner à droite au prochain carrefour.",
+      "en": "No right turn at the next junction."
+    }
+  },
+  {
+    "code": "C33",
+    "category": "C",
+    "name": {
+      "uk": "Розворот заборонено",
+      "nl": "Verboden te keren",
+      "fr": "Interdiction de faire demi-tour",
+      "en": "No U-turn"
+    },
+    "meaning": {
+      "uk": "Розвертатися заборонено до найближчого перехрестя включно.",
+      "nl": "Keren is verboden tot en met het volgende kruispunt.",
+      "fr": "Le demi-tour est interdit jusqu'au prochain carrefour inclus.",
+      "en": "U-turns are prohibited up to and including the next junction."
     }
   },
   {
@@ -160,6 +272,22 @@
     }
   },
   {
+    "code": "C45",
+    "category": "C",
+    "name": {
+      "uk": "Кінець обмеження швидкості",
+      "nl": "Einde snelheidsbeperking",
+      "fr": "Fin de limitation de vitesse",
+      "en": "End of speed limit"
+    },
+    "meaning": {
+      "uk": "Обмеження зі знака C43 закінчилося. Знову діє загальний ліміт для цієї дороги.",
+      "nl": "De beperking van C43 eindigt; de algemene limiet geldt weer.",
+      "fr": "La limitation du C43 prend fin ; la limite générale s'applique à nouveau.",
+      "en": "The C43 limit ends; the general limit applies again."
+    }
+  },
+  {
     "code": "D1",
     "category": "D",
     "name": {
@@ -169,10 +297,10 @@
       "en": "Compulsory direction"
     },
     "meaning": {
-      "uk": "Об'їжджай перешкоду з боку, куди вказує стрілка.",
-      "nl": "Rij langs de kant die de pijl aangeeft.",
-      "fr": "Passez du côté indiqué par la flèche.",
-      "en": "Pass on the side the arrow shows."
+      "uk": "Обов'язково рухатися в напрямку стрілки (наприклад, об'їхати острівець з указаного боку).",
+      "nl": "Verplicht de richting van de pijl te volgen (bv. een vluchtheuvel langs de aangeduide kant voorbijrijden).",
+      "fr": "Obligation de suivre la direction de la flèche (p. ex. contourner un îlot du côté indiqué).",
+      "en": "You must follow the direction of the arrow (e.g. pass an island on the side shown)."
     }
   },
   {
@@ -240,6 +368,102 @@
     }
   },
   {
+    "code": "E9a",
+    "category": "E",
+    "name": {
+      "uk": "Стоянка дозволена",
+      "nl": "Parkeren toegelaten",
+      "fr": "Stationnement autorisé",
+      "en": "Parking allowed"
+    },
+    "meaning": {
+      "uk": "Тут дозволено ставити авто. Таблички можуть обмежувати час чи категорії транспорту.",
+      "nl": "Parkeren is hier toegelaten; onderborden kunnen tijd of voertuigen beperken.",
+      "fr": "Le stationnement est autorisé ; des panneaux additionnels peuvent limiter la durée ou les véhicules.",
+      "en": "Parking allowed; sub-plates may limit time or vehicle types."
+    }
+  },
+  {
+    "code": "F1",
+    "category": "F",
+    "name": {
+      "uk": "Початок населеного пункту",
+      "nl": "Begin bebouwde kom",
+      "fr": "Début d'agglomération",
+      "en": "Start of built-up area"
+    },
+    "meaning": {
+      "uk": "Починається населений пункт: ліміт 50 км/год у Фландрії й Валлонії, 30 км/год у Брюсселі, якщо знаки не кажуть інше.",
+      "nl": "Begin bebouwde kom: 50 km/u in Vlaanderen en Wallonië, 30 km/u in Brussel, tenzij anders aangeduid.",
+      "fr": "Début d'agglomération : 50 km/h en Flandre et Wallonie, 30 km/h à Bruxelles, sauf signalisation contraire.",
+      "en": "Start of built-up area: 50 km/h in Flanders and Wallonia, 30 km/h in Brussels unless signed otherwise."
+    }
+  },
+  {
+    "code": "F19",
+    "category": "F",
+    "name": {
+      "uk": "Дорога з одностороннім рухом",
+      "nl": "Eenrichtingsweg",
+      "fr": "Sens unique",
+      "en": "One-way road"
+    },
+    "meaning": {
+      "uk": "Рух лише в напрямку стрілки. Стоянка дозволена з обох боків.",
+      "nl": "Verkeer alleen in de richting van de pijl; parkeren aan beide kanten.",
+      "fr": "Circulation uniquement dans le sens de la flèche ; stationnement des deux côtés.",
+      "en": "Traffic only in the arrow's direction; parking on both sides."
+    }
+  },
+  {
+    "code": "F3",
+    "category": "F",
+    "name": {
+      "uk": "Кінець населеного пункту",
+      "nl": "Einde bebouwde kom",
+      "fr": "Fin d'agglomération",
+      "en": "End of built-up area"
+    },
+    "meaning": {
+      "uk": "Населений пункт закінчився: базово 70 км/год у Фландрії й Брюсселі, 90 км/год у Валлонії.",
+      "nl": "Einde bebouwde kom: basis 70 km/u in Vlaanderen en Brussel, 90 km/u in Wallonië.",
+      "fr": "Fin d'agglomération : en principe 70 km/h en Flandre et à Bruxelles, 90 km/h en Wallonie.",
+      "en": "End of built-up area: default 70 km/h in Flanders and Brussels, 90 km/h in Wallonia."
+    }
+  },
+  {
+    "code": "F4a",
+    "category": "F",
+    "name": {
+      "uk": "Початок зони 30",
+      "nl": "Begin zone 30",
+      "fr": "Début de zone 30",
+      "en": "Start of zone 30"
+    },
+    "meaning": {
+      "uk": "Від цього знака до знака F4b — не більше 30 км/год.",
+      "nl": "Vanaf dit bord tot F4b: maximaal 30 km/u.",
+      "fr": "De ce panneau jusqu'au F4b : 30 km/h maximum.",
+      "en": "From this sign to F4b: max 30 km/h."
+    }
+  },
+  {
+    "code": "F4b",
+    "category": "F",
+    "name": {
+      "uk": "Кінець зони 30",
+      "nl": "Einde zone 30",
+      "fr": "Fin de zone 30",
+      "en": "End of zone 30"
+    },
+    "meaning": {
+      "uk": "Зона 30 закінчилася. Знову діє загальний ліміт.",
+      "nl": "Einde van de zone 30; de algemene limiet geldt weer.",
+      "fr": "Fin de la zone 30 ; la limite générale s'applique.",
+      "en": "End of zone 30; the general limit applies again."
+    }
+  },
+  {
     "code": "F5",
     "category": "F",
     "name": {
@@ -253,6 +477,22 @@
       "nl": "Begin autosnelweg: 120 km/u, minimum 70, keren en achteruitrijden verboden.",
       "fr": "Début d'autoroute : 120 km/h, minimum 70, demi-tour et marche arrière interdits.",
       "en": "Start of motorway: 120 km/h, minimum 70, no U-turns or reversing."
+    }
+  },
+  {
+    "code": "F7",
+    "category": "F",
+    "name": {
+      "uk": "Кінець автомагістралі",
+      "nl": "Einde autosnelweg",
+      "fr": "Fin d'autoroute",
+      "en": "End of motorway"
+    },
+    "meaning": {
+      "uk": "Правила автомагістралі більше не діють.",
+      "nl": "De regels voor autosnelwegen gelden niet meer.",
+      "fr": "Les règles de l'autoroute ne s'appliquent plus.",
+      "en": "Motorway rules no longer apply."
     }
   }
 ]

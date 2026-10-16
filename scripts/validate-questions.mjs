@@ -42,6 +42,7 @@ for (const q of questions) {
     const optIds = q.options.map((o) => o.id);
     if (new Set(optIds).size !== optIds.length) err(id, "дубльовані id варіантів");
     q.options.forEach((o) => checkI18n(id, `options[${o.id}].text`, o.text));
+    q.options.forEach((o) => { if (o.image && !existsSync(new URL(`../${o.image}`, import.meta.url))) err(id, `файл ${o.image} не знайдено`); });
     if (!optIds.includes(q.correct_option_id)) err(id, `correct_option_id "${q.correct_option_id}" не серед варіантів`);
   }
   if (q.status && !STATUSES.includes(q.status)) err(id, `невідомий status "${q.status}"`);

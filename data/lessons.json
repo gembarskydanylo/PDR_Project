@@ -176,7 +176,8 @@
             "nl": "reddingsstrook",
             "fr": "couloir de secours"
           }
-        ]
+        ],
+        "image": "assets/scenes/rescue-lane.svg"
       },
       {
         "id": "turning",
@@ -194,7 +195,8 @@
         },
         "article": "19.3–19.5",
         "serious": true,
-        "terms": []
+        "terms": [],
+        "image": "assets/scenes/turn-left-oncoming.svg"
       }
     ]
   },
@@ -326,6 +328,34 @@
             "fr": "distance de sécurité"
           }
         ]
+      },
+      {
+        "id": "town_signs",
+        "title": {
+          "uk": "Знаки населеного пункту й зон",
+          "nl": "Borden bebouwde kom en zones",
+          "fr": "Panneaux d'agglomération et de zones",
+          "en": "Built-up area and zone signs"
+        },
+        "body": {
+          "uk": "F1 (біла табличка з назвою) — початок населеного пункту, F3 (перекреслена) — кінець. F4a — початок зони 30, F4b — кінець. C43 обмежує швидкість від знака, C45 скасовує обмеження.",
+          "nl": "F1 (wit naambord): begin bebouwde kom; F3 (doorstreept): einde. F4a: begin zone 30; F4b: einde. C43 beperkt de snelheid, C45 heft de beperking op.",
+          "fr": "F1 (panneau blanc avec le nom) : début d'agglomération ; F3 (barré) : fin. F4a : début de zone 30 ; F4b : fin. C43 limite la vitesse, C45 lève la limitation.",
+          "en": "F1 (white name sign): start of built-up area; F3 (struck through): end. F4a: start of zone 30; F4b: end. C43 limits speed, C45 ends the limit."
+        },
+        "article": "2.12, 22quater, 68",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "begin bebouwde kom",
+            "fr": "début d'agglomération"
+          },
+          {
+            "nl": "einde zone 30",
+            "fr": "fin de zone 30"
+          }
+        ],
+        "sign": "F1"
       }
     ]
   },
@@ -446,7 +476,8 @@
             "nl": "ritsen",
             "fr": "tirette"
           }
-        ]
+        ],
+        "image": "assets/scenes/zipper.svg"
       },
       {
         "id": "hard_shoulder",
@@ -469,7 +500,36 @@
             "nl": "pechstrook",
             "fr": "bande d'arrêt d'urgence"
           }
-        ]
+        ],
+        "image": "assets/scenes/motorway-shoulder.svg"
+      },
+      {
+        "id": "turn_bans",
+        "title": {
+          "uk": "Заборони поворотів і односторонній рух",
+          "nl": "Afslaanverboden en eenrichtingsverkeer",
+          "fr": "Interdictions de tourner et sens unique",
+          "en": "Turn bans and one-way roads"
+        },
+        "body": {
+          "uk": "C31a/C31b забороняють поворот ліворуч/праворуч, C33 — розворот на найближчому перехресті. F19 (прямокутний синій зі стрілкою) — дорога з одностороннім рухом. На ній перед лівим поворотом тримайся лівого краю, а стояти можна з обох боків.",
+          "nl": "C31a/C31b verbieden links/rechts afslaan, C33 keren op het volgende kruispunt. F19 (rechthoekig blauw met pijl): eenrichtingsweg; voor links afslaan houd je links, parkeren mag aan beide kanten.",
+          "fr": "C31a/C31b interdisent de tourner à gauche/droite, C33 le demi-tour au prochain carrefour. F19 (rectangle bleu avec flèche) : sens unique ; pour tourner à gauche, serrez à gauche ; stationnement des deux côtés.",
+          "en": "C31a/C31b ban left/right turns, C33 U-turns at the next junction. F19 (blue rectangle with arrow): one-way road; before a left turn keep left; parking on both sides."
+        },
+        "article": "68, 19.3, 23.2",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "verboden links af te slaan",
+            "fr": "interdiction de tourner à gauche"
+          },
+          {
+            "nl": "eenrichtingsweg",
+            "fr": "sens unique"
+          }
+        ],
+        "sign": "C31a"
       }
     ]
   },
@@ -538,7 +598,8 @@
         },
         "article": "40ter",
         "serious": true,
-        "terms": []
+        "terms": [],
+        "image": "assets/scenes/overtake-cyclist.svg"
       }
     ]
   },
@@ -570,7 +631,8 @@
             "nl": "voorrang verlenen",
             "fr": "céder le passage"
           }
-        ]
+        ],
+        "image": "assets/scenes/pedestrian-waiting.svg"
       },
       {
         "id": "tram_bus",
@@ -588,7 +650,8 @@
         },
         "article": "40.3, 39bis",
         "serious": true,
-        "terms": []
+        "terms": [],
+        "image": "assets/scenes/tram-stop.svg"
       },
       {
         "id": "bikes",
@@ -649,7 +712,8 @@
             "fr": "sortie"
           }
         ],
-        "sign": "F5"
+        "sign": "F5",
+        "image": "assets/scenes/motorway-missed-exit.svg"
       },
       {
         "id": "breakdown",
@@ -703,7 +767,8 @@
             "nl": "slagboom",
             "fr": "barrière"
           }
-        ]
+        ],
+        "image": "assets/scenes/level-crossing.svg"
       }
     ]
   },
