@@ -69,7 +69,9 @@
       "shape",
       "category-A"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_002",
@@ -142,7 +144,9 @@
       "yield"
     ],
     "status": "published",
-    "image": "assets/signs/B1.svg"
+    "image": "assets/signs/B1.svg",
+    "degree": 2,
+    "is_speed": false
   },
   {
     "id": "signs_003",
@@ -215,7 +219,9 @@
       "stop"
     ],
     "status": "published",
-    "image": "assets/signs/B5.svg"
+    "image": "assets/signs/B5.svg",
+    "degree": 2,
+    "is_speed": false
   },
   {
     "id": "signs_004",
@@ -288,7 +294,9 @@
       "priority-road"
     ],
     "status": "published",
-    "image": "assets/signs/B9.svg"
+    "image": "assets/signs/B9.svg",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_005",
@@ -359,7 +367,9 @@
       "priority",
       "B11"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_006",
@@ -431,7 +441,9 @@
       "category-C",
       "shape"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_007",
@@ -504,7 +516,9 @@
       "no-entry"
     ],
     "status": "published",
-    "image": "assets/signs/C1.svg"
+    "image": "assets/signs/C1.svg",
+    "degree": 3,
+    "is_speed": false
   },
   {
     "id": "signs_008",
@@ -576,7 +590,9 @@
       "category-D",
       "shape"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_009",
@@ -647,7 +663,9 @@
       "warning",
       "placement"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_010",
@@ -720,7 +738,9 @@
       "priority-right"
     ],
     "status": "published",
-    "image": "assets/signs/B17.svg"
+    "image": "assets/signs/B17.svg",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_011",
@@ -792,7 +812,9 @@
       "B19",
       "narrow"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "signs_012",
@@ -863,7 +885,9 @@
       "categories",
       "overview"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
   },
   {
     "id": "priority_001",
@@ -925,7 +949,9 @@
       "priority-right"
     ],
     "status": "published",
-    "image": "assets/scenes/priority-right.svg"
+    "image": "assets/scenes/priority-right.svg",
+    "degree": 2,
+    "is_speed": false
   },
   {
     "id": "roundabout_001",
@@ -989,7 +1015,9 @@
       "D5"
     ],
     "status": "published",
-    "image": "assets/scenes/roundabout-yield.svg"
+    "image": "assets/scenes/roundabout-yield.svg",
+    "degree": 2,
+    "is_speed": false
   },
   {
     "id": "speed_001",
@@ -1052,7 +1080,9 @@
       "speed",
       "built-up-area"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": true
   },
   {
     "id": "speed_002",
@@ -1115,7 +1145,9 @@
       "brussels",
       "zone-30"
     ],
-    "status": "published"
+    "status": "published",
+    "degree": 1,
+    "is_speed": true
   },
   {
     "id": "parking_001",
@@ -1178,7 +1210,9 @@
       "pedestrian-crossing"
     ],
     "status": "published",
-    "image": "assets/scenes/crosswalk-parking.svg"
+    "image": "assets/scenes/crosswalk-parking.svg",
+    "degree": 2,
+    "is_speed": false
   },
   {
     "id": "safety_001",
@@ -1238,6 +1272,3600 @@
     },
     "tags": [
       "alcohol"
+    ],
+    "status": "published",
+    "degree": 1,
+    "is_speed": false
+  },
+  {
+    "id": "signal_red_right",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Горить червоний. Праворуч нікого немає. Чи можна повернути праворуч?",
+      "nl": "Het licht is rood. Rechts is er niemand. Mag ik rechts afslaan?",
+      "fr": "Le feu est rouge. Il n'y a personne à droite. Puis-je tourner à droite ?",
+      "en": "The light is red. There is nobody to the right. May I turn right?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Червоне світло забороняє проїжджати стоп-лінію в усіх напрямках. Поворот праворуч на червоний у Бельгії заборонений. Це порушення 3-го ступеня (−5 на іспиті).",
+      "nl": "Nee. Rood verbiedt de stopstreep te overschrijden, in alle richtingen. Rechts afslaan door rood bestaat in België niet. Overtreding van de 3de graad (−5 op het examen).",
+      "fr": "Non. Le feu rouge interdit de franchir la ligne d'arrêt, dans toutes les directions. Tourner à droite au rouge n'existe pas en Belgique. Infraction du 3e degré (−5 à l'examen).",
+      "en": "No. Red forbids passing the stop line in any direction. Turning right on red does not exist in Belgium. 3rd-degree offence (−5 in the exam)."
+    },
+    "source": {
+      "title": "Wegcode art. 61.1.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "traffic-light"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "signal_amber",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Загорівся жовтий. Ти ще можеш спокійно й безпечно зупинитися перед стоп-лінією. Чи можна проїхати?",
+      "nl": "Het licht springt op oranje. Je kunt nog veilig stoppen voor de stopstreep. Mag je doorrijden?",
+      "fr": "Le feu passe à l'orange. Vous pouvez encore vous arrêter sans danger avant la ligne d'arrêt. Pouvez-vous passer ?",
+      "en": "The light turns amber. You can still stop safely before the stop line. May you go through?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Жовте світло означає «стоп», як і червоне. Проїхати можна лише тоді, коли ти вже так близько, що безпечно зупинитися неможливо.",
+      "nl": "Nee. Oranje betekent stoppen, net als rood. Doorrijden mag alleen als je zo dicht bent dat je niet meer veilig kunt stoppen.",
+      "fr": "Non. L'orange signifie s'arrêter, comme le rouge. On ne peut passer que si l'on est si près qu'un arrêt en sécurité est impossible.",
+      "en": "No. Amber means stop, just like red. You may only go on if you are so close that you can no longer stop safely."
+    },
+    "source": {
+      "title": "Wegcode art. 61.1.2°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "traffic-light"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "signal_green_arrow",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Горить червоний, а поруч — додаткова зелена стрілка праворуч. Що це дозволяє?",
+      "nl": "Het licht is rood, met een groene pijl naar rechts ernaast. Wat mag je?",
+      "fr": "Le feu est rouge avec une flèche verte vers la droite à côté. Que pouvez-vous faire ?",
+      "en": "The light is red with an additional green arrow to the right. What may you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Повернути праворуч, пропустивши пішоходів і транспорт, що рухається на свій сигнал",
+          "nl": "Rechts afslaan, maar voorrang verlenen aan voetgangers en aan verkeer dat reglementair uit andere richtingen komt",
+          "fr": "Tourner à droite en cédant le passage aux piétons et au trafic venant régulièrement d'autres directions",
+          "en": "Turn right, giving way to pedestrians and to traffic lawfully coming from other directions"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Повернути праворуч з абсолютним пріоритетом",
+          "nl": "Rechts afslaan met absolute voorrang",
+          "fr": "Tourner à droite avec priorité absolue",
+          "en": "Turn right with absolute priority"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Нічого: червоний важливіший за стрілку",
+          "nl": "Niets: rood gaat voor op de pijl",
+          "fr": "Rien : le rouge prime sur la flèche",
+          "en": "Nothing: red overrides the arrow"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зелена стрілка разом із червоним дозволяє рух лише в напрямку стрілки. Пріоритету вона не дає: ти пропускаєш пішоходів і тих, хто їде на свій зелений.",
+      "nl": "Een groene pijl samen met rood laat enkel de richting van de pijl toe. Je krijgt geen voorrang: je laat voetgangers en verkeer met groen voorgaan.",
+      "fr": "Une flèche verte avec le rouge autorise uniquement la direction de la flèche, sans priorité : vous cédez le passage aux piétons et au trafic qui a le vert.",
+      "en": "A green arrow together with red allows only the arrow's direction, without priority: give way to pedestrians and to traffic that has green."
+    },
+    "source": {
+      "title": "Wegcode art. 61.1.4°–5°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "traffic-light"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "signal_flashing_amber",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Світлофор блимає жовтим. Хто має пріоритет на перехресті?",
+      "nl": "Het verkeerslicht knippert oranje. Wie heeft voorrang op het kruispunt?",
+      "fr": "Le feu clignote à l'orange. Qui a la priorité au carrefour ?",
+      "en": "The traffic light is flashing amber. Who has priority at the intersection?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Діють знаки пріоритету, а якщо їх немає — загальні правила (праворуч)",
+          "nl": "De voorrangsborden, en zonder borden de algemene regels (voorrang van rechts)",
+          "fr": "Les signaux de priorité, et à défaut les règles générales (priorité de droite)",
+          "en": "Priority signs apply, and without signs the general rules (priority to the right)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Той, кому блимає жовтий",
+          "nl": "Wie het knipperlicht ziet",
+          "fr": "Celui qui voit le feu clignotant",
+          "en": "Whoever sees the flashing light"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Усі повинні зупинитися",
+          "nl": "Iedereen moet stoppen",
+          "fr": "Tout le monde doit s'arrêter",
+          "en": "Everyone must stop"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Блимаючий жовтий лише попереджає про обережність і пріоритету не дає. Діють знаки, а без них — правило «праворуч».",
+      "nl": "Knipperend oranje waarschuwt enkel en geeft geen voorrang. De borden gelden, en zonder borden voorrang van rechts.",
+      "fr": "L'orange clignotant avertit seulement et ne donne aucune priorité. Les panneaux s'appliquent, sinon la priorité de droite.",
+      "en": "Flashing amber is only a warning and gives no priority. Signs apply, otherwise priority to the right."
+    },
+    "source": {
+      "title": "Wegcode art. 6.3",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "traffic-light"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "signal_agent_arm",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Регулювальник підняв руку вертикально вгору, а тобі горить зелений. Що робиш?",
+      "nl": "Een bevoegd persoon steekt de arm verticaal omhoog, terwijl jouw licht groen is. Wat doe je?",
+      "fr": "Un agent lève le bras verticalement alors que votre feu est vert. Que faites-vous ?",
+      "en": "An authorised agent raises an arm vertically while your light is green. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зупиняюся (якщо я ще не на перехресті)",
+          "nl": "Ik stop (tenzij ik al op het kruispunt ben)",
+          "fr": "Je m'arrête (sauf si je suis déjà sur le carrefour)",
+          "en": "I stop (unless I am already on the intersection)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їду далі: зелений важливіший",
+          "nl": "Ik rijd door: groen gaat voor",
+          "fr": "Je continue : le vert prime",
+          "en": "I go on: green has precedence"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Вказівки регулювальника важливіші за світлофори, знаки й правила. Піднята вертикально рука означає «стоп» для всіх, крім тих, хто вже на перехресті: вони його звільняють.",
+      "nl": "Bevelen van een bevoegd persoon gaan voor op verkeerslichten, borden en regels. Een verticaal opgestoken arm betekent stoppen voor iedereen, behalve wie al op het kruispunt is: die rijdt het vrij.",
+      "fr": "Les injonctions de l'agent priment sur les feux, les panneaux et les règles. Le bras levé verticalement signifie l'arrêt pour tous, sauf ceux déjà engagés, qui dégagent le carrefour.",
+      "en": "An agent's orders override lights, signs and rules. An arm raised vertically means stop for everyone except those already on the intersection, who clear it."
+    },
+    "source": {
+      "title": "Wegcode art. 4.2, 6.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "agent"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "signal_hierarchy",
+    "topic_id": "road_signs",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що має найвищий пріоритет на дорозі?",
+      "nl": "Wat heeft voorrang op al het andere?",
+      "fr": "Qu'est-ce qui prime sur tout le reste ?",
+      "en": "What takes precedence over everything else?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Вказівки регулювальника",
+          "nl": "De bevelen van een bevoegd persoon",
+          "fr": "Les injonctions d'un agent qualifié",
+          "en": "The orders of an authorised agent"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Світлофор",
+          "nl": "De verkeerslichten",
+          "fr": "Les feux",
+          "en": "The traffic lights"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Дорожні знаки",
+          "nl": "De verkeersborden",
+          "fr": "Les panneaux",
+          "en": "The road signs"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Порядок такий: регулювальник → світлофори → знаки й розмітка → загальні правила. Якщо працює світлофор, знаки пріоритету на тому ж перехресті не діють.",
+      "nl": "De volgorde: bevoegd persoon → verkeerslichten → borden en markeringen → algemene regels. Werken de lichten, dan gelden de voorrangsborden op dat kruispunt niet.",
+      "fr": "L'ordre : agent → feux → panneaux et marquages → règles générales. Quand les feux fonctionnent, les panneaux de priorité du carrefour ne s'appliquent pas.",
+      "en": "The order: agent → traffic lights → signs and markings → general rules. When lights work, the priority signs at that junction do not apply."
+    },
+    "source": {
+      "title": "Wegcode art. 6.1–6.3",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [],
+    "status": "published"
+  },
+  {
+    "id": "sign_e3",
+    "topic_id": "road_signs",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зупинка і стоянка заборонені",
+          "nl": "Stilstaan en parkeren verboden",
+          "fr": "Arrêt et stationnement interdits",
+          "en": "No stopping and no parking"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Лише стоянка заборонена",
+          "nl": "Enkel parkeren verboden",
+          "fr": "Seul le stationnement est interdit",
+          "en": "Only parking is prohibited"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "В'їзд заборонено",
+          "nl": "Verboden toegang",
+          "fr": "Accès interdit",
+          "en": "No entry"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "E3 (два перехрещені червоні штрихи) забороняє і зупинку, і стоянку. E1 (один штрих) забороняє лише стоянку.",
+      "nl": "E3 (twee gekruiste rode strepen) verbiedt stilstaan én parkeren. E1 (één streep) verbiedt alleen parkeren.",
+      "fr": "E3 (deux barres rouges croisées) interdit l'arrêt et le stationnement. E1 (une barre) interdit seulement le stationnement.",
+      "en": "E3 (two crossed red bars) prohibits stopping and parking. E1 (one bar) prohibits parking only."
+    },
+    "source": {
+      "title": "Wegcode art. 70",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "E3"
+    ],
+    "status": "published",
+    "image": "assets/signs/E3.svg"
+  },
+  {
+    "id": "sign_e1",
+    "topic_id": "road_signs",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Стоянка заборонена, коротка зупинка дозволена",
+          "nl": "Parkeren verboden, stilstaan mag",
+          "fr": "Stationnement interdit, l'arrêt est permis",
+          "en": "No parking, stopping is allowed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Зупинка і стоянка заборонені",
+          "nl": "Stilstaan en parkeren verboden",
+          "fr": "Arrêt et stationnement interdits",
+          "en": "No stopping and no parking"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "E1 забороняє стоянку. Зупинитися, щоб висадити людей або розвантажитися, можна.",
+      "nl": "E1 verbiedt parkeren. Stilstaan om mensen te laten in- of uitstappen of te laden mag wel.",
+      "fr": "E1 interdit le stationnement. S'arrêter pour embarquer, débarquer ou charger reste permis.",
+      "en": "E1 prohibits parking. Stopping to let people in or out or to load is still allowed."
+    },
+    "source": {
+      "title": "Wegcode art. 70",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "E1"
+    ],
+    "status": "published",
+    "image": "assets/signs/E1.svg"
+  },
+  {
+    "id": "sign_c3",
+    "topic_id": "road_signs",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Рух заборонено в обох напрямках для всіх транспортних засобів",
+          "nl": "Verboden toegang in beide richtingen voor ieder bestuurder",
+          "fr": "Accès interdit dans les deux sens à tout conducteur",
+          "en": "No entry for any vehicle in both directions"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Одностороння вулиця",
+          "nl": "Eenrichtingsstraat",
+          "fr": "Rue à sens unique",
+          "en": "One-way street"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Стоянка заборонена",
+          "nl": "Parkeren verboden",
+          "fr": "Stationnement interdit",
+          "en": "No parking"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C3 (біле коло з червоною облямівкою) закриває дорогу для всіх транспортних засобів в обох напрямках. Табличка під знаком може робити винятки, наприклад «schoolstraat».",
+      "nl": "C3 (wit rond bord met rode rand) sluit de weg af voor alle bestuurders in beide richtingen. Een onderbord kan uitzonderingen maken, bv. 'schoolstraat'.",
+      "fr": "C3 (rond blanc à bord rouge) ferme la route à tous les conducteurs dans les deux sens. Un panneau additionnel peut prévoir des exceptions, p. ex. « rue scolaire ».",
+      "en": "C3 (white circle with a red border) closes the road to all drivers in both directions. A sub-plate may add exceptions, e.g. 'school street'."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "C3"
+    ],
+    "status": "published",
+    "image": "assets/signs/C3.svg"
+  },
+  {
+    "id": "sign_c43",
+    "topic_id": "road_signs",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Що означає цей знак?",
+      "nl": "Wat betekent dit bord?",
+      "fr": "Que signifie ce panneau ?",
+      "en": "What does this sign mean?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Максимальна швидкість 50 км/год",
+          "nl": "Maximumsnelheid 50 km/u",
+          "fr": "Vitesse maximale 50 km/h",
+          "en": "Maximum speed 50 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Рекомендована швидкість 50 км/год",
+          "nl": "Aanbevolen snelheid 50 km/u",
+          "fr": "Vitesse conseillée 50 km/h",
+          "en": "Advisory speed 50 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Мінімальна швидкість 50 км/год",
+          "nl": "Minimumsnelheid 50 km/u",
+          "fr": "Vitesse minimale 50 km/h",
+          "en": "Minimum speed 50 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "C43 — обмеження максимальної швидкості. Будь-яке питання про ліміт швидкості на іспиті коштує 5 балів.",
+      "nl": "C43 is een snelheidsbeperking. Elke vraag over de maximumsnelheid kost op het examen 5 punten.",
+      "fr": "C43 limite la vitesse maximale. Toute question sur une limite de vitesse coûte 5 points à l'examen.",
+      "en": "C43 is a maximum speed limit. Any question about a speed limit costs 5 points in the exam."
+    },
+    "source": {
+      "title": "Wegcode art. 68",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "C43"
+    ],
+    "status": "published",
+    "image": "assets/signs/C43.svg"
+  },
+  {
+    "id": "priority_dirt_road",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти виїжджаєш з ґрунтової дороги на асфальтовану. Праворуч від тебе нікого, а зліва їде авто. Хто має пріоритет?",
+      "nl": "Je komt van een aardeweg en rijdt een verharde weg op. Links nadert een auto. Wie heeft voorrang?",
+      "fr": "Vous sortez d'un chemin de terre vers une route asphaltée. Une voiture arrive de gauche. Qui a la priorité ?",
+      "en": "You come from a dirt road onto a paved road. A car approaches from the left. Who has priority?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Авто зліва: з ґрунтової дороги пропускають усіх",
+          "nl": "De auto van links: wie van een aardeweg komt, verleent voorrang aan iedereen",
+          "fr": "La voiture de gauche : venant d'un chemin de terre, on cède le passage à tous",
+          "en": "The car on the left: coming from a dirt road you give way to everyone"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Я, бо авто не праворуч від мене",
+          "nl": "Ik, want de auto komt niet van rechts",
+          "fr": "Moi, car la voiture ne vient pas de droite",
+          "en": "Me, because the car is not coming from the right"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Хто виїжджає з ґрунтової дороги (aardeweg) чи стежки на дорогу з проїжджою частиною, пропускає всіх, хто там рухається. Навіть якщо в місці з'їзду ґрунтова дорога заасфальтована.",
+      "nl": "Wie van een aardeweg of pad een openbare weg met rijbaan oprijdt, verleent voorrang aan iedereen. Ook als de aardeweg enkel aan de aansluiting verhard is.",
+      "fr": "Qui débouche d'un chemin de terre ou d'un sentier sur une voie publique avec chaussée cède le passage à tous, même si le chemin n'est revêtu qu'au débouché.",
+      "en": "Whoever enters a road with a carriageway from a dirt road or path gives way to everyone, even if the dirt road is paved only at the junction."
+    },
+    "source": {
+      "title": "Wegcode art. 12.3.1, 2.6",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "priority"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "priority_leave_parking",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти виїжджаєш з паркувального місця праворуч на дорогу. Ззаду наближається велосипедист. Хто пропускає?",
+      "nl": "Je verlaat een parkeerplaats rechts van de rijbaan. Achter je nadert een fietser. Wie verleent voorrang?",
+      "fr": "Vous quittez une place de stationnement à droite de la chaussée. Un cycliste arrive derrière vous. Qui cède le passage ?",
+      "en": "You pull out of a parking space on the right of the road. A cyclist approaches from behind. Who gives way?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Я: виїзд з місця стоянки — це маневр",
+          "nl": "Ik: een parkeerplaats verlaten is een manoeuvre",
+          "fr": "Moi : quitter une place de stationnement est une manœuvre",
+          "en": "Me: leaving a parking space is a manoeuvre"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Велосипедист",
+          "nl": "De fietser",
+          "fr": "Le cycliste",
+          "en": "The cyclist"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Виїзд з місця стоянки, з двору, перестроювання, розворот і задній хід — це маневри. Під час маневру ти пропускаєш усіх інших учасників руху.",
+      "nl": "Een parkeerplaats of eigendom verlaten, van strook wisselen, keren en achteruitrijden zijn manoeuvres. Wie een manoeuvre uitvoert, verleent voorrang aan alle andere weggebruikers.",
+      "fr": "Quitter une place de stationnement ou une propriété, changer de bande, faire demi-tour ou marche arrière sont des manœuvres : on cède le passage à tous les autres usagers.",
+      "en": "Leaving a parking space or property, changing lane, U-turning and reversing are manoeuvres: you give way to all other road users."
+    },
+    "source": {
+      "title": "Wegcode art. 12.4",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "manoeuvre"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "priority_tram",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Перехрестя без знаків. Зліва наближається трамвай. Хто має пріоритет?",
+      "nl": "Kruispunt zonder borden. Van links nadert een tram. Wie heeft voorrang?",
+      "fr": "Carrefour sans signalisation. Un tram arrive de gauche. Qui a la priorité ?",
+      "en": "Intersection without signs. A tram approaches from the left. Who has priority?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Трамвай",
+          "nl": "De tram",
+          "fr": "Le tram",
+          "en": "The tram"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Я, бо трамвай зліва",
+          "nl": "Ik, want de tram komt van links",
+          "fr": "Moi, car le tram vient de gauche",
+          "en": "Me, because the tram is on the left"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Кожен учасник руху пропускає рейкові транспортні засоби (трамвай) і якнайшвидше звільняє рейки. Правило «праворуч» тут не діє.",
+      "nl": "Elke weggebruiker moet voorrang verlenen aan spoorvoertuigen en de sporen zo snel mogelijk vrijmaken. Voorrang van rechts speelt hier niet.",
+      "fr": "Tout usager doit céder le passage aux véhicules sur rails et dégager les voies au plus vite. La priorité de droite ne joue pas.",
+      "en": "Every road user must give way to rail vehicles and clear the tracks as quickly as possible. Priority to the right does not apply."
+    },
+    "source": {
+      "title": "Wegcode art. 12.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tram"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "priority_emergency",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Тобі горить зелений, але ти чуєш сирену машини швидкої допомоги, що наближається. Що робиш?",
+      "nl": "Je hebt groen, maar je hoort de sirene van een naderende ziekenwagen. Wat doe je?",
+      "fr": "Votre feu est vert mais vous entendez la sirène d'une ambulance qui approche. Que faites-vous ?",
+      "en": "Your light is green but you hear the siren of an approaching ambulance. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Звільняю дорогу і за потреби зупиняюся",
+          "nl": "Ik maak de doorgang vrij en stop zo nodig",
+          "fr": "Je dégage le passage et m'arrête si nécessaire",
+          "en": "I clear the way and stop if necessary"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їду далі: у мене зелений",
+          "nl": "Ik rijd door: ik heb groen",
+          "fr": "Je continue : j'ai le vert",
+          "en": "I continue: I have green"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Щойно чуєш спеціальний звуковий сигнал, негайно звільни дорогу й пропусти машину, за потреби зупинись. У заторі утворюй «коридор життя». Порушення 3-го ступеня (−5).",
+      "nl": "Zodra je het speciale geluidssignaal hoort, maak je meteen de doorgang vrij en verleen je voorrang, zo nodig stop je. In de file vorm je een reddingsstrook. Overtreding van de 3de graad (−5).",
+      "fr": "Dès que vous entendez l'avertisseur spécial, dégagez immédiatement le passage, arrêtez-vous si nécessaire. Dans un embouteillage, formez un couloir de secours. Infraction du 3e degré (−5).",
+      "en": "As soon as you hear the special sound signal, clear the way immediately and stop if needed. In a jam, form a rescue lane. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 38, 9.8",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "emergency"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "priority_turn_left",
+    "topic_id": "priority_intersections",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти повертаєш ліворуч на перехресті. Назустріч їде авто прямо. Хто проїжджає першим?",
+      "nl": "Je slaat links af op een kruispunt. Een tegenligger rijdt rechtdoor. Wie rijdt eerst?",
+      "fr": "Vous tournez à gauche à un carrefour. Une voiture en sens inverse va tout droit. Qui passe d'abord ?",
+      "en": "You turn left at an intersection. An oncoming car goes straight on. Who goes first?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зустрічне авто",
+          "nl": "De tegenligger",
+          "fr": "La voiture venant en sens inverse",
+          "en": "The oncoming car"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Я, бо я перший під'їхав",
+          "nl": "Ik, want ik was er eerst",
+          "fr": "Moi, car j'étais là en premier",
+          "en": "Me, because I was there first"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Хто повертає ліворуч, пропускає зустрічний транспорт на дорозі, яку залишає. Порушення 3-го ступеня (−5).",
+      "nl": "Wie links afslaat, laat de tegenliggers op de rijbaan die hij verlaat voorgaan. Overtreding van de 3de graad (−5).",
+      "fr": "Qui tourne à gauche cède le passage aux conducteurs venant en sens inverse sur la chaussée qu'il quitte. Infraction du 3e degré (−5).",
+      "en": "When turning left you give way to oncoming traffic on the road you are leaving. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 19.3.3°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "turning"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "roundabout_indicator",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Коли на круговому русі обов'язково вмикати покажчик повороту?",
+      "nl": "Wanneer moet je op een rotonde je richtingaanwijzer gebruiken?",
+      "fr": "Quand devez-vous utiliser votre clignotant sur un rond-point ?",
+      "en": "When must you use your indicator on a roundabout?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Перед виїздом з кола — правий покажчик",
+          "nl": "Bij het verlaten — rechtse richtingaanwijzer",
+          "fr": "En sortant — clignotant droit",
+          "en": "When leaving — right indicator"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Перед в'їздом — лівий покажчик",
+          "nl": "Bij het oprijden — linkse richtingaanwijzer",
+          "fr": "En entrant — clignotant gauche",
+          "en": "When entering — left indicator"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Ніколи",
+          "nl": "Nooit",
+          "fr": "Jamais",
+          "en": "Never"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "В'їзд на коло покажчика не вимагає. Виїзд — це зміна напрямку, тож правий покажчик вмикай обов'язково.",
+      "nl": "Bij het oprijden van een rotonde is de richtingaanwijzer niet verplicht. Het verlaten is een richtingsverandering: rechtse richtingaanwijzer verplicht.",
+      "fr": "En entrant sur un rond-point, le clignotant n'est pas obligatoire. La sortie est un changement de direction : clignotant droit obligatoire.",
+      "en": "Entering a roundabout needs no indicator. Leaving is a change of direction: the right indicator is mandatory."
+    },
+    "source": {
+      "title": "Wegcode art. 19.2.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "roundabout_lane",
+    "topic_id": "roundabouts",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи мусиш ти на круговому русі завжди триматися крайньої правої смуги?",
+      "nl": "Moet je op een rotonde altijd zo ver mogelijk rechts rijden?",
+      "fr": "Sur un rond-point, devez-vous toujours rouler le plus à droite possible ?",
+      "en": "On a roundabout, must you always keep to the far right?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні: можна обрати смугу, яка найкраще веде до виїзду",
+          "nl": "Nee: je mag de rijstrook kiezen die het best past voor je bestemming",
+          "fr": "Non : vous pouvez choisir la bande la mieux adaptée à votre destination",
+          "en": "No: you may choose the lane that best suits your destination"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так, завжди",
+          "nl": "Ja, altijd",
+          "fr": "Oui, toujours",
+          "en": "Yes, always"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На круговому русі обов'язок триматися правого краю не діє. Дотримуйся розмітки й обирай смугу за напрямком виїзду.",
+      "nl": "Op een rotonde geldt de verplichting om rechts te houden niet. Volg de markeringen en kies de strook volgens je bestemming.",
+      "fr": "Sur un rond-point, l'obligation de serrer à droite ne s'applique pas. Respectez les marquages et choisissez la bande selon votre destination.",
+      "en": "On a roundabout the keep-right obligation does not apply. Follow the markings and choose the lane by your exit."
+    },
+    "source": {
+      "title": "Wegcode art. 9.3.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "roundabout"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_outside_flanders",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "flanders"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Фландрія, поза населеним пунктом, звичайна дорога без знаків обмеження. Максимальна швидкість?",
+      "nl": "Vlaanderen, buiten de bebouwde kom, gewone weg zonder snelheidsborden. Maximumsnelheid?",
+      "fr": "Flandre, hors agglomération, route ordinaire sans panneau de vitesse. Vitesse maximale ?",
+      "en": "Flanders, outside a built-up area, ordinary road with no speed signs. Maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "90 км/год",
+          "nl": "90 km/u",
+          "fr": "90 km/h",
+          "en": "90 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "120 км/год",
+          "nl": "120 km/u",
+          "fr": "120 km/h",
+          "en": "120 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Фландрії базовий ліміт поза населеними пунктами — 70 км/год. 90 км/год діє лише там, де стоїть знак C43 «90».",
+      "nl": "In Vlaanderen is de basislimiet buiten de bebouwde kom 70 km/u. 90 km/u geldt alleen waar een bord C43 '90' staat.",
+      "fr": "En Flandre, la limite de base hors agglomération est de 70 km/h. 90 km/h uniquement là où un panneau C43 « 90 » est placé.",
+      "en": "In Flanders the default limit outside built-up areas is 70 km/h. 90 km/h only where a C43 '90' sign is placed."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2 (Vlaams Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_outside_wallonia",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "wallonia"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Валлонія, поза населеним пунктом, звичайна дорога без знаків обмеження. Максимальна швидкість?",
+      "nl": "Wallonië, buiten de bebouwde kom, gewone weg zonder snelheidsborden. Maximumsnelheid?",
+      "fr": "Wallonie, hors agglomération, route ordinaire sans panneau de vitesse. Vitesse maximale ?",
+      "en": "Wallonia, outside a built-up area, ordinary road with no speed signs. Maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "90 км/год",
+          "nl": "90 km/u",
+          "fr": "90 km/h",
+          "en": "90 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "120 км/год",
+          "nl": "120 km/u",
+          "fr": "120 km/h",
+          "en": "120 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "b",
+    "explanation": {
+      "uk": "У Валлонії базовий ліміт поза населеними пунктами — 90 км/год. На автомагістралях і дорогах 2×2 з розділювальною смугою — 120 км/год.",
+      "nl": "In Wallonië is de basislimiet buiten de bebouwde kom 90 km/u; op autosnelwegen en 2×2-wegen met middenberm 120 km/u.",
+      "fr": "En Wallonie, la limite de base hors agglomération est de 90 km/h ; 120 km/h sur autoroute et routes 2×2 avec berme centrale.",
+      "en": "In Wallonia the default limit outside built-up areas is 90 km/h; 120 km/h on motorways and 2×2 roads with a central reservation."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2 (Waals Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_outside_brussels",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "brussels"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Брюссельський регіон, дорога поза населеним пунктом (не автомагістраль), 2×2 смуги, розділені лише розміткою. Максимальна швидкість?",
+      "nl": "Brussels Gewest, weg buiten de bebouwde kom (geen autosnelweg), 2×2 rijstroken alleen gescheiden door markeringen. Maximumsnelheid?",
+      "fr": "Région bruxelloise, route hors agglomération (pas une autoroute), 2×2 bandes séparées seulement par un marquage. Vitesse maximale ?",
+      "en": "Brussels Region, road outside a built-up area (not a motorway), 2×2 lanes separated only by markings. Maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "90 км/год",
+          "nl": "90 km/u",
+          "fr": "90 km/h",
+          "en": "90 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "120 км/год",
+          "nl": "120 km/u",
+          "fr": "120 km/h",
+          "en": "120 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У Брюссельському регіоні поза населеними пунктами — 70 км/год, у тому числі на 2×2, розділених лише розміткою. 120 км/год — тільки на автомагістралях і 2×2 з розділювальною смугою.",
+      "nl": "In het Brussels Gewest geldt buiten de bebouwde kom 70 km/u, ook op 2×2-wegen gescheiden door markeringen. 120 km/u enkel op autosnelwegen en 2×2 met middenberm.",
+      "fr": "En Région bruxelloise, hors agglomération, 70 km/h, y compris sur les 2×2 séparées par un marquage. 120 km/h uniquement sur autoroute et 2×2 avec berme centrale.",
+      "en": "In the Brussels Region outside built-up areas the limit is 70 km/h, including on 2×2 roads separated only by markings. 120 km/h only on motorways and 2×2 with a central reservation."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2 (Brussels Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_motorway",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Яка максимальна швидкість легкового авто на автомагістралі, якщо знаки не вказують інше?",
+      "nl": "Wat is de maximumsnelheid voor een personenauto op de autosnelweg, tenzij borden anders aangeven?",
+      "fr": "Quelle est la vitesse maximale d'une voiture sur autoroute, sauf signalisation contraire ?",
+      "en": "What is the maximum speed for a car on a motorway unless signs say otherwise?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "120 км/год",
+          "nl": "120 km/u",
+          "fr": "120 km/h",
+          "en": "120 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "130 км/год",
+          "nl": "130 km/u",
+          "fr": "130 km/h",
+          "en": "130 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "110 км/год",
+          "nl": "110 km/u",
+          "fr": "110 km/h",
+          "en": "110 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На автомагістралях у всіх трьох регіонах — 120 км/год, якщо знак C43 не встановлює менше.",
+      "nl": "Op autosnelwegen geldt in de drie gewesten 120 km/u, tenzij een bord C43 minder oplegt.",
+      "fr": "Sur autoroute, 120 km/h dans les trois régions, sauf si un panneau C43 impose moins.",
+      "en": "On motorways the limit is 120 km/h in all three regions unless a C43 sign sets less."
+    },
+    "source": {
+      "title": "Wegcode art. 11.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "motorway"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_motorway_min",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Яка мінімальна швидкість на автомагістралі, якщо знаки не вказують інше?",
+      "nl": "Wat is de minimumsnelheid op de autosnelweg, tenzij borden anders aangeven?",
+      "fr": "Quelle est la vitesse minimale sur autoroute, sauf signalisation contraire ?",
+      "en": "What is the minimum speed on a motorway unless signs say otherwise?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "70 км/год",
+          "nl": "70 km/u",
+          "fr": "70 km/h",
+          "en": "70 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "90 км/год",
+          "nl": "90 km/u",
+          "fr": "90 km/h",
+          "en": "90 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На автомагістралі заборонено їхати повільніше 70 км/год. Транспорт, що не може розвинути 70 км/год на рівній дорозі, на автомагістраль не допускається.",
+      "nl": "Op de autosnelweg mag je niet trager rijden dan 70 km/u. Voertuigen die op een vlakke weg geen 70 km/u halen, zijn er verboden.",
+      "fr": "Sur autoroute, il est interdit de rouler à moins de 70 km/h. Les véhicules incapables d'atteindre 70 km/h en palier y sont interdits.",
+      "en": "On a motorway you may not drive slower than 70 km/h. Vehicles that cannot reach 70 km/h on a level road are banned from it."
+    },
+    "source": {
+      "title": "Wegcode art. 21.1, 21.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "motorway"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_zone30",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Ти в'їжджаєш у зону біля школи (знак F4a «Зона 30» з попереджувальним знаком A23). Максимальна швидкість?",
+      "nl": "Je rijdt een schoolomgeving binnen (bord F4a 'zone 30' met gevaarsbord A23). Maximumsnelheid?",
+      "fr": "Vous entrez dans un abord d'école (panneau F4a « zone 30 » avec signal A23). Vitesse maximale ?",
+      "en": "You enter a school area (sign F4a 'zone 30' with warning sign A23). Maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "30 км/год лише в години занять",
+          "nl": "30 km/u alleen tijdens de schooluren",
+          "fr": "30 km/h seulement pendant les heures de cours",
+          "en": "30 km/h only during school hours"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зона 30 (F4a–F4b) діє постійно, а не лише в години занять, якщо табличка не вказує інше.",
+      "nl": "Een zone 30 (F4a–F4b) geldt altijd, niet alleen tijdens de schooluren, tenzij een onderbord anders vermeldt.",
+      "fr": "Une zone 30 (F4a–F4b) s'applique en permanence, pas seulement pendant les heures de cours, sauf panneau additionnel contraire.",
+      "en": "A zone 30 (F4a–F4b) applies at all times, not only during school hours, unless a sub-plate says otherwise."
+    },
+    "source": {
+      "title": "Wegcode art. 22quater, 2.37",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "zone30"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "speed_woonerf",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Яка максимальна швидкість у житловій зоні (woonerf, знак F12a)?",
+      "nl": "Wat is de maximumsnelheid in een woonerf (bord F12a)?",
+      "fr": "Quelle est la vitesse maximale dans une zone résidentielle (panneau F12a) ?",
+      "en": "What is the speed limit in a residential zone (woonerf, sign F12a)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "20 км/год",
+          "nl": "20 km/u",
+          "fr": "20 km/h",
+          "en": "20 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Пішохідна швидкість",
+          "nl": "Stapvoets",
+          "fr": "Au pas",
+          "en": "Walking pace"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У житловій зоні (woonerf) — 20 км/год, а пішоходи можуть ходити по всій ширині дороги. Увага: з 1 червня 2027 у Фландрії буде «пішохідна швидкість».",
+      "nl": "In een woonerf geldt 20 km/u en voetgangers mogen de hele breedte van de weg gebruiken. Let op: vanaf 1 juni 2027 wordt het in Vlaanderen 'stapvoets'.",
+      "fr": "En zone résidentielle, 20 km/h, et les piétons peuvent utiliser toute la largeur de la voie. Attention : dès le 1er juin 2027, « au pas » en Flandre.",
+      "en": "In a woonerf the limit is 20 km/h and pedestrians may use the whole width of the road. Note: from 1 June 2027 Flanders switches to 'walking pace'."
+    },
+    "source": {
+      "title": "Wegcode art. 22bis",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "woonerf"
+    ],
+    "status": "published",
+    "valid_until": "2027-05-31"
+  },
+  {
+    "id": "distance_rule",
+    "topic_id": "speed_distance",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Яку дистанцію до авто попереду вимагає закон?",
+      "nl": "Welke afstand tot de voorligger schrijft de wet voor?",
+      "fr": "Quelle distance avec le véhicule qui précède la loi impose-t-elle ?",
+      "en": "What following distance does the law require?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Достатню, щоб зупинитися перед будь-якою передбачуваною перешкодою",
+          "nl": "Een voldoende veiligheidsafstand om te kunnen stoppen voor elke voorzienbare hindernis",
+          "fr": "Une distance de sécurité suffisante pour s'arrêter devant tout obstacle prévisible",
+          "en": "A sufficient safety distance to stop for any foreseeable obstacle"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Рівно 2 секунди",
+          "nl": "Precies 2 seconden",
+          "fr": "Exactement 2 secondes",
+          "en": "Exactly 2 seconds"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Щонайменше 50 м для всіх авто",
+          "nl": "Minstens 50 m voor alle auto's",
+          "fr": "Au moins 50 m pour toutes les voitures",
+          "en": "At least 50 m for all cars"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Закон вимагає «достатньої безпечної дистанції» з урахуванням швидкості. «2 секунди» — лише навчальна підказка, такої цифри в Wegcode немає. 50 м поза населеним пунктом — тільки для вантажівок понад 7,5 т або довжиною понад 7 м.",
+      "nl": "De wet eist een 'voldoende veiligheidsafstand' in verhouding tot je snelheid. '2 seconden' is een vuistregel, geen wettekst. 50 m buiten de bebouwde kom geldt enkel voor voertuigen boven 7,5 t of langer dan 7 m.",
+      "fr": "La loi exige une « distance de sécurité suffisante » selon la vitesse. « 2 secondes » est un repère, pas un texte légal. 50 m hors agglomération ne vaut que pour les véhicules de plus de 7,5 t ou de plus de 7 m.",
+      "en": "The law requires a 'sufficient safety distance' for your speed. '2 seconds' is a rule of thumb, not the law. 50 m outside built-up areas applies only to vehicles over 7.5 t or longer than 7 m."
+    },
+    "source": {
+      "title": "Wegcode art. 10.1, 18",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "distance"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_level_crossing",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 4,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи можна зупинитися на залізничному переїзді, щоб висадити пасажира?",
+      "nl": "Mag je stilstaan op een overweg om een passagier te laten uitstappen?",
+      "fr": "Pouvez-vous vous arrêter sur un passage à niveau pour faire descendre un passager ?",
+      "en": "May you stop on a level crossing to let a passenger out?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зупинка і стоянка на залізничному переїзді заборонені завжди. Це порушення 4-го ступеня — найсерйозніше (−5).",
+      "nl": "Stilstaan en parkeren op een overweg is altijd verboden. Dit is een overtreding van de 4de graad, de zwaarste (−5).",
+      "fr": "L'arrêt et le stationnement sur un passage à niveau sont toujours interdits. Infraction du 4e degré, la plus grave (−5).",
+      "en": "Stopping and parking on a level crossing is always prohibited. It is a 4th-degree offence, the most serious (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 24 3°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "level-crossing"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_intersection",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Біля перехрестя: на якій відстані від продовження краю перпендикулярної проїжджої частини заборонено зупинку і стоянку?",
+      "nl": "Aan een kruispunt: op welke afstand van het verlengde van de dwarse rijbaanrand is stilstaan en parkeren verboden?",
+      "fr": "À un carrefour : à quelle distance du prolongement du bord de la chaussée transversale l'arrêt et le stationnement sont-ils interdits ?",
+      "en": "At an intersection: within what distance of the extended edge of the crossing carriageway are stopping and parking prohibited?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Менше 5 м",
+          "nl": "Minder dan 5 m",
+          "fr": "Moins de 5 m",
+          "en": "Less than 5 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Менше 10 м",
+          "nl": "Minder dan 10 m",
+          "fr": "Moins de 10 m",
+          "en": "Less than 10 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Менше 15 м",
+          "nl": "Minder dan 15 m",
+          "fr": "Moins de 15 m",
+          "en": "Less than 15 m"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На перехресті зупинка і стоянка заборонені ближче ніж за 5 м від продовження найближчого краю перпендикулярної проїжджої частини.",
+      "nl": "Op kruispunten is stilstaan en parkeren verboden op minder dan 5 m van het verlengde van de dichtstbijzijnde rand van de dwarse rijbaan.",
+      "fr": "Aux carrefours, l'arrêt et le stationnement sont interdits à moins de 5 m du prolongement du bord le plus proche de la chaussée transversale.",
+      "en": "At intersections stopping and parking are prohibited less than 5 m from the extension of the nearest edge of the crossing carriageway."
+    },
+    "source": {
+      "title": "Wegcode art. 24 7°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "parking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_bus_stop",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "На якій відстані від знака зупинки автобуса чи трамвая заборонена стоянка?",
+      "nl": "Op welke afstand van het bord van een bus- of tramhalte is parkeren verboden?",
+      "fr": "À quelle distance du panneau d'un arrêt de bus ou de tram le stationnement est-il interdit ?",
+      "en": "Within what distance of a bus or tram stop sign is parking prohibited?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "15 м з кожного боку від знака",
+          "nl": "15 m aan weerszijden van het bord",
+          "fr": "15 m de part et d'autre du panneau",
+          "en": "15 m on either side of the sign"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "12 м перед знаком",
+          "nl": "12 m voor het bord",
+          "fr": "12 m avant le panneau",
+          "en": "12 m before the sign"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "5 м з кожного боку",
+          "nl": "5 m aan weerszijden",
+          "fr": "5 m de part et d'autre",
+          "en": "5 m on either side"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Стоянка заборонена ближче ніж за 15 м з обох боків від знака зупинки автобуса, трамвая чи тролейбуса. «12 м» — правило Нідерландів, а не Бельгії.",
+      "nl": "Parkeren is verboden op minder dan 15 m aan weerszijden van het bord van een bus-, tram- of trolleybushalte. '12 m' is een Nederlandse regel.",
+      "fr": "Le stationnement est interdit à moins de 15 m de part et d'autre du panneau d'un arrêt de bus, tram ou trolleybus. « 12 m » est une règle néerlandaise.",
+      "en": "Parking is prohibited less than 15 m on either side of a bus, tram or trolleybus stop sign. '12 m' is a Dutch rule."
+    },
+    "source": {
+      "title": "Wegcode art. 25.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "parking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_ev_charging",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти заряджаєш електромобіль на зарядній станції. Це зупинка чи стоянка?",
+      "nl": "Je laadt je elektrische auto op aan een laadpaal. Is dat stilstaan of parkeren?",
+      "fr": "Vous rechargez votre voiture électrique à une borne. Est-ce un arrêt ou un stationnement ?",
+      "en": "You are charging your electric car at a charging point. Is that stopping or parking?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Стоянка",
+          "nl": "Parkeren",
+          "fr": "Stationnement",
+          "en": "Parking"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Зупинка",
+          "nl": "Stilstaan",
+          "fr": "Arrêt",
+          "en": "Stopping"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зупинка — лише на час посадки-висадки чи вантаження. Усе довше — стоянка. Заправка й заряджання за законом теж вважаються стоянкою.",
+      "nl": "Stilstaan duurt niet langer dan nodig om in of uit te stappen of te laden. Langer is parkeren. Tanken en opladen gelden wettelijk als parkeren.",
+      "fr": "L'arrêt ne dure que le temps d'embarquer, débarquer ou charger. Au-delà, c'est du stationnement. Faire le plein ou recharger compte comme stationnement.",
+      "en": "Stopping lasts only as long as needed to get in or out or load. Anything longer is parking. Refuelling and charging legally count as parking."
+    },
+    "source": {
+      "title": "Wegcode art. 2.22, 2.23",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "parking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_blue_disc",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Синя зона. Ти приїхав о 10:10. На яку позначку ставиш паркувальний диск?",
+      "nl": "Blauwe zone. Je komt aan om 10.10 uur. Waarop zet je de parkeerschijf?",
+      "fr": "Zone bleue. Vous arrivez à 10 h 10. Sur quelle position réglez-vous le disque ?",
+      "en": "Blue zone. You arrive at 10:10. Where do you set the parking disc?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "10:30 — наступна позначка після часу прибуття",
+          "nl": "10.30 uur — het streepje dat volgt op je aankomst",
+          "fr": "10 h 30 — le trait qui suit l'heure d'arrivée",
+          "en": "10:30 — the mark following your arrival"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "10:10 — точний час",
+          "nl": "10.10 uur — het exacte uur",
+          "fr": "10 h 10 — l'heure exacte",
+          "en": "10:10 — the exact time"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "10:00",
+          "nl": "10.00 uur",
+          "fr": "10 h 00",
+          "en": "10:00"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Стрілку диска ставлять на рисочку, що йде після часу прибуття. Без інших знаків синя зона діє в робочі дні з 9:00 до 18:00, максимум 2 години. Субота теж робочий день.",
+      "nl": "De pijl van de schijf komt op het streepje dat volgt op het uur van aankomst. Zonder andere borden: werkdagen 9–18 uur, max. 2 uur. Zaterdag is een werkdag.",
+      "fr": "La flèche du disque se place sur le trait qui suit l'heure d'arrivée. Sans autre panneau : jours ouvrables de 9 h à 18 h, 2 heures maximum. Le samedi est un jour ouvrable.",
+      "en": "The disc's arrow goes on the mark following your arrival time. Without other signs: working days 9:00–18:00, max 2 hours. Saturday counts as a working day."
+    },
+    "source": {
+      "title": "Wegcode art. 27.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "blue-zone"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "parking_one_way",
+    "topic_id": "stopping_parking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Вулиця з одностороннім рухом. З якого боку можна поставити авто?",
+      "nl": "Eenrichtingsstraat. Aan welke kant mag je parkeren?",
+      "fr": "Rue à sens unique. De quel côté pouvez-vous stationner ?",
+      "en": "One-way street. On which side may you park?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "З будь-якого боку",
+          "nl": "Aan beide kanten",
+          "fr": "Des deux côtés",
+          "en": "On either side"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Лише праворуч",
+          "nl": "Alleen rechts",
+          "fr": "Seulement à droite",
+          "en": "Only on the right"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Зазвичай стоянка — праворуч за напрямком руху. На односторонній проїжджій частині можна ставити авто з будь-якого боку.",
+      "nl": "Normaal parkeer je rechts in je rijrichting. Op een rijbaan met eenrichtingsverkeer mag je aan beide kanten parkeren.",
+      "fr": "Normalement, on stationne à droite. Sur une chaussée à sens unique, on peut stationner des deux côtés.",
+      "en": "Normally you park on the right. On a one-way carriageway you may park on either side."
+    },
+    "source": {
+      "title": "Wegcode art. 23.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "parking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lanes_zipper",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Твоя смуга закінчується, рух дуже уповільнений. Коли перестроюватися?",
+      "nl": "Je rijstrook loopt dood, het verkeer is sterk vertraagd. Wanneer voeg je in?",
+      "fr": "Votre bande se termine, la circulation est fortement ralentie. Quand vous insérez-vous ?",
+      "en": "Your lane ends and traffic is heavily slowed. When do you merge?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Безпосередньо перед звуженням, по черзі («блискавка»)",
+          "nl": "Vlak voor de versmalling, om beurten (ritsen)",
+          "fr": "Juste avant le rétrécissement, en alternance (tirette)",
+          "en": "Just before the narrowing, alternately (zipper)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Щойно побачу знак про закінчення смуги",
+          "nl": "Zodra ik het bord zie",
+          "fr": "Dès que je vois le panneau",
+          "en": "As soon as I see the sign"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У дуже повільному русі водії зі смуги, що закінчується, перестроюються лише безпосередньо перед звуженням. Водії вільної смуги пропускають по одному, по черзі. «Блискавка» — не маневр.",
+      "nl": "Bij sterk vertraagd verkeer voegen bestuurders op de doodlopende strook pas vlak voor de versmalling in; de anderen laten er om beurten één voor. Ritsen is geen manoeuvre.",
+      "fr": "En circulation fortement ralentie, on ne s'insère que juste avant le rétrécissement ; les autres laissent passer un véhicule en alternance. La tirette n'est pas une manœuvre.",
+      "en": "In heavily slowed traffic, drivers in the ending lane merge only just before the narrowing; the others let one in alternately. Zipper merging is not a manoeuvre."
+    },
+    "source": {
+      "title": "Wegcode art. 12bis",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "zipper"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lanes_hard_shoulder",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Затор на автомагістралі. Чи можна проїхати по аварійній смузі до найближчого виїзду?",
+      "nl": "File op de autosnelweg. Mag je via de pechstrook naar de volgende afrit rijden?",
+      "fr": "Embouteillage sur l'autoroute. Pouvez-vous emprunter la bande d'arrêt d'urgence jusqu'à la prochaine sortie ?",
+      "en": "Traffic jam on the motorway. May you use the hard shoulder to reach the next exit?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "По аварійній смузі (pechstrook) їздити заборонено. Виняток — службові машини, що їдуть на виклик. Порушення 3-го ступеня (−5).",
+      "nl": "Rijden op de pechstrook is verboden, behalve voor prioritaire voertuigen en hulpdiensten op weg naar een incident. Overtreding van de 3de graad (−5).",
+      "fr": "Rouler sur la bande d'arrêt d'urgence est interdit, sauf pour les véhicules prioritaires et services appelés sur un incident. Infraction du 3e degré (−5).",
+      "en": "Driving on the hard shoulder is prohibited, except for priority vehicles and services called to an incident. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 9.7",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "motorway"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lanes_keep_right",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Автомагістраль з трьома смугами, права смуга вільна. Чи можна довго їхати середньою?",
+      "nl": "Autosnelweg met drie rijstroken, de rechtse is vrij. Mag je lang in de middelste blijven rijden?",
+      "fr": "Autoroute à trois bandes, celle de droite est libre. Pouvez-vous rester longtemps sur celle du milieu ?",
+      "en": "Three-lane motorway, the right lane is free. May you stay in the middle lane for a long time?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Треба триматися якомога правіше. Ліві смуги — для обгону.",
+      "nl": "Je moet zo dicht mogelijk bij de rechterrand rijden; linkse stroken dienen om in te halen.",
+      "fr": "Il faut serrer le plus possible à droite ; les bandes de gauche servent à dépasser.",
+      "en": "You must keep as far right as possible; left lanes are for overtaking."
+    },
+    "source": {
+      "title": "Wegcode art. 9.3.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "keep-right"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lanes_fietszone",
+    "topic_id": "lanes_turning",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти їдеш за велосипедистом у «велосипедній зоні» (fietszone, знак F111). Чи можна його обігнати?",
+      "nl": "Je rijdt achter een fietser in een fietszone (bord F111). Mag je hem inhalen?",
+      "fr": "Vous suivez un cycliste dans une zone cyclable (panneau F111). Pouvez-vous le dépasser ?",
+      "en": "You are behind a cyclist in a cycle zone (fietszone, sign F111). May you overtake?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так, якщо залишити 1 м",
+          "nl": "Ja, met 1 m afstand",
+          "fr": "Oui, en laissant 1 m",
+          "en": "Yes, leaving 1 m"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "У велосипедній зоні авто дозволені, але обганяти велосипедистів (і speed pedelecs) заборонено. Швидкість — не більше 30 км/год.",
+      "nl": "In een fietszone zijn motorvoertuigen toegelaten maar mogen ze fietsers (en speed pedelecs) niet inhalen. Maximaal 30 km/u.",
+      "fr": "Dans une zone cyclable, les véhicules à moteur sont admis mais ne peuvent pas dépasser les cyclistes (ni les speed pedelecs). Maximum 30 km/h.",
+      "en": "In a cycle zone motor vehicles are allowed but may not overtake cyclists (or speed pedelecs). Max 30 km/h."
+    },
+    "source": {
+      "title": "Wegcode art. 22novies",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "fietszone"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_not_accelerate",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Тебе обганяють. Що тобі заборонено?",
+      "nl": "Je wordt ingehaald. Wat mag je niet?",
+      "fr": "Vous êtes dépassé. Qu'est-ce qui vous est interdit ?",
+      "en": "You are being overtaken. What are you not allowed to do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Збільшувати швидкість",
+          "nl": "Versnellen",
+          "fr": "Accélérer",
+          "en": "Speed up"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Триматися праворуч",
+          "nl": "Rechts houden",
+          "fr": "Serrer à droite",
+          "en": "Keep to the right"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Водій, якого обганяють, тримається якомога правіше й не прискорюється. Порушення 3-го ступеня (−5).",
+      "nl": "Wie ingehaald wordt, houdt zo veel mogelijk rechts en mag niet versnellen. Overtreding van de 3de graad (−5).",
+      "fr": "Le conducteur dépassé serre le plus à droite possible et ne peut pas accélérer. Infraction du 3e degré (−5).",
+      "en": "A driver being overtaken keeps as far right as possible and must not speed up. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 16.7",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "overtaking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_tram",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "З якого боку обганяють трамвай, що рухається по проїжджій частині?",
+      "nl": "Aan welke kant haal je een tram op de rijbaan in?",
+      "fr": "De quel côté dépasse-t-on un tram circulant sur la chaussée ?",
+      "en": "On which side do you overtake a tram running on the carriageway?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Праворуч",
+          "nl": "Rechts",
+          "fr": "Par la droite",
+          "en": "On the right"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Ліворуч",
+          "nl": "Links",
+          "fr": "Par la gauche",
+          "en": "On the left"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Трамвай обганяють праворуч, коли він рухається чи стоїть. Ліворуч — лише коли праворуч замало місця, або на дорогах з одностороннім рухом.",
+      "nl": "Een tram haal je rechts in, rijdend of stilstaand. Links alleen als rechts te smal is of bij eenrichtingsverkeer.",
+      "fr": "On dépasse un tram par la droite, qu'il roule ou soit à l'arrêt. Par la gauche seulement si la droite est trop étroite ou en sens unique.",
+      "en": "You overtake a tram on the right, moving or stopped. On the left only if the right is too narrow or on one-way roads."
+    },
+    "source": {
+      "title": "Wegcode art. 16.9",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tram"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_cyclist_inside",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "У населеному пункті ти обганяєш велосипедиста. Яку бокову відстань треба залишити щонайменше?",
+      "nl": "Binnen de bebouwde kom haal je een fietser in. Welke zijdelingse afstand moet je minstens laten?",
+      "fr": "En agglomération, vous dépassez un cycliste. Quelle distance latérale minimale devez-vous laisser ?",
+      "en": "In a built-up area you overtake a cyclist. What minimum lateral distance must you leave?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "1 м",
+          "nl": "1 m",
+          "fr": "1 m",
+          "en": "1 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "0,5 м",
+          "nl": "0,5 m",
+          "fr": "0,5 m",
+          "en": "0.5 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "1,5 м",
+          "nl": "1,5 m",
+          "fr": "1,5 m",
+          "en": "1.5 m"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Щонайменше 1 м у населеному пункті й 1,5 м поза ним, коли обганяєш, об'їжджаєш чи роз'їжджаєшся з велосипедистом. Порушення 3-го ступеня (−5).",
+      "nl": "Minstens 1 m binnen en 1,5 m buiten de bebouwde kom bij het voorbijrijden, inhalen of kruisen van een fietser. Overtreding van de 3de graad (−5).",
+      "fr": "Au moins 1 m en agglomération et 1,5 m hors agglomération pour dépasser ou croiser un cycliste. Infraction du 3e degré (−5).",
+      "en": "At least 1 m inside and 1.5 m outside built-up areas when passing, overtaking or crossing a cyclist. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40ter",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "cyclist",
+      "distance"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_cyclist_outside",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Поза населеним пунктом ти обганяєш велосипедиста. Яку бокову відстань треба залишити щонайменше?",
+      "nl": "Buiten de bebouwde kom haal je een fietser in. Welke zijdelingse afstand moet je minstens laten?",
+      "fr": "Hors agglomération, vous dépassez un cycliste. Quelle distance latérale minimale devez-vous laisser ?",
+      "en": "Outside a built-up area you overtake a cyclist. What minimum lateral distance must you leave?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "1,5 м",
+          "nl": "1,5 m",
+          "fr": "1,5 m",
+          "en": "1.5 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "1 м",
+          "nl": "1 m",
+          "fr": "1 m",
+          "en": "1 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "2 м",
+          "nl": "2 m",
+          "fr": "2 m",
+          "en": "2 m"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Поза населеними пунктами — щонайменше 1,5 м, у населених пунктах — 1 м. Порушення 3-го ступеня (−5).",
+      "nl": "Buiten de bebouwde kom minstens 1,5 m, binnen 1 m. Overtreding van de 3de graad (−5).",
+      "fr": "Hors agglomération au moins 1,5 m, en agglomération 1 m. Infraction du 3e degré (−5).",
+      "en": "Outside built-up areas at least 1.5 m, inside 1 m. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40ter",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "cyclist",
+      "distance"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_solid_line",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи можна перетнути суцільну білу лінію, щоб обігнати повільний трактор?",
+      "nl": "Mag je een doorlopende witte streep overschrijden om een trage tractor in te halen?",
+      "fr": "Pouvez-vous franchir une ligne blanche continue pour dépasser un tracteur lent ?",
+      "en": "May you cross a continuous white line to overtake a slow tractor?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Суцільну лінію перетинати заборонено, як і їхати ліворуч від неї, якщо вона розділяє напрямки руху. Порушення 3-го ступеня (−5).",
+      "nl": "Een doorlopende streep overschrijden is verboden, net als links ervan rijden als ze de rijrichtingen scheidt. Overtreding van de 3de graad (−5).",
+      "fr": "Il est interdit de franchir une ligne continue et de circuler à sa gauche si elle sépare les sens de circulation. Infraction du 3e degré (−5).",
+      "en": "Crossing a continuous line is prohibited, as is driving to its left when it separates directions. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 72.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "overtaking",
+      "marking"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_level_crossing",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Залізничний переїзд без шлагбаумів і світлофора. Чи можна обігнати авто перед ним?",
+      "nl": "Overweg zonder slagbomen of verkeerslichten. Mag je er een auto inhalen?",
+      "fr": "Passage à niveau sans barrières ni feux. Pouvez-vous y dépasser une voiture ?",
+      "en": "Level crossing without barriers or lights. May you overtake a car there?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Обгін на переїзді без шлагбаумів і світлофорів заборонений. Порушення 3-го ступеня (−5).",
+      "nl": "Inhalen op een overweg zonder slagbomen of verkeerslichten is verboden. Overtreding van de 3de graad (−5).",
+      "fr": "Dépasser sur un passage à niveau sans barrières ni feux est interdit. Infraction du 3e degré (−5).",
+      "en": "Overtaking on a level crossing without barriers or lights is prohibited. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 17.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "overtaking",
+      "level-crossing"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "overtake_crosswalk",
+    "topic_id": "overtaking",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Авто попереду гальмує перед нерегульованим пішохідним переходом. Чи можна його обігнати?",
+      "nl": "De auto voor je remt af voor een oversteekplaats zonder lichten. Mag je hem inhalen?",
+      "fr": "La voiture devant vous freine avant un passage pour piétons sans feux. Pouvez-vous la dépasser ?",
+      "en": "The car ahead slows down before an unregulated pedestrian crossing. May you overtake it?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Заборонено обганяти авто, яке зупиняється чи наближається до пішохідного або велосипедного переходу без світлофора чи регулювальника. Порушення 3-го ступеня (−5).",
+      "nl": "Je mag een voertuig niet inhalen dat stopt voor of nadert tot een oversteekplaats voor voetgangers of fietsers zonder lichten of bevoegd persoon. Overtreding van de 3de graad (−5).",
+      "fr": "Interdit de dépasser un véhicule qui s'arrête ou approche d'un passage pour piétons ou cyclistes sans feux ni agent. Infraction du 3e degré (−5).",
+      "en": "You may not overtake a vehicle that stops for or approaches a pedestrian or cyclist crossing without lights or an agent. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 17.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "overtaking",
+      "pedestrian"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "ped_about_to_cross",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Біля нерегульованого пішохідного переходу на краю тротуару стоїть пішохід, готовий перейти. Що робиш?",
+      "nl": "Aan een oversteekplaats zonder lichten staat een voetganger klaar om over te steken. Wat doe je?",
+      "fr": "À un passage pour piétons sans feux, un piéton s'apprête à traverser. Que faites-vous ?",
+      "en": "At an unregulated zebra crossing a pedestrian is about to step onto it. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зупиняюся й пропускаю його",
+          "nl": "Ik stop en laat hem voorgaan",
+          "fr": "Je m'arrête et le laisse passer",
+          "en": "I stop and let them cross"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Їду: він ще не на переході",
+          "nl": "Ik rijd door: hij staat nog niet op de oversteekplaats",
+          "fr": "Je passe : il n'est pas encore sur le passage",
+          "en": "I drive on: they are not on the crossing yet"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Пропускати треба пішоходів, які вже на переході або ось-ось на нього ступлять. Порушення 3-го ступеня (−5).",
+      "nl": "Je moet voorrang verlenen aan voetgangers die op de oversteekplaats zijn of op het punt staan erop te stappen. Overtreding van de 3de graad (−5).",
+      "fr": "Vous devez céder le passage aux piétons engagés ou sur le point de s'engager sur le passage. Infraction du 3e degré (−5).",
+      "en": "You must give way to pedestrians on the crossing or about to step onto it. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40.4.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pedestrian"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "ped_green_turning",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Тобі горить зелений, ти повертаєш праворуч. Пішохід ще переходить дорогу, на яку ти в'їжджаєш. Що робиш?",
+      "nl": "Je hebt groen en slaat rechts af. Een voetganger steekt nog over op de weg die je inrijdt. Wat doe je?",
+      "fr": "Vous avez le vert et tournez à droite. Un piéton traverse encore la voie où vous entrez. Que faites-vous ?",
+      "en": "You have green and turn right. A pedestrian is still crossing the road you are entering. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Пропускаю пішохода",
+          "nl": "Ik laat de voetganger voorgaan",
+          "fr": "Je laisse passer le piéton",
+          "en": "I let the pedestrian cross"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Проїжджаю: у мене зелений",
+          "nl": "Ik rijd door: ik heb groen",
+          "fr": "Je passe : j'ai le vert",
+          "en": "I go: I have green"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Навіть на зелений ти пропускаєш пішоходів, які законно почали переходити. Під час повороту — і тих, хто переходить дорогу, на яку ти в'їжджаєш. Порушення 3-го ступеня (−5).",
+      "nl": "Ook met groen laat je voetgangers die reglementair zijn beginnen oversteken voorgaan, en bij afslaan ook wie de weg oversteekt die je inrijdt. Overtreding van de 3de graad (−5).",
+      "fr": "Même au vert, laissez terminer les piétons régulièrement engagés et, en tournant, ceux qui traversent la voie où vous entrez. Infraction du 3e degré (−5).",
+      "en": "Even on green you let pedestrians who lawfully started crossing finish, and when turning, those crossing the road you enter. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40.4.1, 19.5",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "pedestrian",
+      "turning"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "cyclist_turn_right",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти повертаєш праворуч. Відокремленою велодоріжкою праворуч від тебе прямо їде велосипедист. Хто пропускає?",
+      "nl": "Je slaat rechts af. Op het fietspad rechts van je rijdt een fietser rechtdoor. Wie verleent voorrang?",
+      "fr": "Vous tournez à droite. Sur la piste cyclable à votre droite, un cycliste va tout droit. Qui cède le passage ?",
+      "en": "You turn right. On the cycle path to your right a cyclist goes straight on. Who gives way?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Я — пропускаю велосипедиста",
+          "nl": "Ik — ik laat de fietser voorgaan",
+          "fr": "Moi — je laisse passer le cycliste",
+          "en": "Me — I let the cyclist go"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Велосипедист",
+          "nl": "De fietser",
+          "fr": "Le cycliste",
+          "en": "The cyclist"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Хто змінює напрямок руху, пропускає водіїв і пішоходів на інших частинах тієї ж дороги, зокрема на велодоріжці. Порушення 3-го ступеня (−5).",
+      "nl": "Wie van richting verandert, verleent voorrang aan bestuurders en voetgangers op andere delen van de openbare weg, zoals het fietspad. Overtreding van de 3de graad (−5).",
+      "fr": "Qui change de direction cède le passage aux usagers circulant sur d'autres parties de la voie publique, comme la piste cyclable. Infraction du 3e degré (−5).",
+      "en": "When changing direction you give way to users on other parts of the same road, such as the cycle path. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 19.4",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "cyclist",
+      "turning"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "tram_stop_no_island",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Трамвай зупинився на зупинці без острівця, пасажири виходять на твій бік дороги. Що робиш?",
+      "nl": "Een tram stopt aan een halte zonder vluchtheuvel; reizigers stappen uit aan jouw kant. Wat doe je?",
+      "fr": "Un tram s'arrête à un arrêt sans refuge ; des voyageurs descendent de votre côté. Que faites-vous ?",
+      "en": "A tram stops at a stop without an island; passengers get off on your side. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Зупиняюся й даю їм дійти до тротуару",
+          "nl": "Ik stop en laat ze het trottoir bereiken",
+          "fr": "Je m'arrête et les laisse rejoindre le trottoir",
+          "en": "I stop and let them reach the pavement"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Повільно об'їжджаю",
+          "nl": "Ik rijd stapvoets voorbij",
+          "fr": "Je passe au pas",
+          "en": "I pass slowly"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Біля трамвайної зупинки без острівця зупинись з боку посадки, щоб пасажири безпечно дійшли до тротуару. Порушення 3-го ступеня (−5).",
+      "nl": "Bij een tramhalte zonder vluchtheuvel stop je aan de instapkant zodat de reizigers veilig het trottoir bereiken. Overtreding van de 3de graad (−5).",
+      "fr": "À un arrêt de tram sans refuge, arrêtez-vous du côté de l'embarquement pour que les voyageurs rejoignent le trottoir en sécurité. Infraction du 3e degré (−5).",
+      "en": "At a tram stop without an island, stop on the boarding side so passengers reach the pavement safely. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 40.3.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "tram",
+      "pedestrian"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "school_bus",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Шкільний автобус стоїть з увімкненими всіма покажчиками повороту. Що робиш?",
+      "nl": "Een schoolbus staat stil met alle richtingaanwijzers aan. Wat doe je?",
+      "fr": "Un bus scolaire est arrêté avec tous ses clignotants allumés. Que faites-vous ?",
+      "en": "A school bus has stopped with all its indicators flashing. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Значно знижую швидкість і за потреби зупиняюся",
+          "nl": "Ik vertraag sterk en stop zo nodig",
+          "fr": "Je ralentis fortement et m'arrête si nécessaire",
+          "en": "I slow down considerably and stop if needed"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Об'їжджаю з тією ж швидкістю, бо він стоїть",
+          "nl": "Ik rijd met dezelfde snelheid voorbij",
+          "fr": "Je passe à la même vitesse",
+          "en": "I pass at the same speed"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Біля шкільного автобуса з увімкненими всіма покажчиками будь подвійно уважним, значно знизь швидкість і за потреби зупинись. Порушення 3-го ступеня (−5).",
+      "nl": "Bij een schoolbus met alle richtingaanwijzers aan ben je dubbel voorzichtig, vertraag je sterk en stop je zo nodig. Overtreding van de 3de graad (−5).",
+      "fr": "Près d'un bus scolaire avec tous ses clignotants allumés, redoublez de prudence, ralentissez fortement et arrêtez-vous si nécessaire. Infraction du 3e degré (−5).",
+      "en": "Near a school bus with all indicators flashing, be doubly careful, slow down considerably and stop if needed. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 39bis",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "children"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "escooter_age",
+    "topic_id": "vulnerable_users",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "З якого віку можна їздити на електросамокаті дорогою загального користування (поза житловими зонами)?",
+      "nl": "Vanaf welke leeftijd mag je met een elektrische step op de openbare weg rijden (buiten woonerven)?",
+      "fr": "À partir de quel âge peut-on circuler en trottinette électrique sur la voie publique (hors zones résidentielles) ?",
+      "en": "From what age may you ride an e-scooter on public roads (outside residential zones)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "16 років",
+          "nl": "16 jaar",
+          "fr": "16 ans",
+          "en": "16 years"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "14 років",
+          "nl": "14 jaar",
+          "fr": "14 ans",
+          "en": "14 years"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "18 років",
+          "nl": "18 jaar",
+          "fr": "18 ans",
+          "en": "18 years"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Електросамокат (до 25 км/год) — з 16 років. Самокатник має ті самі права й обов'язки, що й велосипедист: велодоріжка або проїжджа частина. По тротуару їздити заборонено, пасажирів возити теж.",
+      "nl": "Een elektrische step (max. 25 km/u) mag vanaf 16 jaar. Je volgt de regels voor fietsers: fietspad of rijbaan. Op het trottoir rijden is verboden, passagiers ook.",
+      "fr": "Trottinette électrique (25 km/h max.) dès 16 ans. On suit les règles des cyclistes : piste cyclable ou chaussée. Interdit sur le trottoir et sans passager.",
+      "en": "E-scooters (max 25 km/h) from age 16. You follow the cyclist rules: cycle path or carriageway. No riding on the pavement and no passengers."
+    },
+    "source": {
+      "title": "Wegcode art. 2.15.2, 7bis",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "e-scooter"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "motorway_reverse",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 4,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти проїхав свій виїзд з автомагістралі. Чи можна здати назад по аварійній смузі?",
+      "nl": "Je hebt je afrit op de autosnelweg gemist. Mag je achteruitrijden op de pechstrook?",
+      "fr": "Vous avez manqué votre sortie d'autoroute. Pouvez-vous reculer sur la bande d'arrêt d'urgence ?",
+      "en": "You missed your motorway exit. May you reverse on the hard shoulder?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Розвертатися, здавати назад, їхати проти руху й користуватися проїздами в розділювальній смузі на автомагістралі заборонено. Порушення 4-го ступеня (−5). Їдь до наступного виїзду.",
+      "nl": "Keren, achteruitrijden, tegen de rijrichting in rijden en de middenbermovergangen gebruiken is op de autosnelweg verboden. Overtreding van de 4de graad (−5). Rijd tot de volgende afrit.",
+      "fr": "Faire demi-tour, reculer, rouler à contresens et utiliser les passages de la berme centrale sont interdits sur autoroute. Infraction du 4e degré (−5). Allez à la sortie suivante.",
+      "en": "U-turning, reversing, driving against traffic and using the median crossings are prohibited on motorways. 4th-degree offence (−5). Go to the next exit."
+    },
+    "source": {
+      "title": "Wegcode art. 21.4",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "motorway"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "warning_triangle_motorway",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Авто зламалося на автомагістралі. На якій відстані позаду ставиш знак аварійної зупинки?",
+      "nl": "Pech op de autosnelweg. Op welke afstand achter de wagen plaats je de gevarendriehoek?",
+      "fr": "Panne sur l'autoroute. À quelle distance derrière le véhicule placez-vous le triangle ?",
+      "en": "Breakdown on the motorway. How far behind the car do you place the warning triangle?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Щонайменше 100 м",
+          "nl": "Minstens 100 m",
+          "fr": "Au moins 100 m",
+          "en": "At least 100 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Щонайменше 30 м",
+          "nl": "Minstens 30 m",
+          "fr": "Au moins 30 m",
+          "en": "At least 30 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Щонайменше 50 м",
+          "nl": "Minstens 50 m",
+          "fr": "Au moins 50 m",
+          "en": "At least 50 m"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "На автомагістралі — щонайменше 100 м, на інших дорогах — щонайменше 30 м. Знак має бути видно приблизно з 50 м. Виходячи з авто, надягни світловідбивний жилет.",
+      "nl": "Op de autosnelweg minstens 100 m, op andere wegen minstens 30 m; zichtbaar op ongeveer 50 m. Trek bij het uitstappen een fluohesje aan.",
+      "fr": "Sur autoroute au moins 100 m, sur les autres routes au moins 30 m ; visible à environ 50 m. Portez un gilet fluorescent en sortant.",
+      "en": "On motorways at least 100 m, on other roads at least 30 m; visible from about 50 m. Wear a reflective vest when getting out."
+    },
+    "source": {
+      "title": "Wegcode art. 51.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "breakdown"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "level_crossing_barriers",
+    "topic_id": "motorways_tunnels",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 4,
+    "is_speed": false,
+    "question": {
+      "uk": "Потяг проїхав, шлагбаум піднімається, але червоні вогні ще блимають. Чи можна їхати?",
+      "nl": "De trein is voorbij, de slagbomen gaan omhoog, maar de rode lichten knipperen nog. Mag je oprijden?",
+      "fr": "Le train est passé, les barrières se lèvent, mais les feux rouges clignotent encore. Pouvez-vous passer ?",
+      "en": "The train has passed, the barriers are rising, but the red lights are still flashing. May you go?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Не можна заїжджати на переїзд, поки шлагбаум рухається чи закритий, блимають червоні вогні або звучить сигнал. Порушення 4-го ступеня (−5).",
+      "nl": "Je mag niet op een overweg rijden zolang de slagbomen bewegen of dicht zijn, de rode lichten knipperen of het geluidssignaal weerklinkt. Overtreding van de 4de graad (−5).",
+      "fr": "Interdit de s'engager tant que les barrières bougent ou sont fermées, que les feux rouges clignotent ou que le signal sonore retentit. Infraction du 4e degré (−5).",
+      "en": "You may not enter while barriers are moving or closed, red lights flash or the bell sounds. 4th-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 20.3",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "level-crossing"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lights_visibility_200",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Вдень через дощ видимість приблизно 150 м. Чи треба вмикати фари?",
+      "nl": "Overdag is het zicht door regen ongeveer 150 m. Moet je je lichten aansteken?",
+      "fr": "En journée, la visibilité est d'environ 150 m à cause de la pluie. Devez-vous allumer vos feux ?",
+      "en": "In daytime visibility is about 150 m because of rain. Must you switch on your lights?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Так, ближнє світло",
+          "nl": "Ja, dimlichten",
+          "fr": "Oui, les feux de croisement",
+          "en": "Yes, dipped beams"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Ні, вдень не треба",
+          "nl": "Nee, overdag niet",
+          "fr": "Non, pas en journée",
+          "en": "No, not in daytime"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ближнє (або дальнє) світло обов'язкове від сутінків до світанку, а також коли нормально бачиш менше ніж на 200 м. Порушення 3-го ступеня (−5).",
+      "nl": "Dim- of grootlicht is verplicht tussen vallen van de avond en aanbreken van de dag, en telkens het zicht minder dan ongeveer 200 m is. Overtreding van de 3de graad (−5).",
+      "fr": "Les feux de croisement (ou de route) sont obligatoires de la tombée de la nuit au lever du jour et dès que la visibilité est inférieure à environ 200 m. Infraction du 3e degré (−5).",
+      "en": "Dipped (or main) beams are mandatory from nightfall to daybreak and whenever visibility is below about 200 m. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "lights"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lights_main_beam_follow",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Вночі ти їдеш за іншим авто на відстані 40 м з дальнім світлом. Чи це дозволено?",
+      "nl": "'s Nachts rijd je met grootlicht op 40 m achter een andere auto. Mag dat?",
+      "fr": "La nuit, vous suivez une voiture à 40 m en feux de route. Est-ce permis ?",
+      "en": "At night you follow another car at 40 m with main beams on. Is that allowed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Перемикайся на ближнє, коли їдеш за авто ближче ніж за 50 м (крім обгону), при зустрічному русі й на освітлених дорогах.",
+      "nl": "Schakel over op dimlicht als je een voertuig volgt op minder dan 50 m (behalve om in te halen), bij tegenliggers en op verlichte wegen.",
+      "fr": "Passez en feux de croisement si vous suivez un véhicule à moins de 50 m (sauf pour dépasser), en croisant et sur les routes éclairées.",
+      "en": "Switch to dipped beams when following a vehicle at less than 50 m (except to overtake), when meeting traffic and on lit roads."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "lights"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "lights_rear_fog",
+    "topic_id": "weather_hazards",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Коли треба вмикати задній протитуманний ліхтар?",
+      "nl": "Wanneer moet je het achterste mistlicht gebruiken?",
+      "fr": "Quand devez-vous utiliser le feu brouillard arrière ?",
+      "en": "When must you use the rear fog light?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Туман чи сніг з видимістю менше 100 м, а також сильний дощ",
+          "nl": "Mist of sneeuw met zicht onder 100 m, en hevige regen",
+          "fr": "Brouillard ou neige avec visibilité sous 100 m, et forte pluie",
+          "en": "Fog or snow with visibility below 100 m, and heavy rain"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Видимість менше 200 м",
+          "nl": "Zicht onder 200 m",
+          "fr": "Visibilité sous 200 m",
+          "en": "Visibility below 200 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Щоразу, коли вмикаєш ближнє світло",
+          "nl": "Altijd samen met het dimlicht",
+          "fr": "Toujours avec les feux de croisement",
+          "en": "Always with dipped beams"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Задній протитуманний обов'язковий у тумані чи снігопаді з видимістю менше 100 м і при сильному дощі. В інших випадках він заборонений, бо засліплює. Правила «50 км/год з протитуманками» в Бельгії немає.",
+      "nl": "Het achterste mistlicht moet branden bij mist of sneeuw met zicht onder ongeveer 100 m en bij hevige regen; in andere gevallen is het verboden. Er bestaat geen regel '50 km/u met mistlicht'.",
+      "fr": "Le feu brouillard arrière est obligatoire par brouillard ou neige réduisant la visibilité sous environ 100 m et par forte pluie ; interdit sinon. Il n'y a pas de règle « 50 km/h avec antibrouillard » en Belgique.",
+      "en": "The rear fog light must be on in fog or snow with visibility below about 100 m and in heavy rain; otherwise it is forbidden. There is no '50 km/h with fog lights' rule in Belgium."
+    },
+    "source": {
+      "title": "Wegcode art. 30.1.2°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "lights",
+      "fog"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "phone_red_light",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти стоїш на червоне світло. Чи можна взяти телефон у руку, щоб прочитати повідомлення?",
+      "nl": "Je staat stil voor een rood licht. Mag je je gsm in de hand nemen om een bericht te lezen?",
+      "fr": "Vous êtes arrêté au feu rouge. Pouvez-vous prendre votre téléphone en main pour lire un message ?",
+      "en": "You are waiting at a red light. May you hold your phone to read a message?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Поки авто в русі (а очікування на світлофорі — частина руху), брати телефон чи інший пристрій з екраном у руку заборонено. Можна лише в закріпленому тримачі. Порушення 3-го ступеня (−5).",
+      "nl": "Zolang je deelneemt aan het verkeer (ook wachten voor een rood licht) mag je geen gsm of toestel met scherm vasthouden of bedienen, tenzij in een houder. Overtreding van de 3de graad (−5).",
+      "fr": "Tant que vous circulez (y compris en attendant au feu), il est interdit de tenir ou manipuler un téléphone ou appareil à écran, sauf fixé dans un support. Infraction du 3e degré (−5).",
+      "en": "While in traffic (including waiting at a red light) you may not hold or operate a phone or device with a screen unless it is in a holder. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 8.4",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "phone"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "child_seat_135",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Дитині 11 років, зріст 130 см. Як її правильно перевозити?",
+      "nl": "Een kind van 11 jaar is 130 cm groot. Hoe vervoer je het?",
+      "fr": "Un enfant de 11 ans mesure 130 cm. Comment le transporter ?",
+      "en": "A child aged 11 is 130 cm tall. How must they travel?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "У відповідному дитячому кріслі чи бустері",
+          "nl": "In een aangepast kinderbeveiligingssysteem",
+          "fr": "Dans un dispositif de retenue pour enfants adapté",
+          "en": "In a suitable child restraint"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Просто пристебнутою звичайним ременем",
+          "nl": "Gewoon met de gordel",
+          "fr": "Simplement avec la ceinture",
+          "en": "Just with the seat belt"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Діти до 18 років і зростом нижче 135 см їздять у дитячому кріслі чи бустері, що відповідає їхньому зросту й вазі. Порушення 3-го ступеня (−5).",
+      "nl": "Kinderen jonger dan 18 jaar en kleiner dan 135 cm gebruiken een aangepast kinderbeveiligingssysteem. Overtreding van de 3de graad (−5).",
+      "fr": "Les enfants de moins de 18 ans mesurant moins de 135 cm utilisent un dispositif de retenue adapté. Infraction du 3e degré (−5).",
+      "en": "Children under 18 and shorter than 135 cm must use a suitable child restraint. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 35.1.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "child-seat"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "child_seat_airbag",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Чи можна встановити дитяче крісло спиною вперед на переднє сидіння з увімкненою фронтальною подушкою безпеки?",
+      "nl": "Mag je een achterwaarts gericht kinderzitje op de voorzetel plaatsen met een actieve frontale airbag?",
+      "fr": "Pouvez-vous installer un siège enfant dos à la route à l'avant avec un airbag frontal actif ?",
+      "en": "May you place a rear-facing child seat on a front seat with an active front airbag?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ні. Подушка безпеки, що розкривається, може тяжко травмувати дитину. Таке крісло ставлять лише тоді, коли подушку вимкнено. Порушення 3-го ступеня (−5).",
+      "nl": "Nee. Een ontplooiende airbag kan het kind zwaar verwonden. Alleen met uitgeschakelde airbag. Overtreding van de 3de graad (−5).",
+      "fr": "Non. Un airbag qui se déploie peut gravement blesser l'enfant. Uniquement airbag désactivé. Infraction du 3e degré (−5).",
+      "en": "No. A deploying airbag can seriously injure the child. Only with the airbag switched off. 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 35.1.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "child-seat",
+      "airbag"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "seat_belt",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 2,
+    "is_speed": false,
+    "question": {
+      "uk": "Хто в авто повинен пристібатися ременем безпеки?",
+      "nl": "Wie moet in de auto de veiligheidsgordel dragen?",
+      "fr": "Qui doit porter la ceinture de sécurité dans la voiture ?",
+      "en": "Who must wear a seat belt in the car?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Водій і всі пасажири на сидіннях з ременями",
+          "nl": "De bestuurder en alle passagiers op zitplaatsen met gordel",
+          "fr": "Le conducteur et tous les passagers sur des places équipées",
+          "en": "The driver and all passengers on seats fitted with belts"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Лише ті, хто спереду",
+          "nl": "Alleen wie vooraan zit",
+          "fr": "Seulement ceux à l'avant",
+          "en": "Only those in the front"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "Лише за межами населених пунктів",
+          "nl": "Alleen buiten de bebouwde kom",
+          "fr": "Seulement hors agglomération",
+          "en": "Only outside built-up areas"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Ремінь обов'язковий на всіх сидіннях, які ним обладнані, — і спереду, і ззаду, у місті й за містом. Порушення 2-го ступеня (−1).",
+      "nl": "De gordel is verplicht op elke zitplaats die ermee uitgerust is, vooraan en achteraan, binnen en buiten de bebouwde kom. Overtreding van de 2de graad (−1).",
+      "fr": "La ceinture est obligatoire à chaque place équipée, à l'avant comme à l'arrière, en et hors agglomération. Infraction du 2e degré (−1).",
+      "en": "The belt is mandatory on every seat fitted with one, front and rear, inside and outside built-up areas. 2nd-degree offence (−1)."
+    },
+    "source": {
+      "title": "Wegcode art. 35.1.1",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "seat-belt"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "fit_to_drive",
+    "topic_id": "safety_alcohol",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти дуже втомлений після нічної зміни. Що каже закон?",
+      "nl": "Je bent erg moe na een nachtdienst. Wat zegt de wet?",
+      "fr": "Vous êtes très fatigué après une nuit de travail. Que dit la loi ?",
+      "en": "You are very tired after a night shift. What does the law say?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Водій має бути здатним керувати й завжди виконувати всі потрібні маневри",
+          "nl": "De bestuurder moet rijgeschikt zijn en altijd alle nodige manoeuvres kunnen uitvoeren",
+          "fr": "Le conducteur doit être apte à conduire et pouvoir effectuer toutes les manœuvres",
+          "en": "The driver must be fit to drive and always able to perform all necessary manoeuvres"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Втома законом не регулюється",
+          "nl": "Vermoeidheid valt niet onder de wet",
+          "fr": "La fatigue n'est pas réglementée",
+          "en": "Fatigue is not regulated by law"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Водій повинен бути здатним керувати й постійно контролювати авто. Керування в стані, коли ти не можеш цього забезпечити (втома, ліки, наркотики), — порушення 3-го ступеня (−5).",
+      "nl": "Een bestuurder moet rijgeschikt zijn en zijn voertuig voortdurend beheersen. Rijden in een toestand waarin dat niet kan (vermoeidheid, medicatie, drugs) is een overtreding van de 3de graad (−5).",
+      "fr": "Le conducteur doit être apte et maître de son véhicule. Conduire dans un état qui ne le permet pas (fatigue, médicaments, drogues) est une infraction du 3e degré (−5).",
+      "en": "A driver must be fit and in constant control of the vehicle. Driving in a state where that is impossible (fatigue, medication, drugs) is a 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 8.3",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "fatigue"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "mixed_lights_vs_b9",
+    "topic_id": "mixed_exam",
+    "type": "sign",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 3,
+    "is_speed": false,
+    "question": {
+      "uk": "Ти на дорозі з пріоритетом (знак B9). На перехресті працює світлофор, тобі горить червоний. Що діє?",
+      "nl": "Je rijdt op een voorrangsweg (bord B9). Op het kruispunt werken verkeerslichten en jouw licht is rood. Wat geldt?",
+      "fr": "Vous êtes sur une route prioritaire (B9). Au carrefour, les feux fonctionnent et le vôtre est rouge. Qu'est-ce qui s'applique ?",
+      "en": "You are on a priority road (sign B9). At the junction traffic lights work and yours is red. What applies?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Світлофор: я зупиняюся",
+          "nl": "Het verkeerslicht: ik stop",
+          "fr": "Le feu : je m'arrête",
+          "en": "The light: I stop"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Знак B9: я маю пріоритет",
+          "nl": "Het bord B9: ik heb voorrang",
+          "fr": "Le panneau B9 : j'ai la priorité",
+          "en": "Sign B9: I have priority"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Світлофор важливіший за знаки пріоритету. Поки він працює, B9 на цьому перехресті не діє. Проїзд на червоний — порушення 3-го ступеня (−5).",
+      "nl": "Verkeerslichten gaan voor op voorrangsborden: zolang ze werken, geldt B9 op dat kruispunt niet. Door rood rijden is een overtreding van de 3de graad (−5).",
+      "fr": "Les feux priment sur les panneaux de priorité : tant qu'ils fonctionnent, le B9 ne s'applique pas à ce carrefour. Brûler le rouge : 3e degré (−5).",
+      "en": "Lights override priority signs: while they work, B9 does not apply at that junction. Running a red light is a 3rd-degree offence (−5)."
+    },
+    "source": {
+      "title": "Wegcode art. 6.3, 61.1.1°",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "traffic-light",
+      "B9"
+    ],
+    "status": "published",
+    "image": "assets/signs/B9.svg"
+  },
+  {
+    "id": "mixed_green_blocked",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "federal"
+    ],
+    "degree": 1,
+    "is_speed": false,
+    "question": {
+      "uk": "Тобі горить зелений, але за перехрестям затор, і ти, ймовірно, зупинишся посеред перехрестя. Чи можна заїжджати?",
+      "nl": "Je hebt groen, maar na het kruispunt staat een file en je zou waarschijnlijk op het kruispunt moeten stoppen. Mag je oprijden?",
+      "fr": "Vous avez le vert, mais un embouteillage après le carrefour vous obligerait probablement à vous arrêter dessus. Pouvez-vous vous engager ?",
+      "en": "You have green, but there is a jam after the junction and you would probably have to stop on it. May you enter?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "Ні",
+          "nl": "Nee",
+          "fr": "Non",
+          "en": "No"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "Так",
+          "nl": "Ja",
+          "fr": "Oui",
+          "en": "Yes"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Навіть на зелений не заїжджай на перехрестя, якщо, ймовірно, доведеться на ньому зупинитися й заблокувати поперечний рух.",
+      "nl": "Ook met groen mag je een kruispunt niet oprijden als je er waarschijnlijk zou moeten stoppen en het dwarsverkeer zou hinderen.",
+      "fr": "Même au vert, ne vous engagez pas si vous risquez de devoir vous arrêter sur le carrefour et de bloquer la circulation transversale.",
+      "en": "Even on green, do not enter if you would probably have to stop on the junction and block cross traffic."
+    },
+    "source": {
+      "title": "Wegcode art. 14.2",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "intersection"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "mixed_c1_brussels_speed",
+    "topic_id": "mixed_exam",
+    "type": "text",
+    "difficulty": 2,
+    "region": [
+      "brussels"
+    ],
+    "degree": 1,
+    "is_speed": true,
+    "question": {
+      "uk": "Брюссель, звичайна вулиця в населеному пункті, знаків обмеження немає. З якою максимальною швидкістю можна їхати?",
+      "nl": "Brussel, gewone straat in de bebouwde kom, geen snelheidsborden. Hoe snel mag je maximaal?",
+      "fr": "Bruxelles, rue ordinaire en agglomération, sans panneau de vitesse. Quelle vitesse maximale ?",
+      "en": "Brussels, ordinary street in a built-up area, no speed signs. What is the maximum speed?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "uk": "30 км/год",
+          "nl": "30 km/u",
+          "fr": "30 km/h",
+          "en": "30 km/h"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "uk": "50 км/год",
+          "nl": "50 km/u",
+          "fr": "50 km/h",
+          "en": "50 km/h"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "uk": "20 км/год",
+          "nl": "20 km/u",
+          "fr": "20 km/h",
+          "en": "20 km/h"
+        }
+      }
+    ],
+    "correct_option_id": "a",
+    "explanation": {
+      "uk": "Весь Брюссельський регіон з 1 січня 2021 року — «місто 30». 50 км/год — лише там, де це прямо дозволяє знак.",
+      "nl": "Het hele Brussels Gewest is sinds 1 januari 2021 'Stad 30'. 50 km/u enkel waar een bord dat toelaat.",
+      "fr": "Toute la Région bruxelloise est « Ville 30 » depuis le 1er janvier 2021. 50 km/h seulement là où un panneau l'autorise.",
+      "en": "The whole Brussels Region has been a 'City 30' since 1 January 2021. 50 km/h only where a sign allows it."
+    },
+    "source": {
+      "title": "Wegcode art. 11.1 (Brussels Gewest)",
+      "url": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "checked_at": "2026-10-16",
+      "review_status": "verified"
+    },
+    "tags": [
+      "speed",
+      "brussels"
     ],
     "status": "published"
   }

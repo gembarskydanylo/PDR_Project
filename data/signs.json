@@ -1,0 +1,258 @@
+[
+  {
+    "code": "A51",
+    "category": "A",
+    "name": {
+      "uk": "Інша небезпека",
+      "nl": "Ander gevaar",
+      "fr": "Autre danger",
+      "en": "Other danger"
+    },
+    "meaning": {
+      "uk": "Попереджає про небезпеку, яку уточнює табличка під знаком.",
+      "nl": "Waarschuwt voor een gevaar dat een onderbord nader bepaalt.",
+      "fr": "Avertit d'un danger précisé par un panneau additionnel.",
+      "en": "Warns of a danger specified by a sub-plate."
+    }
+  },
+  {
+    "code": "B1",
+    "category": "B",
+    "name": {
+      "uk": "Дати дорогу",
+      "nl": "Voorrang verlenen",
+      "fr": "Cédez le passage",
+      "en": "Give way"
+    },
+    "meaning": {
+      "uk": "Пропусти транспорт на дорозі, яку перетинаєш або на яку в'їжджаєш.",
+      "nl": "Verleen voorrang aan de bestuurders op de weg die je kruist of oprijdt.",
+      "fr": "Cédez le passage aux conducteurs sur la voie que vous croisez ou abordez.",
+      "en": "Give way to drivers on the road you cross or enter."
+    }
+  },
+  {
+    "code": "B5",
+    "category": "B",
+    "name": {
+      "uk": "STOP",
+      "nl": "STOP",
+      "fr": "STOP",
+      "en": "STOP"
+    },
+    "meaning": {
+      "uk": "Повна зупинка біля стоп-лінії або краю перехрестя, потім пропусти всіх.",
+      "nl": "Volledig stoppen aan de stopstreep of de rand van het kruispunt, daarna voorrang verlenen.",
+      "fr": "Arrêt complet à la ligne d'arrêt ou au bord du carrefour, puis céder le passage.",
+      "en": "Full stop at the stop line or junction edge, then give way."
+    }
+  },
+  {
+    "code": "B9",
+    "category": "B",
+    "name": {
+      "uk": "Дорога з пріоритетом",
+      "nl": "Voorrangsweg",
+      "fr": "Route prioritaire",
+      "en": "Priority road"
+    },
+    "meaning": {
+      "uk": "На наступних перехрестях пріоритет у тебе — до знака B11.",
+      "nl": "Je hebt voorrang op de volgende kruispunten, tot bord B11.",
+      "fr": "Vous avez la priorité aux carrefours suivants, jusqu'au panneau B11.",
+      "en": "You have priority at the following junctions until sign B11."
+    }
+  },
+  {
+    "code": "B11",
+    "category": "B",
+    "name": {
+      "uk": "Кінець дороги з пріоритетом",
+      "nl": "Einde voorrangsweg",
+      "fr": "Fin de route prioritaire",
+      "en": "End of priority road"
+    },
+    "meaning": {
+      "uk": "Знову діють загальні правила, зазвичай «праворуч».",
+      "nl": "De algemene regels gelden opnieuw, meestal voorrang van rechts.",
+      "fr": "Les règles générales s'appliquent à nouveau, souvent priorité de droite.",
+      "en": "General rules apply again, usually priority to the right."
+    }
+  },
+  {
+    "code": "B17",
+    "category": "B",
+    "name": {
+      "uk": "Перехрестя з пріоритетом праворуч",
+      "nl": "Kruispunt met voorrang van rechts",
+      "fr": "Carrefour à priorité de droite",
+      "en": "Junction with priority to the right"
+    },
+    "meaning": {
+      "uk": "Попереджає, що на перехресті діє правило «праворуч».",
+      "nl": "Waarschuwt dat op het kruispunt voorrang van rechts geldt.",
+      "fr": "Avertit que la priorité de droite s'applique au carrefour.",
+      "en": "Warns that priority to the right applies at the junction."
+    }
+  },
+  {
+    "code": "C1",
+    "category": "C",
+    "name": {
+      "uk": "В'їзд заборонено",
+      "nl": "Verboden richting",
+      "fr": "Sens interdit",
+      "en": "No entry"
+    },
+    "meaning": {
+      "uk": "Заборонено в'їжджати з цього боку. Ігнорування — 3-й ступінь (−5).",
+      "nl": "Verboden in te rijden langs deze kant. Negeren is 3de graad (−5).",
+      "fr": "Interdit d'entrer par ce côté. L'ignorer = 3e degré (−5).",
+      "en": "No entry from this side. Ignoring it is 3rd degree (−5)."
+    }
+  },
+  {
+    "code": "C3",
+    "category": "C",
+    "name": {
+      "uk": "Рух заборонено",
+      "nl": "Verboden toegang",
+      "fr": "Accès interdit",
+      "en": "Closed to all vehicles"
+    },
+    "meaning": {
+      "uk": "Закрито для всіх транспортних засобів в обох напрямках, якщо табличка не робить винятків.",
+      "nl": "Verboden voor alle bestuurders in beide richtingen, tenzij een onderbord uitzonderingen maakt.",
+      "fr": "Interdit à tout conducteur dans les deux sens, sauf exceptions sur panneau additionnel.",
+      "en": "Closed to all drivers in both directions unless a sub-plate makes exceptions."
+    }
+  },
+  {
+    "code": "C35",
+    "category": "C",
+    "name": {
+      "uk": "Обгін заборонено",
+      "nl": "Inhaalverbod",
+      "fr": "Dépassement interdit",
+      "en": "No overtaking"
+    },
+    "meaning": {
+      "uk": "Заборонено обганяти ліворуч транспорт з більш ніж двома колесами. Двоколісні обганяти можна. Ігнорування — 3-й ступінь (−5).",
+      "nl": "Verboden voertuigen met meer dan twee wielen links in te halen; tweewielers mogen. Negeren is 3de graad (−5).",
+      "fr": "Interdit de dépasser par la gauche les véhicules à plus de deux roues ; les deux-roues, oui. 3e degré (−5).",
+      "en": "No overtaking on the left of vehicles with more than two wheels; two-wheelers allowed. 3rd degree (−5)."
+    }
+  },
+  {
+    "code": "C43",
+    "category": "C",
+    "name": {
+      "uk": "Обмеження швидкості",
+      "nl": "Snelheidsbeperking",
+      "fr": "Limitation de vitesse",
+      "en": "Speed limit"
+    },
+    "meaning": {
+      "uk": "Максимальна швидкість, указана на знаку. Перевищення на іспиті — −5.",
+      "nl": "Maximumsnelheid zoals aangegeven. Op het examen −5.",
+      "fr": "Vitesse maximale indiquée. À l'examen : −5.",
+      "en": "Maximum speed shown. In the exam: −5."
+    }
+  },
+  {
+    "code": "D1",
+    "category": "D",
+    "name": {
+      "uk": "Обов'язковий напрямок",
+      "nl": "Verplichte rijrichting",
+      "fr": "Direction obligatoire",
+      "en": "Compulsory direction"
+    },
+    "meaning": {
+      "uk": "Об'їжджай перешкоду з боку, куди вказує стрілка.",
+      "nl": "Rij langs de kant die de pijl aangeeft.",
+      "fr": "Passez du côté indiqué par la flèche.",
+      "en": "Pass on the side the arrow shows."
+    }
+  },
+  {
+    "code": "D5",
+    "category": "D",
+    "name": {
+      "uk": "Круговий рух",
+      "nl": "Rotonde",
+      "fr": "Rond-point",
+      "en": "Roundabout"
+    },
+    "meaning": {
+      "uk": "Разом зі знаком B1 чи B5 на в'їзді: пропускай тих, хто вже на колі.",
+      "nl": "Met B1 of B5 aan de ingang: voorrang aan wie al op de rotonde rijdt.",
+      "fr": "Avec B1 ou B5 à l'entrée : priorité à ceux déjà sur l'anneau.",
+      "en": "With B1 or B5 at the entry: priority to those already on the ring."
+    }
+  },
+  {
+    "code": "D7",
+    "category": "D",
+    "name": {
+      "uk": "Обов'язкова велодоріжка",
+      "nl": "Verplicht fietspad",
+      "fr": "Piste cyclable obligatoire",
+      "en": "Compulsory cycle path"
+    },
+    "meaning": {
+      "uk": "Велосипедисти повинні їхати цією доріжкою. Автомобілям тут не можна.",
+      "nl": "Fietsers moeten dit fietspad volgen; auto's niet toegelaten.",
+      "fr": "Les cyclistes doivent emprunter cette piste ; voitures interdites.",
+      "en": "Cyclists must use this path; cars not allowed."
+    }
+  },
+  {
+    "code": "E1",
+    "category": "E",
+    "name": {
+      "uk": "Стоянка заборонена",
+      "nl": "Parkeerverbod",
+      "fr": "Stationnement interdit",
+      "en": "No parking"
+    },
+    "meaning": {
+      "uk": "Стоянка заборонена, коротка зупинка — дозволена.",
+      "nl": "Parkeren verboden, stilstaan mag.",
+      "fr": "Stationnement interdit, arrêt permis.",
+      "en": "No parking; stopping allowed."
+    }
+  },
+  {
+    "code": "E3",
+    "category": "E",
+    "name": {
+      "uk": "Зупинка і стоянка заборонені",
+      "nl": "Stilstaan en parkeren verboden",
+      "fr": "Arrêt et stationnement interdits",
+      "en": "No stopping and no parking"
+    },
+    "meaning": {
+      "uk": "Заборонено і зупинятися, і стояти.",
+      "nl": "Zowel stilstaan als parkeren is verboden.",
+      "fr": "L'arrêt et le stationnement sont interdits.",
+      "en": "Both stopping and parking are prohibited."
+    }
+  },
+  {
+    "code": "F5",
+    "category": "F",
+    "name": {
+      "uk": "Автомагістраль",
+      "nl": "Autosnelweg",
+      "fr": "Autoroute",
+      "en": "Motorway"
+    },
+    "meaning": {
+      "uk": "Початок автомагістралі: 120 км/год, мінімум 70, розвороти й задній хід заборонені.",
+      "nl": "Begin autosnelweg: 120 km/u, minimum 70, keren en achteruitrijden verboden.",
+      "fr": "Début d'autoroute : 120 km/h, minimum 70, demi-tour et marche arrière interdits.",
+      "en": "Start of motorway: 120 km/h, minimum 70, no U-turns or reversing."
+    }
+  }
+]

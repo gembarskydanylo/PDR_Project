@@ -1,0 +1,903 @@
+[
+  {
+    "topic_id": "road_signs",
+    "cards": [
+      {
+        "id": "hierarchy",
+        "title": {
+          "uk": "Хто головніший",
+          "nl": "Wat gaat voor",
+          "fr": "Ce qui prime",
+          "en": "What takes precedence"
+        },
+        "body": {
+          "uk": "Регулювальник → світлофор → знаки й розмітка → загальні правила. Якщо світлофор працює, знаки пріоритету на цьому перехресті не діють. Блимаючий жовтий пріоритету не дає.",
+          "nl": "Bevoegd persoon → verkeerslichten → borden en markeringen → algemene regels. Werken de lichten, dan gelden de voorrangsborden op dat kruispunt niet. Knipperend oranje geeft geen voorrang.",
+          "fr": "Agent → feux → panneaux et marquages → règles générales. Quand les feux fonctionnent, les panneaux de priorité du carrefour ne s'appliquent pas. L'orange clignotant ne donne pas la priorité.",
+          "en": "Agent → traffic lights → signs and markings → general rules. When lights work, priority signs at that junction do not apply. Flashing amber gives no priority."
+        },
+        "article": "6.1–6.3",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "bevoegd persoon",
+            "fr": "agent qualifié"
+          }
+        ]
+      },
+      {
+        "id": "lights",
+        "title": {
+          "uk": "Світлофор",
+          "nl": "Verkeerslichten",
+          "fr": "Feux de signalisation",
+          "en": "Traffic lights"
+        },
+        "body": {
+          "uk": "Червоний — не перетинай стоп-лінію (−5 на іспиті). Жовтий — теж стоп, якщо можеш безпечно зупинитися. Зелена стрілка разом із червоним дозволяє рух лише в її напрямку, і пішоходів ти пропускаєш. Повороту праворуч на червоний у Бельгії немає.",
+          "nl": "Rood: stopstreep niet overschrijden (−5). Oranje: ook stoppen als het veilig kan. Een groene pijl naast rood laat enkel die richting toe, voetgangers gaan voor. Rechts afslaan door rood bestaat niet.",
+          "fr": "Rouge : ne franchissez pas la ligne d'arrêt (−5). Orange : arrêt aussi si c'est possible sans danger. Une flèche verte avec le rouge autorise seulement cette direction, piétons prioritaires. Pas de « tourner à droite au rouge ».",
+          "en": "Red: do not cross the stop line (−5). Amber: stop too if you safely can. A green arrow with red allows only that direction; pedestrians first. No right turn on red in Belgium."
+        },
+        "article": "61",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "rood licht",
+            "fr": "feu rouge"
+          },
+          {
+            "nl": "oranje licht",
+            "fr": "feu orange"
+          }
+        ]
+      },
+      {
+        "id": "agent",
+        "title": {
+          "uk": "Сигнали регулювальника",
+          "nl": "Tekens van de bevoegde persoon",
+          "fr": "Signes de l'agent",
+          "en": "Agent's signals"
+        },
+        "body": {
+          "uk": "Рука вгору — стоп для всіх, крім тих, хто вже на перехресті. Руки в сторони — стоп для тих, чий шлях перетинає лінію рук. Червоний ліхтар, яким водять убік, — стоп для водіїв, на яких він спрямований. Ігнорування — 3-й чи 4-й ступінь (−5).",
+          "nl": "Arm omhoog: stop voor iedereen, behalve wie al op het kruispunt is. Armen zijwaarts: stop voor wie de richting van de armen kruist. Zwaaiend rood licht: stop voor wie het gericht is. Negeren is 3de of 4de graad (−5).",
+          "fr": "Bras levé : arrêt pour tous sauf ceux déjà engagés. Bras tendus : arrêt pour ceux qui croisent la direction des bras. Feu rouge balancé : arrêt pour ceux qu'il vise. Ignorer = 3e ou 4e degré (−5).",
+          "en": "Arm raised: stop for everyone except those already on the junction. Arms out: stop for traffic crossing the direction of the arms. Swung red light: stop for those it points at. Ignoring is 3rd or 4th degree (−5)."
+        },
+        "article": "4",
+        "serious": true,
+        "terms": []
+      },
+      {
+        "id": "categories",
+        "title": {
+          "uk": "Категорії знаків",
+          "nl": "Soorten borden",
+          "fr": "Catégories de panneaux",
+          "en": "Sign categories"
+        },
+        "body": {
+          "uk": "A — попередження (трикутник з червоною облямівкою). B — пріоритет (B1 трикутник донизу, B5 STOP, B9 жовтий ромб). C — заборони (круглі з червоною облямівкою). D — накази (круглі сині). E — зупинка й стоянка. F — інформація (прямокутні). Деталі — у «Каталозі знаків».",
+          "nl": "A: gevaarsborden (driehoek, rode rand). B: voorrang (B1 omgekeerde driehoek, B5 STOP, B9 gele ruit). C: verbodsborden (rond, rode rand). D: gebodsborden (rond, blauw). E: stilstaan en parkeren. F: aanwijzingsborden. Zie de bordencatalogus.",
+          "fr": "A : danger (triangle, bord rouge). B : priorité (B1 triangle inversé, B5 STOP, B9 losange jaune). C : interdiction (rond, bord rouge). D : obligation (rond, bleu). E : arrêt et stationnement. F : indication. Voir le catalogue.",
+          "en": "A: warning (triangle, red border). B: priority (B1 inverted triangle, B5 STOP, B9 yellow diamond). C: prohibition (round, red border). D: mandatory (round, blue). E: stopping and parking. F: information. See the sign catalogue."
+        },
+        "article": "65–71",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "gevaarsbord",
+            "fr": "signal de danger"
+          },
+          {
+            "nl": "verbodsbord",
+            "fr": "signal d'interdiction"
+          }
+        ],
+        "sign": "A51"
+      }
+    ]
+  },
+  {
+    "topic_id": "priority_intersections",
+    "cards": [
+      {
+        "id": "right",
+        "title": {
+          "uk": "Пріоритет праворуч",
+          "nl": "Voorrang van rechts",
+          "fr": "Priorité de droite",
+          "en": "Priority to the right"
+        },
+        "body": {
+          "uk": "Без знаків, світлофорів і регулювальника пропускаєш того, хто праворуч. Ширина чи покриття дороги значення не мають.",
+          "nl": "Zonder borden, lichten of bevoegd persoon laat je wie van rechts komt voorgaan. Breedte of verharding van de weg spelen geen rol.",
+          "fr": "Sans panneaux, feux ni agent, on cède le passage à celui qui vient de droite. Largeur et revêtement ne comptent pas.",
+          "en": "Without signs, lights or an agent, give way to traffic from the right. Road width or surface does not matter."
+        },
+        "article": "12.3.1",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "voorrang van rechts",
+            "fr": "priorité de droite"
+          }
+        ],
+        "image": "assets/scenes/priority-right.svg"
+      },
+      {
+        "id": "exceptions",
+        "title": {
+          "uk": "Коли правило «праворуч» не діє",
+          "nl": "Uitzonderingen",
+          "fr": "Exceptions",
+          "en": "Exceptions"
+        },
+        "body": {
+          "uk": "Пропускаєш усіх, якщо виїжджаєш: з ґрунтової дороги (aardeweg) чи стежки; з місця стоянки чи двору (це маневр); з дороги зі знаком B1 або B5. Трамвай пропускають завжди.",
+          "nl": "Je verleent voorrang aan iedereen als je komt van een aardeweg of pad, een parkeerplaats of eigendom verlaat (manoeuvre), of van een weg met B1 of B5. Trams hebben altijd voorrang.",
+          "fr": "On cède le passage à tous en sortant d'un chemin de terre ou sentier, d'une place de stationnement ou d'une propriété (manœuvre), ou d'une voie avec B1 ou B5. Le tram est toujours prioritaire.",
+          "en": "You give way to everyone when coming from a dirt road or path, leaving a parking space or property (a manoeuvre), or from a road with B1 or B5. Trams always have priority."
+        },
+        "article": "12.1, 12.3.1, 12.4",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "aardeweg",
+            "fr": "chemin de terre"
+          },
+          {
+            "nl": "manoeuvre",
+            "fr": "manœuvre"
+          }
+        ],
+        "sign": "B1"
+      },
+      {
+        "id": "emergency",
+        "title": {
+          "uk": "Машини з сиреною",
+          "nl": "Prioritaire voertuigen",
+          "fr": "Véhicules prioritaires",
+          "en": "Emergency vehicles"
+        },
+        "body": {
+          "uk": "Почув сирену — негайно звільни дорогу, навіть на зелений, і за потреби зупинись. У заторі утворюй «коридор життя»: ліва смуга — ліворуч, решта — праворуч. Порушення 3-го ступеня (−5).",
+          "nl": "Hoor je de sirene, maak dan meteen de doorgang vrij, ook met groen, en stop zo nodig. In de file vorm je een reddingsstrook: linkse strook naar links, de rest naar rechts. 3de graad (−5).",
+          "fr": "Dès la sirène, dégagez immédiatement le passage, même au vert, et arrêtez-vous si besoin. En embouteillage, formez un couloir de secours : bande de gauche à gauche, les autres à droite. 3e degré (−5).",
+          "en": "When you hear a siren, clear the way at once, even on green, and stop if needed. In a jam form a rescue lane: left lane to the left, others to the right. 3rd degree (−5)."
+        },
+        "article": "38, 9.8",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "reddingsstrook",
+            "fr": "couloir de secours"
+          }
+        ]
+      },
+      {
+        "id": "turning",
+        "title": {
+          "uk": "Поворот ліворуч",
+          "nl": "Links afslaan",
+          "fr": "Tourner à gauche",
+          "en": "Turning left"
+        },
+        "body": {
+          "uk": "Повертаючи ліворуч, пропускаєш зустрічний транспорт. Під час будь-якого повороту пропускаєш велосипедистів на велодоріжці й пішоходів, що переходять дорогу, на яку ти в'їжджаєш. Усе це — 3-й ступінь (−5).",
+          "nl": "Wie links afslaat, laat tegenliggers voorgaan. Bij elke richtingsverandering laat je fietsers op het fietspad en voetgangers op de weg die je inrijdt voorgaan. Telkens 3de graad (−5).",
+          "fr": "En tournant à gauche, on cède le passage aux véhicules venant en face. À chaque changement de direction, on cède aux cyclistes sur la piste et aux piétons traversant la voie où l'on entre. 3e degré (−5).",
+          "en": "Turning left you give way to oncoming traffic. On any turn you give way to cyclists on the cycle path and pedestrians crossing the road you enter. 3rd degree (−5)."
+        },
+        "article": "19.3–19.5",
+        "serious": true,
+        "terms": []
+      }
+    ]
+  },
+  {
+    "topic_id": "roundabouts",
+    "cards": [
+      {
+        "id": "priority",
+        "title": {
+          "uk": "Хто пропускає",
+          "nl": "Wie heeft voorrang",
+          "fr": "Qui a la priorité",
+          "en": "Who has priority"
+        },
+        "body": {
+          "uk": "Кругова розв'язка за законом — це знак D5 плюс B1 або B5 на в'їздах. Хто в'їжджає, пропускає тих, хто вже на колі.",
+          "nl": "Een rotonde is wettelijk aangeduid met D5 en B1 of B5 aan de ingangen. Wie oprijdt, laat wie al op de rotonde rijdt voorgaan.",
+          "fr": "Un rond-point est signalé par D5 et B1 ou B5 aux entrées. Qui entre cède le passage à ceux déjà sur l'anneau.",
+          "en": "A roundabout is legally signed with D5 plus B1 or B5 at the entries. Those entering give way to those already on the ring."
+        },
+        "article": "2.39, 12.3.1",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "rotonde",
+            "fr": "rond-point"
+          }
+        ],
+        "image": "assets/scenes/roundabout-yield.svg"
+      },
+      {
+        "id": "indicator",
+        "title": {
+          "uk": "Покажчики та смуги",
+          "nl": "Richtingaanwijzer en rijstroken",
+          "fr": "Clignotant et bandes",
+          "en": "Indicator and lanes"
+        },
+        "body": {
+          "uk": "На в'їзді покажчик не обов'язковий. Перед виїздом — правий покажчик обов'язково. Триматися крайньої правої смуги не обов'язково: обирай смугу за напрямком виїзду й дотримуйся розмітки.",
+          "nl": "Bij het oprijden is de richtingaanwijzer niet verplicht, bij het verlaten wel (rechts). Je hoeft niet uiterst rechts te rijden: kies de strook volgens je bestemming en volg de markeringen.",
+          "fr": "En entrant, le clignotant n'est pas obligatoire ; en sortant, si (à droite). Pas d'obligation de serrer à droite : choisissez la bande selon votre sortie et respectez les marquages.",
+          "en": "Entering: indicator not required. Leaving: right indicator required. You need not keep to the far right: choose the lane for your exit and follow the markings."
+        },
+        "article": "19.2.1°, 9.3.1",
+        "serious": false,
+        "terms": [],
+        "sign": "D5"
+      }
+    ]
+  },
+  {
+    "topic_id": "speed_distance",
+    "cards": [
+      {
+        "id": "limits",
+        "title": {
+          "uk": "Обмеження за регіонами",
+          "nl": "Snelheden per gewest",
+          "fr": "Vitesses par région",
+          "en": "Limits by region"
+        },
+        "body": {
+          "uk": "Населений пункт: Фландрія й Валлонія — 50, Брюссель — 30 км/год. Поза населеним пунктом: Фландрія — 70, Валлонія — 90, Брюссель — 70 км/год. Автомагістраль — 120 км/год (мінімум 70). Будь-яке питання про швидкість — це −5 на іспиті.",
+          "nl": "Bebouwde kom: Vlaanderen en Wallonië 50, Brussel 30 km/u. Buiten de bebouwde kom: Vlaanderen 70, Wallonië 90, Brussel 70 km/u. Autosnelweg 120 km/u (minimum 70). Elke snelheidsvraag kost 5 punten.",
+          "fr": "Agglomération : Flandre et Wallonie 50, Bruxelles 30 km/h. Hors agglomération : Flandre 70, Wallonie 90, Bruxelles 70 km/h. Autoroute 120 km/h (minimum 70). Toute question de vitesse coûte 5 points.",
+          "en": "Built-up area: Flanders and Wallonia 50, Brussels 30 km/h. Outside: Flanders 70, Wallonia 90, Brussels 70 km/h. Motorway 120 km/h (minimum 70). Every speed question costs 5 points."
+        },
+        "article": "11, 21.2",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "bebouwde kom",
+            "fr": "agglomération"
+          },
+          {
+            "nl": "maximumsnelheid",
+            "fr": "vitesse maximale"
+          }
+        ],
+        "sign": "C43"
+      },
+      {
+        "id": "zones",
+        "title": {
+          "uk": "Зони",
+          "nl": "Zones",
+          "fr": "Zones",
+          "en": "Zones"
+        },
+        "body": {
+          "uk": "Зона 30 і зона біля школи — 30 км/год, постійно. Житлова зона (woonerf) — 20 км/год, з 1.06.2027 у Фландрії — пішохідна швидкість. Велосипедна зона — не більше 30 км/год, обганяти велосипедистів не можна.",
+          "nl": "Zone 30 en schoolomgeving: 30 km/u, altijd. Woonerf: 20 km/u (vanaf 1.6.2027 in Vlaanderen stapvoets). Fietszone: max. 30 km/u, fietsers niet inhalen.",
+          "fr": "Zone 30 et abords d'école : 30 km/h, en permanence. Zone résidentielle : 20 km/h (au pas en Flandre dès le 1.6.2027). Zone cyclable : 30 km/h max., pas de dépassement des cyclistes.",
+          "en": "Zone 30 and school areas: 30 km/h, at all times. Woonerf: 20 km/h (walking pace in Flanders from 1.6.2027). Cycle zone: max 30 km/h, no overtaking cyclists."
+        },
+        "article": "22bis, 22quater, 22novies",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "woonerf",
+            "fr": "zone résidentielle"
+          },
+          {
+            "nl": "fietszone",
+            "fr": "zone cyclable"
+          }
+        ]
+      },
+      {
+        "id": "distance",
+        "title": {
+          "uk": "Дистанція",
+          "nl": "Afstand houden",
+          "fr": "Distance de sécurité",
+          "en": "Following distance"
+        },
+        "body": {
+          "uk": "Закон вимагає достатньої дистанції, щоб зупинитися перед будь-якою передбачуваною перешкодою. «2 секунди» — корисна підказка, але не цифра із закону.",
+          "nl": "De wet eist een voldoende veiligheidsafstand om voor elke voorzienbare hindernis te kunnen stoppen. '2 seconden' is een vuistregel, geen wettekst.",
+          "fr": "La loi exige une distance suffisante pour s'arrêter devant tout obstacle prévisible. « 2 secondes » est un repère, pas un texte légal.",
+          "en": "The law requires a distance sufficient to stop for any foreseeable obstacle. '2 seconds' is a rule of thumb, not the law."
+        },
+        "article": "10.1, 18",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "veiligheidsafstand",
+            "fr": "distance de sécurité"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topic_id": "stopping_parking",
+    "cards": [
+      {
+        "id": "difference",
+        "title": {
+          "uk": "Зупинка чи стоянка",
+          "nl": "Stilstaan of parkeren",
+          "fr": "Arrêt ou stationnement",
+          "en": "Stopping or parking"
+        },
+        "body": {
+          "uk": "Зупинка триває рівно стільки, скільки потрібно на посадку-висадку чи вантаження. Усе довше — стоянка. Заправка й заряджання електромобіля — теж стоянка.",
+          "nl": "Stilstaan duurt zolang nodig is om in of uit te stappen of te laden. Langer is parkeren. Tanken en opladen gelden als parkeren.",
+          "fr": "L'arrêt dure le temps d'embarquer, débarquer ou charger. Au-delà, c'est du stationnement. Plein et recharge = stationnement.",
+          "en": "Stopping lasts as long as needed to get in or out or load. Longer is parking. Refuelling and charging count as parking."
+        },
+        "article": "2.22, 2.23",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "stilstaan",
+            "fr": "arrêt"
+          },
+          {
+            "nl": "parkeren",
+            "fr": "stationnement"
+          }
+        ],
+        "sign": "E1"
+      },
+      {
+        "id": "distances",
+        "title": {
+          "uk": "Відстані",
+          "nl": "Afstanden",
+          "fr": "Distances",
+          "en": "Distances"
+        },
+        "body": {
+          "uk": "Зупинка й стоянка заборонені: ближче 5 м перед пішохідним переходом і від краю перехрестя; ближче 20 м перед світлофором; на переїзді (4-й ступінь, −5). Стоянка заборонена ближче 15 м з обох боків від зупинки автобуса чи трамвая.",
+          "nl": "Stilstaan en parkeren verboden: minder dan 5 m voor een oversteekplaats en van een kruispunt; minder dan 20 m voor verkeerslichten; op een overweg (4de graad, −5). Parkeren verboden op minder dan 15 m van een bus- of tramhalte.",
+          "fr": "Arrêt et stationnement interdits : à moins de 5 m avant un passage pour piétons et d'un carrefour ; à moins de 20 m avant des feux ; sur un passage à niveau (4e degré, −5). Stationnement interdit à moins de 15 m d'un arrêt de bus ou tram.",
+          "en": "No stopping or parking: within 5 m before a pedestrian crossing and of a junction; within 20 m before traffic lights; on a level crossing (4th degree, −5). No parking within 15 m of a bus or tram stop."
+        },
+        "article": "24, 25",
+        "serious": true,
+        "terms": [],
+        "image": "assets/scenes/crosswalk-parking.svg"
+      },
+      {
+        "id": "blue_zone",
+        "title": {
+          "uk": "Синя зона",
+          "nl": "Blauwe zone",
+          "fr": "Zone bleue",
+          "en": "Blue zone"
+        },
+        "body": {
+          "uk": "Робочі дні (субота теж) з 9:00 до 18:00, максимум 2 години, якщо знаки не кажуть інше. Стрілку диска ставиш на рисочку після часу прибуття. Переводити диск, не від'їхавши, заборонено.",
+          "nl": "Werkdagen (ook zaterdag) van 9 tot 18 uur, max. 2 uur, tenzij borden anders zeggen. De pijl komt op het streepje na je aankomst. De schijf verzetten zonder te vertrekken is verboden.",
+          "fr": "Jours ouvrables (samedi compris) de 9 h à 18 h, 2 h maximum, sauf indication contraire. La flèche se place sur le trait qui suit l'arrivée. Interdit de modifier le disque sans partir.",
+          "en": "Working days (Saturday included) 9:00–18:00, max 2 hours unless signs say otherwise. Set the arrow on the mark after your arrival. Changing the disc without leaving is forbidden."
+        },
+        "article": "27.1",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "parkeerschijf",
+            "fr": "disque de stationnement"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topic_id": "lanes_turning",
+    "cards": [
+      {
+        "id": "keep_right",
+        "title": {
+          "uk": "Тримайся праворуч",
+          "nl": "Rechts houden",
+          "fr": "Serrer à droite",
+          "en": "Keep right"
+        },
+        "body": {
+          "uk": "Їдь якомога ближче до правого краю. Ліві смуги — для обгону. У населеному пункті на дорогах з кількома смугами можна обрати смугу за напрямком руху.",
+          "nl": "Rij zo dicht mogelijk bij de rechterrand; linkse stroken dienen om in te halen. Binnen de bebouwde kom mag je op wegen met meerdere stroken de strook kiezen volgens je bestemming.",
+          "fr": "Roulez le plus près possible du bord droit ; les bandes de gauche servent au dépassement. En agglomération, sur plusieurs bandes, on peut choisir selon sa destination.",
+          "en": "Keep as close to the right edge as possible; left lanes are for overtaking. In built-up areas with several lanes you may choose by destination."
+        },
+        "article": "9.3, 9.4",
+        "serious": false,
+        "terms": []
+      },
+      {
+        "id": "zipper",
+        "title": {
+          "uk": "«Блискавка»",
+          "nl": "Ritsen",
+          "fr": "Tirette",
+          "en": "Zipper merge"
+        },
+        "body": {
+          "uk": "Коли смуга закінчується і рух дуже повільний, перестроюйся лише безпосередньо перед звуженням. Водії вільної смуги пропускають по одному, по черзі.",
+          "nl": "Loopt je strook dood bij sterk vertraagd verkeer, voeg dan pas vlak voor de versmalling in; de anderen laten om beurten één voertuig voor.",
+          "fr": "Quand votre bande se termine en circulation fortement ralentie, insérez-vous juste avant le rétrécissement ; les autres laissent passer un véhicule en alternance.",
+          "en": "When your lane ends in heavily slowed traffic, merge only just before the narrowing; others let one vehicle in alternately."
+        },
+        "article": "12bis",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "ritsen",
+            "fr": "tirette"
+          }
+        ]
+      },
+      {
+        "id": "hard_shoulder",
+        "title": {
+          "uk": "Аварійна смуга",
+          "nl": "Pechstrook",
+          "fr": "Bande d'arrêt d'urgence",
+          "en": "Hard shoulder"
+        },
+        "body": {
+          "uk": "Їздити по аварійній смузі заборонено, навіть у заторі. Виняток — службові машини, що їдуть на виклик. Порушення 3-го ступеня (−5).",
+          "nl": "Rijden op de pechstrook is verboden, ook in de file, behalve voor prioritaire voertuigen en hulpdiensten. 3de graad (−5).",
+          "fr": "Rouler sur la bande d'arrêt d'urgence est interdit, même en embouteillage, sauf véhicules prioritaires et dépanneurs appelés. 3e degré (−5).",
+          "en": "Driving on the hard shoulder is forbidden, even in a jam, except for priority vehicles and services. 3rd degree (−5)."
+        },
+        "article": "9.7",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "pechstrook",
+            "fr": "bande d'arrêt d'urgence"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topic_id": "overtaking",
+    "cards": [
+      {
+        "id": "how",
+        "title": {
+          "uk": "Як обганяти",
+          "nl": "Hoe inhalen",
+          "fr": "Comment dépasser",
+          "en": "How to overtake"
+        },
+        "body": {
+          "uk": "Обганяють ліворуч. Праворуч — лише авто, яке повертає ліворуч, і трамвай. Перед обгоном переконайся, що дорога вільна і тебе самого ніхто не обганяє. Кого обганяють, той не прискорюється (−5).",
+          "nl": "Je haalt links in; rechts enkel wie links afslaat, en trams. Zorg dat de weg vrij is en niemand jou al inhaalt. Wie ingehaald wordt, mag niet versnellen (−5).",
+          "fr": "On dépasse par la gauche ; par la droite seulement celui qui tourne à gauche, et les trams. Vérifiez que la voie est libre et que personne ne vous dépasse déjà. Le dépassé n'accélère pas (−5).",
+          "en": "Overtake on the left; on the right only someone turning left, and trams. Make sure the road is clear and no one is already overtaking you. The overtaken driver must not speed up (−5)."
+        },
+        "article": "16",
+        "serious": true,
+        "terms": []
+      },
+      {
+        "id": "bans",
+        "title": {
+          "uk": "Де обганяти заборонено",
+          "nl": "Inhaalverboden",
+          "fr": "Interdictions de dépasser",
+          "en": "Where overtaking is banned"
+        },
+        "body": {
+          "uk": "Знак C35. Перед пішохідним переходом, якщо авто попереду гальмує. На переїздах без шлагбаумів і світлофорів. На підйомах і поворотах з поганою видимістю. Через суцільну лінію. Майже все це — −5.",
+          "nl": "Bord C35; aan een oversteekplaats als de voorligger stopt; op overwegen zonder slagbomen of lichten; op heuveltoppen en in onoverzichtelijke bochten; over een doorlopende streep. Bijna allemaal −5.",
+          "fr": "Panneau C35 ; à un passage pour piétons si le véhicule devant s'arrête ; aux passages à niveau sans barrières ni feux ; aux sommets de côte et virages sans visibilité ; en franchissant une ligne continue. Presque tous −5.",
+          "en": "Sign C35; at a crossing when the car ahead stops; at level crossings without barriers or lights; at hilltops and blind bends; across a continuous line. Almost all −5."
+        },
+        "article": "17, 72.2",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "inhalen",
+            "fr": "dépasser"
+          },
+          {
+            "nl": "doorlopende streep",
+            "fr": "ligne continue"
+          }
+        ],
+        "sign": "C35"
+      },
+      {
+        "id": "cyclists",
+        "title": {
+          "uk": "Бокова відстань",
+          "nl": "Zijdelingse afstand",
+          "fr": "Distance latérale",
+          "en": "Lateral distance"
+        },
+        "body": {
+          "uk": "Обганяючи велосипедиста, залишай щонайменше 1 м у населеному пункті й 1,5 м поза ним. Те саме стосується пішоходів на проїжджій частині. Порушення 3-го ступеня (−5).",
+          "nl": "Bij het inhalen van een fietser minstens 1 m binnen en 1,5 m buiten de bebouwde kom; ook voor voetgangers op de rijbaan. 3de graad (−5).",
+          "fr": "En dépassant un cycliste : au moins 1 m en agglomération et 1,5 m hors agglomération ; idem pour les piétons sur la chaussée. 3e degré (−5).",
+          "en": "When overtaking a cyclist: at least 1 m inside and 1.5 m outside built-up areas; same for pedestrians on the road. 3rd degree (−5)."
+        },
+        "article": "40ter",
+        "serious": true,
+        "terms": []
+      }
+    ]
+  },
+  {
+    "topic_id": "vulnerable_users",
+    "cards": [
+      {
+        "id": "crossings",
+        "title": {
+          "uk": "Пішохідний перехід",
+          "nl": "Oversteekplaats",
+          "fr": "Passage pour piétons",
+          "en": "Pedestrian crossing"
+        },
+        "body": {
+          "uk": "На нерегульованому переході пропускай пішоходів, які вже на ньому або ось-ось ступлять. На регульованому — навіть на зелений дай закінчити перехід тим, хто вже почав. Порушення 3-го ступеня (−5).",
+          "nl": "Aan een oversteekplaats zonder lichten laat je voetgangers voorgaan die erop zijn of erop willen stappen; met lichten laat je wie reglementair begonnen is ook met groen eerst oversteken. 3de graad (−5).",
+          "fr": "Sans feux, cédez le passage aux piétons engagés ou sur le point de s'engager ; avec feux, laissez terminer ceux qui ont commencé, même au vert. 3e degré (−5).",
+          "en": "Without lights, give way to pedestrians on or about to step onto the crossing; with lights, let those who started finish, even on green. 3rd degree (−5)."
+        },
+        "article": "40.4",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "oversteekplaats",
+            "fr": "passage pour piétons"
+          },
+          {
+            "nl": "voorrang verlenen",
+            "fr": "céder le passage"
+          }
+        ]
+      },
+      {
+        "id": "tram_bus",
+        "title": {
+          "uk": "Трамваї та шкільні автобуси",
+          "nl": "Trams en schoolbussen",
+          "fr": "Trams et bus scolaires",
+          "en": "Trams and school buses"
+        },
+        "body": {
+          "uk": "Біля трамвайної зупинки без острівця зупинись, поки пасажири дійдуть до тротуару. Біля шкільного автобуса з усіма увімкненими покажчиками — значно знизь швидкість і будь готовий зупинитися. Обидва — −5.",
+          "nl": "Aan een tramhalte zonder vluchtheuvel stop je tot de reizigers het trottoir bereiken. Bij een schoolbus met alle richtingaanwijzers aan vertraag je sterk en stop je zo nodig. Beide −5.",
+          "fr": "À un arrêt de tram sans refuge, arrêtez-vous jusqu'à ce que les voyageurs atteignent le trottoir. Près d'un bus scolaire avec tous ses clignotants, ralentissez fortement et arrêtez-vous si besoin. Les deux : −5.",
+          "en": "At a tram stop without an island, stop until passengers reach the pavement. Near a school bus with all indicators on, slow down a lot and stop if needed. Both −5."
+        },
+        "article": "40.3, 39bis",
+        "serious": true,
+        "terms": []
+      },
+      {
+        "id": "bikes",
+        "title": {
+          "uk": "Велосипеди й самокати",
+          "nl": "Fietsen en steps",
+          "fr": "Vélos et trottinettes",
+          "en": "Bikes and e-scooters"
+        },
+        "body": {
+          "uk": "Велосипедисти можуть їхати по двоє, але поза населеним пунктом перешиковуються по одному, коли ззаду наближається транспорт. Електросамокат — з 16 років, за правилами для велосипедистів, тротуаром не можна.",
+          "nl": "Fietsers mogen met twee naast elkaar rijden, maar buiten de bebouwde kom achter elkaar als er verkeer van achteren nadert. Elektrische step vanaf 16 jaar, volgens de fietsregels, niet op het trottoir.",
+          "fr": "Les cyclistes peuvent rouler à deux de front, mais en file hors agglomération quand un véhicule approche par l'arrière. Trottinette électrique dès 16 ans, règles des cyclistes, pas sur le trottoir.",
+          "en": "Cyclists may ride two abreast, but in single file outside built-up areas when traffic approaches from behind. E-scooters from 16, cyclist rules, not on the pavement."
+        },
+        "article": "43, 7bis",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "fietspad",
+            "fr": "piste cyclable"
+          },
+          {
+            "nl": "elektrische step",
+            "fr": "trottinette électrique"
+          }
+        ],
+        "sign": "D7"
+      }
+    ]
+  },
+  {
+    "topic_id": "motorways_tunnels",
+    "cards": [
+      {
+        "id": "motorway",
+        "title": {
+          "uk": "Автомагістраль",
+          "nl": "Autosnelweg",
+          "fr": "Autoroute",
+          "en": "Motorway"
+        },
+        "body": {
+          "uk": "Заборонено: розвертатися, здавати назад, їхати проти руху, користуватися проїздами в розділювальній смузі (4-й ступінь, −5). Зупинятися можна лише на стоянках E9a. Пропустив виїзд — їдь до наступного.",
+          "nl": "Verboden: keren, achteruitrijden, tegen de rijrichting rijden, middenbermovergangen gebruiken (4de graad, −5). Stilstaan enkel op parkings E9a. Afrit gemist? Rijd naar de volgende.",
+          "fr": "Interdit : demi-tour, marche arrière, contresens, passages de la berme centrale (4e degré, −5). Arrêt seulement sur les parkings E9a. Sortie manquée ? Prenez la suivante.",
+          "en": "Forbidden: U-turns, reversing, wrong-way driving, using median crossings (4th degree, −5). Stop only at E9a car parks. Missed your exit? Take the next one."
+        },
+        "article": "21.4",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "autosnelweg",
+            "fr": "autoroute"
+          },
+          {
+            "nl": "afrit",
+            "fr": "sortie"
+          }
+        ],
+        "sign": "F5"
+      },
+      {
+        "id": "breakdown",
+        "title": {
+          "uk": "Поломка",
+          "nl": "Pech",
+          "fr": "Panne",
+          "en": "Breakdown"
+        },
+        "body": {
+          "uk": "Знак аварійної зупинки — щонайменше 100 м позаду на автомагістралі й 30 м на інших дорогах, щоб його було видно з 50 м. Виходячи з авто, надягни світловідбивний жилет.",
+          "nl": "Gevarendriehoek minstens 100 m achter de wagen op de autosnelweg, 30 m op andere wegen, zichtbaar op 50 m. Trek een fluohesje aan bij het uitstappen.",
+          "fr": "Triangle au moins 100 m derrière sur autoroute, 30 m ailleurs, visible à 50 m. Portez le gilet fluorescent en sortant.",
+          "en": "Warning triangle at least 100 m behind on motorways, 30 m elsewhere, visible from 50 m. Wear the reflective vest when getting out."
+        },
+        "article": "51.2",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "gevarendriehoek",
+            "fr": "triangle de danger"
+          },
+          {
+            "nl": "fluohesje",
+            "fr": "gilet fluorescent"
+          }
+        ]
+      },
+      {
+        "id": "level_crossing",
+        "title": {
+          "uk": "Залізничний переїзд",
+          "nl": "Overweg",
+          "fr": "Passage à niveau",
+          "en": "Level crossing"
+        },
+        "body": {
+          "uk": "Не заїжджай, поки шлагбаум рухається чи закритий, блимають червоні вогні або звучить сигнал. Не заїжджай, якщо можеш застрягти на переїзді. Зупинятися на переїзді заборонено. Порушення 4-го ступеня (−5).",
+          "nl": "Niet oprijden zolang slagbomen bewegen of dicht zijn, rode lichten knipperen of het signaal klinkt; niet oprijden als je er zou moeten stoppen. Stilstaan erop is verboden. 4de graad (−5).",
+          "fr": "Ne vous engagez pas tant que les barrières bougent ou sont fermées, que les feux rouges clignotent ou que le signal retentit, ni si vous risquez de devoir vous y arrêter. 4e degré (−5).",
+          "en": "Do not enter while barriers move or are closed, red lights flash or the bell rings, or if you might have to stop on it. Stopping on it is forbidden. 4th degree (−5)."
+        },
+        "article": "20, 24 3°",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "overweg",
+            "fr": "passage à niveau"
+          },
+          {
+            "nl": "slagboom",
+            "fr": "barrière"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "topic_id": "weather_hazards",
+    "cards": [
+      {
+        "id": "lights",
+        "title": {
+          "uk": "Коли вмикати фари",
+          "nl": "Wanneer lichten aan",
+          "fr": "Quand allumer les feux",
+          "en": "When to use lights"
+        },
+        "body": {
+          "uk": "Ближнє світло — від сутінків до світанку й щоразу, коли видимість менше 200 м (3-й ступінь, −5). Дальнє перемикай на ближнє при зустрічному русі й коли їдеш за авто ближче ніж за 50 м.",
+          "nl": "Dimlicht van zonsondergang tot zonsopgang en telkens het zicht onder 200 m is (3de graad, −5). Grootlicht dimmen bij tegenliggers en als je een voertuig op minder dan 50 m volgt.",
+          "fr": "Feux de croisement de la tombée de la nuit au lever du jour et dès que la visibilité est sous 200 m (3e degré, −5). Passez en croisement face aux autres usagers et à moins de 50 m derrière un véhicule.",
+          "en": "Dipped beams from nightfall to daybreak and whenever visibility is under 200 m (3rd degree, −5). Dip main beams for oncoming traffic and when following within 50 m."
+        },
+        "article": "30.1",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "dimlicht",
+            "fr": "feux de croisement"
+          },
+          {
+            "nl": "grootlicht",
+            "fr": "feux de route"
+          }
+        ]
+      },
+      {
+        "id": "fog",
+        "title": {
+          "uk": "Туман і дощ",
+          "nl": "Mist en regen",
+          "fr": "Brouillard et pluie",
+          "en": "Fog and rain"
+        },
+        "body": {
+          "uk": "Задній протитуманний — обов'язково, якщо видимість у тумані чи снігопаді менше 100 м, а також при сильному дощі. В інших випадках вмикати його заборонено. Швидкість завжди підлаштовуй під погоду.",
+          "nl": "Achterste mistlicht verplicht bij mist of sneeuw met zicht onder 100 m en bij hevige regen; anders verboden. Pas je snelheid altijd aan het weer aan.",
+          "fr": "Feu brouillard arrière obligatoire par brouillard ou neige sous 100 m de visibilité et par forte pluie ; interdit sinon. Adaptez toujours votre vitesse à la météo.",
+          "en": "Rear fog light mandatory in fog or snow with visibility under 100 m and in heavy rain; otherwise forbidden. Always adapt your speed to the weather."
+        },
+        "article": "30.1.2°, 10.1",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "mistlicht",
+            "fr": "feu brouillard"
+          }
+        ],
+        "sign": "A51"
+      }
+    ]
+  },
+  {
+    "topic_id": "safety_alcohol",
+    "cards": [
+      {
+        "id": "alcohol",
+        "title": {
+          "uk": "Алкоголь",
+          "nl": "Alcohol",
+          "fr": "Alcool",
+          "en": "Alcohol"
+        },
+        "body": {
+          "uk": "Загальний ліміт — 0,5 г/л крові (0,22 мг/л у видихуваному повітрі). Для професійних водіїв (автобус, вантажівка, таксі) — 0,2 г/л.",
+          "nl": "Algemene limiet 0,5 g/l bloed (0,22 mg/l uitgeademde lucht); voor professionele bestuurders (bus, vrachtwagen, taxi) 0,2 g/l.",
+          "fr": "Limite générale 0,5 g/l de sang (0,22 mg/l d'air expiré) ; conducteurs professionnels (bus, camion, taxi) 0,2 g/l.",
+          "en": "General limit 0.5 g/l of blood (0.22 mg/l of exhaled air); professional drivers (bus, truck, taxi) 0.2 g/l."
+        },
+        "article": "Wegverkeerswet art. 34",
+        "serious": false,
+        "terms": [
+          {
+            "nl": "alcoholgehalte",
+            "fr": "taux d'alcoolémie"
+          }
+        ]
+      },
+      {
+        "id": "phone",
+        "title": {
+          "uk": "Телефон",
+          "nl": "Gsm",
+          "fr": "Téléphone",
+          "en": "Phone"
+        },
+        "body": {
+          "uk": "У русі, навіть на червоне світло чи в заторі, брати телефон чи інший пристрій з екраном у руку заборонено. Можна лише в закріпленому тримачі. Порушення 3-го ступеня (−5).",
+          "nl": "In het verkeer, ook voor een rood licht of in de file, mag je geen gsm of toestel met scherm vasthouden of bedienen, behalve in een houder. 3de graad (−5).",
+          "fr": "En circulation, même au feu rouge ou dans un bouchon, interdit de tenir ou manipuler un téléphone ou appareil à écran, sauf dans un support. 3e degré (−5).",
+          "en": "In traffic, even at a red light or in a jam, you may not hold or operate a phone or device with a screen unless it is in a holder. 3rd degree (−5)."
+        },
+        "article": "8.4",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "gsm",
+            "fr": "GSM / téléphone"
+          }
+        ]
+      },
+      {
+        "id": "belts",
+        "title": {
+          "uk": "Ремені та дитячі крісла",
+          "nl": "Gordels en kinderzitjes",
+          "fr": "Ceintures et sièges enfants",
+          "en": "Belts and child seats"
+        },
+        "body": {
+          "uk": "Ремінь — на всіх сидіннях, де він є (−1). Діти до 18 років і нижче 135 см — у дитячому кріслі чи бустері (−5). Крісло спиною вперед — лише якщо передню подушку безпеки вимкнено (−5).",
+          "nl": "Gordel op elke uitgeruste zitplaats (−1). Kinderen onder 18 en kleiner dan 135 cm in een aangepast kinderzitje (−5). Achterwaarts zitje vooraan alleen met uitgeschakelde airbag (−5).",
+          "fr": "Ceinture à chaque place équipée (−1). Enfants de moins de 18 ans et de moins de 135 cm dans un siège adapté (−5). Siège dos à la route à l'avant seulement airbag désactivé (−5).",
+          "en": "Belt on every fitted seat (−1). Children under 18 and under 135 cm in a suitable child seat (−5). Rear-facing seat in front only with the airbag off (−5)."
+        },
+        "article": "35",
+        "serious": true,
+        "terms": [
+          {
+            "nl": "veiligheidsgordel",
+            "fr": "ceinture de sécurité"
+          },
+          {
+            "nl": "kinderzitje",
+            "fr": "siège enfant"
+          }
+        ]
+      },
+      {
+        "id": "fitness",
+        "title": {
+          "uk": "Втома, ліки, наркотики",
+          "nl": "Vermoeidheid, medicatie, drugs",
+          "fr": "Fatigue, médicaments, drogues",
+          "en": "Fatigue, medication, drugs"
+        },
+        "body": {
+          "uk": "Водій повинен бути здатним керувати й постійно контролювати авто. Якщо втома, ліки чи наркотики цьому заважають, керувати не можна. Порушення 3-го ступеня (−5).",
+          "nl": "Een bestuurder moet rijgeschikt zijn en zijn voertuig altijd beheersen. Als vermoeidheid, medicatie of drugs dat verhinderen, mag je niet rijden. 3de graad (−5).",
+          "fr": "Le conducteur doit être apte et maître de son véhicule. Si la fatigue, des médicaments ou des drogues l'empêchent, il ne peut pas conduire. 3e degré (−5).",
+          "en": "A driver must be fit and always in control. If fatigue, medication or drugs prevent that, you must not drive. 3rd degree (−5)."
+        },
+        "article": "8.3",
+        "serious": true,
+        "terms": []
+      }
+    ]
+  },
+  {
+    "topic_id": "mixed_exam",
+    "cards": [
+      {
+        "id": "format",
+        "title": {
+          "uk": "Як проходить іспит",
+          "nl": "Zo verloopt het examen",
+          "fr": "Déroulement de l'examen",
+          "en": "How the exam works"
+        },
+        "body": {
+          "uk": "50 питань, 2–3 варіанти, до 15 секунд на кожне. Стартуєш з 50 балів: звичайна помилка — −1, серйозна (3-й/4-й ступінь або швидкість) — −5. Склав — від 41/50, тобто дві серйозні помилки — це провал. Результат дійсний 3 роки.",
+          "nl": "50 vragen, 2 of 3 antwoorden, max. 15 seconden per vraag. Je start met 50 punten: lichte fout −1, zware fout (3de/4de graad of snelheid) −5. Geslaagd vanaf 41/50: twee zware fouten = gezakt. Geldig 3 jaar.",
+          "fr": "50 questions, 2 ou 3 réponses, 15 secondes max. par question. On part de 50 points : faute légère −1, faute grave (3e/4e degré ou vitesse) −5. Réussite à 41/50 : deux fautes graves = échec. Valable 3 ans.",
+          "en": "50 questions, 2–3 answers, up to 15 seconds each. You start at 50 points: minor error −1, serious error (3rd/4th degree or speed) −5. Pass from 41/50, so two serious errors mean failing. Valid 3 years."
+        },
+        "article": "GOCA Doc. 130",
+        "serious": false,
+        "terms": []
+      },
+      {
+        "id": "language",
+        "title": {
+          "uk": "Мова іспиту",
+          "nl": "Taal van het examen",
+          "fr": "Langue de l'examen",
+          "en": "Exam language"
+        },
+        "body": {
+          "uk": "Українською іспит не складають. Фландрія — нідерландською (можна аудіопереклад FR/DE/EN, +43 €). Брюссель — французькою або нідерландською (перекладач DE/EN, 50 €). Валлонія — французькою. Тому вчи терміни тією мовою, якою складатимеш: вмикай «Другу мову» в налаштуваннях.",
+          "nl": "Het examen bestaat niet in het Oekraïens. Vlaanderen: Nederlands (audiovertaling FR/DE/EN, +43 €). Brussel: Frans of Nederlands (tolk DE/EN, 50 €). Wallonië: Frans. Leer de termen in je examentaal: zet 'Tweede taal' aan.",
+          "fr": "L'examen n'existe pas en ukrainien. Flandre : néerlandais (traduction audio FR/DE/EN, +43 €). Bruxelles : français ou néerlandais (interprète DE/EN, 50 €). Wallonie : français. Apprenez les termes dans votre langue d'examen : activez « Deuxième langue ».",
+          "en": "There is no exam in Ukrainian. Flanders: Dutch (audio translation FR/DE/EN, +€43). Brussels: French or Dutch (interpreter DE/EN, €50). Wallonia: French. Learn the terms in your exam language: turn on 'Second language'."
+        },
+        "article": "GOCA, be.brussels, SPW",
+        "serious": false,
+        "terms": []
+      }
+    ]
+  }
+]
