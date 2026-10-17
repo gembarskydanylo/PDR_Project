@@ -1,5 +1,5 @@
 // Підвищуй версію при кожній зміні файлів зі списку SHELL.
-const VERSION = "pdr-v8";
+const VERSION = "pdr-v9";
 const SHELL = [
   "./",
   "./index.html",

@@ -175,7 +175,7 @@ for code, k in (("A1a", -1), ("A1b", 1)):
     d = f"M{cx - 4 * k},{cy + 20} L{cx - 4 * k},{cy + 2} Q{cx - 4 * k},{cy - 12} {cx + 10 * k},{cy - 16}"
     SIGNS[code] = svg(body + f'<path d="{d}" fill="none" stroke="{BLACK}" stroke-width="7" stroke-linecap="butt"/>', 100, 92)
 
-# A41 — залізничний переїзд зі шлагбаумом (піктограма огорожі)
+# A41 — залізничний переїзд зі шлагбаумом (чинний знак у старому кодексі)
 body, (cx, cy) = triangle(up=True)
 SIGNS["A41"] = svg(body + f'<g fill="{BLACK}">'
                           f'<rect x="{cx - 20}" y="{cy - 8}" width="40" height="5"/>'
@@ -287,26 +287,35 @@ def zebra(x, y, w, n=5, color=BLACK):
 
 # A21 — пішохідний перехід (попередження)
 body, (cx, cy) = triangle(up=True)
-SIGNS["A21"] = svg(body + walker(cx - 1, cy - 17, 0.82) + zebra(cx - 18, cy + 15.5, 36), 100, 92)
+pedestrian = (f'<circle cx="{cx}" cy="{cy - 23}" r="4.5" fill="{BLACK}"/>'
+              f'<path d="M{cx - 2},{cy - 18} L{cx + 6},{cy - 6} L{cx + 3},{cy + 1} L{cx + 12},{cy + 14} '
+              f'L{cx + 8},{cy + 16} L{cx - 2},{cy + 5} L{cx - 8},{cy + 18} L{cx - 12},{cy + 16} '
+              f'L{cx - 6},{cy - 1} L{cx - 7},{cy - 11} L{cx - 17},{cy - 3} L{cx - 20},{cy - 6} Z" fill="{BLACK}"/>')
+crossing = ''.join(f'<polygon points="{cx + x - 4},{cy + 18} {cx + x + 4},{cy + 18} {cx + x + 7},{cy + 25} {cx + x - 7},{cy + 25}" fill="{BLACK}"/>' for x in (-17, 0, 17))
+SIGNS["A21"] = svg(body + pedestrian + crossing, 100, 92)
 
 # A23 — діти
 body, (cx, cy) = triangle(up=True)
-SIGNS["A23"] = svg(body + walker(cx - 7, cy - 16, 0.78) + walker(cx + 9, cy - 8, 0.56), 100, 92)
+def child(x, y, scale=1):
+    return (f'<g transform="translate({x} {y}) scale({scale})" fill="{BLACK}">'
+            '<circle cx="0" cy="0" r="4"/><path d="M-3,5 L4,7 L7,15 L4,18 L2,12 L1,21 L8,27 L6,30 L-2,25 L-8,31 L-11,28 L-4,19 L-5,12 L-10,17 L-13,15 Z"/>'
+            '</g>')
+SIGNS["A23"] = svg(body + child(cx - 8, cy - 19, .9) + child(cx + 9, cy - 12, .72), 100, 92)
 
 # F49 — пішохідний перехід (інформаційний)
 SIGNS["F49"] = svg(f'<rect x="2" y="2" width="96" height="96" rx="8" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
                    f'<polygon points="50,12 90,84 10,84" fill="{WHITE}" stroke="{WHITE}" stroke-width="4" stroke-linejoin="round"/>'
-                   + walker(48, 36, 0.86) + zebra(30, 74, 40))
+                   + f'<g transform="translate(-2 0.33)">{pedestrian}</g>'
+                   + ''.join(f'<polygon points="{30 + x - 5},74 {30 + x + 5},74 {30 + x + 8},80 {30 + x - 8},80" fill="{BLACK}"/>' for x in (0, 20, 40)))
 
 # A43 — залізничний переїзд без шлагбаума (паровоз)
 body, (cx, cy) = triangle(up=True)
-loco = (f'<g fill="{BLACK}"><rect x="{cx - 20}" y="{cy - 2}" width="26" height="12" rx="2"/>'
-        f'<rect x="{cx + 5}" y="{cy - 12}" width="12" height="22" rx="1"/>'
-        f'<rect x="{cx + 3}" y="{cy - 14}" width="16" height="3"/>'
-        f'<rect x="{cx - 16}" y="{cy - 10}" width="6" height="9"/>'
-        f'<rect x="{cx - 22}" y="{cy + 8}" width="4" height="4"/>'
-        f'<circle cx="{cx - 12}" cy="{cy + 14}" r="4"/><circle cx="{cx - 3}" cy="{cy + 14}" r="4"/><circle cx="{cx + 11}" cy="{cy + 13}" r="5"/></g>'
-        f'<rect x="{cx + 8}" y="{cy - 9}" width="6" height="6" fill="{WHITE}"/>')
+loco = (f'<g fill="{BLACK}"><path d="M{cx - 28},{cy + 8} L{cx + 16},{cy + 8} L{cx + 22},{cy + 13} L{cx - 23},{cy + 13} Z"/>'
+        f'<rect x="{cx - 20}" y="{cy - 3}" width="37" height="13"/><rect x="{cx - 13}" y="{cy - 17}" width="17" height="15"/>'
+        f'<path d="M{cx - 23},{cy - 2} L{cx - 17},{cy - 11} L{cx - 14},{cy + 7} L{cx - 24},{cy + 7} Z"/>'
+        f'<rect x="{cx - 12}" y="{cy - 20}" width="3" height="6"/><path d="M{cx - 14},{cy - 21} L{cx - 6},{cy - 21} L{cx - 8},{cy - 18} L{cx - 14},{cy - 18} Z"/>'
+        f'<rect x="{cx + 1}" y="{cy - 13}" width="5" height="7" fill="{WHITE}"/>'
+        f'<circle cx="{cx - 15}" cy="{cy + 14}" r="4"/><circle cx="{cx - 3}" cy="{cy + 14}" r="4"/><circle cx="{cx + 13}" cy="{cy + 14}" r="4"/></g>')
 SIGNS["A43"] = svg(body + loco, 100, 92)
 
 

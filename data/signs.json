@@ -377,10 +377,10 @@
       "en": "No overtaking"
     },
     "meaning": {
-      "uk": "Заборонено обганяти ліворуч транспорт з більш ніж двома колесами. Двоколісні обганяти можна. Ігнорування — 3-й ступінь (−5).",
-      "nl": "Verboden voertuigen met meer dan twee wielen links in te halen; tweewielers mogen. Negeren is 3de graad (−5).",
-      "fr": "Interdit de dépasser par la gauche les véhicules à plus de deux roues ; les deux-roues, oui. 3e degré (−5).",
-      "en": "No overtaking on the left of vehicles with more than two wheels; two-wheelers allowed. 3rd degree (−5)."
+      "uk": "Від знака до найближчого перехрестя заборонено обганяти гужовий транспорт і транспортні засоби з більш ніж двома колесами. Двоколісні транспортні засоби, зокрема мотоцикли, під заборону не підпадають.",
+      "nl": "Vanaf het bord tot het volgende kruispunt mag je geen gespannen of voertuigen met meer dan twee wielen links inhalen. Tweewielers, waaronder motorfietsen, vallen niet onder dit verbod.",
+      "fr": "Du panneau jusqu’au prochain carrefour, il est interdit de dépasser par la gauche les véhicules à traction animale et les véhicules à plus de deux roues. Les deux-roues, y compris les motocyclettes, ne sont pas visés par cette interdiction.",
+      "en": "From this sign to the next junction, do not overtake animal-drawn vehicles or vehicles with more than two wheels on the left. Two-wheelers, including motorcycles, are not covered by this prohibition."
     }
   },
   {
@@ -425,10 +425,10 @@
       "en": "Compulsory direction"
     },
     "meaning": {
-      "uk": "Обов'язково рухатися в напрямку стрілки (наприклад, об'їхати острівець з указаного боку).",
-      "nl": "Verplicht de richting van de pijl te volgen (bv. een vluchtheuvel langs de aangeduide kant voorbijrijden).",
-      "fr": "Obligation de suivre la direction de la flèche (p. ex. contourner un îlot du côté indiqué).",
-      "en": "You must follow the direction of the arrow (e.g. pass an island on the side shown)."
+      "uk": "Рухайся в напрямку стрілки; якщо знак зі стрілкою прямо стоїть на перешкоді, об’їдь її з указаного боку.",
+      "nl": "Volg de pijl; staat een bord met rechte pijl op een hindernis, rijd er dan langs de aangegeven kant voorbij.",
+      "fr": "Suivez la flèche ; si le panneau à flèche droite est placé sur un obstacle, passez du côté indiqué.",
+      "en": "Follow the arrow; when the straight-arrow sign is placed on an obstacle, pass it on the side shown."
     }
   },
   {

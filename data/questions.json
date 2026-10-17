@@ -5418,10 +5418,10 @@
       {
         "id": "a",
         "text": {
-          "uk": "Обганяти транспорт з більш ніж двома колесами заборонено",
-          "nl": "Verboden voertuigen met meer dan twee wielen in te halen",
-          "fr": "Interdiction de dépasser les véhicules à plus de deux roues",
-          "en": "No overtaking vehicles with more than two wheels"
+          "uk": "Заборонено обганяти гужовий транспорт і транспорт із більш ніж двома колесами",
+          "nl": "Verboden gespannen en voertuigen met meer dan twee wielen in te halen",
+          "fr": "Interdiction de dépasser les véhicules à traction animale et ceux à plus de deux roues",
+          "en": "No overtaking animal-drawn vehicles or vehicles with more than two wheels"
         }
       },
       {
@@ -5445,10 +5445,10 @@
     ],
     "correct_option_id": "a",
     "explanation": {
-      "uk": "C35 забороняє обганяти ліворуч транспорт, що має більш ніж два колеса. Велосипедистів, мопеди й мотоцикли обганяти можна, залишаючи 1 / 1,5 м. Ігнорування знака — 3-й ступінь (−5).",
-      "nl": "C35 verbiedt voertuigen met meer dan twee wielen links in te halen. Fietsers, bromfietsen en motoren mag je inhalen (1 / 1,5 m). Negeren is 3de graad (−5).",
-      "fr": "C35 interdit de dépasser par la gauche les véhicules à plus de deux roues. Cyclistes, cyclos et motos peuvent être dépassés (1 / 1,5 m). L'ignorer = 3e degré (−5).",
-      "en": "C35 bans overtaking vehicles with more than two wheels on the left. Cyclists, mopeds and motorcycles may be overtaken (1 / 1.5 m). Ignoring it is 3rd degree (−5)."
+      "uk": "До найближчого перехрестя C35 забороняє обганяти гужовий транспорт і транспортні засоби з більш ніж двома колесами. Двоколісні транспортні засоби, зокрема мотоцикли, під цю заборону не підпадають. Ігнорування знака — 3-й ступінь (−5).",
+      "nl": "Tot het volgende kruispunt verbiedt C35 het links inhalen van gespannen en voertuigen met meer dan twee wielen. Tweewielers, waaronder motorfietsen, vallen niet onder dit verbod. Negeren is 3de graad (−5).",
+      "fr": "Jusqu’au prochain carrefour, C35 interdit de dépasser par la gauche les véhicules à traction animale et les véhicules à plus de deux roues. Les deux-roues, y compris les motocyclettes, ne sont pas visés par cette interdiction. L’ignorer = 3e degré (−5).",
+      "en": "Until the next junction, C35 bans overtaking animal-drawn vehicles and vehicles with more than two wheels on the left. Two-wheelers, including motorcycles, are not covered by this prohibition. Ignoring it is 3rd degree (−5)."
     },
     "source": {
       "title": "Wegcode art. 68.3",
@@ -10601,10 +10601,10 @@
     ],
     "correct_option_id": "a",
     "explanation": {
-      "uk": "C35 забороняє обганяти лише транспорт з більш ніж двома колесами. Велосипедиста обганяти можна, дотримуючись бокової відстані.",
-      "nl": "C35 verbiedt enkel voertuigen met meer dan twee wielen in te halen. Een fietser mag, met de nodige zijdelingse afstand.",
-      "fr": "C35 n'interdit que le dépassement des véhicules à plus de deux roues. Un cycliste peut être dépassé, avec la distance latérale.",
-      "en": "C35 only bans overtaking vehicles with more than two wheels. A cyclist may be overtaken with the lateral distance."
+      "uk": "Велосипедист має два колеса, тому C35 не забороняє його обгін. Пропускай із боковою відстанню щонайменше 1 м у населеному пункті та 1,5 м поза ним.",
+      "nl": "Een fiets heeft twee wielen, dus C35 verbiedt niet om een fietser in te halen. Laat minstens 1 m zijdelingse afstand binnen de bebouwde kom en 1,5 m erbuiten.",
+      "fr": "Un vélo a deux roues : C35 n’interdit donc pas de dépasser un cycliste. Gardez une distance latérale d’au moins 1 m en agglomération et 1,5 m hors agglomération.",
+      "en": "A bicycle has two wheels, so C35 does not prohibit overtaking a cyclist. Leave at least 1 m of lateral clearance in built-up areas and 1.5 m outside them."
     },
     "source": {
       "title": "Wegcode art. 68.3, 40ter",

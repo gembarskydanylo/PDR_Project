@@ -13,7 +13,7 @@ let examTimer = null;
 
 const EXAM_SIZE = 50;
 const PRACTICE_SIZE = 20;
-const THEMES = ["auto", "light", "dark"];
+const THEMES = ["study", "energy"];
 const KEYS = "ABCDEFG";
 
 const $ = (id) => document.getElementById(id);
@@ -127,9 +127,12 @@ async function init() {
 function readTheme() {
   try {
     const saved = localStorage.getItem("pdr_theme");
-    return THEMES.includes(saved) ? saved : "auto";
+    if (THEMES.includes(saved)) return saved;
+    // Keep existing installs on the new default and retain an intentional dark choice.
+    if (saved === "dark") return "energy";
+    return "study";
   } catch (e) {
-    return "auto";
+    return "study";
   }
 }
 

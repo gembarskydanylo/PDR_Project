@@ -1,61 +1,41 @@
 /* ===== Tokens ===== */
 :root {
   color-scheme: light;
-  --bg: #F1F2F0;          /* бетон */
-  --surface: #FFFFFF;
-  --surface-2: #F7F7F5;
-  --line: #DADBD6;
-  --text: #1E2227;        /* асфальт */
-  --mut: #5E646B;
-  --accent: #0B4F9C;      /* синій бельгійських знаків */
+  --bg: #F7F4EB;
+  --surface: #FFFDF7;
+  --surface-2: #F0EDE3;
+  --line: #E6DFD0;
+  --text: #263328;
+  --mut: #6E796C;
+  --accent: #35744B;
   --accent-ink: #FFFFFF;
-  --accent-soft: #E6EEF8;
-  --ok: #1E7B46;
-  --ok-bg: #E7F3EC;
+  --accent-soft: #E8F1E4;
+  --ok: #287746;
+  --ok-bg: #E5F1E6;
   --bad: #B3261E;
   --bad-bg: #FBEAEA;
   --figure: #FFFFFF;
-  --radius: 12px;
+  --radius: 14px;
   --tabbar-h: 64px;
   font-family: "Segoe UI", Roboto, "SF Pro Text", -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
 }
 
-:root[data-theme="dark"] {
+:root[data-theme="energy"] {
   color-scheme: dark;
-  --bg: #15181B;
-  --surface: #1E2226;
-  --surface-2: #252A2F;
-  --line: #343A40;
-  --text: #E8EAEC;
-  --mut: #9AA1A8;
-  --accent: #78AEEF;
-  --accent-ink: #0E1520;
-  --accent-soft: #1D2B3C;
-  --ok: #5CC08A;
-  --ok-bg: #16301F;
-  --bad: #F08A80;
-  --bad-bg: #3A1D1B;
-  --figure: #E9EAE6;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root[data-theme="auto"] {
-    color-scheme: dark;
-    --bg: #15181B;
-    --surface: #1E2226;
-    --surface-2: #252A2F;
-    --line: #343A40;
-    --text: #E8EAEC;
-    --mut: #9AA1A8;
-    --accent: #78AEEF;
-    --accent-ink: #0E1520;
-    --accent-soft: #1D2B3C;
-    --ok: #5CC08A;
-    --ok-bg: #16301F;
-    --bad: #F08A80;
-    --bad-bg: #3A1D1B;
-    --figure: #E9EAE6;
-  }
+  --bg: #101B2C;
+  --surface: #18263A;
+  --surface-2: #203149;
+  --line: #293B53;
+  --text: #F2F6FC;
+  --mut: #A7B6CA;
+  --accent: #B5F34A;
+  --accent-ink: #14200B;
+  --accent-soft: #253B36;
+  --ok: #8BE09C;
+  --ok-bg: #1C382E;
+  --bad: #FF938D;
+  --bad-bg: #48292D;
+  --figure: #F1F2EE;
 }
 
 /* ===== Base ===== */
@@ -370,4 +350,27 @@ body.in-quiz .tabbar { display: none; }
 
 @media (min-width: 700px) {
   .figure.sign img { width: 200px; height: 200px; }
+}
+
+/* Desktop: retain the compact bottom navigation on phones, use a side rail on wide screens. */
+@media (min-width: 900px) {
+  body { padding-bottom: 24px; }
+  main { max-width: 1080px; margin: 0 auto 0 244px; padding: 28px 32px 32px; }
+  .topbar { padding-left: 260px; padding-right: 28px; }
+  .tabbar {
+    top: 0; right: auto; bottom: 0; left: 0;
+    width: 220px;
+    display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start;
+    gap: 6px; padding: 22px 14px;
+    border-top: 0; border-right: 1px solid var(--line);
+  }
+  .tabbar button {
+    height: 48px; min-height: 48px; flex-direction: row; justify-content: flex-start;
+    gap: 12px; padding: 0 14px; border-radius: 10px; font-size: 14px;
+  }
+  .tabbar button[aria-current="page"] { background: var(--accent-soft); }
+  .tabbar .count { top: 14px; left: auto; right: 12px; }
+  .tabbar svg { width: 20px; height: 20px; }
+  body.in-quiz main { margin-left: auto; margin-right: auto; }
+  body.in-quiz .topbar { padding-left: 20px; }
 }
